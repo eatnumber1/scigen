@@ -548,7 +548,7 @@ EVAL_SEC_INTRO_BS	EVAL_SEC_HYP_SET EVAL_SEC_INTRO_B LIT_MIDDLE_TWO EVAL_SEC_INTR
 EVAL_SEC_INTRO_A2	In this light, we worked hard to arrive at a suitable evaluation METHODOLOGY.
 EVAL_SEC_INTRO_A2	We did not take any shortcuts here.
 EVAL_SEC_INTRO_A2	We desire to prove that our ideas have merit, despite their costs in complexity.
-EVAL_SEC_INTRO_A2	Only with precise measurements might we convince the reader that performance is king.
+EVAL_SEC_INTRO_A2	Only with precise measurements might we convince the reader that performance MATTERS.
 
 EVAL_SEC_INTRO_A	EVAL_SEC_INTRO_A1 EVAL_SEC_INTRO_A2
 
@@ -564,11 +564,16 @@ EVAL_SEC_INTRO_A	Our EVALUATION represents a valuable research contribution in a
 EVAL_SEC_INTRO_A	As we will soon see, the goals of this section are manifold.
 
 EVAL_SEC_INTRO_B	studies have shown that EVAL_MEASUREMENT is roughly PERCENTAGE higher than we might expect CITATION.
-EVAL_SEC_INTRO_B	our logic follows a new model: performance is king only as long as CONSTRAINT_TAKES take a back seat to CONSTRAINT XXX
+EVAL_SEC_INTRO_B	our logic follows a new model: performance MATTERS only as long as CONSTRAINT_TAKES a back seat to CONSTRAINT_OR_MEASUREMENT XXX
 EVAL_SEC_INTRO_B	TAKE_NOTE_THAT we have intentionally neglected to SCI_VERB PROP_OR_MEASUREMENT XXX
 EVAL_SEC_INTRO_B	TAKE_NOTE_THAT we have decided not to SCI_VERB PROP_OR_MEASUREMENT XXX
 EVAL_SEC_INTRO_B	only with the benefit of our system's SCI_THING might we optimize for CONSTRAINT_TYPE at the cost of CONSTRAINT_OR_MEASUREMENT
 
+MATTERS		is king
+MATTERS		is of import
+MATTERS		really matters
+MATTERS		matters
+MATTERS		might cause us to lose sleep
 
 CONSTRAINT_TYPE		performance
 CONSTRAINT_TYPE		security
@@ -578,10 +583,10 @@ CONSTRAINT_TYPE		complexity
 CONSTRAINT_TYPE		simplicity
 
 CONSTRAINT_P		CONSTRAINT_TYPE constraints
-CONTRAINT_TAKES		CONSTRAINT_TYPE takes
-CONTRAINT_TAKES		CONSTRAINT_P take
+CONSTRAINT_TAKES		CONSTRAINT_TYPE takes
+CONSTRAINT_TAKES		CONSTRAINT_P take
 
-CONSTRAINT_OR_MEASUREMENT	EVAL_MEASUREMENTT
+CONSTRAINT_OR_MEASUREMENT	EVAL_MEASUREMENT
 CONSTRAINT_OR_MEASUREMENT	CONSTRAINT_TYPE
 CONSTRAINT_OR_MEASUREMENT	CONSTRAINT_P
 
