@@ -642,12 +642,18 @@ BAD		outmoded
 EVAL_SEC_INTRO_C	We hope to make clear that our EVAL_MODING is the key to our EVALUATION.
 EVAL_SEC_INTRO_C	Our work in this regard is a novel contribution, in and of itself.
 EVAL_SEC_INTRO_C	Our EVALUATION will show that EVAL_MODING is crucial to our results.
-EVAL_SEC_INTRO_C	We hope that this section proves to the reader that EVAL_FACT.
+EVAL_SEC_INTRO_C	We hope that this section PROVES SCI_FACT.
+EVAL_SEC_INTRO_C	We hope that this section SCI_FACT.
 EVAL_SEC_INTRO_C	Our evaluation strives to make these points clear.
 EVAL_SEC_INTRO_C	Our EVALUATION holds suprising results for patient reader.
 
 EVAL_MODING		EVAL_MODING_HARDWARE
 EVAL_MODING		EVAL_MODING_SOFTWARE
+
+PROVES		proves
+PROVES		proves to the reader
+PROVES		illuminates
+PROVES		sheds light on 
 
 MORE_IMPORTANT_THAN	MORE important than
 MORE_IMPORTANT_THAN	not as important as
