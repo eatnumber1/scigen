@@ -47,7 +47,11 @@ sub read_rules {
 
 sub generate {
     my ($rules, $start) = @_;
+
+    # must sort; order matters, and we want to make sure that we get
+    # the longest matches first
     my $in = join "|", sort { length ($b) <=> length ($a) } keys %$rules;
+
     $RE = qr/^(.*?)(${in})/s ;
     my $s = expand ($rules, $start);
     print "$s\n";
