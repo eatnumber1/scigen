@@ -1,4 +1,4 @@
-package Text::Autoformat;
+package Autoformat;
 
 use strict; use vars qw($VERSION @ISA @EXPORT @EXPORT_OK); use Carp;
 use 5.005;
@@ -6,7 +6,7 @@ $VERSION = '1.12';
 
 require Exporter;
 
-use Text::Reform qw( form tag break_at break_with break_wrap break_TeX );
+use Reform qw( form tag break_at break_with break_wrap break_TeX );
 
 @ISA = qw(Exporter);
 @EXPORT = qw( autoformat );
@@ -59,13 +59,13 @@ my %casing = (
 	upper => [ \%upper_entities,  \%upper_entities,
 		   sub { $_ = uc },   sub { $_ = uc } ],
 	title => [ \%upper_entities,  \%lower_entities,
-		   sub { $_ = ucfirst lc }, sub { $_ = lc } ],
+		   sub { $_ = ucfirst  }, sub { $_ = lc  } ],
 );
 
 my $default_margin = 72;
 my $default_widow  = 10;
 
-$Text::Autoformat::widow_slack = 0.1;
+$Autoformat::widow_slack = 0.1;
 
 
 sub defn($)
@@ -414,7 +414,7 @@ sub autoformat	# ($text, %args)
 			   . $para->{quotespace}
 			   . $hfield
 			   . $para->{hangspace};
-	        my $rightslack = int (($args{right}-length $leftmargin)*$Text::Autoformat::widow_slack);
+	        my $rightslack = int (($args{right}-length $leftmargin)*$Autoformat::widow_slack);
 	        my ($widow_okay, $rightindent, $firsttext, $newtext) = (0,0);
 	        do {
 	            my $tlen = $args{right}-$rightindent-length($leftmargin
@@ -513,7 +513,7 @@ sub entitle {
 }
 
 my $abbrev = join '|', qw{
-	etc[.]	pp[.]	ph[.]?d[.]	U[.]S[.]
+	etc[.]	pp[.]	ph[.]?d[.]	U[.]S[.]  al. Jr.
 };
 
 my $gen_abbrev = join '|', $abbrev, qw{
@@ -533,7 +533,8 @@ sub ensentence {
 		$brsent = $1 =~ /^[[(]/;
 		return uc $str
 	}
-	unless ($str =~ /[a-z].*[A-Z]|[A-Z].*[a-z]/) {
+	unless ($str =~ /[a-z0-9].*[A-Z]|[A-Z].*[a-z0-9]/ or 
+		$str =~ /^[A-Z]+/) {
 		$str = lc $str;
 	}
 	if ($eos) {
