@@ -213,9 +213,11 @@ sub expand {
     my $full_token;
 
     my $repeat = 0;
+    my $count = 0;
     do {
 
 	my $input = pick_rand ($rules->{$start});
+	$count++;
 	if ($debug >= 5) {
 	    warn "$start -> $input\n";
 	}
@@ -243,8 +245,7 @@ sub expand {
 	    
 	    if( !$repeat ) {
 		push @{$rules->{dup_name("$start")}}, $full_token;
-	    } elsif( ($#dups-1) == $#{@{$rules->{$start}}} ) {
-		$full_token = "";
+	    } elsif( $count > 50 ) {
 		$repeat = 0;
 	    }
 	    
