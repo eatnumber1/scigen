@@ -586,7 +586,7 @@ IMPL_MID_X the IMPL_COMPONENT and the IMPL_COMPONENT must run IMPL_RUN_TYPE
 
 IMPL_CONCL we plan to release all of this code under LICENSE_TYPE XXX
 IMPL_CONCL overall, SCI_OUR_SYSTEM adds only modest overhead and complexity to RELATED SCI_BUZZWORD_ADJ SCI_SYSTEM_PL XXX
-IMPL_CONCL we SCI_CAN imagine other SCI_APPROACH_PL to the implementation that would have made PROGRAMMING_VERBING it much simpler XXX
+IMPL_CONCL one SCI_CAN imagine other SCI_APPROACH_PL to the implementation that would have made PROGRAMMING_VERBING it much simpler XXX
 IMPL_CONCL+3 IMPL_MID_X XXX
 
 
@@ -987,7 +987,6 @@ EVAL_SEC_INTRO_C	we hope to make clear that our EVAL_MODING is the key to our EV
 EVAL_SEC_INTRO_C	our work in this regard is a novel contribution, in and of itself.
 EVAL_SEC_INTRO_C	our EVALUATION will show that EVAL_MODING is crucial to our results.
 EVAL_SEC_INTRO_C	we hope that this section PROVES SCI_A_FACT.
-EVAL_SEC_INTRO_C	we hope that this section SCI_A_FACT.
 EVAL_SEC_INTRO_C	our evaluation strives to make these points clear.
 EVAL_SEC_INTRO_C	our EVALUATION holds suprising results for patient reader.
 
