@@ -4,6 +4,10 @@ use strict;
 use IO::File;
 use Data::Dumper;
 use Autoformat;
+use vars qw($SCIGEND_PORT);
+
+#### daemon settings ####
+$SCIGEND_PORT = 4724;
 
 sub dup_name {
     my $name = shift;
