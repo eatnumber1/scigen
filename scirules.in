@@ -770,6 +770,8 @@ SCI_EVAL {
 
  EVAL_SEC_SOFTWARE_P
 
+ EVAL_GUTS
+
  LATEX_FIGURE_MAYBE
 
  LATEX_FIGURE_MAYBE
@@ -899,6 +901,14 @@ PROVES		proves
 PROVES		proves to the reader
 PROVES		illuminates
 PROVES		sheds light on 
+
+PROVE_THAT	prove that
+PROVE_THAT	show that
+PROVE_THAT	exhibit that
+PROVE_THAT	demonstrate that
+PROVE_THAT	make manifest that
+
+
 
 MORE_IMPORTANT_THAN	MORE important than
 MORE_IMPORTANT_THAN	not as important as
@@ -1144,6 +1154,11 @@ EVAL_DONE_DIFFERENT had we EMULATED our EXP_WHERE, as opposed to EMULATING_IT, w
 EVAL_MOD_XXX+3	XXX
 EVAL_MOD_XXX	.  EVAL_SEC_FILLER.
 
+EMULATING	emulating
+EMULATING	simulating
+EMULATING	deploying
+EMULATING	rolling out
+
 EMULATING_IT	simulating it in WARE
 EMULATING_IT	emulating it in WARE
 EMULATING_IT	deploying it in THE_WILD
@@ -1376,8 +1391,8 @@ LINKER_SUFFIX		built on the SCI_COUNTRY toolkit for SCI_MATH_ADV SCI_VERBING EVA
 
 EVAL_SEC_SOFTWARE_END	We made all of our software is available under a LICENSE_TYPE license.
 EVAL_SEC_SOFTWARE_END	We note that other researchers have tried and failed to enable this functionality.
-EVAL_SEC_SOFTWARE_END	This concludes our discussion of software modifications.
-EVAL_SEC_SOFTWARE_END	All of these techniques are of interesting historical significance; SCI_SOURCE and SCI_SOURCE investigated a SIMILAR SETUP in SCI_YEAR.
+EVAL_SEC_SOFTWARE_END	this concludes our discussion of software modifications.
+EVAL_SEC_SOFTWARE_END	all of these techniques are of interesting historical significance; SCI_SOURCE and SCI_SOURCE investigated a SIMILAR SETUP in SCI_YEAR.
 
 SIMILAR	related
 SIMILAR	similar
@@ -1517,6 +1532,55 @@ VERSION_BASE	DIGIT.DIGIT.DIGIT
 VERSION		VERSION_BASE
 VERSION		VERSION_BASE, Service Pack DIGIT
 
+#EVAL_GUTS {
+#
+#EVAL_GUTS_P
+#
+#EVAL_GUTS_P_2
+#
+#}
+
+EVAL_GUTS	EVAL_GUTS_P
+
+EVAL_GUTS_P	EVAL_GUTS_INTRO EVAL_GUTS_EXP_SET
+
+EVAL_GUTS_INTRO	our hardware and software modficiations PROVE_THAT EMULATING SCI_OUR_SYSTEM is one thing, but EMULATING_IT is a completely different story.
+EVAL_GUTS_INTRO we have taken great pains to describe out EVALUATION setup; now, the payoff, is to discuss our results.
+EVAL_GUTS_INTRO given these trivial configurations, we achieved non-trivial results.
+EVAL_GUTS_INTRO is it possible to justify the great pains we took in our implementation? SCI_RESPONSE.
+EVAL_GUTS_INTRO is it possible to justify having paid little attention to our implementation and experimental setup? SCI_RESPONSE.
+
+EVAL_GUTS_EXP_SET EXP_SET_LEADIN we ran four novel experiments: (1) EVAL_EXP; (2) EVAL_EXP; (3) EVAL_EXP; and (4) EVAL_EXP XXX
+
+EXP_SET_LEADIN that being said,
+EXP_SET_LEADIN 
+EXP_SET_LEADIN we these considerations in mind,
+EXP_SET_LEADIN seizing upon this IDEAL configuration,
+
+IDEAL	ideal
+IDEAL	approximate
+IDEAL	contrived
+
+EVAL_EXP	we ran SCI_THING_P on DIGITDIGIT nodes spread throughout the NETWORK_TYPE network, and compared them against SCI_THING_P running locally
+
+EVAL_EXP	we deployed DIGITDIGIT OLD_MACHINEs across the NETWORK_TYPE network, and tested our SCI_THING_P accordingly
+
+EVAL_EXP	we asked (and answered) what would happen if SCI_MATH_ADV SCI_MATH_ADJ SCI_THING_P were used instead of SCI_THING_P
+
+EVAL_EXP	we measured HARDWARE_PROP as a function of HARDWARE_PROP on a OLD_MACHINE
+
+EVAL_EXP 	we compared EVAL_MEASUREMENT on the OSNAME, OSNAME and OSNAME operating systems
+
+EVAL_EXP	we measured MEASURABLE_SYSTEM and MEASURABLE_SYSTEM PERFORMANCE on our EXP_WHERE
+
+MEASURABLE_SYSTEM	DNS
+MEASURABLE_SYSTEM	Web server
+MEASURABLE_SYSTEM	E-mail
+MEASURABLE_SYSTEM	instant messenger
+MEASURABLE_SYSTEM	RAID array
+MEASURABLE_SYSTEM	database
+MEASURABLE_SYSTEM	WHOIS
+MEASURABLE_SYSTEM	DHCP
 
 
 #############################################################################
@@ -2424,6 +2488,7 @@ SCI_ACH_PRES	SCI_VERBING SCI_THING_MOD
 SCI_ACH_PRES	SCI_VERBING SCI_THING_MOD (which SCI_EFFECT )
 
 SCI_RESPONSE	yes
+SCI_RESPONSE	absolutely
 SCI_RESPONSE	no
 SCI_RESPONSE	it is
 SCI_RESPONSE	unlikely
@@ -2747,6 +2812,7 @@ EVAL_MEASUREMENT_UM response time
 EVAL_MEASUREMENT_UM bandwidth
 EVAL_MEASUREMENT_UM S/N
 EVAL_MEASUREMENT_UM distance
+EVAL_MEASUREMENT_UM interrupt rate
 
 EVAL_MEASUREMENT EVAL_MEASUREMENT_UM
 EVAL_MEASUREMENT STAT_ADJ EVAL_MEASUREMENT_UM
