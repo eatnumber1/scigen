@@ -36,9 +36,9 @@ SCIPAPER_LONG	{
 
 }
 
-XXX+15		.
-XXX		CITATION.
-XXX		. FILLER_SENTENCE.
+#############################################################################
+####### Titles #######
+#############################################################################
 
 SCI_TITLE TOPIC : SCI_ACT
 SCI_TITLE SCI_TITLE_PREP the SCI_ACT
@@ -72,6 +72,10 @@ SCI_TITLE_IMPACT	influence of
 
 SCI_AUTHORS FIRSTNAME LASTNAME
 
+#############################################################################
+####### Abstract #######
+#############################################################################
+
 SCI_ABSTRACT {
 
  SCI_ABSTRACT_HEADER 
@@ -89,6 +93,10 @@ SCI_AB_A_START after years of SCI_ADJ research into SCI_THING_MOD, we SCI_PROVE_
 
 SCI_AB_A_END
 SCI_AB_A_END , which embodies the SCI_ADJ principles of SCI_FIELD
+
+#############################################################################
+####### Intro #######
+#############################################################################
 
 SCI_INTRO {
 
@@ -450,10 +458,501 @@ SCI_INTRO_PARAGRAPH_CONTR SCI_IN_THIS_PAPER, we make four main contributions.  S
 SCI_CONTR_3 SCI_CONTR_2 LIT_MIDDLE_3 SCI_GENERIC_THESIS XXX
 SCI_CONTR_4 SCI_CONTR_3 LIT_LAST SCI_GENERIC_THESIS XXX
 SCI_CONTR_2 LIT_FIRST SCI_GENERIC_THESIS XXX LIT_MIDDLE_TWO SCI_GENERIC_THESIS XXX
-
 SCI_CONTR_ANY SCI_CONTR_3
 SCI_CONTR_ANY SCI_CONTR_4
 SCI_CONTR_ANY SCI_CONTR_2
+
+#############################################################################
+####### Eval #######
+#############################################################################
+
+# eventually all of this, but for now...
+#
+#EVAL_SEC {
+#
+#EVAL_SEC_INTRO
+#
+#EVAL_SEC_BODY
+#
+#EVAL_SEC_CONCL
+#
+#}
+
+EVAL_SEC_LATEX_HEADER		\section{Evaluation and Performance Results}
+EVAL_SEC_LATEX_HEADER		\section{Performance Results}
+EVAL_SEC_LATEX_HEADER		\section{Evaluation}
+EVAL_SEC_LATEX_HEADER		\section{Experimental Evaluation}
+EVAL_SEC_LATEX_HEADER		\section{Experimental Evaluation and Analysis}
+EVAL_SEC_LATEX_HEADER		\section{Results and Analysis}
+EVAL_SEC_LATEX_HEADER		\section{Results}
+
+SCI_EVAL {
+
+EVAL_SEC_LATEX_HEADER
+
+EVAL_SEC_BODY_P
+
+}
+
+NETWORK_TYPE_N	2
+NETWORK_TYPE_N	10
+NETWORK_TYPE_N	100
+NETWORK_TYPE_N	1000
+
+NETWORK_TYPE	Internet
+NETWORK_TYPE	Internet-2
+NETWORK_TYPE	Planetlab
+NETWORK_TYPE	sensor-net
+NETWORK_TYPE	NETWORK_TYPE_N-node
+NETWORK_TYPE	NETWORK_TYPE_N-node
+NETWORK_TYPE	NETWORK_TYPE_N-node
+NETWORK_TYPE	planetary-scale
+NETWORK_TYPE	underwater
+NETWORK_TYPE	millenium
+
+EXP_ADJ		SCI_BUZZWORD_ADJ
+EXP_ADJ		real-time
+EXP_ADJ		packet-level
+EXP_ADJ		quantized
+EXP_ADJ		real-world
+EXP_ADJ		ad-hoc
+EXP_ADJ		software
+EXP_ADJ		hardware
+EXP_TYPE	EXP_ADJ EXP_TYPE_UM
+EXP_TYPE	EXP_TYPE_UM
+EXP_TYPE_UM	simulation
+EXP_TYPE_UM	emulation
+EXP_TYPE_UM	deployment
+EXP_TYPE_UM	prototype
+
+EXP_WHERE_UM	cluster
+EXP_WHERE_UM	testbed
+EXP_WHERE_UM	overlay network
+
+# common places to run experiments
+EXP_WHERE_CMN	desktop machines
+EXP_WHERE_CMN	mobile telephones
+EXP_WHERE_CMN	system
+EXP_WHERE_CMN	network
+EXP_WHERE_CMN+4	EXP_WHERE_ADJ EXP_WHERE_UM
+
+# rare places
+OLD_MACHINE	Macintosh SE
+OLD_MACHINE	UNIVAC
+OLD_MACHINE	Apple II
+OLD_MACHINE	IBM PC Junior
+OLD_MACHINE	Atari 2600
+OLD_MACHINE	Nintendo Gameboy
+OLD_MACHINE	Motorola bag telephone
+OLD_MACHINE	Apple Newton
+OLD_MACHINE	Commodore 64
+OLD_MACHINE	NeXT Workstation
+OLD_MACHINE	LISP machine
+OLD_MACHINE	PDP 11
+EXP_WHERE_RARE	decomissioned OLD_MACHINEs
+EXP_WHERE_RARE	XBox network
+EXP_WHERE_RARE	human test subjects
+
+EXP_WHERE	EXP_WHERE_RARE
+EXP_WHERE+8	EXP_WHERE_CMN
+
+
+EXP_WHERE_ADJ	SCI_BUZZWORD_ADJ
+EXP_WHERE_ADJ	NETWORK_TYPE
+EXP_WHOSE	MIT's
+EXP_WHOSE	UC Berkeley's
+EXP_WHOSE	CERN's
+EXP_WHOSE	DARPA's
+EXP_WHOSE	the NSA's
+EXP_WHOSE	the KGB's
+EXP_WHOSE+3	our
+EXP_WHOSE	Intel's
+
+EXP	EXP_TYPE on EXP_WHOSE EXP_WHERE
+
+
+EVAL_SEC_BODY		EVAL_SEC_BODY_P_LIST
+EVAL_SEC_BODY_P_LIST	EVAL_SEC_BODY_P
+EVAL_SEC_BODY_P_LIST+2 	EVAL_SEC_BODY_P_LIST EVAL_SEC_BODY_P
+
+#EVAL_SEC_BODY_P EVAL_SEC_BODY_P_TOPIC EVAL_SEC_BODY_P_BODY EVAL_SEC_BODY_P_CLOSE
+EVAL_SEC_BODY_P_TOPIC	EVAL_SEC_BODY_P_TOPIC_LEADIN EVAL_SEC_BODY_P_FINDING
+
+
+EVAL_SEC_BODY_P_FINDING	a SIMUL_ADJ SIMUL_TYPE SIMUL_VERB SIMUL_SYSTEM 
+
+EVAL_SEC_BODY_P_TOPIC_LEADIN We were suprised to discover that
+EVAL_SEC_BODY_P_TOPIC_LEADIN As with
+
+EVAL_SEC_BODY_P	{
+EVAL_ACTION EVAL_MOD_XXX LIT_FIRST EVAL_MOD EVAL_MOD_XXX 
+LIT_MIDDLE_TWO EVAL_MOD EVAL_MOD_XXX LIT_MIDDLE_3 EVAL_MOD EVAL_MOD_XXX
+EVAL_SEC_BODY_P_REST
+}
+
+EVAL_SEC_BODY_P_REST	
+EVAL_SEC_BODY_P_REST  LIT_LAST_OR_MIDDLE EVAL_MOD EVAL_MOD_XXX
+EVAL_SEC_BODY_P_REST  LIT_MIDDLE EVAL_MOD EVAL_MOD_XXX LIT_LAST EVAL_MOD EVAL_MOD_XXX
+EVAL_SEC_BODY_P_REST  LIT_MIDDLE EVAL_MOD EVAL_MOD_XXX LIT_MIDDLE EVAL_MOD EVAL_MOD_XXX LIT_LAST EVAL_MOD EVAL_MOD_XXX
+
+EVAL_SEC_FILLER	This configuration step was time-consuming but worth it in the end
+EVAL_SEC_FILLER	Configurations without this modification showed DIFFERENT EVAL_MEASUREMENT
+EVAL_SEC_FILLER	With this change, we noted DIFFERENT PERFORMANCE IMPROVEMENT
+EVAL_SEC_FILLER	This step flies in the face of conventional wisdom, but is INSTRUMENTAL to our results
+EVAL_SEC_FILLER	To find the required HARDWARE_ITEMS, we combed eBay and tag sales
+EVAL_SEC_FILLER	We struggled to amass the necessary HARDWARE_ITEMS
+EVAL_SEC_FILLER	The HARDWARE_ITEMS described here explain our UNIQUE results.
+EVAL_SEC_FILLER	Note that only experiments on our EXP_WHERE (and not on our EXP_WHERE) followed this pattern
+EVAL_SEC_FILLER	We only NOTED these results when EMULATING_IT
+EVAL_SEC_FILLER	EVAL_DONE_DIFFERENT
+
+EVAL_DONE_DIFFERENT Had we EMULATED our EXP_WHERE, as opposed to EMULATING_IT, we would have seen DIFFERENT results
+
+EVAL_MOD_XXX+3	XXX
+EVAL_MOD_XXX	.  EVAL_SEC_FILLER.
+
+EMULATING_IT	simulating it in WARE
+EMULATING_IT	emulating it in WARE
+EMULATING_IT	deploying it in THE_WILD
+
+WARE		software
+WARE		hardware
+WARE		courseware
+WARE		bioware
+WARE		middleware
+
+THE_WILD	the wild
+THE_WILD	a laboratory setting
+THE_WILD	a controlled environment
+THE_WILD	a chaotic spatio-temporal environment
+
+EVAL_WHO+25 	We
+EVAL_WHO 	SCI_COUNTRY SCI_PEOPLE
+EVAL_WHO 	SCI_PEOPLE
+
+EVAL_VERBED	instrumented
+EVAL_VERBED	performed
+EVAL_VERBED	carried out
+EVAL_VERBED	ran
+EVAL_VERBED	executed
+EVAL_VERBED	scripted
+
+EVAL_WHY_VERB	prove
+EVAL_WHY_VERB	disprove
+EVAL_WHY_VERB	measure
+EVAL_WHY_VERB	quantify
+
+IMPACT		impact on
+IMPACT		effect on
+IMPACT		influence on
+IMPACT		inability to effect
+IMPACT		lack of influence on
+IMPACT		independence of 
+IMPACT		orthogonality relative to 
+
+EVAL_SYSTEM	SCI_BUZZWORD_NOUN
+EVAL_SYSTEM	SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN
+
+EVAL_FACT	EVAL_SYSTEM's IMPACT SCI_A_FACT
+EVAL_FACT	the SCI_MATH_ADV SCI_BUZZWORD_ADJ nature of SCI_BUZZWORD_NOUN
+EVAL_FACT	the SCI_MATH_ADV SCI_BUZZWORD_ADJ behavior of SCI_MATH_ADJ SCI_BUZZWORD_NOUN
+EVAL_FACT	SCI_A_FACT
+
+EVAL_WHY	EVAL_WHY_VERB EVAL_FACT
+
+EVAL_ACTION 	EVAL_WHO EVAL_VERBED a EXP to EVAL_WHY
+EVAL_MOD	EVAL_WHO EVAL_MOD_ACTION EVAL_MOD_OBJECT
+EVAL_MOD	EVAL_WHO EVAL_MOD_ACTION EVAL_MOD_OBJECT to EVAL_MOD_WHY
+
+#
+# passive voice does not work due to was/were problems
+#
+#EVAL_MOD	EVAL_MOD_PASSIVE_ACTION EVAL_MOD_OBJECT to EVAL_MOD_WHY
+#EVAL_MOD	EVAL_MOD_PASSIVE_ACTION EVAL_MOD_OBJECT
+
+EVAL_MOD_WHY	EVAL_WHY
+EVAL_MOD_WHY	PROBE_VERB the HARDWARE_PROP_OR_MEASUREMENT of EVAL_MOD_OBJECT
+EVAL_MOD_WHY	PROBE_VERB EVAL_MOD_OBJECT
+EVAL_MOD_WHY	PROBE_VERB SCI_BUZZWORD_NOUN
+
+EVAL_MOD_OBJECT our EXP_WHERE
+EVAL_MOD_OBJECT EXP_WHOSE EXP_WHERE
+
+# this doesn't appear to be working well
+#EVAL_MOD_OBJECT SCI_BUZZWORD_NOUN
+
+EVAL_MOD_UNITS	MB
+EVAL_MOD_UNITS	GB
+EVAL_MOD_UNITS	kb
+EVAL_MOD_UNITS	Hz
+EVAL_MOD_UNITS	GHz
+
+EVAL_MOD_N	10
+EVAL_MOD_N	25
+EVAL_MOD_N	100
+EVAL_MOD_N	2
+EVAL_MOD_N	3
+EVAL_MOD_N	7
+EVAL_MOD_N	8
+EVAL_MOD_N	300
+EVAL_MOD_N	200
+EVAL_MOD_N	150
+
+EVAL_MOD_AMOUNT	more
+EVAL_MOD_AMOUNT	some
+
+EVAL_MOD_HARDWARE	hard drive space
+EVAL_MOD_HARDWARE	memory
+EVAL_MOD_HARDWARE	network bandwidth
+
+EVAL_MOD_PROPERTY	throughput
+EVAL_MOD_PROPERTY	SCI_MATH_ADJ throughput
+EVAL_MOD_PROPERTY	latency
+
+HARDWARE_PROP		MEMORY_TYPE space
+HARDWARE_PROP		MEMORY_TYPE speed
+HARDWARE_PROP		MEMORY_TYPE throughput
+HARDWARE_PROP		STORAGE_TYPE space
+HARDWARE_PROP		STORAGE_TYPE speed
+HARDWARE_PROP		STORAGE_TYPE throughput
+
+HARDWARE		MEMORY
+HARDWARE		PROCESSOR
+HARDWARE 		STORAGE
+HARDWARE		NETWORK_BANDWIDTH
+
+HARDWARE_ITEMS		MEMORY_ITEMS
+HARDWARE_ITEMS		PROCESSOR_ITEMS
+HARDWARE_ITEMS		STORAGE_ITEMS
+HARDWARE_ITEMS		EXPANSION_ITEMS
+
+MEMORY_ITEMS		MEMORY_TYPE
+MEMORY_ITEMS		EVAL_MOD_NMB of MEMORY_TYPE
+MEMORY_ITEMS		EVAL_MOD_NGB of MEMORY_TYPE
+MEMORY_ITEMS		EVAL_MOD_NkB of MEMORY_TYPE
+
+PROCESSOR_ITEM		PROCESSOR_TYPE
+PROCESSOR_ITEMS		PROCESSOR_TYPEs
+
+STORAGE_ITEM		STORAGE_SIZE STORAGE_TYPE
+STORAGE_ITEM		STORAGE_TYPE
+
+EXPANSION_ITEMS		EXPANSION_ITEMs
+STORAGE_ITEMS		STORAGE_ITEMs
+
+EXPANSION_ITEM		joystick
+EXPANSION_ITEM		2400 baum modem
+EXPANSION_ITEM		SoundBlaster 8bit sound card
+EXPANSION_ITEM		Knesis keyboard
+EXPANSION_ITEM		power strip
+EXPANSION_ITEM		Ethernet card
+EXPANSION_ITEM		tulip card
+EXPANSION_ITEM		laser label printer
+EXPANSION_ITEM		dot-matrix printer
+EXPANSION_ITEM		5.25" floppy drive
+
+
+BANDWIDTH_AMOUNT	EVAL_MOD_NMB/s
+BANDWIDTH_AMOUNT	EVAL_MOD_NkB/s
+BANDWIDTH_AMOUNT	EVAL_MOD_NGB/s
+BANDWIDTH_AMOUNT	EVAL_MOD_NGb/s
+
+NETWORK_BANDWIDTH	BANDWIDTH_AMOUNT of BANDWIDTH_TYPE
+BANDWIDTH_TYPE		Ethernet access
+BANDWIDTH_TYPE		Wi-Fi throughput
+BANDWIDTH_TYPE		Internet access
+
+MEMORY			EVAL_MOD_NMB of MEMORY_TYPE
+MEMORY			EVAL_MOD_AMOUNT MEMORY_TYPE
+
+STORAGE_M		EVAL_MOD_AMOUNT STORAGE_TYPE space
+STORAGE_M		STORAGE_DEVICES_N STORAGE_SIZE STORAGE_TYPEs
+STORAGE_S		a STORAGE_SIZE STORAGE_TYPE
+
+STORAGE+2		STORAGE_M
+STORAGE			STORAGE_S
+
+STORAGE_DEVICES_N	EVAL_MOD_N
+
+STORAGE_SIZE		EVAL_MOD_NMB
+STORAGE_SIZE		EVAL_MOD_NkB
+STORAGE_SIZE		EVAL_MOD_NGB
+STORAGE_SIZE		EVAL_MOD_N-petabyte
+STORAGE_SIZE		EVAL_MOD_NTB
+
+STORAGE_TYPE		hard disk
+STORAGE_TYPE		optical drive
+STORAGE_TYPE		floppy disk
+STORAGE_TYPE		tape drive
+STORAGE_TYPE		USB key
+
+MEMORY_TYPE		RAM
+MEMORY_TYPE		ROM
+MEMORY_TYPE		flash-memory
+MEMORY_TYPE		NV-RAM
+
+CHIP_SPEED		EVAL_MOD_NGHz
+CHIP_SPEED		EVAL_MOD_NMHz
+
+PROCESSOR		EVAL_MOD_AMOUNT PROCESSOR_TYPEs
+PROCESSOR		EVAL_MOD_N PROCESSOR_TYPEs
+PROCESSOR_TYPE		CPU
+PROCESSOR_TYPE		FPU
+PROCESSOR_TYPE		RISC processor
+PROCESSOR_TYPE		CISC processor
+PROCESSOR_TYPE		CHIP_SPEED Athlon ATHLON_TYPE
+PROCESSOR_TYPE		CHIP_SPEED Pentium PENTIUM_TYPE
+PROCESSOR_TYPE		CHIP_SPEED Intel 386
+PENTIUM_TYPE		IV
+PENTIUM_TYPE		III
+PENTIUM_TYPE		Centrino
+PENTIUM_TYPE		II
+ATHLON_TYPE		XP
+ATHLON_TYPE		64
+
+HARDWARE_PROP_OR_MEASUREMENT		HARDWARE_PROP
+HARDWARE_PROP_OR_MEASUREMENT		effective HARDWARE_PROP
+HARDWARE_PROP_OR_MEASUREMENT		EVAL_MEASUREMENT
+
+MULTIPLE_VERBED		doubled
+MULTIPLE_VERBED		halved
+MULTIPLE_VERBED		tripled
+MULTIPLE_VERBED		quadrupled
+MULTIPLE_VERBED		reduced
+
+EVAL_MOD_ACTION		added HARDWARE to
+EVAL_MOD_ACTION		removed HARDWARE from
+EVAL_MOD_ACTION 	MULTIPLE_VERBED the HARDWARE_PROP_OR_MEASUREMENT of
+EVAL_MOD_PASSIVE_ACTION HARDWARE was added to
+EVAL_MOD_PASSIVE_ACTION HARDWARE was removed from
+
+#############################################################################
+####### Nouns #######
+#############################################################################
+
+SCI_BUZZWORD_NOUN technology
+SCI_BUZZWORD_NOUN communication
+SCI_BUZZWORD_NOUN algorithms
+SCI_BUZZWORD_NOUN theory
+SCI_BUZZWORD_NOUN methodologies
+SCI_BUZZWORD_NOUN e-commerce
+SCI_BUZZWORD_NOUN information
+SCI_BUZZWORD_NOUN models
+SCI_BUZZWORD_NOUN courseware
+
+WHAT_PL			these results
+WHAT_PL			these algorithms
+WHAT_PL			a more thorough discussion
+
+WHAT			it
+WHAT			this FINDING
+WHAT			such a claim
+WHAT			such a hypothesis
+
+FINDING			result
+FINDING			finding
+FINDING			outcome
+FINDING			discussion
+FINDING			technique
+FINDING+3
+
+SCI_THING	DHTs
+SCI_THING	robots
+SCI_THING	agents
+SCI_THING	Markov models
+SCI_THING	the memory bus
+SCI_THING	SMPs
+SCI_THING	kernels
+SCI_THING	operating systems
+SCI_THING	interrupts
+SCI_THING	Web services
+SCI_THING	massive multiplayer online role-playing games
+SCI_THING	Byzantine fault tolerance
+SCI_THING	the location-identity split
+SCI_THING	sensor networks
+SCI_THING	online algorithms
+SCI_THING	extreme programming
+SCI_THING	object-oriented languages
+SCI_THING	Scheme
+SCI_THING	DNS
+SCI_THING	802.11b
+SCI_THING	information retrieval systems
+SCI_THING	web browsers
+SCI_THING	the Commodore VIC-20
+SCI_THING	the Turing machine
+SCI_THING	B-trees
+SCI_THING	hierarchical databases
+SCI_THING	randomized algorithms
+SCI_THING	the Internet
+SCI_THING	the Internets
+SCI_THING	consistent hashing
+SCI_THING	the transistor
+SCI_THING	the UNIVAC computer
+SCI_THING	Boolean logic
+SCI_THING	voice-over-IP
+SCI_THING	the World Wide Web
+SCI_THING	flip-flop gates
+SCI_THING	e-business
+SCI_THING	neural networks
+SCI_THING	von Neumann machines
+SCI_THING	context-free grammar
+SCI_THING	embedded systems
+SCI_THING	journaling file systems
+SCI_THING 	Internet QoS
+SCI_THING	model checking
+SCI_THING	lambda calculus
+SCI_THING	scatter/gather I/O
+SCI_THING	XML
+SCI_THING	I/O automata
+SCI_THING	fiber-optic cables
+SCI_THING	the Ethernet
+SCI_THING	RAID
+SCI_THING	802.11 mesh networks
+SCI_THING_MOD	SCI_THING CITATION_SOMETIMES
+SCI_SYSTEM	algorithm
+SCI_SYSTEM	system
+SCI_SYSTEM	framework
+SCI_SYSTEM	methodology
+SCI_SYSTEM	SCI_APPROACH
+SCI_SYSTEM_PL	algorithms
+SCI_SYSTEM_PL	systems
+SCI_SYSTEM_PL	frameworks
+SCI_SYSTEM_PL	methodologies
+SCI_SYSTEM_PL	SCI_APPROACH_PL
+
+SCI_FIELD	SCI_BUZZWORD_ADJ SCI_FIELD
+SCI_FIELD+9	SCI_MATH_ADJ SCI_FIELD
+SCI_FIELD	hardware and architecture
+SCI_FIELD	networking
+SCI_FIELD	operating systems
+SCI_FIELD	programming languages
+SCI_FIELD	theory
+SCI_FIELD	algorithms
+SCI_FIELD	complexity theory
+SCI_FIELD	artificial intelligence
+SCI_FIELD	machine learning
+SCI_FIELD	robotics
+SCI_FIELD	electrical engineering
+SCI_FIELD	e-voting technology
+SCI_FIELD	cryptography
+SCI_FIELD	cryptoanalysis
+SCI_FIELD	cyberinformatics
+SCI_FIELD	stegonography
+SCI_FIELD	software engineering
+SCI_COUNTRY	American
+SCI_COUNTRY	British
+SCI_COUNTRY	Canadian
+SCI_COUNTRY	French
+SCI_COUNTRY	German
+SCI_COUNTRY	Italian
+SCI_COUNTRY	Japanese
+SCI_COUNTRY	Swedish
+SCI_COUNTRY	Russian
+SCI_COUNTRY	Soviet
+
+#############################################################################
+####### Adjectives/adverbs #######
+#############################################################################
 
 SCI_BUZZWORD_ADJ_MULTI+5 SCI_BUZZWORD_ADJ
 SCI_BUZZWORD_ADJ_MULTI+10 SCI_BUZZWORD_ADJ, SCI_BUZZWORD_ADJ
@@ -487,40 +986,178 @@ SCI_BUZZWORD_ADJ semantic
 SCI_BUZZWORD_ADJ real-time
 SCI_BUZZWORD_ADJ cooperative
 
-SCI_BUZZWORD_NOUN technology
-SCI_BUZZWORD_NOUN communication
-SCI_BUZZWORD_NOUN algorithms
-SCI_BUZZWORD_NOUN theory
-SCI_BUZZWORD_NOUN methodologies
-SCI_BUZZWORD_NOUN e-commerce
-SCI_BUZZWORD_NOUN information
-SCI_BUZZWORD_NOUN models
-SCI_BUZZWORD_NOUN courseware
-
-SCI_COMPLEXITY_FUNC O
-SCI_COMPLEXITY_FUNC $\Omega$
-SCI_COMPLEXITY_FUNC $\theta$
-SCI_COMPLEXITY $n$
-SCI_COMPLEXITY $n^2$
-SCI_COMPLEXITY $\log n$
-SCI_COMPLEXITY $2^n$
-SCI_COMPLEXITY $n!$
-SCI_PROOF_PROP runs in SCI_COMPLEXITY_FUNC(SCI_COMPLEXITY) time
-SCI_PROOF_PROP is NP-complete
-SCI_PROOF_PROP is impossible
-SCI_PROOF_PROP is optimal
-SCI_PROOF_PROP is Turing complete
-SCI_PROOF_PROP is maximally efficient
-
-SCI_REACTION well-received
-SCI_REACTION adamantly opposed
-SCI_REACTION considered SCI_ADJ
-SCI_REACTION LIT_GOOD
-
 SCI_IDEAL	ideal
 SCI_IDEAL	perfect
 SCI_IDEAL	different
 SCI_IDEAL	distinct
+
+LIT_GOOD	good
+LIT_GOOD	bad
+LIT_GOOD	excellent
+LIT_GOOD	useful
+LIT_GOOD	satisfactory
+LIT_GOOD	numerous
+LIT_GOOD	promising
+LIT_GOOD	significant
+LIT_GOOD	encouraging
+LIT_GOOD	outdated
+
+LIT_GREAT	great
+LIT_GREAT	profound
+LIT_GREAT	tremendous
+LIT_GREAT	limited
+LIT_GREAT	minimal
+LIT_GREAT	improbable
+LIT_GREAT_ADV	greatly
+LIT_GREAT_ADV	profoundly
+LIT_GREAT_ADV	tremendously
+LIT_GREAT_ADV	minimally
+LIT_GREAT_ADV	improbably
+
+LIT_OFTEN	often
+LIT_OFTEN	usually
+LIT_OFTEN	rarely
+LIT_OFTEN	never
+LIT_OFTEN	always
+LIT_OFTEN	mostly
+LIT_OFTEN	largely
+LIT_OFTEN	entirely
+LIT_OFTEN	generally
+LIT_OFTEN	regularly
+LIT_OFTEN	continuously
+
+SCI_ADJ	important
+SCI_ADJ	significant
+SCI_ADJ	key
+SCI_ADJ	unfortunate
+SCI_ADJ	robust
+SCI_ADJ	typical
+SCI_ADJ	unproven
+SCI_ADJ	confusing
+SCI_ADJ	extensive
+SCI_ADJ	appropriate
+SCI_ADJ	confirmed
+SCI_ADJ	theoretical
+SCI_ADJ	technical
+SCI_ADJ	structured
+SCI_ADJ	natural
+SCI_ADJ	essential
+SCI_ADJ	private
+SCI_ADJ	intuitive
+SCI_ADJ practical
+SCI_ADJ compelling
+SCI_ADJ_ADV	particularly
+SCI_ADJ_ADV	dubiously
+SCI_ADJ_ADV	daringly
+SCI_ADJ_ADV	shockingly
+SCI_ADJ_ADV	daringly
+SCI_ADJ_ADV	famously
+SCI_ADJ_ADV	predictably
+SCI_ADJ_ADV	clearly
+SCI_ADJ_ADV	obviously
+SCI_ADJ_ADV	urgently
+SCI_ADJ_ADV	compellingly
+SCI_ADV	obviously
+SCI_ADV	evidently
+SCI_ADV	clearly
+SCI_ADV	apparently
+SCI_ADV	perhaps
+SCI_COMPLEXNOUN	complexity
+SCI_COMPLEXNOUN	contradiction
+SCI_COMPLEXNOUN	uncertainty
+SCI_COMPLEXNOUN	chaos
+SCI_COMPLEXNOUN	change
+SCI_COMPLEXNOUN	mystery
+SCI_COMPLEXNOUN	enigma
+SCI_COMPLEXNOUN	paradox
+SCI_COMPLEXNOUN	incoherence
+SCI_COMPLEXNOUN	simplicity
+
+PERVERSE		perverse
+PERVERSE		counterintuitive
+PERVERSE		unexpected
+
+RELATED			prior
+RELATED			related
+RELATED			previous
+RELATED			existing
+
+DIFFERENT	degraded
+DIFFERENT	amplified
+DIFFERENT	exaggerated
+DIFFERENT	weakened
+DIFFERENT	muted
+DIFFERENT	duplicated
+
+IMPROVEMENT	improvement
+IMPROVEMENT	degredation
+IMPROVEMENT	amplification
+
+PERFORMANCE	performance
+PERFORMANCE	throughput
+PERFORMANCE	latency
+
+INSTRUMENTAL	instrumental
+INSTRUMENTAL	crucial
+INSTRUMENTAL	essential
+
+UNIQUE		unique
+UNIQUE		conventional
+UNIQUE		expected
+
+STAT_ADJ		effective
+STAT_ADJ		mean
+STAT_ADJ		median
+STAT_ADJ		expected
+STAT_ADJ		average
+STAT_ADJ		10th-percentile
+
+#
+# MK Addition 2/16/05 -- mathematical adjectives and adverbs
+#
+SCI_MATH_ADJ+3  SCI_MATH_ADV SCI_MATH_ADJ
+SCI_MATH_ADJ	SCI_MATH_ADJ, SCI_MATH_ADJ
+
+SCI_MATH_ADJ	disjoint
+SCI_MATH_ADJ	independent
+SCI_MATH_ADJ	mutually exclusive
+SCI_MATH_ADJ	noisy
+SCI_MATH_ADJ	fuzzy
+SCI_MATH_ADJ	random
+SCI_MATH_ADJ	stochastic
+SCI_MATH_ADJ	discrete
+SCI_MATH_ADJ	parallel
+SCI_MATH_ADJ	distributed
+SCI_MATH_ADJ	partitioned
+SCI_MATH_ADJ	exhaustive
+SCI_MATH_ADJ	Markov
+SCI_MATH_ADJ	Bayesian
+SCI_MATH_ADJ	randomized
+SCI_MATH_ADJ	pipelined
+SCI_MATH_ADJ	hardware
+SCI_MATH_ADJ	wireless
+SCI_MATH_ADJ	wired
+SCI_MATH_ADJ	separated
+SCI_MATH_ADJ	saturated
+SCI_MATH_ADJ	DoS-ed
+SCI_MATH_ADJ	replicated
+
+SCI_MATH_ADV	extremely
+SCI_MATH_ADV	indepenently
+SCI_MATH_ADV	randomly
+SCI_MATH_ADV	mutually
+SCI_MATH_ADV	collectively
+SCI_MATH_ADV	topologically
+SCI_MATH_ADV	computationally
+SCI_MATH_ADV	oportunistically
+SCI_MATH_ADV	lazily
+
+####### Flow control #######
+
+SCI_B_LEADIN_C	Finally, 
+SCI_B_LEADIN_C	Ultimately, 
+SCI_B_LEADIN_C	As a result, 
+SCI_B_LEADIN_C	In the end, 
 
 LIT_MIDDLE_TWO+4	
 LIT_MIDDLE_TWO		Second,
@@ -567,46 +1204,6 @@ LIT_ALTHOUGH	while
 LIT_ALTHOUGH	even though
 LIT_ALTHOUGH	despite the fact that
 
-LIT_OFTEN	often
-LIT_OFTEN	usually
-LIT_OFTEN	rarely
-LIT_OFTEN	never
-LIT_OFTEN	always
-LIT_OFTEN	mostly
-LIT_OFTEN	largely
-LIT_OFTEN	entirely
-LIT_OFTEN	generally
-LIT_OFTEN	regularly
-LIT_OFTEN	continuously
-
-LIT_OMIT	omit
-LIT_OMIT	withhold
-LIT_OMIT	skip
-LIT_OMIT	leave out
-
-LIT_GOOD	good
-LIT_GOOD	bad
-LIT_GOOD	excellent
-LIT_GOOD	useful
-LIT_GOOD	satisfactory
-LIT_GOOD	numerous
-LIT_GOOD	promising
-LIT_GOOD	significant
-LIT_GOOD	encouraging
-LIT_GOOD	outdated
-
-LIT_GREAT	great
-LIT_GREAT	profound
-LIT_GREAT	tremendous
-LIT_GREAT	limited
-LIT_GREAT	minimal
-LIT_GREAT	improbable
-LIT_GREAT_ADV	greatly
-LIT_GREAT_ADV	profoundly
-LIT_GREAT_ADV	tremendously
-LIT_GREAT_ADV	minimally
-LIT_GREAT_ADV	improbably
-
 LIT_CONCLUSION	thus
 LIT_CONCLUSION	thusly
 LIT_CONCLUSION	therefore
@@ -628,84 +1225,18 @@ LIT_LAST_MAYBE
 LIT_LAST_OR_MIDDLE 	LIT_LAST
 LIT_LAST_OR_MIDDLE	LIT_MIDDLE
 
-LIT_BASED_ON	based on
-LIT_BASED_ON	derived from
-LIT_BASED_ON	copied from
-LIT_BASED_ON	built on
+#############################################################################
+####### Verbs #######
+#############################################################################
 
-SCI_SCIENTIST	FIRSTNAME LASTNAME
-SCIPAPER_TITLE	SCI_SCIENTIST and TOPIC :<br><i> SCI_SUBTITLE </i>
-SCIPAPER_TITLE	TOPIC and SCI_THING
-
-FILLER_SENTENCE+10	FILLER_SURPRISE
-FILLER_SENTENCE		Our SCI_GOAL here is to set the record straight
-FILLER_SENTENCE		This is an important point to understand
-FILLER_SENTENCE		This is INSTRUMENTAL to the success of our work
-FILLER_SENTENCE		We LIT_OMIT WHAT_PL OMIT_WHY
-FILLER_SENTENCE		Of course, this is not always the case
-FILLER_SENTENCE		This follows from the SCI_ACT CITATION_SOMETIMES
-
-FILLER_SURPRISE		LIT_ALTHOUGH WHAT FILLER_SURPRISE_1, it FILLER_SURPRISE_2
-FILLER_SURPRISE		WHAT FILLER_SURPRISE_1 but FILLER_SURPRISE_2
-FILLER_SURPRISE_1	might seem PERVERSE
-FILLER_SURPRISE_1	is LIT_OFTEN a SCI_ADJ SCI_GOAL
-FILLER_SURPRISE_1	at first glance seems PERVERSE
-FILLER_SURPRISE_2	fell in line with our expectations
-FILLER_SURPRISE_2	is SUPPORTED by RELATED work in the field
-FILLER_SURPRISE_2	has ample historical precendence
-FILLER_SURPRISE_2	is derived from known results
-FILLER_SURPRISE_2	LIT_OFTEN conflicts with the need to provide SCI_THING to SCI_PEOPLE
-
-WHAT_PL			these results
-WHAT_PL			these algorithms
-WHAT_PL			a more thorough discussion
-
-WHAT			it
-WHAT			this FINDING
-WHAT			such a claim
-WHAT			such a hypothesis
-
-FINDING			result
-FINDING			finding
-FINDING			outcome
-FINDING			discussion
-FINDING			technique
-FINDING+3
-
-OMIT_WHY due to space constraints
-OMIT_WHY due to resource constraints
-OMIT_WHY for anonymity
-OMIT_WHY for now
-OMIT_WHY until future work
+LIT_OMIT	omit
+LIT_OMIT	withhold
+LIT_OMIT	skip
+LIT_OMIT	leave out
 
 SUPPORTED		supported
 SUPPORTED		buffetted
 
-PERVERSE		perverse
-PERVERSE		counterintuitive
-PERVERSE		unexpected
-
-RELATED			prior
-RELATED			related
-RELATED			previous
-RELATED			existing
-
-SCI_A_FACT	SCI_SOURCE 's SCI_ACT in SCI_YEAR
-SCI_A_FACT	the SCI_COMPLEXNOUN of SCI_FIELD
-SCI_A_FACT	the work of SCI_COUNTRY SCI_PERSON SCI_SOURCE
-SCI_B_LEADIN_C	Finally, 
-SCI_B_LEADIN_C	Ultimately, 
-SCI_B_LEADIN_C	As a result, 
-SCI_B_LEADIN_C	In the end, 
-SCI_ACT+50	SCI_ACT_A SCI_THING
-SCI_ACT	SCI_ACT_A SCI_THING that SCI_EFFECT
-SCI_ACT_A	understanding of
-SCI_ACT_A	unification of SCI_THING and
-SCI_ACT_A+15	SCI_VERBION of
-SCI_ACH	SCI_VERBED SCI_THING_MOD
-SCI_ACH	SCI_VERBED SCI_THING_MOD (which SCI_EFFECT )
-SCI_ACH_PRES	SCI_VERBING SCI_THING_MOD
-SCI_ACH_PRES	SCI_VERBING SCI_THING_MOD (which SCI_EFFECT )
 SCI_VERB_PL	interact
 SCI_VERB_PL	collaborate
 SCI_VERB_PL	interfere
@@ -863,69 +1394,92 @@ SCI_SYS_VERBION	creation
 SCI_SYS_VERBION	observation
 SCI_SYS_VERBION	management
 SCI_SYS_VERBION+10	SCI_VERBION
-SCI_THING	DHTs
-SCI_THING	robots
-SCI_THING	agents
-SCI_THING	Markov models
-SCI_THING	the memory bus
-SCI_THING	SMPs
-SCI_THING	kernels
-SCI_THING	operating systems
-SCI_THING	interrupts
-SCI_THING	Web services
-SCI_THING	massive multiplayer online role-playing games
-SCI_THING	Byzantine fault tolerance
-SCI_THING	the location-identity split
-SCI_THING	sensor networks
-SCI_THING	online algorithms
-SCI_THING	extreme programming
-SCI_THING	object-oriented languages
-SCI_THING	Scheme
-SCI_THING	DNS
-SCI_THING	802.11b
-SCI_THING	information retrieval systems
-SCI_THING	web browsers
-SCI_THING	the Commodore VIC-20
-SCI_THING	the Turing machine
-SCI_THING	B-trees
-SCI_THING	hierarchical databases
-SCI_THING	randomized algorithms
-SCI_THING	the Internet
-SCI_THING	the Internets
-SCI_THING	consistent hashing
-SCI_THING	the transistor
-SCI_THING	the UNIVAC computer
-SCI_THING	Boolean logic
-SCI_THING	voice-over-IP
-SCI_THING	the World Wide Web
-SCI_THING	flip-flop gates
-SCI_THING	e-business
-SCI_THING	neural networks
-SCI_THING	von Neumann machines
-SCI_THING	context-free grammar
-SCI_THING	embedded systems
-SCI_THING	journaling file systems
-SCI_THING 	Internet QoS
-SCI_THING	model checking
-SCI_THING	lambda calculus
-SCI_THING	scatter/gather I/O
-SCI_THING	XML
-SCI_THING	I/O automata
-SCI_THING	fiber-optic cables
-SCI_THING	the Ethernet
-SCI_THING	RAID
-SCI_THING	802.11 mesh networks
-SCI_THING_MOD	SCI_THING CITATION_SOMETIMES
-SCI_SYSTEM	algorithm
-SCI_SYSTEM	system
-SCI_SYSTEM	framework
-SCI_SYSTEM	methodology
-SCI_SYSTEM	SCI_APPROACH
-SCI_SYSTEM_PL	algorithms
-SCI_SYSTEM_PL	systems
-SCI_SYSTEM_PL	frameworks
-SCI_SYSTEM_PL	methodologies
-SCI_SYSTEM_PL	SCI_APPROACH_PL
+
+SCI_MATH_VERBING	separating
+SCI_MATH_VERBING	decoupling
+SCI_MATH_VERBING	saturating
+SCI_MATH_VERBING	composing
+SCI_MATH_VERBING	replicating
+SCI_MATH_VERBING	pipelining
+
+NOTED		noted
+NOTED		observed
+NOTED		measured
+NOTED		characterized
+
+EMULATED	emulated
+EMULATED	simulated
+EMULATED	prototyped
+EMULATED	deployed
+
+IMPROVE_VERB	improve
+IMPROVE_VERB	degrade
+IMPROVE_VERB	amplify
+
+PROBE_VERB	probe
+PROBE_VERB	examine
+PROBE_VERB	investigate
+PROBE_VERB	discover
+PROBE_VERB	consider
+PROBE_VERB	better understand
+PROBE_VERB	understand
+
+#############################################################################
+####### Phrases and fillers #######
+#############################################################################
+
+XXX+15		.
+XXX		CITATION.
+XXX		. FILLER_SENTENCE.
+
+SCI_REACTION well-received
+SCI_REACTION adamantly opposed
+SCI_REACTION considered SCI_ADJ
+SCI_REACTION LIT_GOOD
+
+LIT_BASED_ON	based on
+LIT_BASED_ON	derived from
+LIT_BASED_ON	copied from
+LIT_BASED_ON	built on
+
+FILLER_SENTENCE+10	FILLER_SURPRISE
+FILLER_SENTENCE		Our SCI_GOAL here is to set the record straight
+FILLER_SENTENCE		This is an important point to understand
+FILLER_SENTENCE		This is INSTRUMENTAL to the success of our work
+FILLER_SENTENCE		We LIT_OMIT WHAT_PL OMIT_WHY
+FILLER_SENTENCE		Of course, this is not always the case
+FILLER_SENTENCE		This follows from the SCI_ACT CITATION_SOMETIMES
+
+FILLER_SURPRISE		LIT_ALTHOUGH WHAT FILLER_SURPRISE_1, it FILLER_SURPRISE_2
+FILLER_SURPRISE		WHAT FILLER_SURPRISE_1 but FILLER_SURPRISE_2
+FILLER_SURPRISE_1	might seem PERVERSE
+FILLER_SURPRISE_1	is LIT_OFTEN a SCI_ADJ SCI_GOAL
+FILLER_SURPRISE_1	at first glance seems PERVERSE
+FILLER_SURPRISE_2	fell in line with our expectations
+FILLER_SURPRISE_2	is SUPPORTED by RELATED work in the field
+FILLER_SURPRISE_2	has ample historical precendence
+FILLER_SURPRISE_2	is derived from known results
+FILLER_SURPRISE_2	LIT_OFTEN conflicts with the need to provide SCI_THING to SCI_PEOPLE
+
+OMIT_WHY due to space constraints
+OMIT_WHY due to resource constraints
+OMIT_WHY for anonymity
+OMIT_WHY for now
+OMIT_WHY until future work
+
+SCI_A_FACT	SCI_SOURCE 's SCI_ACT in SCI_YEAR
+SCI_A_FACT	the SCI_COMPLEXNOUN of SCI_FIELD
+SCI_A_FACT	the work of SCI_COUNTRY SCI_PERSON SCI_SOURCE
+SCI_ACT+50	SCI_ACT_A SCI_THING
+SCI_ACT	SCI_ACT_A SCI_THING that SCI_EFFECT
+SCI_ACT_A	understanding of
+SCI_ACT_A	unification of SCI_THING and
+SCI_ACT_A+15	SCI_VERBION of
+SCI_ACH	SCI_VERBED SCI_THING_MOD
+SCI_ACH	SCI_VERBED SCI_THING_MOD (which SCI_EFFECT )
+SCI_ACH_PRES	SCI_VERBING SCI_THING_MOD
+SCI_ACH_PRES	SCI_VERBING SCI_THING_MOD (which SCI_EFFECT )
+
 SCI_RESPONSE	yes
 SCI_RESPONSE	no
 SCI_RESPONSE	it is
@@ -939,6 +1493,26 @@ SCI_EFFECT	made SCI_VERBING and possibly SCI_VERBING TOPIC a reality
 SCI_EFFECT	would allow for further study into SCI_THING_MOD
 SCI_EFFECT	paved the way for the SCI_ACT_A SCI_THING_MOD
 SCI_EFFECT	would make SCI_VERBING SCI_THING_MOD a real possibility
+
+SCI_COMPLEXITY_FUNC O
+SCI_COMPLEXITY_FUNC $\Omega$
+SCI_COMPLEXITY_FUNC $\theta$
+SCI_COMPLEXITY $n$
+SCI_COMPLEXITY $n^2$
+SCI_COMPLEXITY $\log n$
+SCI_COMPLEXITY $2^n$
+SCI_COMPLEXITY $n!$
+SCI_PROOF_PROP runs in SCI_COMPLEXITY_FUNC(SCI_COMPLEXITY) time
+SCI_PROOF_PROP is NP-complete
+SCI_PROOF_PROP is impossible
+SCI_PROOF_PROP is optimal
+SCI_PROOF_PROP is Turing complete
+SCI_PROOF_PROP is maximally efficient
+
+#############################################################################
+####### People #######
+#############################################################################
+
 SCI_PERSON	chemist
 SCI_PERSON	physicist
 SCI_PERSON	information theorist
@@ -967,131 +1541,7 @@ SCI_PEOPLE	researchers
 SCI_PEOPLE	stegonographers
 SCI_PEOPLE	cyberinformaticians
 SCI_PEOPLE	end-users
-SCI_FIELD	SCI_BUZZWORD_ADJ SCI_FIELD
-SCI_FIELD+9	SCI_MATH_ADJ SCI_FIELD
-SCI_FIELD	hardware and architecture
-SCI_FIELD	networking
-SCI_FIELD	operating systems
-SCI_FIELD	programming languages
-SCI_FIELD	theory
-SCI_FIELD	algorithms
-SCI_FIELD	complexity theory
-SCI_FIELD	artificial intelligence
-SCI_FIELD	machine learning
-SCI_FIELD	robotics
-SCI_FIELD	electrical engineering
-SCI_FIELD	e-voting technology
-SCI_FIELD	cryptography
-SCI_FIELD	cryptoanalysis
-SCI_FIELD	cyberinformatics
-SCI_FIELD	stegonography
-SCI_FIELD	software engineering
-SCI_COUNTRY	American
-SCI_COUNTRY	British
-SCI_COUNTRY	Canadian
-SCI_COUNTRY	French
-SCI_COUNTRY	German
-SCI_COUNTRY	Italian
-SCI_COUNTRY	Japanese
-SCI_COUNTRY	Swedish
-SCI_COUNTRY	Russian
-SCI_COUNTRY	Soviet
 
-#
-# MK Addition 2/16/05 -- mathematical adjectives and adverbs
-#
-SCI_MATH_ADJ+3  SCI_MATH_ADV SCI_MATH_ADJ
-SCI_MATH_ADJ	SCI_MATH_ADJ, SCI_MATH_ADJ
-
-SCI_MATH_ADJ	disjoint
-SCI_MATH_ADJ	independent
-SCI_MATH_ADJ	mutually exclusive
-SCI_MATH_ADJ	noisy
-SCI_MATH_ADJ	fuzzy
-SCI_MATH_ADJ	random
-SCI_MATH_ADJ	stochastic
-SCI_MATH_ADJ	discrete
-SCI_MATH_ADJ	parallel
-SCI_MATH_ADJ	distributed
-SCI_MATH_ADJ	partitioned
-SCI_MATH_ADJ	exhaustive
-SCI_MATH_ADJ	Markov
-SCI_MATH_ADJ	Bayesian
-SCI_MATH_ADJ	randomized
-SCI_MATH_ADJ	pipelined
-SCI_MATH_ADJ	hardware
-SCI_MATH_ADJ	wireless
-SCI_MATH_ADJ	wired
-SCI_MATH_ADJ	separated
-SCI_MATH_ADJ	saturated
-SCI_MATH_ADJ	DoS-ed
-SCI_MATH_ADJ	replicated
-
-SCI_MATH_ADV	extremely
-SCI_MATH_ADV	indepenently
-SCI_MATH_ADV	randomly
-SCI_MATH_ADV	mutually
-SCI_MATH_ADV	collectively
-SCI_MATH_ADV	topologically
-SCI_MATH_ADV	computationally
-SCI_MATH_ADV	oportunistically
-SCI_MATH_ADV	lazily
-
-SCI_MATH_VERBING	separating
-SCI_MATH_VERBING	decoupling
-SCI_MATH_VERBING	saturating
-SCI_MATH_VERBING	composing
-SCI_MATH_VERBING	replicating
-SCI_MATH_VERBING	pipelining
-
-
-
-SCI_ADJ	important
-SCI_ADJ	significant
-SCI_ADJ	key
-SCI_ADJ	unfortunate
-SCI_ADJ	robust
-SCI_ADJ	typical
-SCI_ADJ	unproven
-SCI_ADJ	confusing
-SCI_ADJ	extensive
-SCI_ADJ	appropriate
-SCI_ADJ	confirmed
-SCI_ADJ	theoretical
-SCI_ADJ	technical
-SCI_ADJ	structured
-SCI_ADJ	natural
-SCI_ADJ	essential
-SCI_ADJ	private
-SCI_ADJ	intuitive
-SCI_ADJ practical
-SCI_ADJ compelling
-SCI_ADJ_ADV	particularly
-SCI_ADJ_ADV	dubiously
-SCI_ADJ_ADV	daringly
-SCI_ADJ_ADV	shockingly
-SCI_ADJ_ADV	daringly
-SCI_ADJ_ADV	famously
-SCI_ADJ_ADV	predictably
-SCI_ADJ_ADV	clearly
-SCI_ADJ_ADV	obviously
-SCI_ADJ_ADV	urgently
-SCI_ADJ_ADV	compellingly
-SCI_ADV	obviously
-SCI_ADV	evidently
-SCI_ADV	clearly
-SCI_ADV	apparently
-SCI_ADV	perhaps
-SCI_COMPLEXNOUN	complexity
-SCI_COMPLEXNOUN	contradiction
-SCI_COMPLEXNOUN	uncertainty
-SCI_COMPLEXNOUN	chaos
-SCI_COMPLEXNOUN	change
-SCI_COMPLEXNOUN	mystery
-SCI_COMPLEXNOUN	enigma
-SCI_COMPLEXNOUN	paradox
-SCI_COMPLEXNOUN	incoherence
-SCI_COMPLEXNOUN	simplicity
 SCI_SOURCE	Alan Turing
 SCI_SOURCE	Albert Einstein
 SCI_SOURCE	Charles Darwin
@@ -1259,434 +1709,9 @@ GENERIC_LASTNAME Nehru
 GENERIC_LASTNAME Shastri
 GENERIC_LASTNAME Kumar
 
-SCI_YEAR	1935
-SCI_YEAR	1953
-SCI_YEAR	1967
-SCI_YEAR	1970
-SCI_YEAR	1977
-SCI_YEAR	1980
-SCI_YEAR	1986
-SCI_YEAR	1993
-SCI_YEAR	1995
-SCI_YEAR	1999
-SCI_YEAR	2001
-SCI_YEAR	2004
-
-# eventually all of this, but for now...
-#
-#EVAL_SEC {
-#
-#EVAL_SEC_INTRO
-#
-#EVAL_SEC_BODY
-#
-#EVAL_SEC_CONCL
-#
-#}
-
-EVAL_SEC_LATEX_HEADER		\section{Evaluation and Performance Results}
-EVAL_SEC_LATEX_HEADER		\section{Performance Results}
-EVAL_SEC_LATEX_HEADER		\section{Evaluation}
-EVAL_SEC_LATEX_HEADER		\section{Experimental Evaluation}
-EVAL_SEC_LATEX_HEADER		\section{Experimental Evaluation and Analysis}
-EVAL_SEC_LATEX_HEADER		\section{Results and Analysis}
-EVAL_SEC_LATEX_HEADER		\section{Results}
-
-SCI_EVAL {
-
-EVAL_SEC_LATEX_HEADER
-
-EVAL_SEC_BODY_P
-
-}
-
-NETWORK_TYPE_N	2
-NETWORK_TYPE_N	10
-NETWORK_TYPE_N	100
-NETWORK_TYPE_N	1000
-
-NETWORK_TYPE	Internet
-NETWORK_TYPE	Internet-2
-NETWORK_TYPE	Planetlab
-NETWORK_TYPE	sensor-net
-NETWORK_TYPE	NETWORK_TYPE_N-node
-NETWORK_TYPE	NETWORK_TYPE_N-node
-NETWORK_TYPE	NETWORK_TYPE_N-node
-NETWORK_TYPE	planetary-scale
-NETWORK_TYPE	underwater
-NETWORK_TYPE	millenium
-
-EXP_ADJ		SCI_BUZZWORD_ADJ
-EXP_ADJ		real-time
-EXP_ADJ		packet-level
-EXP_ADJ		quantized
-EXP_ADJ		real-world
-EXP_ADJ		ad-hoc
-EXP_ADJ		software
-EXP_ADJ		hardware
-EXP_TYPE	EXP_ADJ EXP_TYPE_UM
-EXP_TYPE	EXP_TYPE_UM
-EXP_TYPE_UM	simulation
-EXP_TYPE_UM	emulation
-EXP_TYPE_UM	deployment
-EXP_TYPE_UM	prototype
-
-EXP_WHERE_UM	cluster
-EXP_WHERE_UM	testbed
-EXP_WHERE_UM	overlay network
-
-# common places to run experiments
-EXP_WHERE_CMN	desktop machines
-EXP_WHERE_CMN	mobile telephones
-EXP_WHERE_CMN	system
-EXP_WHERE_CMN	network
-EXP_WHERE_CMN+4	EXP_WHERE_ADJ EXP_WHERE_UM
-
-# rare places
-OLD_MACHINE	Macintosh SE
-OLD_MACHINE	UNIVAC
-OLD_MACHINE	Apple II
-OLD_MACHINE	IBM PC Junior
-OLD_MACHINE	Atari 2600
-OLD_MACHINE	Nintendo Gameboy
-OLD_MACHINE	Motorola bag telephone
-OLD_MACHINE	Apple Newton
-OLD_MACHINE	Commodore 64
-OLD_MACHINE	NeXT Workstation
-OLD_MACHINE	LISP machine
-OLD_MACHINE	PDP 11
-EXP_WHERE_RARE	decomissioned OLD_MACHINEs
-EXP_WHERE_RARE	XBox network
-EXP_WHERE_RARE	human test subjects
-
-EXP_WHERE	EXP_WHERE_RARE
-EXP_WHERE+8	EXP_WHERE_CMN
-
-
-EXP_WHERE_ADJ	SCI_BUZZWORD_ADJ
-EXP_WHERE_ADJ	NETWORK_TYPE
-EXP_WHOSE	MIT's
-EXP_WHOSE	UC Berkeley's
-EXP_WHOSE	CERN's
-EXP_WHOSE	DARPA's
-EXP_WHOSE	the NSA's
-EXP_WHOSE	the KGB's
-EXP_WHOSE+3	our
-EXP_WHOSE	Intel's
-
-EXP	EXP_TYPE on EXP_WHOSE EXP_WHERE
-
-
-EVAL_SEC_BODY		EVAL_SEC_BODY_P_LIST
-EVAL_SEC_BODY_P_LIST	EVAL_SEC_BODY_P
-EVAL_SEC_BODY_P_LIST+2 	EVAL_SEC_BODY_P_LIST EVAL_SEC_BODY_P
-
-#EVAL_SEC_BODY_P EVAL_SEC_BODY_P_TOPIC EVAL_SEC_BODY_P_BODY EVAL_SEC_BODY_P_CLOSE
-EVAL_SEC_BODY_P_TOPIC	EVAL_SEC_BODY_P_TOPIC_LEADIN EVAL_SEC_BODY_P_FINDING
-
-
-EVAL_SEC_BODY_P_FINDING	a SIMUL_ADJ SIMUL_TYPE SIMUL_VERB SIMUL_SYSTEM 
-
-EVAL_SEC_BODY_P_TOPIC_LEADIN We were suprised to discover that
-EVAL_SEC_BODY_P_TOPIC_LEADIN As with
-
-EVAL_SEC_BODY_P	{
-EVAL_ACTION EVAL_MOD_XXX LIT_FIRST EVAL_MOD EVAL_MOD_XXX 
-LIT_MIDDLE_TWO EVAL_MOD EVAL_MOD_XXX LIT_MIDDLE_3 EVAL_MOD EVAL_MOD_XXX
-EVAL_SEC_BODY_P_REST
-}
-
-EVAL_SEC_BODY_P_REST	
-EVAL_SEC_BODY_P_REST  LIT_LAST_OR_MIDDLE EVAL_MOD EVAL_MOD_XXX
-EVAL_SEC_BODY_P_REST  LIT_MIDDLE EVAL_MOD EVAL_MOD_XXX LIT_LAST EVAL_MOD EVAL_MOD_XXX
-EVAL_SEC_BODY_P_REST  LIT_MIDDLE EVAL_MOD EVAL_MOD_XXX LIT_MIDDLE EVAL_MOD EVAL_MOD_XXX LIT_LAST EVAL_MOD EVAL_MOD_XXX
-
-EVAL_SEC_FILLER	This configuration step was time-consuming but worth it in the end
-EVAL_SEC_FILLER	Configurations without this modification showed DIFFERENT EVAL_MEASUREMENT
-EVAL_SEC_FILLER	With this change, we noted DIFFERENT PERFORMANCE IMPROVEMENT
-EVAL_SEC_FILLER	This step flies in the face of conventional wisdom, but is INSTRUMENTAL to our results
-EVAL_SEC_FILLER	To find the required HARDWARE_ITEMS, we combed eBay and tag sales
-EVAL_SEC_FILLER	We struggled to amass the necessary HARDWARE_ITEMS
-EVAL_SEC_FILLER	The HARDWARE_ITEMS described here explain our UNIQUE results.
-EVAL_SEC_FILLER	Note that only experiments on our EXP_WHERE (and not on our EXP_WHERE) followed this pattern
-EVAL_SEC_FILLER	We only NOTED these results when EMULATING_IT
-EVAL_SEC_FILLER	EVAL_DONE_DIFFERENT
-
-EVAL_DONE_DIFFERENT Had we EMULATED our EXP_WHERE, as opposed to EMULATING_IT, we would have seen DIFFERENT results
-
-NOTED		noted
-NOTED		observed
-NOTED		measured
-NOTED		characterized
-
-EVAL_MOD_XXX+3	XXX
-EVAL_MOD_XXX	.  EVAL_SEC_FILLER.
-
-EMULATED	emulated
-EMULATED	simulated
-EMULATED	prototyped
-EMULATED	deployed
-
-EMULATING_IT	simulating it in WARE
-EMULATING_IT	emulating it in WARE
-EMULATING_IT	deploying it in THE_WILD
-
-WARE		software
-WARE		hardware
-WARE		courseware
-WARE		bioware
-WARE		middleware
-
-THE_WILD	the wild
-THE_WILD	a laboratory setting
-THE_WILD	a controlled environment
-THE_WILD	a chaotic spatio-temporal environment
-
-
-DIFFERENT	degraded
-DIFFERENT	amplified
-DIFFERENT	exaggerated
-DIFFERENT	weakened
-DIFFERENT	muted
-DIFFERENT	duplicated
-
-IMPROVEMENT	improvement
-IMPROVEMENT	degredation
-IMPROVEMENT	amplification
-IMPROVE_VERB	improve
-IMPROVE_VERB	degrade
-IMPROVE_VERB	amplify
-
-PERFORMANCE	performance
-PERFORMANCE	throughput
-PERFORMANCE	latency
-
-INSTRUMENTAL	instrumental
-INSTRUMENTAL	crucial
-INSTRUMENTAL	essential
-
-UNIQUE		unique
-UNIQUE		conventional
-UNIQUE		expected
-
-EVAL_WHO+25 	We
-EVAL_WHO 	SCI_COUNTRY SCI_PEOPLE
-EVAL_WHO 	SCI_PEOPLE
-
-EVAL_VERBED	instrumented
-EVAL_VERBED	performed
-EVAL_VERBED	carried out
-EVAL_VERBED	ran
-EVAL_VERBED	executed
-EVAL_VERBED	scripted
-
-EVAL_WHY_VERB	prove
-EVAL_WHY_VERB	disprove
-EVAL_WHY_VERB	measure
-EVAL_WHY_VERB	quantify
-
-IMPACT		impact on
-IMPACT		effect on
-IMPACT		influence on
-IMPACT		inability to effect
-IMPACT		lack of influence on
-IMPACT		independence of 
-IMPACT		orthogonality relative to 
-
-EVAL_SYSTEM	SCI_BUZZWORD_NOUN
-EVAL_SYSTEM	SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN
-
-EVAL_FACT	EVAL_SYSTEM's IMPACT SCI_A_FACT
-EVAL_FACT	the SCI_MATH_ADV SCI_BUZZWORD_ADJ nature of SCI_BUZZWORD_NOUN
-EVAL_FACT	the SCI_MATH_ADV SCI_BUZZWORD_ADJ behavior of SCI_MATH_ADJ SCI_BUZZWORD_NOUN
-EVAL_FACT	SCI_A_FACT
-
-EVAL_WHY	EVAL_WHY_VERB EVAL_FACT
-
-EVAL_ACTION 	EVAL_WHO EVAL_VERBED a EXP to EVAL_WHY
-EVAL_MOD	EVAL_WHO EVAL_MOD_ACTION EVAL_MOD_OBJECT
-EVAL_MOD	EVAL_WHO EVAL_MOD_ACTION EVAL_MOD_OBJECT to EVAL_MOD_WHY
-
-#
-# passive voice does not work due to was/were problems
-#
-#EVAL_MOD	EVAL_MOD_PASSIVE_ACTION EVAL_MOD_OBJECT to EVAL_MOD_WHY
-#EVAL_MOD	EVAL_MOD_PASSIVE_ACTION EVAL_MOD_OBJECT
-
-EVAL_MOD_WHY	EVAL_WHY
-EVAL_MOD_WHY	PROBE_VERB the HARDWARE_PROP_OR_MEASUREMENT of EVAL_MOD_OBJECT
-EVAL_MOD_WHY	PROBE_VERB EVAL_MOD_OBJECT
-EVAL_MOD_WHY	PROBE_VERB SCI_BUZZWORD_NOUN
-
-PROBE_VERB	probe
-PROBE_VERB	examine
-PROBE_VERB	investigate
-PROBE_VERB	discover
-PROBE_VERB	consider
-PROBE_VERB	better understand
-PROBE_VERB	understand
-
-EVAL_MOD_OBJECT our EXP_WHERE
-EVAL_MOD_OBJECT EXP_WHOSE EXP_WHERE
-
-# this doesn't appear to be working well
-#EVAL_MOD_OBJECT SCI_BUZZWORD_NOUN
-
-EVAL_MOD_UNITS	MB
-EVAL_MOD_UNITS	GB
-EVAL_MOD_UNITS	kb
-EVAL_MOD_UNITS	Hz
-EVAL_MOD_UNITS	GHz
-
-EVAL_MOD_N	10
-EVAL_MOD_N	25
-EVAL_MOD_N	100
-EVAL_MOD_N	2
-EVAL_MOD_N	3
-EVAL_MOD_N	7
-EVAL_MOD_N	8
-EVAL_MOD_N	300
-EVAL_MOD_N	200
-EVAL_MOD_N	150
-
-EVAL_MOD_AMOUNT	more
-EVAL_MOD_AMOUNT	some
-
-EVAL_MOD_HARDWARE	hard drive space
-EVAL_MOD_HARDWARE	memory
-EVAL_MOD_HARDWARE	network bandwidth
-
-STAT_ADJ		effective
-STAT_ADJ		mean
-STAT_ADJ		median
-STAT_ADJ		expected
-STAT_ADJ		average
-STAT_ADJ		10th-percentile
-
-EVAL_MOD_PROPERTY	throughput
-EVAL_MOD_PROPERTY	SCI_MATH_ADJ throughput
-EVAL_MOD_PROPERTY	latency
-
-HARDWARE_PROP		MEMORY_TYPE space
-HARDWARE_PROP		MEMORY_TYPE speed
-HARDWARE_PROP		MEMORY_TYPE throughput
-HARDWARE_PROP		STORAGE_TYPE space
-HARDWARE_PROP		STORAGE_TYPE speed
-HARDWARE_PROP		STORAGE_TYPE throughput
-
-HARDWARE		MEMORY
-HARDWARE		PROCESSOR
-HARDWARE 		STORAGE
-HARDWARE		NETWORK_BANDWIDTH
-
-HARDWARE_ITEMS		MEMORY_ITEMS
-HARDWARE_ITEMS		PROCESSOR_ITEMS
-HARDWARE_ITEMS		STORAGE_ITEMS
-HARDWARE_ITEMS		EXPANSION_ITEMS
-
-MEMORY_ITEMS		MEMORY_TYPE
-MEMORY_ITEMS		EVAL_MOD_NMB of MEMORY_TYPE
-MEMORY_ITEMS		EVAL_MOD_NGB of MEMORY_TYPE
-MEMORY_ITEMS		EVAL_MOD_NkB of MEMORY_TYPE
-
-PROCESSOR_ITEM		PROCESSOR_TYPE
-PROCESSOR_ITEMS		PROCESSOR_TYPEs
-
-STORAGE_ITEM		STORAGE_SIZE STORAGE_TYPE
-STORAGE_ITEM		STORAGE_TYPE
-
-EXPANSION_ITEMS		EXPANSION_ITEMs
-STORAGE_ITEMS		STORAGE_ITEMs
-
-EXPANSION_ITEM		joystick
-EXPANSION_ITEM		2400 baum modem
-EXPANSION_ITEM		SoundBlaster 8bit sound card
-EXPANSION_ITEM		Knesis keyboard
-EXPANSION_ITEM		power strip
-EXPANSION_ITEM		Ethernet card
-EXPANSION_ITEM		tulip card
-EXPANSION_ITEM		laser label printer
-EXPANSION_ITEM		dot-matrix printer
-EXPANSION_ITEM		5.25" floppy drive
-
-
-BANDWIDTH_AMOUNT	EVAL_MOD_NMB/s
-BANDWIDTH_AMOUNT	EVAL_MOD_NkB/s
-BANDWIDTH_AMOUNT	EVAL_MOD_NGB/s
-BANDWIDTH_AMOUNT	EVAL_MOD_NGb/s
-
-NETWORK_BANDWIDTH	BANDWIDTH_AMOUNT of BANDWIDTH_TYPE
-BANDWIDTH_TYPE		Ethernet access
-BANDWIDTH_TYPE		Wi-Fi throughput
-BANDWIDTH_TYPE		Internet access
-
-MEMORY			EVAL_MOD_NMB of MEMORY_TYPE
-MEMORY			EVAL_MOD_AMOUNT MEMORY_TYPE
-
-STORAGE_M		EVAL_MOD_AMOUNT STORAGE_TYPE space
-STORAGE_M		STORAGE_DEVICES_N STORAGE_SIZE STORAGE_TYPEs
-STORAGE_S		a STORAGE_SIZE STORAGE_TYPE
-
-STORAGE+2		STORAGE_M
-STORAGE			STORAGE_S
-
-STORAGE_DEVICES_N	EVAL_MOD_N
-
-STORAGE_SIZE		EVAL_MOD_NMB
-STORAGE_SIZE		EVAL_MOD_NkB
-STORAGE_SIZE		EVAL_MOD_NGB
-STORAGE_SIZE		EVAL_MOD_N-petabyte
-STORAGE_SIZE		EVAL_MOD_NTB
-
-STORAGE_TYPE		hard disk
-STORAGE_TYPE		optical drive
-STORAGE_TYPE		floppy disk
-STORAGE_TYPE		tape drive
-STORAGE_TYPE		USB key
-
-MEMORY_TYPE		RAM
-MEMORY_TYPE		ROM
-MEMORY_TYPE		flash-memory
-MEMORY_TYPE		NV-RAM
-
-CHIP_SPEED		EVAL_MOD_NGHz
-CHIP_SPEED		EVAL_MOD_NMHz
-
-PROCESSOR		EVAL_MOD_AMOUNT PROCESSOR_TYPEs
-PROCESSOR		EVAL_MOD_N PROCESSOR_TYPEs
-PROCESSOR_TYPE		CPU
-PROCESSOR_TYPE		FPU
-PROCESSOR_TYPE		RISC processor
-PROCESSOR_TYPE		CISC processor
-PROCESSOR_TYPE		CHIP_SPEED Athlon ATHLON_TYPE
-PROCESSOR_TYPE		CHIP_SPEED Pentium PENTIUM_TYPE
-PROCESSOR_TYPE		CHIP_SPEED Intel 386
-PENTIUM_TYPE		IV
-PENTIUM_TYPE		III
-PENTIUM_TYPE		Centrino
-PENTIUM_TYPE		II
-ATHLON_TYPE		XP
-ATHLON_TYPE		64
-
-HARDWARE_PROP_OR_MEASUREMENT		HARDWARE_PROP
-HARDWARE_PROP_OR_MEASUREMENT		effective HARDWARE_PROP
-HARDWARE_PROP_OR_MEASUREMENT		EVAL_MEASUREMENT
-
-MULTIPLE_VERBED		doubled
-MULTIPLE_VERBED		halved
-MULTIPLE_VERBED		tripled
-MULTIPLE_VERBED		quadrupled
-MULTIPLE_VERBED		reduced
-
-EVAL_MOD_ACTION		added HARDWARE to
-EVAL_MOD_ACTION		removed HARDWARE from
-EVAL_MOD_ACTION 	MULTIPLE_VERBED the HARDWARE_PROP_OR_MEASUREMENT of
-EVAL_MOD_PASSIVE_ACTION HARDWARE was added to
-EVAL_MOD_PASSIVE_ACTION HARDWARE was removed from
-
-
-
+#############################################################################
 ######### Units/Graphs ##########
+#############################################################################
 
 SCI_CAPTION See Figure~\ref{LATEX_FIG_LABEL_REF} XXX
 
@@ -1851,8 +1876,9 @@ GNUPLOT {
 
 }
 
-
+#############################################################################
 ######## LaTeX stuff ########
+#############################################################################
 
 LATEX_HEADER { 
 
@@ -1902,6 +1928,10 @@ LATEX_FIG_LABEL fig:labelNEWFIGLABEL+
 LATEX_FIG_LABEL_REF fig:labelNEWFIGLABEL#
 NEWFIGLABEL\+
 NEWFIGLABEL\#
+
+#############################################################################
+######## Citations ########
+#############################################################################
 
 CITATION_SOMETIMES CITATION
 CITATION_SOMETIMES+20
@@ -1969,6 +1999,18 @@ CITE_MONTH oct
 CITE_MONTH nov
 CITE_MONTH dec
 
+SCI_YEAR	1935
+SCI_YEAR	1953
+SCI_YEAR	1967
+SCI_YEAR	1970
+SCI_YEAR	1977
+SCI_YEAR	1980
+SCI_YEAR	1986
+SCI_YEAR	1993
+SCI_YEAR	1995
+SCI_YEAR	1999
+SCI_YEAR	2001
+SCI_YEAR	2004
 CITE_YEAR SCI_YEAR
 CITE_YEAR+10 199DIGIT
 CITE_YEAR+2 1999
