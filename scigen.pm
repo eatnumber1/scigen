@@ -122,7 +122,7 @@ sub pretty_print {
 	my $newline = "";
 
 	$line =~ s/(\s+)([\.\,\?\;\:])/$2/g;
-	$line =~ s/(\W+)(a)\s+([aeiou])/$1$2n $3/gi;
+	$line =~ s/(\b)(a)\s+([aeiou])/$1$2n $3/gi;
 
 	if( $line =~ /\\section(\*?){(.*)}/ ) {
 	    $newline = "\\section${1}{" . 
