@@ -1553,15 +1553,41 @@ EVAL_GUTS_INTRO EVAL_GUTS_EXP_SET EVAL_GUTS_EXP_SET_FOLLOWON  XXX
 
 EVAL_GUTS_ANALYSIS_1
 
-LIT_MIDDLE_TWO EVAL_GUTS_ANALYSIS_2
+EVAL_GUTS_ANALYSIS_2
 
-LIT_MIDDLE_3 EVAL_GUTS_ANALYSIS_3
+EVAL_GUTS_ANALYSIS_3
 
 }
 
-EVAL_GUTS_ANALYSIS_1  
-EVAL_GUTS_ANALYSIS_2  
+EVAL_GUTS_ANALYSIS_1_A  We first analyze WHICH_EXPERIMENTS EXP_FIG_REF
+
+EXP_FIG_REF	as shown in Figure~\ref{LATEX_FIG_LABEL_REF}
+
+EVAL_GUTS_ANALYSIS_1 EVAL_GUTS_ANALYSIS_1_A XXX EVAL_GUTS_ANALYSIS
+
+EVAL_GUTS_ANALYSIS  EVAL_ANALYZE_ONE XXX LIT_MIDDLE_TWO EVAL_ANALYZE_ONE XXX LIT_MIDDLE_3 EVAL_ANALYZE_ONE XXX
+
+EVAL_ANALYZE_ONE note the heavy tail on this CDF, exhibiting DIFFERENT EVAL_MEASUREMENT
+EVAL_ANALYZE_ONE the many discontinuities in the graphs point to DIFFERENT EVAL_MEASUREMENT introduced with our hardware upgrades
+EVAL_ANALYZE_ONE bugs in our system caused the unstable behavior throughout the experiments
+EVAL_ANALYZE_ONE Gaussian electromagnetic disturbances in our EXP_WHERE caused unstable experimental results
+
+EVAL_GUTS_ANALYSIS_2 EVAL_GUTS_ANALYSIS_2_A XXX EVAL_GUTS_ANALYSIS 
 EVAL_GUTS_ANALYSIS_3 
+
+EVAL_GUTS_ANALYSIS_2_A	We have seen on type of behavior in EXP_FIGS; our other experiments (shown in Figure~\ref{LATEX_FIG_LABEL_REF} paint a different picture
+EVAL_GUTS_ANALYSIS_2_A	We next turn to WHICH_EXPERIMENTS, shown in EXP_FIG
+EVAL_GUTS_ANALYSIS_2_A  Shown in EXP_FIG, WHICH_EXPERIMENTS call attention to SCI_OUR_SYSTEM's EVAL_MEASUREMENT
+
+EXP_FIG		Figure~\ref{LATEX_LABEL_REF_FIG}
+EXP_FIGS	Figures~\ref{LATEX_LABEL_REF_FIG} and~\ref{LATEX_LABEL_REF_FIG}
+
+WHICH_EXPERIMENTS	experiments (1) and (3)
+WHICH_EXPERIMENTS	the first two experiments
+WHICH_EXPERIMENTS	the second half of our experiments
+WHICH_EXPERIMENTS	experiments (3) and (4)
+WHICH_EXPERIMENTS	experiments (1) and (4)
+WHICH_EXPERIMENTS	all four experiments
 
 
 EVAL_GUTS_INTRO	our hardware and software modficiations PROVE_THAT EMULATING SCI_OUR_SYSTEM is one thing, but EMULATING_IT is a completely different story.
