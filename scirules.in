@@ -1882,7 +1882,7 @@ SCI_THING_HAS	SCI_THING_P have
 SCI_THING_P	courseware
 SCI_THING_P	e-commerce
 
-SCI_THING_P	distributed hash tables (DHTs)
+SCI_THING_P	DHTs
 SCI_THING_P	robots
 SCI_THING_P	agents
 SCI_THING_P	Markov models
@@ -1935,7 +1935,8 @@ SCI_THING_S	simulated annealing
 SCI_THING_P	superpages
 SCI_THING_P	superblocks
 SCI_THING_S	partition table
-SCI_THING_P	64-bit architectures
+SCI_THING_P	POWER_OF_TWO bit architectures
+# SCI_THING_S 	distance e-learning
 SCI_THING_P	vacuum tubes
 SCI_THING_S 	Internet QoS
 SCI_THING_S 	rasterization
@@ -2087,6 +2088,7 @@ SCI_BUZZWORD_ADJ wearable
 SCI_BUZZWORD_ADJ semantic
 SCI_BUZZWORD_ADJ real-time
 SCI_BUZZWORD_ADJ cooperative
+SCI_BUZZWORD_ADJ decentralized
 SCI_BUZZWORD_ADJ scalable
 SCI_BUZZWORD_ADJ certifiable
 SCI_BUZZWORD_ADJ robust
@@ -3402,6 +3404,14 @@ NONZ 9
 DIGIT+9	NONZ
 DIGIT 	0
 
+
+POWER_OF_TWO 2
+POWER_OF_TWO 4
+POWER_OF_TWO 8
+POWER_OF_TWO 16
+POWER_OF_TWO 32
+POWER_OF_TWO 64
+POWER_OF_TWO 128
 
 MED_NUM NONZDIGIT
 MED_NUM NONZDIGITDIGIT
