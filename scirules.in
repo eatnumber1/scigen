@@ -54,9 +54,13 @@ SCI_INTRO_PARAGRAPH_FINAL The rest of this paper is organized as follows.  SCI_I
 SCI_IPF_FIRST SCI_B_LEADIN_A we motivate the need for SCI_THING.
 
 SCI_IPF_MID SCI_IPF_MID_B SCI_IPF_MID_B
+SCI_IPF_MID_B SCI_IPF_MID_B SCI_IPF_MID_B
+SCI_IPF_MID_B SCI_IPF_MID_REL
 SCI_IPF_MID_B LIT_MIDDLE_TWO we SCI_MID_VERB the SCI_ACT.
-SCI_IPF_MID_B LIT_MIDDLE_TWO we place TOPIC in context with the related work in this area.
 SCI_IPF_MID_B
+SCI_IPF_MID_REL LIT_MIDDLE_TWO we then place TOPIC in context with the related work in this area.
+SCI_IPF_MID_REL
+
 
 SCI_IPF_FINAL SCI_B_LEADIN_C we conclude.
 
@@ -780,7 +784,7 @@ SCI_B_SUPP_ONE	LASTNAME 's research posed a SCI_ADJ question: what, indeed was t
 SCI_B_SUPP_TWO	Working closely with the SCI_COUNTRY SCI_PERSON SCI_SOURCE , LASTNAME struggled to define a Unified Theory of TOPIC .
 SCI_B_SUPP_TWO	SCI_SOURCE 's SCI_ADJ research into SCI_THING provided a SCI_ADJ touchstone for LASTNAME .
 SCI_B_SUPP_TWO	TOPIC 's SCI_ADJ possibilities had never been SCI_VERBED until LASTNAME suggested SCI_ACH_PRES .
-SCI_B_SUPP_TWO	LASTNAME 's theory of TOPIC was SCI_ADJ_ADV complete, but futher study still seemed SCI_ADJ if the SCI_ACT was to occurr.
+SCI_B_SUPP_TWO	LASTNAME 's theory of TOPIC was SCI_ADJ_ADV complete, but futher study still seemed SCI_ADJ if the SCI_ACT was to occur.
 SCI_B_SUPP_TWO	LASTNAME was SCI_ADJ_ADV close to a discovery.
 SCI_B_SUPP_TWO	LASTNAME had grasped the SCI_COMPLEXNOUN of TOPIC ; but its SCI_COMPLEXNOUN was still SCI_ADJ_ADV out of reach.
 SCI_B_SUPP_TWO	LASTNAME hoped that TOPIC technology might become a SCI_ADJ force for good.
@@ -840,39 +844,40 @@ SCI_VERBING	inventing
 SCI_VERBING	developing
 SCI_VERBING	discovering
 SCI_VERBING	refining
-SCI_THING	aromatherapy
-SCI_THING	chaos theory
-SCI_THING	cold fusion
-SCI_THING	electromagnetic waves
-SCI_THING	Euclidean geometry
-SCI_THING	fire
-SCI_THING	food dehydration
-SCI_THING	gamma-ray radiation
-SCI_THING	gender-reassignment therapy
-SCI_THING	healing crystals
-SCI_THING	Jungian archetypes
-SCI_THING	krazy glue
-SCI_THING	kryptonite
-SCI_THING	laser hair removal technology
-SCI_THING	nuclear fission
-SCI_THING	silicon semiconductors
-SCI_THING	so-called new math
-SCI_THING	space-age plastics
-SCI_THING	telegraph and radio
-SCI_THING	television
+SCI_THING	DHTs
+SCI_THING	Markov models
+SCI_THING	the memory bus
+SCI_THING	SMPs
+SCI_THING	kernels
+SCI_THING	operating systems
+SCI_THING	interrupts
+SCI_THING	Web services
+SCI_THING	massive multiplayer online role-playing games
+SCI_THING	Byzantine fault tolerance
+SCI_THING	the location-identity split
+SCI_THING	sensor networks
+SCI_THING	online algorithms
+SCI_THING	extreme programming
+SCI_THING	object-oriented languages
+SCI_THING	Scheme
+SCI_THING	DNS
+SCI_THING	802.11b
+SCI_THING	information retrieval systems
+SCI_THING	web browsers
 SCI_THING	the Commodore VIC-20
-SCI_THING	the dilithium warp drive
-SCI_THING	the atom
-SCI_THING	the H-Bomb
-SCI_THING	the id
+SCI_THING	the Turing machine
+SCI_THING	B-trees
+SCI_THING	hierarchical databases
+SCI_THING	randomized algorithms
 SCI_THING	the Internet
-SCI_THING	the superego
+SCI_THING	the Internets
+SCI_THING	consistent hashing
 SCI_THING	the transistor
 SCI_THING	the UNIVAC computer
-SCI_THING	the wheel
-SCI_THING	the X-ray
-SCI_THING	thermodynamic theory
-SCI_THING	wormholes in space
+SCI_THING	Boolean logic
+SCI_THING	voice-over-IP
+SCI_THING	the World Wide Web
+SCI_THING	flip-flop gates
 SCI_RESPONSE	yes
 SCI_RESPONSE	no
 SCI_RESPONSE	it is
