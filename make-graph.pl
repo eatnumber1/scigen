@@ -81,6 +81,7 @@ if( $type eq "bargraph" ) {
 
 
 @x = sort { $a <=> $b} @x;
+my @y = ();
 
 print GPFILE "plot ";
 for( my $i = 0; $i < $curves; $i++ ) {
@@ -90,6 +91,8 @@ for( my $i = 0; $i < $curves; $i++ ) {
 	print GPFILE "points";
     } elsif( $type eq "curve" ) {
 	print GPFILE "linespoints";
+    } elsif( $type eq "cdf" ) {
+	print GPFILE "lines";
     } else {
 	print GPFILE "boxes";
     }
@@ -102,6 +105,7 @@ for( my $i = 0; $i < $curves; $i++ ) {
 
     my $num_points = 0;
     do {
+	@y = ();
 	my $func = `perl scigen.pl -f functions.in -s EXPR`;
 	
 	open( DAT, ">$datafile.$i" ) or 
@@ -119,11 +123,28 @@ for( my $i = 0; $i < $curves; $i++ ) {
 	    
 	    my $yn = &add_noise($y);
 	    
-	    print DAT "$x $yn\n";
+	    if( $type ne "cdf" ) {
+		print DAT "$x $yn\n";
+	    } else {
+		if( $#y == -1 ) {
+		    push @y, abs($yn);
+		} else {
+		    push @y, abs($yn)+$y[$#y];
+		}
+	    }
 	    $num_points++;
 	}
 	
     } while($num_points == 0);
+
+    if( $type eq "cdf" ) {
+	my $k = 0;
+	foreach my $y (@y) {
+	    my $ynormal = $y/$y[$#y];
+	    print DAT "$x[$k] $ynormal\n";
+	    $k++;
+	}
+    }
 
     close( DAT );
 
