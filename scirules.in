@@ -1248,7 +1248,12 @@ EVAL_SEC_SOFTWARE_INTRO	SYSNAME does not run on a commodity operating system but
 EVAL_SEC_SOFTWARE_INTRO	SYSNAME runs on HACKED standard software
 EVAL_SEC_SOFTWARE_INTRO	We ran SCI_OUR_SYSTEM on commodity operating systems, such as OSFULL and OSFULL
 EVAL_SEC_SOFTWARE_INTRO	Building a sufficient software environment took time, but was well worth it in the end.
-EVAL_SEC_SOFTWARE_INTRO	When SCI_SOURCE HACKED OSFULL's SOFTWARE_PROP in SCI_YEAR, he could not have anticipated the impact; our work here attempts to follow on.
+EVAL_SEC_SOFTWARE_INTRO	When SCI_SOURCE HACKED OSFULL's SOFTWARE_PROP in SCI_YEAR, he could not have anticipated the impact; our work here FOLLOWS_SUIT
+
+
+FOLLOWS_SUIT 	attempts to follow on
+FOLLOWS_SUIT 	follows suit
+FOLLOWS_SUIT 	inherits from this previous work
 
 OSNAME		GNU/Debian Linux 
 OSNAME		FreeBSD
