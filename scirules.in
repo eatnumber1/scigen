@@ -33,7 +33,7 @@ SCIPAPER_LONG	{
 
 }
 
-XXX+20		.
+XXX+15		.
 XXX		CITATION.
 XXX+2		. FILLER_SENTENCE.
 
@@ -45,12 +45,27 @@ SCI_TITLE Deconstructing SCI_THING
 SCI_TITLE Decoupling SCI_THING from SCI_THING in SCI_THING
 SCI_TITLE A Methodology for the SCI_ACT
 SCI_TITLE A Case for SCI_THING
+SCI_TITLE SCI_VERBING SCI_THING using SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN
+SCI_TITLE SCI_VERBING SCI_THING and SCI_THING
+SCI_TITLE SCI_BUZZWORD_ADJ_MULTI SCI_BUZZWORD_NOUN
+SCI_TITLE SCI_TITLE_COMPARE SCI_THING and SCI_THING
+SCI_TITLE The SCI_TITLE_IMPACT SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN on SCI_FIELD
+SCI_TITLE SCI_BUZZWORD_ADJ_MULTI SCI_BUZZWORD_NOUN for SCI_THING
 
 SCI_TITLE_NOT no longer
 SCI_TITLE_NOT+3
 
 SCI_TITLE_PREP On
 SCI_TITLE_PREP Towards
+
+SCI_TITLE_COMPARE Comparing
+SCI_TITLE_COMPARE Contrasting
+SCI_TITLE_COMPARE The relationship between
+SCI_TITLE_COMPARE SCI_VERBING
+
+SCI_TITLE_IMPACT	impact of
+SCI_TITLE_IMPACT	effect of
+SCI_TITLE_IMPACT	influence of
 
 SCI_AUTHORS FIRSTNAME LASTNAME
 
@@ -62,12 +77,12 @@ SCI_ABSTRACT {
 
 }
 
-SCI_ABSTRACT_A SCI_AB_A_START the SCI_ACT SCI_AB_A_END.
+SCI_ABSTRACT_A SCI_AB_A_START the SCI_ACT SCI_AB_A_END XXX
 
 SCI_AB_A_START in this paper, we SCI_MID_VERB 
 SCI_AB_A_START in fact, few SCI_PEOPLE would disagree with
 SCI_AB_A_START given the current status of SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN, SCI_PEOPLE SCI_ADJ_ADV desire
-SCI_AB_A_START after years of SCI_ADJ research into SCI_THING, we SCI_MID_VERB
+SCI_AB_A_START after years of SCI_ADJ research into SCI_THING_MOD, we SCI_MID_VERB
 
 SCI_AB_A_END
 SCI_AB_A_END , which embodies the SCI_ADJ principles of SCI_FIELD
@@ -77,13 +92,10 @@ SCI_INTRO {
  SCI_INTRO_HEADER 
 
  SCI_INTRO_PARAGRAPH_A 
- CITATION
 
  SCI_PARAGRAPH_B_ONE
- CITATION
 
  SCI_PARAGRAPH_B_TWO
- CITATION
 
  SCI_INTRO_PARAGRAPH_FINAL
 
@@ -93,12 +105,12 @@ SCI_INTRO_PARAGRAPH_A SCI_INTRO_A SCI_A_TWO SCI_A_THREE SCI_A_FOUR
 
 SCI_INTRO_PARAGRAPH_FINAL The rest of this paper is organized as follows.  SCI_IPF_FIRST SCI_IPF_MID SCI_IPF_FINAL
 
-SCI_IPF_FIRST SCI_B_LEADIN_A we motivate the need for SCI_THING.
+SCI_IPF_FIRST SCI_B_LEADIN_A we motivate the need for SCI_THING_MOD.
 
 SCI_IPF_MID SCI_IPF_MID_B SCI_IPF_MID_B
 SCI_IPF_MID_B SCI_IPF_MID_B SCI_IPF_MID_B
 SCI_IPF_MID_B SCI_IPF_MID_REL
-SCI_IPF_MID_B LIT_MIDDLE_TWO we SCI_MID_VERB the SCI_ACT.
+SCI_IPF_MID_B LIT_MIDDLE_TWO we SCI_MID_VERB the SCI_ACT XXX
 SCI_IPF_MID_B
 SCI_IPF_MID_REL LIT_MIDDLE_TWO we then place TOPIC in context with the related work in this area.
 SCI_IPF_MID_REL
@@ -115,22 +127,25 @@ SCI_MID_VERB disprove
 SCI_ABSTRACT_HEADER \section*{Abstract}
 SCI_INTRO_HEADER \section{Introduction}
 
-SCI_INTRO_A	Many SCI_PEOPLE would agree that, had it not been for TOPIC , the SCI_ACT might never have occurred.
-SCI_INTRO_A	SCI_THING must work.
-SCI_INTRO_A	In recent years, much research has been devoted to the SCI_ACT; however, few have explored the SCI_ACT.
-SCI_INTRO_A	SCI_THING and SCI_THING, while SCI_ADJ in theory, have not until recently been considered SCI_ADJ.
-SCI_INTRO_A	The SCI_ACT is a challenge.
-SCI_INTRO_A	The SCI_ACT has SCI_VERBED SCI_THING, and current trends suggest that the SCI_ACT will soon emerge.
-SCI_INTRO_A	SCI_PEOPLE agree that TOPIC is an interesting new topic in the field of SCI_FIELD, and SCI_PEOPLE concur.
-SCI_INTRO_A	The SCI_FIELD approach to SCI_THING is defined not only by the SCI_ACT, but also by the SCI_ADJ need for SCI_THING.
-SCI_INTRO_A	Recent advances in SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN SCI_INTRO_ACT SCI_THING.
+SCI_INTRO_A	Many SCI_PEOPLE would agree that, had it not been for TOPIC , the SCI_ACT might never have occurred XXX
+SCI_INTRO_A	SCI_THING_MOD must work XXX
+SCI_INTRO_A	In recent years, much research has been devoted to the SCI_ACT; however, few have explored the SCI_ACT XXX
+SCI_INTRO_A	SCI_THING_MOD and SCI_THING_MOD, while SCI_ADJ in theory, have not until recently been considered SCI_ADJ XXX
+SCI_INTRO_A	The SCI_ACT is a challenge XXX
+SCI_INTRO_A	The SCI_ACT has SCI_VERBED SCI_THING_MOD, and current trends suggest that the SCI_ACT will soon emerge XXX
+SCI_INTRO_A	SCI_PEOPLE agree that TOPIC is an interesting new topic in the field of SCI_FIELD, and SCI_PEOPLE concur XXX
+SCI_INTRO_A	The SCI_FIELD approach to SCI_THING_MOD is defined not only by the SCI_ACT, but also by the SCI_ADJ need for SCI_THING_MOD XXX
+SCI_INTRO_A	Recent advances in SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN SCI_INTRO_ACT SCI_THING_MOD XXX
 
 SCI_INTRO_ACT offer a viable alternative to
 SCI_INTRO_ACT have paved the way for
 SCI_INTRO_ACT are often at odds with
 SCI_INTRO_ACT do not necessarily obviate the need for
-SCI_INTRO_ACT are based entirely on the assumption that SCI_THING and SCI_THING are not in conflict with
+SCI_INTRO_ACT are based entirely on the assumption that SCI_THING_MOD and SCI_THING_MOD are not in conflict with
 
+SCI_BUZZWORD_ADJ_MULTI+5 SCI_BUZZWORD_ADJ
+SCI_BUZZWORD_ADJ_MULTI+10 SCI_BUZZWORD_ADJ, SCI_BUZZWORD_ADJ
+SCI_BUZZWORD_ADJ_MULTI SCI_BUZZWORD_ADJ, SCI_BUZZWORD_ADJ, SCI_BUZZWORD_ADJ
 SCI_BUZZWORD_ADJ peer-to-peer
 SCI_BUZZWORD_ADJ ubiquitous
 SCI_BUZZWORD_ADJ wireless
@@ -156,6 +171,8 @@ SCI_BUZZWORD_ADJ concurrent
 SCI_BUZZWORD_ADJ probabilistic
 SCI_BUZZWORD_ADJ mobile
 SCI_BUZZWORD_ADJ wearable
+SCI_BUZZWORD_ADJ semantic
+SCI_BUZZWORD_ADJ real time
 
 SCI_BUZZWORD_NOUN technology
 SCI_BUZZWORD_NOUN communication
@@ -163,6 +180,8 @@ SCI_BUZZWORD_NOUN algorithms
 SCI_BUZZWORD_NOUN theory
 SCI_BUZZWORD_NOUN e-commerce
 SCI_BUZZWORD_NOUN information
+SCI_BUZZWORD_NOUN models
+SCI_BUZZWORD_NOUN courseware
 
 LIT_MIDDLE_TWO+4	
 LIT_MIDDLE_TWO		Second,
@@ -263,26 +282,26 @@ SCI_SUBTITLE	SCI_MOVEMENT SCI_ACT or SCI_MOVEMENT SCI_ACT ?
 SCI_SUBTITLE	a SCI_ADJ theory
 SCI_SUBTITLE	the SCI_ACT as it relates to TOPIC
 SCI_SUBTITLE	SCI_COMPLEXNOUN and SCI_COMPLEXNOUN
-SCI_A_ONE	Many SCI_PEOPLE would agree that, had it not been for TOPIC , the SCI_ACT might never have occurred.
-SCI_A_ONE	Without TOPIC , the SCI_YEAR SCI_ACT would have been merely a SCI_ADJ fantasy.
-SCI_A_ONE	The implications of TOPIC technology have been far-reaching and pervasive, touching all aspects of our lives.
-SCI_A_ONE	Although the SCI_ACT by SCI_SOURCE and the SCI_ACT by SCI_SOURCE were both SCI_ADJ discoveries, they would have been nothing without TOPIC .
-SCI_A_ONE	Our SCI_ADJ_ADV modern lives are influenced by TOPIC everyday.
-SCI_A_ONE	TOPIC technology has led to SCI_ADJ advances in SCI_FIELD , discoveries that today we take for granted.
-SCI_A_ONE	Unified TOPIC theory has led to many SCI_ADJ advances, including SCI_THING and SCI_THING .
-SCI_A_TWO	Few scientists have been as SCI_ADJ as SCI_SCIENTIST in the development of TOPIC .
-SCI_A_TWO	No discussion of TOPIC would be complete without mention of SCI_SCIENTIST .
-SCI_A_TWO	Although the contributions of SCI_SOURCE and SCI_SOURCE to TOPIC are well documented, few people realize that it was actually SCI_SCIENTIST who played a leading role in its development.
-SCI_A_TWO	Few would argue that SCI_SCIENTIST 's discovery of TOPIC was one of the most important scientific advances of our century.
-SCI_A_TWO	No one played as pivotal a role in the development of TOPIC as SCI_SCIENTIST .
-SCI_A_TWO	Although the contributions of SCI_SCIENTIST to the worldwide advancement of science are SCI_ADJ , TOPIC is perhaps the most SCI_ADJ of all.
-SCI_A_TWO	TOPIC , perhaps one of the most SCI_ADJ advances of our time, would never have occurred had it not been for SCI_SCIENTIST .
-SCI_A_THREE	Three points support this thesis: SCI_A_FACT , SCI_A_FACT , and most importantly, SCI_A_FACT .
-SCI_A_THREE	Three important discoveries led to the discovery of TOPIC : SCI_THING , SCI_THING , and SCI_THING .
-SCI_A_THREE	The evidence points to three main factors: SCI_A_FACT , SCI_THING , and SCI_A_FACT .
-SCI_A_FOUR	In this paper, the author will demonstrate the important role played by SCI_SCIENTIST in the development of TOPIC .
-SCI_A_FOUR	The author hopes to set the record straight concerning SCI_SCIENTIST 's many contributions to TOPIC .
-SCI_A_FOUR	This paper will explore SCI_SCIENTIST 's important relationship with TOPIC .
+SCI_A_ONE	Many SCI_PEOPLE would agree that, had it not been for TOPIC , the SCI_ACT might never have occurred XXX
+SCI_A_ONE	Without TOPIC , the SCI_YEAR SCI_ACT would have been merely a SCI_ADJ fantasy XXX
+SCI_A_ONE	The implications of TOPIC technology have been far-reaching and pervasive, touching all aspects of our lives XXX
+SCI_A_ONE	Although the SCI_ACT by SCI_SOURCE and the SCI_ACT by SCI_SOURCE were both SCI_ADJ discoveries, they would have been nothing without TOPIC  XXX
+SCI_A_ONE	Our SCI_ADJ_ADV modern lives are influenced by TOPIC everyday XXX
+SCI_A_ONE	TOPIC technology has led to SCI_ADJ advances in SCI_FIELD , discoveries that today we take for granted XXX
+SCI_A_ONE	Unified TOPIC theory has led to many SCI_ADJ advances, including SCI_THING_MOD and SCI_THING_MOD  XXX
+SCI_A_TWO	Few scientists have been as SCI_ADJ as SCI_SCIENTIST in the development of TOPIC  XXX
+SCI_A_TWO	No discussion of TOPIC would be complete without mention of SCI_SCIENTIST  XXX
+SCI_A_TWO	Although the contributions of SCI_SOURCE and SCI_SOURCE to TOPIC are well documented, few people realize that it was actually SCI_SCIENTIST who played a leading role in its development XXX
+SCI_A_TWO	Few would argue that SCI_SCIENTIST 's discovery of TOPIC was one of the most important scientific advances of our century XXX
+SCI_A_TWO	No one played as pivotal a role in the development of TOPIC as SCI_SCIENTIST  XXX
+SCI_A_TWO	Although the contributions of SCI_SCIENTIST to the worldwide advancement of science are SCI_ADJ , TOPIC is perhaps the most SCI_ADJ of all XXX
+SCI_A_TWO	TOPIC , perhaps one of the most SCI_ADJ advances of our time, would never have occurred had it not been for SCI_SCIENTIST  XXX
+SCI_A_THREE	Three points support this thesis: SCI_A_FACT , SCI_A_FACT , and most importantly, SCI_A_FACT  XXX
+SCI_A_THREE	Three important discoveries led to the discovery of TOPIC : SCI_THING_MOD , SCI_THING_MOD , and SCI_THING_MOD  XXX
+SCI_A_THREE	The evidence points to three main factors: SCI_A_FACT , SCI_THING_MOD , and SCI_A_FACT  XXX
+SCI_A_FOUR	In this paper, the author will demonstrate the important role played by SCI_SCIENTIST in the development of TOPIC  XXX
+SCI_A_FOUR	The author hopes to set the record straight concerning SCI_SCIENTIST 's many contributions to TOPIC  XXX
+SCI_A_FOUR	This paper will explore SCI_SCIENTIST 's important relationship with TOPIC  XXX
 SCI_A_FACT	SCI_SOURCE 's SCI_ACT in SCI_YEAR
 SCI_A_FACT	LASTNAME 's relationship with the SCI_COUNTRY SCI_PEOPLE
 SCI_A_FACT	the SCI_COMPLEXNOUN of SCI_MOVEMENT theory
@@ -310,49 +329,49 @@ SCI_B_LEADIN_C	Finally,
 SCI_B_LEADIN_C	Ultimately, 
 SCI_B_LEADIN_C	As a result, 
 SCI_B_LEADIN_C	In the end, 
-SCI_B_ONE	LASTNAME 's SCI_ADJ discovery of SCI_THING prompted SCI_ADJ inquiry into TOPIC .
-SCI_B_ONE	LASTNAME 's initial intent was not so much SCI_ACT , but rather SCI_ACT .
-SCI_B_ONE	LASTNAME 's SCI_ADJ discovery of TOPIC was no so much SCI_COMPLEXNOUN as it was SCI_COMPLEXNOUN .
-SCI_B_ONE	few would have suspected that LASTNAME 's SCI_ADJ experiments with SCI_THING would lead to TOPIC .
-SCI_B_ONE	the idea of TOPIC was a SCI_ADJ joke.
-SCI_B_ONE	few scientists in SCI_YEAR were willing to risk their SCI_ADJ reputations on controversial TOPIC research.
-SCI_B_ONE	LASTNAME 's interest in TOPIC sprung from a personal, SCI_ADJ sense of duty.
-SCI_B_TWO	public interest was piqued by the SCI_ADJ possibility of using TOPIC warfare against the SCI_COUNTRY enemy.
-SCI_B_TWO	facing the SCI_ADJ attitudes of the scientific community, LASTNAME continued reasearch into TOPIC .
-SCI_B_TWO	it wasn't until the SCI_ADJ SCI_ACT in SCI_YEAR that TOPIC research became a possibility.
-SCI_B_TWO	no one before LASTNAME had considered combining the SCI_YEAR findings of SCI_SOURCE , who had SCI_VERBED SCI_THING before anyone thought it possible, with TOPIC in such a meaningful way.
-SCI_B_TWO	LASTNAME made a SCI_ADJ discovery: TOPIC , it would seem, had SCI_MOVEMENT implications.  This realization was on a par with the SCI_ACT .
-SCI_B_TWO	SCI_ADJ success came in SCI_YEAR , when LASTNAME SCI_ACH .
-SCI_B_TWO	it was a long, SCI_ADJ time for LASTNAME .
+SCI_B_ONE	LASTNAME 's SCI_ADJ discovery of SCI_THING_MOD prompted SCI_ADJ inquiry into TOPIC  XXX
+SCI_B_ONE	LASTNAME 's initial intent was not so much SCI_ACT , but rather SCI_ACT  XXX
+SCI_B_ONE	LASTNAME 's SCI_ADJ discovery of TOPIC was no so much SCI_COMPLEXNOUN as it was SCI_COMPLEXNOUN  XXX
+SCI_B_ONE	few would have suspected that LASTNAME 's SCI_ADJ experiments with SCI_THING_MOD would lead to TOPIC  XXX
+SCI_B_ONE	the idea of TOPIC was a SCI_ADJ joke XXX
+SCI_B_ONE	few scientists in SCI_YEAR were willing to risk their SCI_ADJ reputations on controversial TOPIC research XXX
+SCI_B_ONE	LASTNAME 's interest in TOPIC sprung from a personal, SCI_ADJ sense of duty XXX
+SCI_B_TWO	public interest was piqued by the SCI_ADJ possibility of using TOPIC warfare against the SCI_COUNTRY enemy XXX
+SCI_B_TWO	facing the SCI_ADJ attitudes of the scientific community, LASTNAME continued reasearch into TOPIC  XXX
+SCI_B_TWO	it wasn't until the SCI_ADJ SCI_ACT in SCI_YEAR that TOPIC research became a possibility XXX
+SCI_B_TWO	no one before LASTNAME had considered combining the SCI_YEAR findings of SCI_SOURCE , who had SCI_VERBED SCI_THING_MOD before anyone thought it possible, with TOPIC in such a meaningful way XXX
+SCI_B_TWO	LASTNAME made a SCI_ADJ discovery: TOPIC , it would seem, had SCI_MOVEMENT implications XXX  This realization was on a par with the SCI_ACT  XXX
+SCI_B_TWO	SCI_ADJ success came in SCI_YEAR , when LASTNAME SCI_ACH  XXX
+SCI_B_TWO	it was a long, SCI_ADJ time for LASTNAME  XXX
 SCI_B_TWO	SCI_SOURCE summed up scientific sentiment in saying, SCI_QUOTE 
-SCI_B_THREE	LASTNAME contrinued working despite SCI_ADJ obstacles.
-SCI_B_THREE	SCI_SOURCE 's SCI_YEAR paper on SCI_THING provided a SCI_ADJ basis for SCI_COMPLEXNOUN .
-SCI_B_THREE	LASTNAME 's TOPIC research soon attracted the government, who were interested in military applications, namely the SCI_ACT .
-SCI_B_THREE	it wasn't until the SCI_COUNTRY SCI_PEOPLE SCI_ACH that LASTNAME gained insight into the SCI_COMPLEXNOUN of TOPIC .
-SCI_B_THREE	the SCI_ADJ importance of TOPIC was not fully grasped until LASTNAME SCI_ACH in SCI_YEAR .
-SCI_B_THREE	LASTNAME 's SCI_ADJ efforts had begun to prove SCI_ADJ .
-SCI_B_THREE	LASTNAME became increasingly intrigued by the SCI_ADJ SCI_COMPLEXNOUN of SCI_ACH_PRES .
+SCI_B_THREE	LASTNAME contrinued working despite SCI_ADJ obstacles XXX
+SCI_B_THREE	SCI_SOURCE 's SCI_YEAR paper on SCI_THING_MOD provided a SCI_ADJ basis for SCI_COMPLEXNOUN  XXX
+SCI_B_THREE	LASTNAME 's TOPIC research soon attracted the government, who were interested in military applications, namely the SCI_ACT  XXX
+SCI_B_THREE	it wasn't until the SCI_COUNTRY SCI_PEOPLE SCI_ACH that LASTNAME gained insight into the SCI_COMPLEXNOUN of TOPIC  XXX
+SCI_B_THREE	the SCI_ADJ importance of TOPIC was not fully grasped until LASTNAME SCI_ACH in SCI_YEAR  XXX
+SCI_B_THREE	LASTNAME 's SCI_ADJ efforts had begun to prove SCI_ADJ  XXX
+SCI_B_THREE	LASTNAME became increasingly intrigued by the SCI_ADJ SCI_COMPLEXNOUN of SCI_ACH_PRES  XXX
 SCI_B_THREE	LASTNAME is rumored to have said, SCI_QUOTE 
-SCI_B_SUPP_ONE	SCI_ADJ developments seemed SCI_ADJ in the wake of recent SCI_COUNTRY TOPIC discoveries.
-SCI_B_SUPP_ONE	dismay became relief when LASTNAME succeeded in SCI_ACH_PRES .
-SCI_B_SUPP_ONE	further investigation into SCI_THING proved SCI_ADJ .  TOPIC was suggested as a SCI_ADJ alternative.
+SCI_B_SUPP_ONE	SCI_ADJ developments seemed SCI_ADJ in the wake of recent SCI_COUNTRY TOPIC discoveries XXX
+SCI_B_SUPP_ONE	dismay became relief when LASTNAME succeeded in SCI_ACH_PRES  XXX
+SCI_B_SUPP_ONE	further investigation into SCI_THING_MOD proved SCI_ADJ  XXX  TOPIC was suggested as a SCI_ADJ alternative XXX
 SCI_B_SUPP_ONE	LASTNAME remained SCI_ADJ_ADV undaunted, claiming SCI_QUOTE 
-SCI_B_SUPP_ONE	LASTNAME 's SCI_ADJ thesis was supported by SCI_ADJ SCI_COUNTRY research.
-SCI_B_SUPP_ONE	the question of TOPIC 's SCI_ADJ SCI_COMPLEXNOUN still remained to be answered, at least until the SCI_ACT .
+SCI_B_SUPP_ONE	LASTNAME 's SCI_ADJ thesis was supported by SCI_ADJ SCI_COUNTRY research XXX
+SCI_B_SUPP_ONE	the question of TOPIC 's SCI_ADJ SCI_COMPLEXNOUN still remained to be answered, at least until the SCI_ACT  XXX
 SCI_B_SUPP_ONE	LASTNAME 's research posed a SCI_ADJ question: what, indeed was the SCI_COMPLEXNOUN of TOPIC ?
-SCI_B_SUPP_TWO	Working closely with the SCI_COUNTRY SCI_PERSON SCI_SOURCE , LASTNAME struggled to define a Unified Theory of TOPIC .
-SCI_B_SUPP_TWO	SCI_SOURCE 's SCI_ADJ research into SCI_THING provided a SCI_ADJ touchstone for LASTNAME .
-SCI_B_SUPP_TWO	TOPIC 's SCI_ADJ possibilities had never been SCI_VERBED until LASTNAME suggested SCI_ACH_PRES .
-SCI_B_SUPP_TWO	LASTNAME 's theory of TOPIC was SCI_ADJ_ADV complete, but futher study still seemed SCI_ADJ if the SCI_ACT was to occur.
-SCI_B_SUPP_TWO	LASTNAME was SCI_ADJ_ADV close to a discovery.
-SCI_B_SUPP_TWO	LASTNAME had grasped the SCI_COMPLEXNOUN of TOPIC ; but its SCI_COMPLEXNOUN was still SCI_ADJ_ADV out of reach.
-SCI_B_SUPP_TWO	LASTNAME hoped that TOPIC technology might become a SCI_ADJ force for good.
+SCI_B_SUPP_TWO	Working closely with the SCI_COUNTRY SCI_PERSON SCI_SOURCE , LASTNAME struggled to define a Unified Theory of TOPIC  XXX
+SCI_B_SUPP_TWO	SCI_SOURCE 's SCI_ADJ research into SCI_THING_MOD provided a SCI_ADJ touchstone for LASTNAME  XXX
+SCI_B_SUPP_TWO	TOPIC 's SCI_ADJ possibilities had never been SCI_VERBED until LASTNAME suggested SCI_ACH_PRES  XXX
+SCI_B_SUPP_TWO	LASTNAME 's theory of TOPIC was SCI_ADJ_ADV complete, but futher study still seemed SCI_ADJ if the SCI_ACT was to occur XXX
+SCI_B_SUPP_TWO	LASTNAME was SCI_ADJ_ADV close to a discovery XXX
+SCI_B_SUPP_TWO	LASTNAME had grasped the SCI_COMPLEXNOUN of TOPIC ; but its SCI_COMPLEXNOUN was still SCI_ADJ_ADV out of reach XXX
+SCI_B_SUPP_TWO	LASTNAME hoped that TOPIC technology might become a SCI_ADJ force for good XXX
 SCI_B_SUPP_THREE	As SCI_SOURCE said of the discovery, SCI_QUOTE 
 SCI_B_SUPP_THREE	As SCI_SOURCE once quipped, SCI_QUOTE 
-SCI_B_SUPP_THREE	This begs the question: is TOPIC SCI_MOVEMENT in nature?  LASTNAME would say SCI_RESPONSE .
-SCI_B_SUPP_THREE	LASTNAME 's SCI_ADJ paper was published later that year.
-SCI_B_SUPP_THREE	LASTNAME felt the time was ripe for further exploration, possibly even the SCI_ACT_A SCI_THING .
-SCI_B_SUPP_THREE	LASTNAME 's colleagues in SCI_FIELD were intrigued.
+SCI_B_SUPP_THREE	This begs the question: is TOPIC SCI_MOVEMENT in nature?  LASTNAME would say SCI_RESPONSE  XXX
+SCI_B_SUPP_THREE	LASTNAME 's SCI_ADJ paper was published later that year XXX
+SCI_B_SUPP_THREE	LASTNAME felt the time was ripe for further exploration, possibly even the SCI_ACT_A SCI_THING_MOD  XXX
+SCI_B_SUPP_THREE	LASTNAME 's colleagues in SCI_FIELD were intrigued XXX
 SCI_C_ONE	SCI_C_ONE_OPENING , SCI_C_ONE_CLOSING
 SCI_C_ONE_OPENING	these days
 SCI_C_ONE_OPENING	nowadays
@@ -361,19 +380,19 @@ SCI_C_ONE_OPENING	as such
 SCI_C_ONE_OPENING	as we begin the new millennium
 SCI_C_ONE_OPENING	in modern times
 SCI_C_ONE_OPENING	in the SCI_ADJ world of the 21st century
-SCI_C_ONE_CLOSING	we take TOPIC for granted.
-SCI_C_ONE_CLOSING	we've come a long way since the early experiments in TOPIC .
-SCI_C_ONE_CLOSING	our memories of the pre- TOPIC era have become faded.
-SCI_C_ONE_CLOSING	the interest in TOPIC has waned.
-SCI_C_ONE_CLOSING	the lessons of TOPIC seem outdated and irrelevant.
-SCI_C_ONE_CLOSING	the survivors of TOPIC warfare are growing fewer by the day.
-SCI_C_TWO	It's easy to forget that, once, TOPIC was a SCI_ADJ mystery that challenged even the greatest SCI_COUNTRY SCI_PEOPLE .
-SCI_C_TWO	But, in reality, the lessons of TOPIC are more relevant than ever.
+SCI_C_ONE_CLOSING	we take TOPIC for granted XXX
+SCI_C_ONE_CLOSING	we've come a long way since the early experiments in TOPIC  XXX
+SCI_C_ONE_CLOSING	our memories of the pre- TOPIC era have become faded XXX
+SCI_C_ONE_CLOSING	the interest in TOPIC has waned XXX
+SCI_C_ONE_CLOSING	the lessons of TOPIC seem outdated and irrelevant XXX
+SCI_C_ONE_CLOSING	the survivors of TOPIC warfare are growing fewer by the day XXX
+SCI_C_TWO	It's easy to forget that, once, TOPIC was a SCI_ADJ mystery that challenged even the greatest SCI_COUNTRY SCI_PEOPLE  XXX
+SCI_C_TWO	But, in reality, the lessons of TOPIC are more relevant than ever XXX
 SCI_C_THREE	Even as late as SCI_YEAR , SCI_SOURCE noted , SCI_QUOTE
 SCI_C_THREE	As prominent SCI_PEOPLE like SCI_SOURCE have noted, SCI_QUOTE
-SCI_C_FOUR	The world is changing; changing with the help of TOPIC .
-SCI_C_FOUR	SCI_ADV we are destined to never truly understand how much we owe to TOPIC .
-SCI_C_FOUR	SCI_ADV , the name of SCI_SCIENTIST will be destined to go down in History.
+SCI_C_FOUR	The world is changing; changing with the help of TOPIC  XXX
+SCI_C_FOUR	SCI_ADV we are destined to never truly understand how much we owe to TOPIC  XXX
+SCI_C_FOUR	SCI_ADV , the name of SCI_SCIENTIST will be destined to go down in History XXX
 SCI_ACT	SCI_ACT_A SCI_THING
 SCI_ACT	SCI_ACT_A SCI_THING that SCI_EFFECT
 SCI_ACT_A	discovery of
@@ -382,28 +401,40 @@ SCI_ACT_A	development of
 SCI_ACT_A	understanding of
 SCI_ACT_A	conception of
 SCI_ACT_A	deployment of
+SCI_ACT_A	development of
 SCI_ACT_A	unification of SCI_THING and
 SCI_ACT_A	exploration of
-SCI_ACH	SCI_VERBED SCI_THING
-SCI_ACH	SCI_VERBED SCI_THING (which SCI_EFFECT )
-SCI_ACH_PRES	SCI_VERBING SCI_THING
-SCI_ACH_PRES	SCI_VERBING SCI_THING (which SCI_EFFECT )
+SCI_ACT_A	refinement of
+SCI_ACT_A	synthesis of
+SCI_ACH	SCI_VERBED SCI_THING_MOD
+SCI_ACH	SCI_VERBED SCI_THING_MOD (which SCI_EFFECT )
+SCI_ACH_PRES	SCI_VERBING SCI_THING_MOD
+SCI_ACH_PRES	SCI_VERBING SCI_THING_MOD (which SCI_EFFECT )
 SCI_VERBED	explored
 SCI_VERBED	harnessed
-SCI_VERBED	squared
 SCI_VERBED	invented
 SCI_VERBED	developed
 SCI_VERBED	discovered
 SCI_VERBED	refined
+SCI_VERBED	developed
+SCI_VERBED	investigated
+SCI_VERBED	analyzed
+SCI_VERBED	improved
 SCI_VERBING	harnessing
 SCI_VERBING	exploring
 SCI_VERBING	controlling
-SCI_VERBING	squaring
 SCI_VERBING	inventing
 SCI_VERBING	developing
 SCI_VERBING	discovering
 SCI_VERBING	refining
+SCI_VERBING	developing
+SCI_VERBING	architecting
+SCI_VERBING	investigating
+SCI_VERBING	improving
+SCI_VERBING	analyzing
 SCI_THING	DHTs
+SCI_THING	robots
+SCI_THING	agents
 SCI_THING	Markov models
 SCI_THING	the memory bus
 SCI_THING	SMPs
@@ -453,6 +484,7 @@ SCI_THING	fiber-optic cables
 SCI_THING	the Ethernet
 SCI_THING	RAID
 SCI_THING	802.11 mesh networks
+SCI_THING_MOD	SCI_THING CITATION_SOMETIMES
 SCI_RESPONSE	yes
 SCI_RESPONSE	no
 SCI_RESPONSE	it is
@@ -463,9 +495,9 @@ SCI_RESPONSE	the answer is yes
 SCI_RESPONSE	yes, but only in theory
 SCI_RESPONSE	yes, but with low probability
 SCI_EFFECT	made SCI_VERBING and possibly SCI_VERBING TOPIC a reality
-SCI_EFFECT	would allow for further study into SCI_THING
-SCI_EFFECT	paved the way for the SCI_ACT_A SCI_THING
-SCI_EFFECT	would make SCI_VERBING SCI_THING a real possibility
+SCI_EFFECT	would allow for further study into SCI_THING_MOD
+SCI_EFFECT	paved the way for the SCI_ACT_A SCI_THING_MOD
+SCI_EFFECT	would make SCI_VERBING SCI_THING_MOD a real possibility
 SCI_PERSON	chemist
 SCI_PERSON	physicist
 SCI_PERSON	information theorist
@@ -494,15 +526,7 @@ SCI_PEOPLE	researchers
 SCI_PEOPLE	stegonographers
 SCI_PEOPLE	cyberinformaticians
 SCI_FIELD	SCI_BUZZWORD_ADJ SCI_FIELD
-SCI_FIELD	SCI_MATH_ADJ SCI_FIELD
-SCI_FIELD	SCI_MATH_ADJ SCI_FIELD
-SCI_FIELD	SCI_MATH_ADJ SCI_FIELD
-SCI_FIELD	SCI_MATH_ADJ SCI_FIELD
-SCI_FIELD	SCI_MATH_ADJ SCI_FIELD
-SCI_FIELD	SCI_MATH_ADJ SCI_FIELD
-SCI_FIELD	SCI_MATH_ADJ SCI_FIELD
-SCI_FIELD	SCI_MATH_ADJ SCI_FIELD
-SCI_FIELD	SCI_MATH_ADJ SCI_FIELD
+SCI_FIELD+9	SCI_MATH_ADJ SCI_FIELD
 SCI_FIELD	hardware and architecture
 SCI_FIELD	networking
 SCI_FIELD	operating systems
@@ -534,9 +558,7 @@ SCI_COUNTRY	Soviet
 #
 # MK Addition 2/16/05 -- mathematical adjectives and adverbs
 #
-SCI_MATH_ADJ 	SCI_MATH_ADV SCI_MATH_ADJ
-SCI_MATH_ADJ 	SCI_MATH_ADV SCI_MATH_ADJ
-SCI_MATH_ADJ 	SCI_MATH_ADV SCI_MATH_ADJ
+SCI_MATH_ADJ+3  SCI_MATH_ADV SCI_MATH_ADJ
 SCI_MATH_ADJ	SCI_MATH_ADJ, SCI_MATH_ADJ
 
 SCI_MATH_ADJ	disjoint
@@ -650,7 +672,7 @@ SCI_QUOTE_COMMENT	This comment truly captures the view of the SCI_PEOPLE when co
 SCI_QUOTE_COMMENT	SCI_ADJ in this quote's SCI_COMPLEXNOUN is the SCI_MOVEMENT sentiment that LASTNAME faced in SCI_YEAR .
 SCI_QUOTE_COMMENT	The motive for saying this is SCI_ADJ when one considers that LASTNAME was a SCI_PERSON .
 SCI_QUOTE_COMMENT	Immortal words from a SCI_ADJ player in the field of TOPIC .
-SCI_QUOTE_COMMENT	Though this was written during SCI_YEAR , it's apparent that SCI_MOVEMENT ideas had begun to influence the TOPIC SCI_PEOPLE .
+SCI_QUOTE_COMMENT	Though this was written during SCI_YEAR , it's apparent that SCI_MOVEMENT ideas had begun to influence the TOPIC SCI_PEOPLE  XXX
 SCI_QUOTE_SOURCE	( SCI_QUOTE_NAME SCI_QUOTE_NUMBER )
 SCI_QUOTE_NAME	Spock
 SCI_QUOTE_NAME	Coyne
@@ -817,9 +839,7 @@ EXP_WHOSE	CERN's
 EXP_WHOSE	DARPA's
 EXP_WHOSE	the NSA's
 EXP_WHOSE	the KGB's
-EXP_WHOSE	our
-EXP_WHOSE	our
-EXP_WHOSE	our
+EXP_WHOSE+3	our
 EXP_WHOSE	Intel's
 
 EXP	EXP_TYPE on EXP_WHOSE EXP_WHERE
@@ -827,8 +847,7 @@ EXP	EXP_TYPE on EXP_WHOSE EXP_WHERE
 
 EVAL_SEC_BODY		EVAL_SEC_BODY_P_LIST
 EVAL_SEC_BODY_P_LIST	EVAL_SEC_BODY_P
-EVAL_SEC_BODY_P_LIST 	EVAL_SEC_BODY_P_LIST EVAL_SEC_BODY_P
-EVAL_SEC_BODY_P_LIST 	EVAL_SEC_BODY_P_LIST EVAL_SEC_BODY_P
+EVAL_SEC_BODY_P_LIST+2 	EVAL_SEC_BODY_P_LIST EVAL_SEC_BODY_P
 
 #EVAL_SEC_BODY_P EVAL_SEC_BODY_P_TOPIC EVAL_SEC_BODY_P_BODY EVAL_SEC_BODY_P_CLOSE
 EVAL_SEC_BODY_P_TOPIC	EVAL_SEC_BODY_P_TOPIC_LEADIN EVAL_SEC_BODY_P_FINDING
@@ -840,23 +859,18 @@ EVAL_SEC_BODY_P_TOPIC_LEADIN We were suprised to discover that
 EVAL_SEC_BODY_P_TOPIC_LEADIN As with
 
 EVAL_SEC_BODY_P	{
-EVAL_ACTION. LIT_FIRST EVAL_MOD XXX 
+EVAL_ACTION XXX LIT_FIRST EVAL_MOD XXX 
 LIT_MIDDLE_TWO EVAL_MOD XXX LIT_MIDDLE_3 EVAL_MOD XXX
 EVAL_SEC_BODY_P_REST
 }
 
 EVAL_SEC_BODY_P_REST	
-EVAL_SEC_BODY_P_REST  LIT_LAST_OR_MIDDLE EVAL_MOD.
-EVAL_SEC_BODY_P_REST  LIT_MIDDLE EVAL_MOD XXX LIT_LAST EVAL_MOD.
-EVAL_SEC_BODY_P_REST  LIT_MIDDLE EVAL_MOD XXX LIT_MIDDLE EVAL_MOD XXX LIT_LAST EVAL_MOD.
+EVAL_SEC_BODY_P_REST  LIT_LAST_OR_MIDDLE EVAL_MOD XXX
+EVAL_SEC_BODY_P_REST  LIT_MIDDLE EVAL_MOD XXX LIT_LAST EVAL_MOD XXX
+EVAL_SEC_BODY_P_REST  LIT_MIDDLE EVAL_MOD XXX LIT_MIDDLE EVAL_MOD XXX LIT_LAST EVAL_MOD XXX
 
 
-EVAL_WHO 	we
-EVAL_WHO 	we
-EVAL_WHO 	we
-EVAL_WHO 	we
-EVAL_WHO 	we
-EVAL_WHO 	we
+EVAL_WHO+6 	we
 EVAL_WHO 	SCI_COUNTRY SCI_PEOPLE
 EVAL_WHO 	SCI_PEOPLE
 
@@ -1041,7 +1055,7 @@ EVAL_MOD_PASSIVE_ACTION HARDWARE was removed from
 
 ######### Units/Graphs ##########
 
-SCI_CAPTION See Figure~\ref{LATEX_FIG_LABEL_REF}.
+SCI_CAPTION See Figure~\ref{LATEX_FIG_LABEL_REF} XXX
 
 EVAL_UNIT MB/s
 EVAL_UNIT ms
@@ -1071,7 +1085,7 @@ EVAL_MEASUREMENT_UM power
 EVAL_MEASUREMENT_UM seek time
 EVAL_MEASUREMENT_UM complexity
 EVAL_MEASUREMENT_UM block size
-EVAL_MEASUREMENT_UM popularity of SCI_THING
+EVAL_MEASUREMENT_UM popularity of SCI_THING_MOD
 EVAL_MEASUREMENT_UM sampling rate
 EVAL_MEASUREMENT_UM instruction rate
 EVAL_MEASUREMENT_UM energy
@@ -1095,21 +1109,11 @@ GRAPH_Y_AXIS GRAPH_AXIS
 
 GRAPH_X_AXIS GRAPH_AXIS
 
-GRAPH_TYPE GRAPH_TYPE_SCATTER1
-GRAPH_TYPE GRAPH_TYPE_SCATTER1
-GRAPH_TYPE GRAPH_TYPE_SCATTER2
-GRAPH_TYPE GRAPH_TYPE_SCATTER2
-GRAPH_TYPE GRAPH_TYPE_CURVE1
-GRAPH_TYPE GRAPH_TYPE_CURVE1
-GRAPH_TYPE GRAPH_TYPE_CURVE1
-GRAPH_TYPE GRAPH_TYPE_CURVE1
-GRAPH_TYPE GRAPH_TYPE_CURVE1
-GRAPH_TYPE GRAPH_TYPE_CURVE2
-GRAPH_TYPE GRAPH_TYPE_CURVE2
-GRAPH_TYPE GRAPH_TYPE_CURVE2
-GRAPH_TYPE GRAPH_TYPE_CURVE2
-GRAPH_TYPE GRAPH_TYPE_CURVE4
-GRAPH_TYPE GRAPH_TYPE_CURVE4
+GRAPH_TYPE+2 GRAPH_TYPE_SCATTER1
+GRAPH_TYPE+2 GRAPH_TYPE_SCATTER2
+GRAPH_TYPE+5 GRAPH_TYPE_CURVE1
+GRAPH_TYPE+4 GRAPH_TYPE_CURVE2
+GRAPH_TYPE+2 GRAPH_TYPE_CURVE4
 GRAPH_TYPE GRAPH_TYPE_CURVE10
 GRAPH_TYPE GRAPH_TYPE_BARGRAPH1
 GRAPH_TYPE GRAPH_TYPE_CDF1
@@ -1195,26 +1199,10 @@ GRAPH_LOG set log xy 10
 GRAPH_LOG set log x 2
 GRAPH_LOG set log y 2
 GRAPH_LOG set log xy 2
-GRAPH_LOG
-GRAPH_LOG
-GRAPH_LOG
-GRAPH_LOG
-GRAPH_LOG
-GRAPH_LOG
-GRAPH_LOG
-GRAPH_LOG
-GRAPH_LOG
-GRAPH_LOG
-GRAPH_LOG
-GRAPH_LOG
-GRAPH_LOG
-GRAPH_LOG
+GRAPH_LOG+14
 
 GRAPH_ERRORS errorbars
-GRAPH_ERRORS
-GRAPH_ERRORS
-GRAPH_ERRORS
-GRAPH_ERRORS
+GRAPH_ERRORS+4
 
 GRAPH_CURVE_LABEL title 'NETWORK_TYPE'
 GRAPH_CURVE_LABEL title 'SCI_THING'
@@ -1282,10 +1270,9 @@ LATEX_FIG_LABEL_REF fig:labelNEWFIGLABEL#
 NEWFIGLABEL\+
 NEWFIGLABEL\#
 
-CITATION \cite{cite:CITATIONLABEL+}
-CITATION \cite{cite:CITATIONLABEL+}
-CITATION \cite{cite:CITATIONLABEL+}
-CITATION \cite{cite:CITATIONLABEL+}
+CITATION_SOMETIMES CITATION
+CITATION_SOMETIMES+20
+CITATION+4 \cite{cite:CITATIONLABEL+}
 CITATION \cite{cite:CITATIONLABEL#}
 CITATIONLABEL\+
 CITATIONLABEL\#
@@ -1320,23 +1307,13 @@ CITE_YEAR 1995
 CITE_YEAR 1996
 CITE_YEAR 1997
 CITE_YEAR 1998
-CITE_YEAR 1999
-CITE_YEAR 2000
-CITE_YEAR 2001
-CITE_YEAR 2002
-CITE_YEAR 2003
-CITE_YEAR 2004
-CITE_YEAR 2005
-CITE_YEAR 1999
-CITE_YEAR 2000
-CITE_YEAR 2001
-CITE_YEAR 2002
-CITE_YEAR 2003
-CITE_YEAR 2004
-CITE_YEAR 2005
-CITE_YEAR 2003
-CITE_YEAR 2004
-CITE_YEAR 2005
+CITE_YEAR+2 1999
+CITE_YEAR+2 2000
+CITE_YEAR+3 2001
+CITE_YEAR+3 2002
+CITE_YEAR+4 2003
+CITE_YEAR+4 2004
+CITE_YEAR+4 2005
 
 BIBTEX_ENTRY {
 
