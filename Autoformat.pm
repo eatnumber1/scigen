@@ -535,7 +535,7 @@ sub ensentence {
 		return uc $str
 	}
 	unless ($str =~ /[a-z0-9].*[A-Z]|[A-Z].*[a-z0-9]/ or 
-		$str =~ /^[A-Z]+/) {
+		$str =~ /^\(?\{?[A-Z]+\}?\)?/) {
 		$str = lc $str;
 	}
 	if ($eos) {
