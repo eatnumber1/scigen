@@ -11,6 +11,12 @@ SCIPAPER_LATEX {
 
  SCI_INTRO
 
+ SCI_BACK
+
+ SCI_MODEL
+
+ SCI_IMPL
+
  SCI_EVAL
 
  LATEX_FIGURE
@@ -18,6 +24,12 @@ SCIPAPER_LATEX {
  LATEX_FIGURE
 
  LATEX_FIGURE
+
+ SCI_DISC
+
+ SCI_RELWORK
+
+ SCI_CONCL
 
  LATEX_FOOTER
 
@@ -195,10 +207,10 @@ SCI_INTRO_PARAGRAPH_GENERIC SCI_INTRO_GENERIC_FIRST SCI_INTRO_GENERIC_MID_ANY SC
 
 SCI_INTRO_PARAGRAPH_FINAL SCI_IPF_ORG SCI_IPF_FIRST SCI_IPF_MID SCI_IPF_FINAL
 
-SCI_IPF_ORG+3 The rest of this paper is organized as follows.
-SCI_IPF_ORG We proceed as follows.
-SCI_IPF_ORG The rest of the paper proceeds as follows.
-SCI_IPF_ORG The roadmap of the paper is as follows.
+SCI_IPF_ORG+3 the rest of this paper is organized as follows.
+SCI_IPF_ORG we proceed as follows.
+SCI_IPF_ORG the rest of the paper proceeds as follows.
+SCI_IPF_ORG the roadmap of the paper is as follows.
 
 SCI_IPF_FIRST LIT_FIRST we motivate the need for SCI_THING_MOD.
 
@@ -384,11 +396,11 @@ SCI_GENERIC_NOUN+2 SCI_THING_MOD
 SCI_GENERIC_NOUN the SCI_ACT
 
 SCI_INTRO_THESIS SCI_IN_THIS_PAPER, SCI_GENERIC_THESIS XXX
-SCI_INTRO_THESIS In order to SCI_SOLVE_CLAUSE, SCI_GENERIC_THESIS XXX
-SCI_INTRO_THESIS We SCI_PRESENT_VERB SCI_OVERALL_THESIS_THING XXX
+SCI_INTRO_THESIS in order to SCI_SOLVE_CLAUSE, SCI_GENERIC_THESIS XXX
+SCI_INTRO_THESIS we SCI_PRESENT_VERB SCI_OVERALL_THESIS_THING XXX
 SCI_INTRO_THESIS SCI_IN_THIS_PAPER SCI_GENERIC_THESIS XXX
 SCI_INTRO_THESIS SCI_GENERIC_THESIS XXX
-SCI_INTRO_THESIS Our focus SCI_IN_THIS_PAPER is not on whether SCI_OVERALL_THESIS_PROVE, but rather on SCI_PRESENT_VERBING SCI_OVERALL_THESIS_THING XXX
+SCI_INTRO_THESIS our focus SCI_IN_THIS_PAPER is not on whether SCI_OVERALL_THESIS_PROVE, but rather on SCI_PRESENT_VERBING SCI_OVERALL_THESIS_THING XXX
 
 SCI_GENERIC_THESIS we SCI_PROVE_VERB that SCI_OVERALL_THESIS_PROVE
 SCI_GENERIC_THESIS we use SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN to SCI_PROVE_VERB that SCI_OVERALL_THESIS_PROVE
@@ -427,7 +439,7 @@ SCI_INTRO_GENERIC_FIRST SCI_PEOPLE LIT_OFTEN SCI_VERB SCI_GENERIC_NOUN in the pl
 SCI_INTRO_GENERIC_FIRST SCI_BUZZWORD_ADJ SCI_SYSTEM_PL are particularly SCI_ADJ when it comes to SCI_GENERIC_NOUN XXX
 SCI_INTRO_GENERIC_FIRST To our knowledge, our work SCI_IN_THIS_PAPER marks the first SCI_SYSTEM SCI_VERBED specifically for SCI_GENERIC_NOUN XXX
 SCI_INTRO_GENERIC_FIRST LIT_REVERSAL, this SCI_APPROACH is fraught with difficulty, largely due to SCI_GENERIC_NOUN XXX
-SCI_INTRO_GENERIC_FIRST We question the need for SCI_GENERIC_NOUN XXX
+SCI_INTRO_GENERIC_FIRST we question the need for SCI_GENERIC_NOUN XXX
 
 SCI_INTRO_GENERIC_CLOSING this combination of properties has not yet been SCI_VERBED in RELATED work XXX
 SCI_INTRO_GENERIC_CLOSING combined with SCI_GENERIC_NOUN, WHAT SCI_VERBS SCI_OVERALL_THESIS_THING XXX
@@ -463,6 +475,78 @@ SCI_CONTR_ANY SCI_CONTR_4
 SCI_CONTR_ANY SCI_CONTR_2
 
 #############################################################################
+####### Background/Overview #######
+#############################################################################
+
+BACK_SEC_LATEX_HEADER+3		\section{Background}
+BACK_SEC_LATEX_HEADER+3		\section{Overview}
+BACK_SEC_LATEX_HEADER		\section{Overview of SCI_THING}
+BACK_SEC_LATEX_HEADER		\section{A Brief Primer on SCI_THING}
+
+SCI_BACK {
+
+BACK_SEC_LATEX_HEADER
+
+}
+
+#############################################################################
+####### Model/Design #######
+#############################################################################
+
+MODEL_SEC_LATEX_HEADER	\section{Model}
+MODEL_SEC_LATEX_HEADER	\section{Design}
+MODEL_SEC_LATEX_HEADER	\section{Framework}
+MODEL_SEC_LATEX_HEADER	\section{Principles}
+MODEL_SEC_LATEX_HEADER	\section{Methodology}
+MODEL_SEC_LATEX_HEADER	\section{SCI_SYSTEM SCI_VERBION}
+MODEL_SEC_LATEX_HEADER	\section{SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN}
+
+SCI_MODEL {
+
+MODEL_SEC_LATEX_HEADER
+
+}
+
+#############################################################################
+####### Implementation #######
+#############################################################################
+
+IMPL_SEC_LATEX_HEADER+10	\section{Implementation}
+IMPL_SEC_LATEX_HEADER		\section{SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN}
+
+SCI_IMPL {
+
+IMPL_SEC_LATEX_HEADER
+
+}
+
+#############################################################################
+####### Discussion #######
+#############################################################################
+
+DISC_SEC_LATEX_HEADER+4		\section{Discussion}
+DISC_SEC_LATEX_HEADER		\section{Summary}
+DISC_SEC_LATEX_HEADER		\section{Analysis}
+
+SCI_DISC {
+
+DISC_SEC_LATEX_HEADER
+
+}
+
+#############################################################################
+####### Related Work #######
+#############################################################################
+
+RELWORK_SEC_LATEX_HEADER	\section{Related Work}
+
+SCI_RELWORK {
+
+RELWORK_SEC_LATEX_HEADER
+
+}
+
+#############################################################################
 ####### Eval #######
 #############################################################################
 
@@ -480,11 +564,11 @@ SCI_CONTR_ANY SCI_CONTR_2
 
 EVAL_SEC_LATEX_HEADER		\section{Evaluation and Performance Results}
 EVAL_SEC_LATEX_HEADER		\section{Performance Results}
-EVAL_SEC_LATEX_HEADER		\section{Evaluation}
+EVAL_SEC_LATEX_HEADER+5		\section{Evaluation}
 EVAL_SEC_LATEX_HEADER		\section{Experimental Evaluation}
 EVAL_SEC_LATEX_HEADER		\section{Experimental Evaluation and Analysis}
 EVAL_SEC_LATEX_HEADER		\section{Results and Analysis}
-EVAL_SEC_LATEX_HEADER		\section{Results}
+EVAL_SEC_LATEX_HEADER+5		\section{Results}
 
 SCI_EVAL {
 
@@ -581,8 +665,8 @@ EVAL_SEC_BODY_P_TOPIC	EVAL_SEC_BODY_P_TOPIC_LEADIN EVAL_SEC_BODY_P_FINDING
 
 EVAL_SEC_BODY_P_FINDING	a SIMUL_ADJ SIMUL_TYPE SIMUL_VERB SIMUL_SYSTEM 
 
-EVAL_SEC_BODY_P_TOPIC_LEADIN We were suprised to discover that
-EVAL_SEC_BODY_P_TOPIC_LEADIN As with
+EVAL_SEC_BODY_P_TOPIC_LEADIN we were suprised to discover that
+EVAL_SEC_BODY_P_TOPIC_LEADIN as with
 
 EVAL_SEC_BODY_P	{
 EVAL_ACTION EVAL_MOD_XXX LIT_FIRST EVAL_MOD EVAL_MOD_XXX 
@@ -600,13 +684,13 @@ EVAL_SEC_FILLER	Configurations without this modification showed DIFFERENT EVAL_M
 EVAL_SEC_FILLER	With this change, we noted DIFFERENT PERFORMANCE IMPROVEMENT
 EVAL_SEC_FILLER	This step flies in the face of conventional wisdom, but is INSTRUMENTAL to our results
 EVAL_SEC_FILLER	To find the required HARDWARE_ITEMS, we combed eBay and tag sales
-EVAL_SEC_FILLER	We struggled to amass the necessary HARDWARE_ITEMS
-EVAL_SEC_FILLER	The HARDWARE_ITEMS described here explain our UNIQUE results.
-EVAL_SEC_FILLER	Note that only experiments on our EXP_WHERE (and not on our EXP_WHERE) followed this pattern
-EVAL_SEC_FILLER	We only NOTED these results when EMULATING_IT
+EVAL_SEC_FILLER	we struggled to amass the necessary HARDWARE_ITEMS
+EVAL_SEC_FILLER	the HARDWARE_ITEMS described here explain our UNIQUE results.
+EVAL_SEC_FILLER	note that only experiments on our EXP_WHERE (and not on our EXP_WHERE) followed this pattern
+EVAL_SEC_FILLER	we only NOTED these results when EMULATING_IT
 EVAL_SEC_FILLER	EVAL_DONE_DIFFERENT
 
-EVAL_DONE_DIFFERENT Had we EMULATED our EXP_WHERE, as opposed to EMULATING_IT, we would have seen DIFFERENT results
+EVAL_DONE_DIFFERENT had we EMULATED our EXP_WHERE, as opposed to EMULATING_IT, we would have seen DIFFERENT results
 
 EVAL_MOD_XXX+3	XXX
 EVAL_MOD_XXX	.  EVAL_SEC_FILLER.
@@ -626,7 +710,7 @@ THE_WILD	a laboratory setting
 THE_WILD	a controlled environment
 THE_WILD	a chaotic spatio-temporal environment
 
-EVAL_WHO+25 	We
+EVAL_WHO+25 	we
 EVAL_WHO 	SCI_COUNTRY SCI_PEOPLE
 EVAL_WHO 	SCI_PEOPLE
 
@@ -825,6 +909,19 @@ EVAL_MOD_ACTION		removed HARDWARE from
 EVAL_MOD_ACTION 	MULTIPLE_VERBED the HARDWARE_PROP_OR_MEASUREMENT of
 EVAL_MOD_PASSIVE_ACTION HARDWARE was added to
 EVAL_MOD_PASSIVE_ACTION HARDWARE was removed from
+
+#############################################################################
+####### Conclusion #######
+#############################################################################
+
+CONCL_SEC_LATEX_HEADER+10	\section{Conclusion}
+CONCL_SEC_LATEX_HEADER		\section{Conclusions}
+
+SCI_CONCL {
+
+CONCL_SEC_LATEX_HEADER
+
+}
 
 #############################################################################
 ####### Nouns #######
@@ -1443,12 +1540,12 @@ LIT_BASED_ON	copied from
 LIT_BASED_ON	built on
 
 FILLER_SENTENCE+10	FILLER_SURPRISE
-FILLER_SENTENCE		Our SCI_GOAL here is to set the record straight
-FILLER_SENTENCE		This is an important point to understand
-FILLER_SENTENCE		This is INSTRUMENTAL to the success of our work
-FILLER_SENTENCE		We LIT_OMIT WHAT_PL OMIT_WHY
-FILLER_SENTENCE		Of course, this is not always the case
-FILLER_SENTENCE		This follows from the SCI_ACT CITATION_SOMETIMES
+FILLER_SENTENCE		our SCI_GOAL here is to set the record straight
+FILLER_SENTENCE		this is an important point to understand
+FILLER_SENTENCE		this is INSTRUMENTAL to the success of our work
+FILLER_SENTENCE		we LIT_OMIT WHAT_PL OMIT_WHY
+FILLER_SENTENCE		of course, this is not always the case
+FILLER_SENTENCE		this follows from the SCI_ACT CITATION_SOMETIMES
 
 FILLER_SURPRISE		LIT_ALTHOUGH WHAT FILLER_SURPRISE_1, it FILLER_SURPRISE_2
 FILLER_SURPRISE		WHAT FILLER_SURPRISE_1 but FILLER_SURPRISE_2
