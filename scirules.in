@@ -19,12 +19,6 @@ SCIPAPER_LATEX {
 
  SCI_EVAL
 
- LATEX_FIGURE
-
- LATEX_FIGURE
-
- LATEX_FIGURE
-
  SCI_DISC
 
  SCI_RELWORK
@@ -88,6 +82,8 @@ SCI_AUTHORS FIRSTNAME LASTNAME
 ####### Abstract #######
 #############################################################################
 
+SCI_ABSTRACT_HEADER \section*{Abstract}
+
 SCI_ABSTRACT {
 
  SCI_ABSTRACT_HEADER 
@@ -109,6 +105,8 @@ SCI_AB_A_END , which embodies the SCI_ADJ principles of SCI_FIELD
 #############################################################################
 ####### Intro #######
 #############################################################################
+
+SCI_INTRO_HEADER \section{Introduction}
 
 SCI_INTRO {
 
@@ -224,107 +222,6 @@ SCI_IPF_MID_REL we place our work in context with the RELATED work in this area
 
 
 SCI_IPF_FINAL SCI_B_LEADIN_C we conclude.
-
-SCI_PROVE_VERB demonstrate
-SCI_PROVE_VERB argue
-SCI_PROVE_VERB prove
-SCI_PROVE_VERB show
-SCI_PROVE_VERB disprove
-SCI_PROVE_VERBING demonstrating
-SCI_PROVE_VERBING arguing
-SCI_PROVE_VERBING proving
-SCI_PROVE_VERBING showing
-SCI_PROVE_VERBING disproving
-
-SCI_PRESENT_VERB present
-SCI_PRESENT_VERB introduce
-SCI_PRESENT_VERB propose
-SCI_PRESENT_VERB motivate
-SCI_PRESENT_VERB construct
-SCI_PRESENT_VERB describe
-SCI_PRESENT_VERB explore
-SCI_PRESENT_VERBING presenting
-SCI_PRESENT_VERBING introducing
-SCI_PRESENT_VERBING proposing
-SCI_PRESENT_VERBING motivating
-SCI_PRESENT_VERBING constructing
-SCI_PRESENT_VERBING describing
-SCI_PRESENT_VERBING exploring
-
-SCI_STATUS_ADJ famous
-SCI_STATUS_ADJ well-known
-SCI_STATUS_ADJ little-known
-SCI_STATUS_ADJ acclaimed
-SCI_STATUS_ADJ much-tauted
-SCI_STATUS_ADJ infamous
-SCI_STATUS_ADJ foremost
-
-SCI_PROBLEM_SOLVE solve
-SCI_PROBLEM_SOLVE overcome
-SCI_PROBLEM_SOLVE surmount
-SCI_PROBLEM_SOLVE answer
-SCI_PROBLEM_SOLVE fix
-SCI_PROBLEM_SOLVE address
-SCI_PROBLEM_SOLVED solved
-SCI_PROBLEM_SOLVED overcame
-SCI_PROBLEM_SOLVED surmounted
-SCI_PROBLEM_SOLVED answered
-SCI_PROBLEM_SOLVED fixed
-SCI_PROBLEM_SOLVED addressed
-
-SCI_PROBLEM problem
-SCI_PROBLEM issue
-SCI_PROBLEM obstacle
-SCI_PROBLEM grand challenge
-SCI_PROBLEM challenge
-
-SCI_GOAL_ACHIEVE achieve
-SCI_GOAL_ACHIEVE realize
-SCI_GOAL_ACHIEVE fulfill
-SCI_GOAL_ACHIEVE accomplish
-
-SCI_GOAL goal
-SCI_GOAL mission
-SCI_GOAL objective
-SCI_GOAL purpose
-
-SCI_SOLVE_CLAUSE SCI_PROBLEM_SOLVE this SCI_PROBLEM
-SCI_SOLVE_CLAUSE SCI_GOAL_ACHIEVE this SCI_GOAL
-
-SCI_GOAL_OR_PROBLEM SCI_PROBLEM
-SCI_GOAL_OR_PROBLEM SCI_GOAL
-
-SCI_APPROACH approach
-SCI_APPROACH solution
-SCI_APPROACH method
-SCI_APPROACH_PL approaches
-SCI_APPROACH_PL solutions
-SCI_APPROACH_PL methods
-
-SCI_DRAWBACK drawback
-SCI_DRAWBACK disadvantage
-SCI_DRAWBACK shortcoming
-SCI_DRAWBACK flaw
-
-SCI_CAN+5	can
-SCI_CAN+5	cannot
-SCI_CAN		should not
-SCI_CAN		should
-SCI_CAN		might
-SCI_CAN		is able to
-SCI_CAN		may be able to
-SCI_CAN		is not able to
-SCI_CAN		will not able to
-SCI_CAN		will be able to
-
-SCI_IN_THIS_PAPER in this paper
-SCI_IN_THIS_PAPER in this position paper
-SCI_IN_THIS_PAPER in this work
-SCI_IN_THIS_PAPER in our research
-SCI_IN_THIS_PAPER here
-
-SCI_ABSTRACT_HEADER \section*{Abstract}
-SCI_INTRO_HEADER \section{Introduction}
 
 SCI_INTRO_A	Many SCI_PEOPLE would agree that, had it not been for TOPIC , the SCI_ACT might never have occurred XXX
 SCI_INTRO_A	SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN and SCI_THING_MOD have garnered LIT_GREAT interest from both SCI_PEOPLE and SCI_PEOPLE in the last several years XXX
@@ -497,6 +394,7 @@ MODEL_SEC_LATEX_HEADER	\section{Model}
 MODEL_SEC_LATEX_HEADER	\section{Design}
 MODEL_SEC_LATEX_HEADER	\section{Framework}
 MODEL_SEC_LATEX_HEADER	\section{Principles}
+MODEL_SEC_LATEX_HEADER	\section{Architecture}
 MODEL_SEC_LATEX_HEADER	\section{Methodology}
 MODEL_SEC_LATEX_HEADER	\section{SCI_SYSTEM SCI_VERBION}
 MODEL_SEC_LATEX_HEADER	\section{SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN}
@@ -542,9 +440,37 @@ RELWORK_SEC_LATEX_HEADER	\section{Related Work}
 
 SCI_RELWORK {
 
-RELWORK_SEC_LATEX_HEADER
+ RELWORK_SEC_LATEX_HEADER
+
+ RELWORK_INTRO_P
 
 }
+
+RELWORK_CITATION+2 CITATION
+RELWORK_CITATION CITATION_MULTI
+RELWORK_CITATION+2
+
+RELWORK_XXX RELWORK_CITATION.
+
+RELWORK_INTRO_P RELWORK_INTRO_1
+
+RELWORK_INTRO_1 in this section, we discuss RELATED research into SCI_GENERIC_NOUN, SCI_GENERIC_NOUN, and SCI_GENERIC_NOUN RELWORK_XXX
+RELWORK_INTRO_1 in this section, we consider alternative SCI_SYSTEM_PL as well as RELATED work.
+RELWORK_INTRO_1 we now consider RELATED work.
+RELWORK_INTRO_1 in designing our SCI_SYSTEM, we drew on RELATED work from a number of distinct areas.
+RELWORK_INTRO_1+10 RELWORK_INTRO
+
+RELWORK_INTRO while we know of no other studies on SCI_GENERIC_NOUN, several efforts have been made to SCI_VERB SCI_THING_MOD RELWORK_XXX
+RELWORK_INTRO we now compare our SCI_APPROACH to RELATED SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN SCI_APPROACH_PL RELWORK_XXX
+RELWORK_INTRO our SCI_APPROACH is related to research into SCI_GENERIC_NOUN, SCI_GENERIC_NOUN, and SCI_GENERIC_NOUN RELWORK_XXX
+RELWORK_INTRO the SCI_VERBION of SCI_GENERIC_NOUN has been widely studied RELWORK_XXX
+RELWORK_INTRO LIT_ALTHOUGH we are the first to SCI_PRESENT_VERB SCI_GENERIC_NOUN in this light, much RELATED work has been devoted to SCI_ACT  RELWORK_XXX
+RELWORK_INTRO our SCI_SYSTEM builds on RELATED work in SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN and SCI_FIELD RELWORK_XXX
+RELWORK_INTRO the concept of SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN has been SCI_VERBED before in the literature RELWORK_XXX
+RELWORK_INTRO a major source of our inspiration is early work SCI_BY_WHO_SOMETIMES on SCI_GENERIC_NOUN RELWORK_XX
+RELWORK_INTRO a number of RELATED SCI_SYSTEM_PL have SCI_VERBED SCI_GENERIC_NOUN, either for the SCI_ACT RELWORK_CITATION or for the SCI_ACT RELWORK_XXX
+RELWORK_INTRO Several SCI_BUZZWORD_ADJ and SCI_BUZZWORD_ADJ SCI_SYSTEM_PL have bene proposed in the literature RELWORK_XXX
+
 
 #############################################################################
 ####### Eval #######
@@ -572,9 +498,15 @@ EVAL_SEC_LATEX_HEADER+5		\section{Results}
 
 SCI_EVAL {
 
-EVAL_SEC_LATEX_HEADER
+ EVAL_SEC_LATEX_HEADER
 
-EVAL_SEC_BODY_P
+ EVAL_SEC_BODY_P
+
+ LATEX_FIGURE
+
+ LATEX_FIGURE
+
+ LATEX_FIGURE
 
 }
 
@@ -937,6 +869,32 @@ SCI_BUZZWORD_NOUN information
 SCI_BUZZWORD_NOUN models
 SCI_BUZZWORD_NOUN courseware
 
+SCI_PROBLEM problem
+SCI_PROBLEM issue
+SCI_PROBLEM obstacle
+SCI_PROBLEM grand challenge
+SCI_PROBLEM challenge
+
+SCI_GOAL goal
+SCI_GOAL mission
+SCI_GOAL objective
+SCI_GOAL purpose
+
+SCI_GOAL_OR_PROBLEM SCI_PROBLEM
+SCI_GOAL_OR_PROBLEM SCI_GOAL
+
+SCI_APPROACH approach
+SCI_APPROACH solution
+SCI_APPROACH method
+SCI_APPROACH_PL approaches
+SCI_APPROACH_PL solutions
+SCI_APPROACH_PL methods
+
+SCI_DRAWBACK drawback
+SCI_DRAWBACK disadvantage
+SCI_DRAWBACK shortcoming
+SCI_DRAWBACK flaw
+
 WHAT_PL			these results
 WHAT_PL			these algorithms
 WHAT_PL			a more thorough discussion
@@ -1209,6 +1167,15 @@ STAT_ADJ		expected
 STAT_ADJ		average
 STAT_ADJ		10th-percentile
 
+SCI_STATUS_ADJ famous
+SCI_STATUS_ADJ well-known
+SCI_STATUS_ADJ little-known
+SCI_STATUS_ADJ acclaimed
+SCI_STATUS_ADJ much-tauted
+SCI_STATUS_ADJ infamous
+SCI_STATUS_ADJ foremost
+
+
 #
 # MK Addition 2/16/05 -- mathematical adjectives and adverbs
 #
@@ -1249,7 +1216,9 @@ SCI_MATH_ADV	computationally
 SCI_MATH_ADV	oportunistically
 SCI_MATH_ADV	lazily
 
+#############################################################################
 ####### Flow control #######
+#############################################################################
 
 SCI_B_LEADIN_C	Finally, 
 SCI_B_LEADIN_C	Ultimately, 
@@ -1333,6 +1302,50 @@ LIT_OMIT	leave out
 
 SUPPORTED		supported
 SUPPORTED		buffetted
+
+SCI_PROVE_VERB demonstrate
+SCI_PROVE_VERB argue
+SCI_PROVE_VERB prove
+SCI_PROVE_VERB show
+SCI_PROVE_VERB disprove
+SCI_PROVE_VERBING demonstrating
+SCI_PROVE_VERBING arguing
+SCI_PROVE_VERBING proving
+SCI_PROVE_VERBING showing
+SCI_PROVE_VERBING disproving
+
+SCI_PRESENT_VERB present
+SCI_PRESENT_VERB introduce
+SCI_PRESENT_VERB propose
+SCI_PRESENT_VERB motivate
+SCI_PRESENT_VERB construct
+SCI_PRESENT_VERB describe
+SCI_PRESENT_VERB explore
+SCI_PRESENT_VERBING presenting
+SCI_PRESENT_VERBING introducing
+SCI_PRESENT_VERBING proposing
+SCI_PRESENT_VERBING motivating
+SCI_PRESENT_VERBING constructing
+SCI_PRESENT_VERBING describing
+SCI_PRESENT_VERBING exploring
+
+SCI_PROBLEM_SOLVE solve
+SCI_PROBLEM_SOLVE overcome
+SCI_PROBLEM_SOLVE surmount
+SCI_PROBLEM_SOLVE answer
+SCI_PROBLEM_SOLVE fix
+SCI_PROBLEM_SOLVE address
+SCI_PROBLEM_SOLVED solved
+SCI_PROBLEM_SOLVED overcame
+SCI_PROBLEM_SOLVED surmounted
+SCI_PROBLEM_SOLVED answered
+SCI_PROBLEM_SOLVED fixed
+SCI_PROBLEM_SOLVED addressed
+
+SCI_GOAL_ACHIEVE achieve
+SCI_GOAL_ACHIEVE realize
+SCI_GOAL_ACHIEVE fulfill
+SCI_GOAL_ACHIEVE accomplish
 
 SCI_VERB_PL	interact
 SCI_VERB_PL	collaborate
@@ -1525,9 +1538,30 @@ PROBE_VERB	understand
 ####### Phrases and fillers #######
 #############################################################################
 
-XXX+15		.
-XXX		CITATION.
-XXX		. FILLER_SENTENCE.
+XXX+60		.
+XXX+4		CITATION.
+XXX		CITATION_MULTI.
+XXX+4		. FILLER_SENTENCE.
+
+SCI_CAN+5	can
+SCI_CAN+5	cannot
+SCI_CAN		should not
+SCI_CAN		should
+SCI_CAN		might
+SCI_CAN		is able to
+SCI_CAN		may be able to
+SCI_CAN		is not able to
+SCI_CAN		will not able to
+SCI_CAN		will be able to
+
+SCI_SOLVE_CLAUSE SCI_PROBLEM_SOLVE this SCI_PROBLEM
+SCI_SOLVE_CLAUSE SCI_GOAL_ACHIEVE this SCI_GOAL
+
+SCI_IN_THIS_PAPER in this paper
+SCI_IN_THIS_PAPER in this position paper
+SCI_IN_THIS_PAPER in this work
+SCI_IN_THIS_PAPER in our research
+SCI_IN_THIS_PAPER here
 
 SCI_REACTION well-received
 SCI_REACTION adamantly opposed
@@ -2030,10 +2064,18 @@ NEWFIGLABEL\#
 ######## Citations ########
 #############################################################################
 
-CITATION_SOMETIMES CITATION
-CITATION_SOMETIMES+20
-CITATION+4 \cite{cite:CITATIONLABEL+}
-CITATION \cite{cite:CITATIONLABEL#}
+CITATION_SOMETIMES+4 CITATION
+CITATION_SOMETIMES CITATION_MULTI
+CITATION_SOMETIMES+80
+CITATION_SINGLE+4 cite:CITATIONLABEL+
+CITATION_SINGLE cite:CITATIONLABEL#
+CITATION \cite{CITATION_SINGLE}
+CITATION_MULTI+3 \cite{CITATION_SINGLE}
+CITATION_MULTI+10 \cite{CITATION_SINGLE, CITATION_SINGLE}
+CITATION_MULTI+8 \cite{CITATION_SINGLE, CITATION_SINGLE, CITATION_SINGLE}
+CITATION_MULTI+3 \cite{CITATION_SINGLE, CITATION_SINGLE, CITATION_SINGLE, CITATION_SINGLE}
+CITATION_MULTI+2 \cite{CITATION_SINGLE, CITATION_SINGLE, CITATION_SINGLE, CITATION_SINGLE, CITATION_SINGLE}
+CITATION_MULTI \cite{CITATION_SINGLE, CITATION_SINGLE, CITATION_SINGLE, CITATION_SINGLE, CITATION_SINGLE, CITATION_SINGLE, CITATION_SINGLE}
 CITATIONLABEL\+
 CITATIONLABEL\#
 

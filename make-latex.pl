@@ -31,7 +31,7 @@ while( <TEX> ) {
     }
 
     # find citations
-    while( $line =~ s/cite{([^}]*)}// ) {
+    while( $line =~ s/(cite\:\d+)// ) {
         my $citelabel = $1;
 	$citelabels{$citelabel} = 1;
     }
