@@ -10,6 +10,8 @@ use IO::File;
 use strict;
 use Data::Dumper;
 
+use vars qw [ $RE ];
+
 
 sub read_rules {
     my ($fh, $rules, $name) = @_;
@@ -42,11 +44,12 @@ sub read_rules {
     }
 }
 
+
 sub generate {
     my ($rules, $start) = @_;
-    my $in = join "|", keys %$rules;
-    my $re = qr/^(.*?)(${in})/s; 
-    my $s = expand ($rules, $re, $start);
+    my $in = join "|", sort { length ($b) <=> length ($a) } keys %$rules;
+    $RE = qr/^(.*?)(${in})/s ;
+    my $s = expand ($rules, $start);
     print "$s\n";
 }
 
@@ -57,30 +60,32 @@ sub pick_rand {
 }
 
 sub pop_first_rule {
-    my ($rules, $regex, $preamble, $input, $rule) = @_;
+    my ($rules, $preamble, $input, $rule) = @_;
 
     $$preamble = undef;
     $$rule = undef;
 
     my $ret = undef;
-    if ($$input =~ s/$regex//s) {
+    
+    if ($$input =~ s/$RE//s ) {
 	$$preamble = $1;
 	$$rule = $2;
 	return 1;
     }
+	
     return 0;
 }
 
 sub expand {
-    my ($rules, $regex, $start) = @_;
+    my ($rules, $start) = @_;
 
     my $input = pick_rand ($rules->{$start});
     my $res = "";
     my ($pre, $rule);
     my @components;
 
-    while (pop_first_rule ($rules, $regex, \$pre, \$input, \$rule)) {
-	my $ex = expand ($rules, $regex, $rule);
+    while (pop_first_rule ($rules, \$pre, \$input, \$rule)) {
+	my $ex = expand ($rules, $rule);
 	push @components, $pre if length ($pre);
 	push @components, $ex if length ($ex);
     }
@@ -107,8 +112,11 @@ if ( $filename ) {
     $filename = "STDIN";
     $fh = \*STDIN;
 }
-			 
 
+foreach my $arg (@ARGV) {
+    my ($n,$v) = split /=/, $arg;
+    push @{$dat->{$n}}, $v;
+}
 
 # run
 read_rules ($fh, $dat, $filename);
