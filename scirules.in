@@ -728,28 +728,26 @@ SCI_MATH_VERBING	pipelining
 
 
 
-SCI_ADJ	SCI_ADJ_ADV important
+SCI_ADJ	important
 SCI_ADJ	significant
 SCI_ADJ	key
-SCI_ADJ	SCI_ADJ_ADV unfortunate
-SCI_ADJ	fortuitous
-SCI_ADJ	trying
-SCI_ADJ	daunting
-SCI_ADJ	SCI_ADJ_ADV unbearable
-SCI_ADJ	foolish
-SCI_ADJ	foolhardy
-SCI_ADJ	SCI_ADJ_ADV amusing
-SCI_ADJ	disturbing
-SCI_ADJ	SCI_ADJ_ADV alarming
+SCI_ADJ	unfortunate
+SCI_ADJ	robust
+SCI_ADJ	typical
+SCI_ADJ	unproven
 SCI_ADJ	confusing
-SCI_ADJ	SCI_ADJ_ADV enlightening
-SCI_ADJ	SCI_ADJ_ADV inspiring
-SCI_ADJ	laughable
-SCI_ADJ	shocking
-SCI_ADJ	SCI_ADJ_ADV annoying
-SCI_ADJ	SCI_ADJ_ADV invigorating
-SCI_ADJ	celebrated
-SCI_ADJ	desirable
+SCI_ADJ	extensive
+SCI_ADJ	appropriate
+SCI_ADJ	confirmed
+SCI_ADJ	theoretical
+SCI_ADJ	technical
+SCI_ADJ	structured
+SCI_ADJ	natural
+SCI_ADJ	essential
+SCI_ADJ	private
+SCI_ADJ	intuitive
+SCI_ADJ practical
+SCI_ADJ compelling
 SCI_ADJ_ADV	particularly
 SCI_ADJ_ADV	dubiously
 SCI_ADJ_ADV	daringly
@@ -760,6 +758,7 @@ SCI_ADJ_ADV	predictably
 SCI_ADJ_ADV	clearly
 SCI_ADJ_ADV	obviously
 SCI_ADJ_ADV	urgently
+SCI_ADJ_ADV	compellingly
 SCI_ADV	obviously
 SCI_ADV	evidently
 SCI_ADV	clearly
