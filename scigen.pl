@@ -10,6 +10,8 @@ use IO::File;
 use strict;
 use Data::Dumper;
 
+my $debug = 0;
+
 use vars qw [ $RE ];
 
 
@@ -61,7 +63,8 @@ sub generate {
 sub pick_rand {
     my ($set) = @_;
     my $n = $#$set + 1;
-    return @$set[int (rand () * $n)];
+    my $v =  @$set[int (rand () * $n)];
+    return $v;
 }
 
 sub pop_first_rule {
@@ -85,6 +88,9 @@ sub expand {
     my ($rules, $start) = @_;
 
     my $input = pick_rand ($rules->{$start});
+    if ($debug >= 5) {
+	warn "$start -> $input\n";
+    }
     my $res = "";
     my ($pre, $rule);
     my @components;
@@ -108,7 +114,8 @@ use Getopt::Long;
 
 # parse args
 my $result = GetOptions ("filename=s" => \$filename,
-			 "start=s"    => \$start );
+			 "start=s"    => \$start,
+			 "debug=i"    => \$debug );
 
 if ( $filename ) {
     $fh = new IO::File ("<$filename");
