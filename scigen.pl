@@ -1,5 +1,11 @@
 #!/usr/bin/perl
 
+#
+# simple context-free grammar expander
+#
+# $Id$
+#
+
 use IO::File;
 use strict;
 use Data::Dumper;
@@ -81,21 +87,7 @@ sub expand {
     return  join "", @components ;
 }
 
-sub generate_inner {
-    my ($rules, $regex, $start) = @_;
-
-    while (length ($start)) {
-	$start =~ s/^(.*?)($regex)?//eos;
-	my $pre = $1;
-	my $pattern = $2;
-	print $pre;
-	if ($pattern) {
-	    $start =  pick_rand ($rules->{$2}) . $start;
-	    print "intermediate => $start\n";
-	}
-    }
-}
-
+# main
 my $dat = {} ;
 my $fh;
 my $filename;
@@ -103,6 +95,7 @@ my $start = "START";
 
 use Getopt::Long;
 
+# parse args
 my $result = GetOptions ("filename=s" => \$filename,
 			 "start=s"    => \$start );
 
@@ -116,7 +109,6 @@ if ( $filename ) {
 			 
 
 
-
+# run
 read_rules ($fh, $dat, $filename);
-
 generate ($dat, $start);
