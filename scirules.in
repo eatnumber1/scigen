@@ -18,7 +18,7 @@ SCI_TITLE SCI_ACT using TOPIC
 SCI_TITLE SCI_THING SCI_TITLE_NOT considered harmful
 SCI_TITLE Deconstructing SCI_THING
 SCI_TITLE Decoupling SCI_THING from SCI_THING in SCI_THING
-SCI_TITLE A Methodology for SCI_ACT
+SCI_TITLE A Methodology for the SCI_ACT
 
 SCI_TITLE_NOT no longer
 SCI_TITLE_NOT
@@ -40,7 +40,7 @@ SCI_INTRO {
 
  SCI_INTRO_HEADER 
 
- SCI_PARAGRAPH_A
+ SCI_INTRO_PARAGRAPH_A
 
  SCI_PARAGRAPH_B_ONE
 
@@ -49,6 +49,8 @@ SCI_INTRO {
  SCI_INTRO_PARAGRAPH_FINAL
 
 }
+	
+SCI_INTRO_PARAGRAPH_A SCI_INTRO_A SCI_A_TWO SCI_A_THREE SCI_A_FOUR
 
 SCI_INTRO_PARAGRAPH_FINAL The rest of this paper is organized as follows.  SCI_IPF_FIRST SCI_IPF_MID SCI_IPF_FINAL
 
@@ -72,6 +74,15 @@ SCI_MID_VERB show
 
 SCI_ABSTRACT_HEADER <b>Abstract</b>
 SCI_INTRO_HEADER <b>Introduction</b>
+
+SCI_INTRO_A	Many SCI_PEOPLE would agree that, had it not been for TOPIC , the SCI_ACT might never have occurred.
+SCI_INTRO_A	SCI_THING must work.
+SCI_INTRO_A	In recent years, much research has been devoted to the SCI_ACT; however, few have explored the SCI_ACT.
+SCI_INTRO_A	SCI_THING and SCI_THING, while SCI_ADJ in theory, have not until recently been considered SCI_ADJ.
+SCI_INTRO_A	The SCI_ACT is a challenge.
+SCI_INTRO_A	The SCI_ACT has SCI_VERBED SCI_THING, and current trends suggest that the SCI_ACT will soon emerge.
+SCI_INTRO_A	SCI_PEOPLE agree that TOPIC is an interesting new topic in the field of SCI_FIELD, and SCI_PEOPLE concur.
+SCI_INTRO_A	The SCI_FIELD approach to SCI_THING is defined not only by the SCI_ACT, but also by the SCI_ADJ need for SCI_THING.
 
 LIT_PARAGRAPH_BODY1	{
 LIT_MIDDLE_ONE LIT_PARAGRAPH_B 
