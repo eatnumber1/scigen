@@ -8,7 +8,7 @@ my $MARGIN = .1;
 my $XMAX = int rand 100 + 10;
 my $XMIN = $XMAX - int rand 2*$XMAX;
 
-my $NUM_POINTS_SCATTER =int rand 1000 + 100;
+my $NUM_POINTS_SCATTER = int rand 1000 + 100;
 my $NUM_POINTS_CURVE = (int rand 100) + 10;
 
 sub add_noise {
@@ -83,25 +83,30 @@ for( my $i = 0; $i < $curves; $i++ ) {
 	print GPFILE "\n";
     }
 
-    my $func = `perl scigen.pl -f functions.in -s EXPR`;
-
-    open( DAT, ">$datafile.$i" ) or die( "Couldn't write to $datafile.$i" );
-
-    foreach my $x (@x) {
+    my $num_points = 0;
+    do {
+	my $func = `perl scigen.pl -f functions.in -s EXPR`;
 	
-	my $expr = $func . " ";
-	$expr =~ s/xxx/$x/g;
-	#print "expr = $expr\n";
-	my $y = eval( $expr );
-	if( !defined $y or $y eq "NaN" ) {
-	    next;
+	open( DAT, ">$datafile.$i" ) or 
+	    die( "Couldn't write to $datafile.$i" );
+	
+	foreach my $x (@x) {
+	    
+	    my $expr = $func . " ";
+	    $expr =~ s/xxx/$x/g;
+	    #print "expr = $expr\n";
+	    my $y = eval( $expr );
+	    if( !defined $y or $y eq "NaN" ) {
+		next;
+	    }
+	    
+	    my $yn = &add_noise($y);
+	    
+	    print DAT "$x $yn\n";
+	    $num_points++;
 	}
 	
-	my $yn = &add_noise($y);
-	
-	print DAT "$x $yn\n";
-	
-    }
+    } while($num_points == 0);
 
     close( DAT );
 
