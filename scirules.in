@@ -984,6 +984,7 @@ SCI_PEOPLE	theorists
 SCI_PEOPLE	researchers
 SCI_PEOPLE	stegonographers
 SCI_PEOPLE	cyberinformaticians
+SCI_FIELD	SCI_BUZZWORD_ADJ SCI_FIELD
 SCI_FIELD	hardware and architecture
 SCI_FIELD	networking
 SCI_FIELD	operating systems
