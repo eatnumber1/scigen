@@ -23,8 +23,10 @@ while( <TEX> ) {
 
     if( /figure=(.*),/ ) {
 	my $figfile = "$tmp_dir/$1";
-	system( "./make-graph.pl $figfile" ) and
-	    die( "couldn't make $figfile" );
+	my $done = 0;
+	while( !$done ) {
+	    system( "./make-graph.pl $figfile" ) or $done=1;
+	}
 	push @figures, $figfile;
     }
 
