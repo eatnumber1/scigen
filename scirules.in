@@ -239,12 +239,12 @@ SCI_INTRO_A	In recent years, much research has been devoted to the SCI_ACT; LIT_
 SCI_INTRO_A	SCI_THING_MOD and SCI_THING_MOD, while SCI_ADJ in theory, have not until recently been considered SCI_ADJ XXX
 SCI_INTRO_A	The SCI_ACT is a SCI_ADJ SCI_PROBLEM XXX
 SCI_INTRO_A	The SCI_ACT has SCI_VERBED SCI_THING_MOD, and current trends suggest that the SCI_ACT will soon emerge XXX
-SCI_INTRO_A	SCI_PEOPLE agree that SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN is an interesting new topic in the field of SCI_FIELD, and SCI_PEOPLE concur XXX
+SCI_INTRO_A	SCI_PEOPLE agree that SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN are an interesting new topic in the field of SCI_FIELD, and SCI_PEOPLE concur XXX
 SCI_INTRO_A	The SCI_FIELD SCI_APPROACH to SCI_THING_MOD is defined not only by the SCI_ACT, but also by the SCI_ADJ need for SCI_THING_MOD XXX
 SCI_INTRO_A	Recent advances in SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN and SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN SCI_INTRO_ACT SCI_THING_MOD XXX
 SCI_INTRO_A	Many SCI_PEOPLE would agree that, had it not been for SCI_THING, the SCI_ACT might never have occurred XXX
-SCI_INTRO_A	The implications of SCI_BUZZWORD_ADJ technology have been far-reaching and pervasive XXX
-SCI_INTRO_A	Unified SCI_BUZZWORD_ADJ theory has led to many SCI_ADJ advances, including SCI_THING_MOD and SCI_THING_MOD  XXX
+SCI_INTRO_A	The implications of SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN have been far-reaching and pervasive XXX
+SCI_INTRO_A	Unified SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN has led to many SCI_ADJ advances, including SCI_THING_MOD and SCI_THING_MOD  XXX
 
 SCI_INTRO_ACT offer a viable alternative to
 SCI_INTRO_ACT have paved the way for
@@ -1319,7 +1319,7 @@ STORAGE_ITEMS		STORAGE_ITEMs
 
 EXPANSION_ITEM		joystick
 EXPANSION_ITEM		2400 baud modem
-EXPANSION_ITEM		SoundBlaster 8bit sound card
+EXPANSION_ITEM		SoundBlaster 8-bit sound card
 EXPANSION_ITEM		Knesis keyboard
 EXPANSION_ITEM		power strip
 EXPANSION_ITEM		Ethernet card
@@ -1803,16 +1803,24 @@ SCI_BUZZWORD_NOUN communication
 SCI_BUZZWORD_NOUN algorithms
 SCI_BUZZWORD_NOUN theory
 SCI_BUZZWORD_NOUN methodologies
-SCI_BUZZWORD_NOUN e-commerce
 SCI_BUZZWORD_NOUN information
 SCI_BUZZWORD_NOUN models
-SCI_BUZZWORD_NOUN courseware
+SCI_BUZZWORD_NOUN archetypes
+SCI_BUZZWORD_NOUN configurations
+SCI_BUZZWORD_NOUN modalities
+SCI_BUZZWORD_NOUN symmetries
+SCI_BUZZWORD_NOUN epistemologies
 
 SCI_PROBLEM problem
 SCI_PROBLEM issue
 SCI_PROBLEM obstacle
 SCI_PROBLEM grand challenge
 SCI_PROBLEM challenge
+SCI_PROBLEM quandary
+SCI_PROBLEM riddle
+SCI_PROBLEM quagmire
+SCI_PROBLEM question
+
 SCI_PROBLEM_PL problems
 SCI_PROBLEM_PL issues
 SCI_PROBLEM_PL obstacles
@@ -1824,10 +1832,15 @@ SCI_GOAL goal
 SCI_GOAL mission
 SCI_GOAL objective
 SCI_GOAL purpose
+SCI_GOAL ambition
+SCI_GOAL aim
+SCI_GOAL intent
+
 SCI_GOAL_PL goals
 SCI_GOAL_PL missions
 SCI_GOAL_PL objectives
 SCI_GOAL_PL purposes
+SCI_GOAL_PL ambitions
 
 SCI_GOAL_OR_PROBLEM SCI_PROBLEM
 SCI_GOAL_OR_PROBLEM SCI_GOAL
@@ -1866,7 +1879,10 @@ SCI_THING	SCI_THING_S
 SCI_THING_HAS	SCI_THING_S has
 SCI_THING_HAS	SCI_THING_P have
 
-SCI_THING_P	DHTs
+SCI_THING_P	courseware
+SCI_THING_P	e-commerce
+
+SCI_THING_P	distributed hash tables (DHTs)
 SCI_THING_P	robots
 SCI_THING_P	agents
 SCI_THING_P	Markov models
@@ -1888,6 +1904,8 @@ SCI_THING_S	DNS
 SCI_THING_S	802.11b
 SCI_THING_P	information retrieval systems
 SCI_THING_P	web browsers
+SCI_THING_S	architecture
+SCI_THING_P	thin clients
 #SCI_THING_S	the Commodore VIC-20
 SCI_THING_S	the Turing machine
 SCI_THING_P	B-trees
@@ -1899,6 +1917,7 @@ SCI_THING_S	consistent hashing
 SCI_THING_S	the transistor
 SCI_THING_S	the UNIVAC computer
 SCI_THING_S	Boolean logic
+SCI_THING_P	web browser
 SCI_THING_S	voice-over-IP
 SCI_THING_S	the World Wide Web
 SCI_THING_P	flip-flop gates
@@ -1910,9 +1929,12 @@ SCI_THING_P	embedded systems
 SCI_THING_P	digital-to-analog converters
 SCI_THING_P	journaling file systems
 SCI_THING_P	expert systems
+SCI_THING_P	active networks
 SCI_THING_S	evolutionary programming
 SCI_THING_S	simulated annealing
 SCI_THING_P	superpages
+SCI_THING_P	superblocks
+SCI_THING_S	partition table
 SCI_THING_P	64-bit architectures
 SCI_THING_P	vacuum tubes
 SCI_THING_S 	Internet QoS
@@ -1922,6 +1944,9 @@ SCI_THING_S	lambda calculus
 SCI_THING_S	scatter/gather I/O
 SCI_THING_S	XML
 SCI_THING_P	I/O automata
+SCI_THING_P	hash tables
+SCI_THING_P	red-black trees
+SCI_THING_P	linked lists
 SCI_THING_S	fiber-optic cables
 SCI_THING_S	the Ethernet
 SCI_THING_S	RAID
@@ -1938,6 +1963,18 @@ SCI_THING_S	reinforcement learning
 SCI_THING_P	Lamport clocks
 SCI_THING_S	the producer-consumer problem
 SCI_THING_P	checksums
+SCI_THING_P	link-level acknowledgements
+SCI_THING_S	public-private key pair
+SCI_THING_P	symmetric encryption
+SCI_THING_S	forward-error correction
+SCI_THING_S	erasure coding
+SCI_THING_S	redundancy
+SCI_THING_S	replication
+SCI_THING_S     congestion control
+SCI_THING_P	wide-area networks
+SCI_THING_P	local-area networks
+SCI_THING_S	DHCP
+SCI_THING_P	write-back caches
 SCI_THING_P	multicast SCI_SYSTEM_PL
 SCI_THING_S	write-ahead logging
 SCI_THING_S	cache coherence
@@ -2004,18 +2041,37 @@ SCI_BUZZWORD_ADJ_MULTI+10 SCI_BUZZWORD_ADJ, SCI_BUZZWORD_ADJ
 SCI_BUZZWORD_ADJ_MULTI SCI_BUZZWORD_ADJ, SCI_BUZZWORD_ADJ, SCI_BUZZWORD_ADJ
 SCI_BUZZWORD_ADJ peer-to-peer
 SCI_BUZZWORD_ADJ ubiquitous
+SCI_BUZZWORD_ADJ client-server
+SCI_BUZZWORD_ADJ efficient
+SCI_BUZZWORD_ADJ reliable
+SCI_BUZZWORD_ADJ replicated
+SCI_BUZZWORD_ADJ low-energy
+SCI_BUZZWORD_ADJ omniscient
 SCI_BUZZWORD_ADJ wireless
 SCI_BUZZWORD_ADJ modular
 SCI_BUZZWORD_ADJ autonomous
 SCI_BUZZWORD_ADJ introspective
 SCI_BUZZWORD_ADJ distributed
+SCI_BUZZWORD_ADJ flexible
+SCI_BUZZWORD_ADJ extensible
+SCI_BUZZWORD_ADJ amphibious
+SCI_BUZZWORD_ADJ metamorphic
+SCI_BUZZWORD_ADJ ambimorphic
+SCI_BUZZWORD_ADJ permutable
+SCI_BUZZWORD_ADJ adaptive
+SCI_BUZZWORD_ADJ self-learning
+SCI_BUZZWORD_ADJ trainable
+SCI_BUZZWORD_ADJ ``smart''
+SCI_BUZZWORD_ADJ classical
 SCI_BUZZWORD_ADJ atomic
 SCI_BUZZWORD_ADJ event-driven
 SCI_BUZZWORD_ADJ read-write
+SCI_BUZZWORD_ADJ encrypted
 SCI_BUZZWORD_ADJ highly-available
 SCI_BUZZWORD_ADJ secure
 SCI_BUZZWORD_ADJ interposable
 SCI_BUZZWORD_ADJ cacheable
+SCI_BUZZWORD_ADJ perfect
 SCI_BUZZWORD_ADJ electronic
 SCI_BUZZWORD_ADJ pervasive
 SCI_BUZZWORD_ADJ large-scale
@@ -2032,9 +2088,14 @@ SCI_BUZZWORD_ADJ semantic
 SCI_BUZZWORD_ADJ real-time
 SCI_BUZZWORD_ADJ cooperative
 SCI_BUZZWORD_ADJ scalable
+SCI_BUZZWORD_ADJ certifiable
 SCI_BUZZWORD_ADJ robust
+SCI_BUZZWORD_ADJ signed
+SCI_BUZZWORD_ADJ virtual
+SCI_BUZZWORD_ADJ lossless
 
 SCI_IDEAL	ideal
+SCI_IDEAL	optimal
 SCI_IDEAL	perfect
 SCI_IDEAL	different
 SCI_IDEAL	distinct
@@ -2105,6 +2166,8 @@ SCI_ADJ_ADV	clearly
 SCI_ADJ_ADV	obviously
 SCI_ADJ_ADV	urgently
 SCI_ADJ_ADV	compellingly
+
+SCI_ADV	ostensibly
 SCI_ADV	obviously
 SCI_ADV	evidently
 SCI_ADV	clearly
@@ -2210,6 +2273,7 @@ SCI_MATH_ADV	topologically
 SCI_MATH_ADV	computationally
 SCI_MATH_ADV	oportunistically
 SCI_MATH_ADV	lazily
+SCI_MATH_ADV	provably
 
 #############################################################################
 ####### Flow control #######
@@ -2273,6 +2337,7 @@ LIT_CONCLUSION	obviously
 LIT_CONCLUSION  as a result
 
 LIT_REVERSAL	however
+LIT_REVERSAL	on the other hand
 LIT_REVERSAL	nevertheless
 LIT_REVERSAL	contrarily
 LIT_REVERSAL	unfortunately
@@ -2303,16 +2368,30 @@ SCI_PROVE_VERB argue
 SCI_PROVE_VERB prove
 SCI_PROVE_VERB show
 SCI_PROVE_VERB disprove
+SCI_PROVE_VERB validate
+SCI_PROVE_VERB verify
+SCI_PROVE_VERB confirm
+SCI_PROVE_VERB disconfirm
+
 SCI_PROVE_VERBED demonstrated
 SCI_PROVE_VERBED argued
 SCI_PROVE_VERBED proved
 SCI_PROVE_VERBED showed
 SCI_PROVE_VERBED disproved
+SCI_PROVE_VERBED validated
+SCI_PROVE_VERBED verified
+SCI_PROVE_VERBED confirmed
+SCI_PROVE_VERBED disconfirmed
+
 SCI_PROVE_VERBING demonstrating
 SCI_PROVE_VERBING arguing
 SCI_PROVE_VERBING proving
 SCI_PROVE_VERBING showing
 SCI_PROVE_VERBING disproving
+SCI_PROVE_VERBING validating
+SCI_PROVE_VERBING verifying
+SCI_PROVE_VERBING confirming
+SCI_PROVE_VERBING disconfirming
 
 SCI_PRESENT_VERB present
 SCI_PRESENT_VERB introduce
@@ -2387,6 +2466,7 @@ SCI_VERB	deploy
 SCI_VERB	synthesize
 SCI_VERB	visualize
 SCI_VERB	study
+
 SCI_VERBS	explores
 SCI_VERBS	enables
 SCI_VERBS	harnesses
@@ -2702,6 +2782,12 @@ SCI_PERSON	mad scientist
 SCI_PERSON	hardware designer
 SCI_PERSON	complexity theorist
 SCI_PERSON	algorithmist
+SCI_PERSON	analyst
+
+SCI_PEOPLE	leading analysts
+SCI_PEOPLE	experts
+SCI_PEOPLE	analysts
+SCI_PEOPLE	scholars
 SCI_PEOPLE	information theorists
 SCI_PEOPLE	statisticians
 SCI_PEOPLE	computational biologists
@@ -2719,7 +2805,10 @@ SCI_PEOPLE	researchers
 SCI_PEOPLE	steganographers
 SCI_PEOPLE	cyberinformaticians
 SCI_PEOPLE	end-users
+SCI_PEOPLE      futurists
+SCI_PEOPLE      cyberneticists
 
+SCI_SOURCE	Rodney Brooks
 SCI_SOURCE	Alan Turing
 SCI_SOURCE	Albert Einstein
 SCI_SOURCE	Charles Darwin
@@ -2740,7 +2829,7 @@ SCI_SOURCE	Ron Rivest
 SCI_SOURCE	A.J. Perlis
 SCI_SOURCE	Maurice V. Wilkes
 SCI_SOURCE	Richard Hamming
-SCI_SOURCE	Marvin Minksy
+SCI_SOURCE	Marvin Minsky
 SCI_SOURCE	J.H. Wilkinson
 SCI_SOURCE	John McCarthy
 SCI_SOURCE	E.W. Dijkstra
@@ -2951,7 +3040,7 @@ EVAL_MEASUREMENT_UM instruction rate
 EVAL_MEASUREMENT_UM energy
 EVAL_MEASUREMENT_UM response time
 EVAL_MEASUREMENT_UM bandwidth
-EVAL_MEASUREMENT_UM S/N
+EVAL_MEASUREMENT_UM signal-to-noise ratio
 EVAL_MEASUREMENT_UM distance
 EVAL_MEASUREMENT_UM interrupt rate
 
