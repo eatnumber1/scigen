@@ -413,6 +413,8 @@ SCI_MODEL {
 
 MODEL_SEC_LATEX_HEADER
 
+  LATEX_DIAGRAM
+
 }
 
 #############################################################################
@@ -2589,6 +2591,25 @@ LATEX_FIG_LABEL_REF fig:labelNEWFIGLABEL#
 NEWFIGLABEL\+
 NEWFIGLABEL\#
 
+LATEX_DIAGRAM {
+
+\begin{figure}[t]
+\centerline{\epsfig{figure=LATEX_DIA_FILENAME,width=3in}}
+\caption{\small{SCI_CAPTION}}
+\label{LATEX_DIA_LABEL}
+\end{figure}
+
+}
+
+LATEX_DIA_FILENAME diaNEWDIANUM+.eps
+NEWDIANUM\+
+NEWDIANUM\#
+
+LATEX_DIA_LABEL dia:labelNEWDIALABEL+
+LATEX_DIA_LABEL_REF dia:labelNEWDIALABEL#
+NEWDIALABEL\+
+NEWDIALABEL\#
+
 #############################################################################
 ######## Citations ########
 #############################################################################
@@ -2716,24 +2737,26 @@ CITE_INST UT Austin
 CITE_INST CMU
 CITE_INST Stanford University
 
-DIGIT 1
-DIGIT 2
-DIGIT 3
-DIGIT 4
-DIGIT 5
-DIGIT 6
-DIGIT 7
-DIGIT 8
-DIGIT 9
-DIGIT 0
+NONZ 1
+NONZ 2
+NONZ 3
+NONZ 4
+NONZ 5
+NONZ 6
+NONZ 7
+NONZ 8
+NONZ 9
+DIGIT+9	NONZ
+DIGIT 	0
 
-MED_NUM DIGITDIGIT
-MED_NUM DIGITDIGITDIGIT
-MED_NUM DIGITDIGITDIGITDIGIT
+
+MED_NUM NONZDIGIT
+MED_NUM NONZDIGITDIGIT
+MED_NUM NONZDIGITDIGITDIGIT
 
 SMALL_NUM+3 DIGIT
-SMALL_NUM+8 DIGITDIGIT
-SMALL_NUM DIGITDIGITDIGIT
+SMALL_NUM+8 NONZDIGIT
+SMALL_NUM NONZDIGITDIGIT
 
 CITE_TRNUM MED_NUM-MED_NUM-MED_NUM
 CITE_TRNUM MED_NUM/MED_NUM

@@ -16,7 +16,8 @@ if( defined $filename ) {
     $eps_file = $filename;
 }
 
-my @label_types = qw( NODE_LABEL_LET NODE_LABEL_PROG );
+my @label_types = qw( NODE_LABEL_LET NODE_LABEL_PROG 
+		      NODE_LABEL_NET NODE_LABEL_IP );
 my %types = ("digraph" => "DIR_LAYOUT",
 	     "graph" => "UNDIR_LAYOUT" );
 my %edges = ("digraph" => "->",
@@ -30,6 +31,7 @@ scigen::read_rules ($fh, $dat, \$RE, 0);
 
 my $graph_type = scigen::generate ($dat, "PICK_GRAPH_TYPE", $RE, 0, 0);
 my $label_type = scigen::generate ($dat, "PICK_LABEL_TYPE", $RE, 0, 0);
+my $shape_type = scigen::generate ($dat, "PICK_SHAPE_TYPE", $RE, 0, 0);
 $label_type = $label_types[$label_type];
 my $dir_rule = $types{$graph_type};
 my $edge_type = $edges{$graph_type};
@@ -43,6 +45,12 @@ my @c = ($edge_type);
 $dat->{"EDGEOP"} = \@c;
 my @d = ($sysname);
 $dat->{"SYSNAME"} = \@d;
+my @e = ();
+my @shapes = split( /\s+/, $shape_type );
+foreach my $s (@shapes) {
+    push @e, $s
+}
+$dat->{"SHAPE_TYPE"} = \@e;
 
 scigen::compute_re( $dat, \$RE );
 my $graph_file = scigen::generate ($dat, "GRAPHVIZ", $RE, 0, 0);

@@ -35,11 +35,26 @@ while( <TEX> ) {
 
     my $line = $_;
 
-    if( /figure=(.*),/ ) {
+    if( /figure=(figure.*),/ ) {
 	my $figfile = "$tmp_dir/$1";
 	my $done = 0;
 	while( !$done ) {
 	    system( "./make-graph.pl $figfile" ) or $done=1;
+	}
+	push @figures, $figfile;
+    }
+
+    if( /figure=(dia.*),/ ) {
+	my $figfile = "$tmp_dir/$1";
+	my $done = 0;
+	while( !$done ) {
+	    if( `which neato` ) {
+		(system( "./make-diagram.pl $sysname $figfile" ) or 
+		 !(-f $figfile)) 
+		    or $done=1;
+	    } else {
+		system( "./make-graph.pl $figfile" ) or $done=1;
+	    }
 	}
 	push @figures, $figfile;
     }
