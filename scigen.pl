@@ -43,7 +43,20 @@ sub read_rules {
 	    chomp ($line);
 	    $rule = $line;
 	}
-	push @{$rules->{$name}}, $rule;
+
+	# look for the weight
+	my $weight = 1;
+	if( $name =~ /([^\+]*)\+(\d+)$/ ) {
+	    $name = $1;
+	    $weight = $2;
+	    if( $debug > 10 ) {
+		warn "weighting rule by $weight: $name -> $rule\n";
+	    }
+	}
+
+	do {
+	    push @{$rules->{$name}}, $rule;
+	} while( --$weight > 0 );
     }
 }
 
