@@ -259,8 +259,10 @@ FILLER_SURPRISE_2	is SUPPORTED by RELATED work in the field
 FILLER_SURPRISE_2	has ample historical precendence
 FILLER_SURPRISE_2	is derived from known results
 
-WHAT			it
-WHAT			this FINDING
+WHAT			It
+WHAT			This FINDING
+WHAT			Such a claim
+WHAT			Such a hypothesis
 
 FINDING			result
 FINDING			finding
@@ -1072,7 +1074,7 @@ UNIQUE		unique
 UNIQUE		conventional
 UNIQUE		expected
 
-EVAL_WHO+50 	we
+EVAL_WHO+25 	We
 EVAL_WHO 	SCI_COUNTRY SCI_PEOPLE
 EVAL_WHO 	SCI_PEOPLE
 
