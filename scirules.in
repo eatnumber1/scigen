@@ -3,7 +3,6 @@
 # $Id$
 #
 
-LIT_BOOK	<i> TOPIC </i>
 SCIPAPER_LONG	{
 
  SCI_TITLE
@@ -140,155 +139,6 @@ SCI_BUZZWORD_NOUN theory
 SCI_BUZZWORD_NOUN e-commerce
 SCI_BUZZWORD_NOUN information
 
-LIT_PARAGRAPH_BODY1	{
-LIT_MIDDLE_ONE LIT_PARAGRAPH_B 
-
- LIT_PARAGRAPH_B 
-
- LIT_BLOCKQUOTE 
-
- LIT_PARAGRAPH_B 
-
- LIT_PARAGRAPH_B 
-
- 
-}
-
-LIT_PARAGRAPH_BODY2	{
-LIT_PARAGRAPH_B 
-
- LIT_PARAGRAPH_B 
-
- LIT_BLOCKQUOTE 
-
- LIT_PARAGRAPH_B 
-
- LIT_MIDDLE_THREE LIT_PARAGRAPH_B 
-
-
-}
-
-LIT_BLOCKQUOTE	<blockquote><blockquote><font size=1 face=verdana> LIT_BLOCKQUOTE_BODY ( LASTNAME HIST_QUOTE_PAGE ) </font></blockquote></blockquote> LIT_BLOCKQUOTE_RESPONSE 
-LIT_BLOCKQUOTE_RESPONSE	LIT_QUOTE_COMMENT_UNPUNC ; LIT_QUOTE_TRANS LIT_QUOTE_COMMENT
-LIT_QUOTE_TRANS	still, 
-LIT_QUOTE_TRANS	
-LIT_BLOCKQUOTE_BODY	LIT_QUOTEA . LIT_QUOTEA . LIT_QUOTEA . LIT_QUOTEA . LIT_QUOTEA . LIT_QUOTEA .
-LITPAPER_TITLE	<font size=3> TOPIC : LIT_SUBTITLE </font><br><font size=3><i>By USER_NAME </i></font>
-LIT_PARAGRAPH_A	LIT_A_ONE LIT_A_TWO LIT_A_THREE
-LIT_PARAGRAPH_MIDDLE	{
-LIT_MIDDLE_ONE LIT_PARAGRAPH_B 
-
- LIT_MIDDLE_TWO LIT_PARAGRAPH_B 
-
- LIT_MIDDLE_THREE LIT_PARAGRAPH_B
-}
-
-LIT_PARAGRAPH_B	LIT_B_ONE LIT_B_TWO LIT_B_CONCLUDE
-LIT_PARAGRAPH_C	LIT_C_ONE LIT_C_TWO LIT_C_THREE LIT_C_FOUR
-LIT_SUBTITLE	LIT_THEMES_A and LIT_THEMES_B
-LIT_SUBTITLE	LIT_THEMES_A and LIT_THEMES_C
-LIT_SUBTITLE	LIT_THEMES_B and LIT_THEMES_C
-LIT_SUBTITLE	a LIT_MOVEMENTA LIT_TITLE_NOUN 
-LIT_SUBTITLE	a LIT_MOVEMENTA LIT_TITLE_NOUN 
-LIT_SUBTITLE	LIT_THEMES_B , LIT_THEMES_C , and LIT_THEMES_A
-LIT_SUBTITLE	LASTNAME and the use of LIT_THEMES
-LIT_ADJ_50	LIT_ADJ
-LIT_ADJ_50	
-LIT_TITLE_NOUN	exploration
-LIT_TITLE_NOUN	explanation
-LIT_TITLE_NOUN	approach
-LIT_TITLE_NOUN	critique
-LIT_TITLE_NOUN	exegesis
-LIT_TITLE_NOUN	analysis
-LIT_NOUN_POS	sanity
-LIT_NOUN_POS	spirit
-LIT_NOUN_POS	motivation
-LIT_NOUN_POS	ability
-LIT_NOUN_POS	intelligence
-LIT_NOUN_POS	will to live
-LIT_SUPER_NEG	most self-indulgent
-LIT_SUPER_NEG	most ill-conceived
-LIT_SUPER_NEG	worst
-LIT_SUPER_NEG	most half-baked
-LIT_SUPER_NEG	crassest
-LIT_SUPER_NEG	most commercial
-LIT_SUPER_POS	most influential
-LIT_SUPER_POS	best
-LIT_SUPER_POS	most timeless
-LIT_SUPER_POS	richest
-LIT_SUPER_POS	best-loved
-LIT_SUPER_POS	most enduring
-LIT_ADJ_NEG	half-baked
-LIT_ADJ_NEG	LIT_ADV brainless
-LIT_ADJ_NEG	wrong-headed
-LIT_ADJ_NEG	witless
-LIT_ADJ_NEG	ponderous
-LIT_ADJ_NEG	simple
-LIT_ADJ_NEG	drug-influenced
-LIT_ADJ_NEG	insane
-LIT_ADJ_NEG	pandering
-LIT_ADJ	LIT_ADJ_POS
-LIT_ADJ	LIT_ADJ_NEG
-LIT_ADJ_POS	triumphant
-LIT_ADJ_POS	notable
-LIT_ADJ_POS	famous
-LIT_ADJ_POS	reknown
-LIT_ADJ_POS	brilliant
-LIT_ADJ_POS	monumental
-LIT_ADJ_POS	skillful
-LIT_ADJ_POS	moving
-LIT_ADJ_POS	powerful
-LIT_DURATION	often
-LIT_DURATION	frequently
-LIT_DURATION	habitually
-LIT_DURATION	usually
-LIT_DURATION	typically
-LIT_A_ONE	FIRSTNAME LASTNAME was a LIT_ADJ_POS contributor to the LIT_PERIOD literary tradition.
-LIT_A_ONE	Frequent allusions to LIT_THEMES have led many critics to question LASTNAME 's LIT_NOUN_POS .
-LIT_A_ONE	There was no author more LIT_ADJ_POS during the LIT_PERIOD than FIRSTNAME LASTNAME .
-LIT_A_ONE	Writers of the LIT_PERIOD LIT_DURATION ignored the themes of LIT_THEMES_A and LIT_THEMES_C . FIRSTNAME LASTNAME was no exception.
-LIT_A_ONE	LIT_THEMES was a favorite theme of FIRSTNAME LASTNAME .
-LIT_A_TWO	However, in  LIT_BOOK , LASTNAME demonstrates none of the ill effects that LIT_SCHOOL had on many writers of the period. LIT_THESIS .
-LIT_A_TWO	Still, while scholars often feel LIT_BOOK is LIT_ADJ_NEG , it is one of LASTNAME 's LIT_SUPER_POS works. LIT_THESIS .
-LIT_A_TWO	Nevertheless, LASTNAME 's use of LIT_THEMES is all too often mistaken for LIT_THEMES in LIT_BOOK . LIT_THESIS .
-LIT_A_TWO	To wit, LIT_THEMES was never so present in FIRSTNAME LASTNAME 's work as in the LIT_ADJ_POS novel, LIT_BOOK .  LIT_THESIS .
-LIT_A_TWO	Unfortunately, LIT_BOOK is absolutely LIT_ADJ_NEG in terms of LASTNAME 's usual LIT_MOVEMENTA politics . LIT_THESIS .
-LIT_THESIS	LIT_THESIS_OPENING , LIT_THESIS_MIDDLE LIT_THESIS_CLOSE
-LIT_THESIS_OPENING	In this paper
-LIT_THESIS_OPENING	In the following paragraphs
-LIT_THESIS_OPENING	Below
-LIT_THESIS_MIDDLE	I will show that
-LIT_THESIS_MIDDLE	evidence will be presented that clearly demonstrates
-LIT_THESIS_MIDDLE	it will be proven that
-LIT_THESIS_CLOSE	most LIT_MOVEMENTA critics are wrong about LASTNAME 's use of LIT_THEMES 
-LIT_THESIS_CLOSE	LIT_BOOK is the most LIT_ADJ_POS example of LIT_MOVEMENTA writing ever created 
-LIT_THESIS_CLOSE	LIT_BOOK 's LIT_MOVEMENTA overtones and views on LIT_BIG_NOUN are <i>not</i> evidence of LASTNAME 's surrender to LIT_BIG_NOUN 
-LIT_THESIS_CLOSE	LASTNAME 's LIT_ADJ_POS writing is representative of the strong LIT_MOVEMENTA ideals of the author's time
-LIT_A_THREE	Support for this claim is present in the following: (a) LIT_A_THESIS_POINT_A , (b) LIT_A_THESIS_POINT_B , and (c) LIT_A_THESIS_POINT_C .
-LIT_A_THREE	This claim is buttressed by three points: (1) LIT_A_THESIS_POINT_B , (2) LIT_A_THESIS_POINT_A , and (3) LIT_A_THESIS_POINT_C .
-LIT_A_THESIS_POINT_A	 LASTNAME 's LIT_ADJ_POS LIT_ACTION of LIT_THEMES_A in the work
-LIT_A_THESIS_POINT_A	 LASTNAME 's LIT_ADJ_NEG take on LIT_THEMES_A throughout the book
-LIT_A_THESIS_POINT_A	 LASTNAME 's adversarial relationship to LIT_SCHOOL while writing the book
-LIT_A_THESIS_POINT_A	 LASTNAME 's LIT_ADJ_POS role in LIT_SCHOOL
-LIT_A_THESIS_POINT_B	the LIT_ADJ_POS use of LIT_THEMES_B in LIT_BOOK
-LIT_A_THESIS_POINT_B	the LIT_MOVEMENTA theme of LIT_THEMES_B in LIT_BOOK
-LIT_A_THESIS_POINT_B	the LIT_MOVEMENTA views of LIT_BOOK 's protagonist, LIT_CHARACTER 
-LIT_A_THESIS_POINT_C	the author's LIT_ACTION of LIT_THEMES_C
-LIT_A_THESIS_POINT_C	LIT_MOVEMENTA overtones in the work's LIT_CHAPTER
-LIT_A_THESIS_POINT_C	the author's LIT_ACTION of LIT_THEMES_C , showing the influence of the LIT_SCHOOL
-LIT_A_THESIS_POINT_C	the author's brave LIT_ACTION of LIT_THEMES_C depite the influence of the LIT_MOVEMENTA school 
-LIT_ACTION	employment
-LIT_ACTION	portrayal
-LIT_ACTION	incorporation
-LIT_ACTION	exploration
-LIT_ACTION	use
-LIT_MIDDLE_ONE	
-LIT_MIDDLE_ONE	
-LIT_MIDDLE_ONE	To start,
-LIT_MIDDLE_ONE	How can I put this...
-LIT_MIDDLE_ONE	First,
-LIT_MIDDLE_ONE	To begin,
-LIT_MIDDLE_ONE	First of all,
 LIT_MIDDLE_TWO	
 LIT_MIDDLE_TWO	
 LIT_MIDDLE_TWO	
@@ -298,440 +148,7 @@ LIT_MIDDLE_TWO	Next,
 LIT_MIDDLE_TWO	Further,
 LIT_MIDDLE_TWO	Furthermore,
 LIT_MIDDLE_TWO	Continuing with this rationale,
-LIT_MIDDLE_THREE	
-LIT_MIDDLE_THREE	
-LIT_MIDDLE_THREE	
-LIT_MIDDLE_THREE	
-LIT_MIDDLE_THREE	Finally,
-LIT_MIDDLE_THREE	Third,
-LIT_MIDDLE_THREE	Last,
-LIT_MIDDLE_THREE	Finally,
-LIT_PHRASE	a quest for LIT_BIG_NOUN 
-LIT_PHRASE	the most succesful
-LIT_PHRASE	a triumph
-LIT_PHRASE	a triumph over the LIT_THEMES_B of the human condition
-LIT_PHRASE	with few equals in the forest of truth
-LIT_TRANS	therefore
-LIT_TRANS	hence
-LIT_TRANS	ergo
-LIT_TRANS	thusly
-LIT_TRANS	thus
-LIT_QUOTE_COMMENT_UNPUNC	In some circles, this caused revolution; in others, revulsion
-LIT_QUOTE_COMMENT_UNPUNC	LASTNAME 's quest for LIT_BIG_NOUN couldn't be more forceful 
-LIT_QUOTE_COMMENT_UNPUNC	The LIT_MOVEMENTA implications of this are wide-ranging
-LIT_QUOTE_COMMENT_UNPUNC	Truer words have never been uttered, at least not by me
-LIT_QUOTE_COMMENT_UNPUNC	Notice how the LIT_THEMES_A shown here almost eclipses the sense of LIT_THEMES_B 
-LIT_QUOTE_COMMENT_UNPUNC	This is LIT_ADV the most LIT_ADJ_POS , LIT_ADJ_POS capitulation of LIT_MOVEMENTA ideals LASTNAME would ever make
-LIT_QUOTE_COMMENT_UNPUNC	LIT_ADV , LASTNAME 's intentions for LIT_CHARACTER are ambiguous here
-LIT_QUOTE_COMMENT_UNPUNC	Though these words have a LIT_MOVEMENTA quality, they also reveal search for LIT_BIG_NOUN 
-LIT_QUOTE_COMMENT_UNPUNC	The few words encapsulate nearly the whole of LIT_PERIOD thought
-LIT_QUOTE_COMMENT_UNPUNC	One can see that LIT_THEMES_A is right around the corner
-LIT_QUOTE_COMMENT_UNPUNC	LIT_THEMES_A and LIT_THEMES_B come to bear here like never before
-LIT_QUOTE_COMMENT_UNPUNC	The question is begged: what is <i>really</i> going on here
-LIT_QUOTE_COMMENT_UNPUNC	Thus, LIT_SCHOOL was in effect 
-LIT_QUOTE_COMMENT_UNPUNC	Many LIT_PEOPLE have looked to these words for guidance
-LIT_QUOTE_COMMENT_UNPUNC	Yet again, LIT_BOOK 's discordant amalgam of LIT_THEMES_B and LIT_THEMES_B couldn't be more compelling
-LIT_QUOTE_COMMENT_UNPUNC	With these words, LASTNAME devastated his critics
-LIT_QUOTE_COMMENT_UNPUNC	In just a few words, the LIT_MOVEMENTA movement was left in shambles
-LIT_QUOTE_COMMENT_UNPUNC	Salt in the wounds of LIT_BIG_NOUN 
-LIT_QUOTE_COMMENT_UNPUNC	Pregnant words
-LIT_QUOTE_COMMENT_UNPUNC	The contemplation of this passage is beyond me
-LIT_QUOTE_COMMENT_UNPUNC	I'll address this in greater detail later
-LIT_QUOTE_COMMENT_UNPUNC	This passage escaped most critics, but not LIT_SOURCE , who plagarized it years later
-LIT_QUOTE_COMMENT_UNPUNC	To conclude from this that my argument is true is... trivial
-LIT_QUOTE_COMMENT	in some circles, this caused revolution; in others, revulsion.
-LIT_QUOTE_COMMENT	LASTNAME 's quest for LIT_BIG_NOUN couldn't be more forceful .
-LIT_QUOTE_COMMENT	the LIT_MOVEMENTA implications of this are wide-ranging.
-LIT_QUOTE_COMMENT	truer words have never been uttered, at least not by me.
-LIT_QUOTE_COMMENT	notice how the LIT_THEMES_A shown here almost eclipses the sense of LIT_THEMES_B .
-LIT_QUOTE_COMMENT	this line is LIT_ADV the most LIT_ADJ_POS , LIT_ADJ_POS capitulation of LIT_MOVEMENTA ideals LASTNAME would ever make.
-LIT_QUOTE_COMMENT	LIT_ADV , LASTNAME 's intentions for LIT_CHARACTER are ambiguous here.
-LIT_QUOTE_COMMENT	though these words have a LIT_MOVEMENTA quality, they also reveal search for LIT_BIG_NOUN .
-LIT_QUOTE_COMMENT	these words encapsulate nearly the whole of LIT_PERIOD thought.
-LIT_QUOTE_COMMENT	one can see that LIT_THEMES_A is right around the corner.
-LIT_QUOTE_COMMENT	LIT_THEMES_A and LIT_THEMES_B come to bear here like never before.
-LIT_QUOTE_COMMENT	the question is begged: what is <i>really</i> going on here?
-LIT_QUOTE_COMMENT	LIT_SCHOOL was in effect.
-LIT_QUOTE_COMMENT	many LIT_PEOPLE have looked to these words for guidance.
-LIT_QUOTE_COMMENT	LIT_BOOK 's discordant amalgam of LIT_THEMES_B and LIT_THEMES_B couldn't be more forceful.
-LIT_QUOTE_COMMENT	with these words, LASTNAME devastated his critics.
-LIT_QUOTE_COMMENT	in these few words, the LIT_MOVEMENTA movement was left in shambles.
-LIT_QUOTE_COMMENT	salt in the wounds of LIT_BIG_NOUN .
-LIT_QUOTE_COMMENT	these are pregnant words, indeed.
-LIT_QUOTE_COMMENT	the contemplation of this passage is beyond me.
-LIT_QUOTE_COMMENT	I'll address this in greater detail later.
-LIT_QUOTE_COMMENT	this passage escaped most critics, but not LIT_SOURCE , who plagarized it years later, frankly.
-LIT_QUOTE_COMMENT	to conclude from this that my argument is true is... trivial.
-LIT_CRIT_ADJ	fecund
-LIT_CRIT_ADJ	fertile
-LIT_CRIT_ADJ	invaluable
-LIT_CRIT_ADJ	fruitful
-LIT_CRIT_ADJ	useful
-LIT_B_ONE	in the LIT_CHAPTER_EARLY of LIT_BOOK , LASTNAME writes: LIT_QUOTE LIT_QUOTE_COMMENT
-LIT_B_ONE	the lingering line of LIT_BOOK is , LIT_QUOTE LIT_QUOTE_COMMENT 
-LIT_B_ONE	consider this passage: LIT_QUOTE LIT_QUOTE_COMMENT 
-LIT_B_ONE	in LIT_BOOK 's LIT_CHAPTER_EARLY we find LASTNAME at his LIT_SUPER_NEG . But even this section can still prove LIT_CRIT_ADJ to the LIT_GROUP reader . Consider: LIT_QUOTE LIT_QUOTE_COMMENT 
-LIT_B_ONE	with words like \" LIT_QUOTEA ,\"  LASTNAME stakes his claim.
-LIT_B_ONE	lines like \" LIT_QUOTEA ,\" have made LIT_BOOK required reading for the LIT_MOVEMENTA student. 
-LIT_B_ONE	LASTNAME 's LIT_GROUP sympathies are evident in LIT_BOOK . 
-LIT_B_ONE	how LIT_ADJ_RHET that LIT_BOOK is LIT_DURATION dismissed as little more than LIT_TYPE !
-LIT_B_ONE	LIT_BOOK is LIT_ADV a LIT_ADJ_POS work.
-LIT_B_ONE	when LIT_PEOPLE dismiss LIT_BOOK as a simple LIT_TYPE , all I can say is, LIT_FILLER 
-LIT_B_ONE	LIT_BOOK is LIT_CRIT_ADJ ground for the LIT_MOVEMENTA LIT_GROUP .
-LIT_B_ONE	could the so-called  \" LIT_MOVEMENTA \" critics be more wrong about LIT_BOOK ?
-LIT_B_ONE	LASTNAME 's prose is so LIT_DURATION LIT_ADJ_POS that we often take for granted lines like LIT_QUOTE 
-LIT_B_ONE	what ignorant moron annointed LASTNAME as the LIT_MOVEMENTA savior?
-LIT_B_ONE	these themes are most evident in LIT_CHAPTER_EARLY of LIT_BOOK , for that is when LASTNAME 's often LIT_ADJ_NEG prose shines most brightly.
-LIT_B_ONE	LASTNAME 's LIT_ACTION of such imagery is most skillful in LIT_BOOK 's LIT_ADJ_POS LIT_CHAPTER_EARLY .
-LIT_B_ONE	the LIT_THEMES_A in LIT_BOOK really hits you like a rock.
-LIT_B_ONE	LIT_THEMES_A is not LIT_BOOK 's only theme; there is also pure LIT_BIG_NOUN .
-LIT_B_ONE	consider that LIT_BOOK was not so much written by LASTNAME as belched forth in a fit of sublime inspiration .
-LIT_B_ONE	realize that LASTNAME had lost his LIT_NOUN_POS just before completing LIT_BOOK .
-LIT_B_ONE	LASTNAME 's LIT_NOUN_POS is truly evident in LIT_BOOK .
-LIT_B_ONE	critics are dead wrong when they cite LIT_BOOK as an example of LASTNAME 's dwindling LIT_NOUN_POS .
-LIT_B_ONE	any examination of LIT_BIG_NOUN is incomplete without addressing the LIT_THEMES_A of LIT_BOOK .
-LIT_B_ONE	LIT_BOOK is, like all of LASTNAME 's great works, LIT_PHRASE .
-LIT_B_ONE	LIT_BOOK cannot be fully understood without examination of LIT_SCHOOL .
-LIT_B_ONE	the LIT_THEMES motif in LIT_BOOK was not original with LASTNAME . Consider this famous quote by LIT_SOURCE : \" LIT_QUOTEA .\" LIT_QUOTE_COMMENT 
-LIT_B_ONE	The protagonist's life is dominated by LIT_NOUN , and the character of LIT_CHARACTER is LIT_ADJ as a symbol of LIT_THEMES_A .
-LIT_B_TWO	In the LIT_CHAPTER_LATE the reader is presented with a paradox: though the characters seem unable to escape LIT_THEMES , they are simultaneously LIT_ADJ and LIT_ADJ .
-LIT_B_TWO	the author uses LIT_THEMES_B to transform LIT_CHARACTER from a LIT_ADJ_NEG bit-player into a LIT_ADJ_POS hero.
-LIT_B_TWO	To indicate that LIT_CHARACTER is the work's villain, the author makes his dialogue LIT_ADJ_NEG .
-LIT_B_TWO	LIT_BOOK 's LIT_ACTION of LIT_THEMES_C is in keeping with its LIT_MOVEMENTA point-of-view .
-LIT_B_TWO	it's quite obvious that LASTNAME 's LIT_NOUN_POS was tenuous at best by the time LIT_BOOK was completed.
-LIT_B_TWO	LIT_BOOK is not so much LIT_TYPE <i>per se</i> as it is LASTNAME 's most heart-felt LIT_TITLE_NOUN of LIT_BIG_NOUN .
-LIT_B_TWO	for the LIT_GROUP community there can be no other conclusion.
-LIT_B_TWO	while this fact allays most of LASTNAME 's LIT_GROUP detractors, it has led a certain LIT_MOVEMENTA critic-- the execrable LIT_SOURCE --to proclaim \" LIT_QUOTE_COMMENT \"
-LIT_B_TWO	it should be obvious that LASTNAME was never driven <i>purely</i> by the LIT_BIG_NOUN paradigm.
-LIT_B_TWO	of course, like all great works, LIT_BOOK has its flaws!
-LIT_B_TWO	still, LIT_BOOK was not originally seen as a <i>tour de force</i> by the intelligensia. LIT_FILLER 
-LIT_B_TWO	As such, the words of the character LIT_CHARACTER ring true: \" LIT_QUOTEA .\"
-LIT_B_TWO	as you can imagine, LIT_PEOPLE took to the streets after the book's first publication.
-LIT_B_TWO	wars have been fought over less.
-LIT_B_TWO	many LIT_PEOPLE_MOD see the book's LIT_CHAPTER_LATE as the LIT_SUPER_POS ; I, however, do not.
-LIT_B_TWO	LASTNAME 's quest for LIT_BIG_NOUN in his later books supports this conclusion.
-LIT_B_TWO	While most other HIST_NATIONALITY authors conceived of their characters as LIT_MOVEMENT symbols, LASTNAME 's lusted for real LIT_BIG_NOUN ! 
-LIT_B_TWO	Where many other HIST_NATIONALITY writers failed to convincingly portray LIT_THEMES , LASTNAME succeeds.
-LIT_B_CONCLUDE	LIT_B_THREE_UNPUNC ; LIT_B_THREE 
-LIT_B_CONCLUDE	 LIT_B_THREE 
-LIT_B_THREE	critics of LASTNAME 's work often overlook this aspect.
-LIT_B_THREE	LIT_CHARACTER 's famously LIT_ADJ_NEG attitude throughout the book is often cited.
-LIT_B_THREE	parts of the book's LIT_CHAPTER_LATE are often cited as evidence.
-LIT_B_THREE	it is no great feat to realize LASTNAME has written himself into a corner here!
-LIT_B_THREE	LIT_ADV , LASTNAME meant this as a critique of LIT_THEMES_C .
-LIT_B_THREE	of course, this is the LIT_MOVEMENTA view.
-LIT_B_THREE	of course, this is only a guess.
-LIT_B_THREE	nonetheless, we must be careful in making assumptions.
-LIT_B_THREE	as pure LIT_TYPE , LIT_BOOK was assailed for such statements. LIT_FILLER 
-LIT_B_THREE	read as LIT_TYPE , LIT_BOOK supports no other analysis.
-LIT_B_THREE	that's the LIT_GROUP assumption, at least.
-LIT_B_THREE	at best, this is the LIT_ADJ_NEG critique. LIT_FILLER 
-LIT_B_THREE	some of LASTNAME 's LIT_SUPER_POS writing is in LIT_BOOK .
-LIT_B_THREE	to see how this supports my previous claim is quite trivial.
-LIT_B_THREE	evidence for this conclusion abounds in the LIT_CHAPTER_LATE of the book.
-LIT_B_THREE	this all but proves my thesis, especially when LASTNAME 's LIT_ACTION of LIT_THEMES_A in the book is taken into account.
-LIT_B_THREE	the casual critic LIT_DURATION misses this point.
-LIT_B_THREE	LASTNAME 's point here is clear:  LIT_BIG_NOUN and LIT_BIG_NOUN are LIT_STOCK_PHRASE .
-LIT_B_THREE	as an affirmation of LIT_BIG_NOUN , this is LASTNAME 's grandest statement.
-LIT_B_THREE	it is also LIT_ADJ_RHET that scholars--by seeing him as an avatar of LASTNAME 's LIT_MOVEMENT views--have misinterpreted the character LIT_CHARACTER 's role in the book.
-LIT_B_THREE	this becomes LIT_ADJ_RHET only when one considers the book's famous line, LIT_QUOTE 
-LIT_B_THREE	LIT_CHARACTER is a surprisingly LIT_ADJ character.
-LIT_B_THREE	this is LIT_ADV why LIT_CHARACTER is such a LIT_ADJ character.
-LIT_B_THREE	LIT_CHARACTER is a far from marginal character; in fact, it is through him that many of LASTNAME 's LIT_PERIOD influences show through.
-LIT_B_THREE	this reasoning differs radically from traditional theories of LIT_SCHOOL .
-LIT_B_THREE_UNPUNC	Critics of LASTNAME 's work often overlook this aspect
-LIT_B_THREE_UNPUNC	LIT_CHARACTER 's famously LIT_ADJ_NEG attitude throughout the book is often blamed
-LIT_B_THREE_UNPUNC	developments in the LIT_CHAPTER_EARLY are often cited as evidence
-LIT_B_THREE_UNPUNC	It is no great feat to realize LASTNAME has written himself into a corner here
-LIT_B_THREE_UNPUNC	LIT_ADV , LASTNAME meant this as a critique of LIT_THEMES_C 
-LIT_B_THREE_UNPUNC	As pure LIT_TYPE , LIT_BOOK was assailed for such statements 
-LIT_B_THREE_UNPUNC	Read as LIT_TYPE , LIT_BOOK supports no other analysis
-LIT_B_THREE_UNPUNC	Some of LASTNAME LIT_SUPER_POS writing is in LIT_BOOK 
-LIT_B_THREE_UNPUNC	To see how this supports my previous claim is quite trivial
-LIT_B_THREE_UNPUNC	Evidence for this conclusion abounds in the LIT_CHAPTER_EARLY of the book
-LIT_B_THREE_UNPUNC	This all but proves my thesis, especially when LASTNAME 's LIT_ACTION of LIT_THEMES_A in the book is taken into account
-LIT_B_THREE_UNPUNC	The casual critic LIT_DURATION misses this point
-LIT_B_THREE_UNPUNC	LASTNAME 's point here is clear:  LIT_BIG_NOUN and LIT_BIG_NOUN are LIT_STOCK_PHRASE 
-LIT_B_THREE_UNPUNC	As an affirmation of LIT_BIG_NOUN , this is LASTNAME 's grandest statement
-LIT_B_THREE_UNPUNC	It is LIT_ADJ_RHET that scholars--by seeing him as an avatar of LASTNAME 's LIT_MOVEMENTA views--have misinterpreted the character LIT_CHARACTER 's role in the book 
-LIT_B_THREE_UNPUNC	This becomes LIT_ADJ_RHET only when one considers the book's famous line, \" LIT_QUOTEA \" 
-LIT_B_THREE_UNPUNC	LIT_CHARACTER is a LIT_ADJ character for this very reason
-LIT_B_THREE_UNPUNC	This is LIT_ADV why LIT_CHARACTER is such a LIT_ADJ character
-LIT_B_THREE_UNPUNC	LIT_CHARACTER is a far from marginal character; in fact, it is through him that many of LASTNAME 's LIT_PERIOD influences show through
-LIT_B_THREE_UNPUNC	This reasoning differs radically from traditional theories on LIT_SCHOOL 
-LIT_ADJ_RHET	meaningful
-LIT_ADJ_RHET	clear
-LIT_ADJ_RHET	significant
-LIT_ADJ_RHET	germane
-LIT_ADJ_RHET	relevant
-LIT_ADJ_RHET	apparent
-LIT_ADJ_RHET	trivial
-LIT_ADJ_RHET	obvious
-LIT_ADJ_RHET	predictable
-LIT_ADJ_RHET	transparent
-LIT_FILLER	how things have changed!
-LIT_FILLER	SCI_C_ONE_OPENING this is truly foolish.
-LIT_FILLER	what blindness.
-LIT_FILLER	give me a goddamn break!
-LIT_FILLER	woe is them!
-LIT_FILLER	yet again, the curs of ignorance slaver at the heels of reason.
-LIT_FILLER	this begs the question: why?
-LIT_FILLER	<i>Quelle injuste</i>!
-LIT_TYPE	roman a clef
-LIT_TYPE	bildungsroman
-LIT_TYPE	allegory
-LIT_TYPE	satire
-LIT_TYPE	non-fiction
-LIT_TYPE	journalism
-LIT_TYPE	autobiography
-LIT_BIG_NOUN	life
-LIT_BIG_NOUN	reality
-LIT_BIG_NOUN	humanity
-LIT_BIG_NOUN	being
-LIT_BIG_NOUN	hate
-LIT_BIG_NOUN	love
-LIT_BIG_NOUN	peer pressure
-LIT_BIG_NOUN	truth
-LIT_BIG_NOUN	religion
-LIT_BIG_NOUN	salvation
-LIT_BIG_NOUN	immortality
-LIT_BIG_NOUN	reason
-LIT_C_ONE	LIT_C_ONE_CLOSING
-LIT_ADV	probably
-LIT_ADV	totally
-LIT_ADV	definitely
-LIT_ADV	possibly
-LIT_ADV	most likely
-LIT_ADV	obviously
-LIT_ADV	clearly
-LIT_STOCK_PHRASE	part and parcel
-LIT_STOCK_PHRASE	one and the same
-LIT_PEOPLE_MOD	former LIT_PEOPLE
-LIT_PEOPLE_MOD	wannabe LIT_PEOPLE
-LIT_PEOPLE_MOD	concerned LIT_PEOPLE
-LIT_PEOPLE_MOD	politically-minded LIT_PEOPLE
-LIT_PEOPLE_MOD	contemplative LIT_PEOPLE
-LIT_PEOPLE_MOD	aspiring LIT_PEOPLE
-LIT_PEOPLE_MOD	erstwhile LIT_PEOPLE
-LIT_PEOPLE_MOD	LIT_PEOPLE
-LIT_PEOPLE_MOD	LIT_PEOPLE
-LIT_PEOPLE_MOD	LIT_PEOPLE
-LIT_PEOPLE_MOD	LIT_PEOPLE
-LIT_PEOPLE_MOD	LIT_PEOPLE
-LIT_PEOPLE_MOD	LIT_PEOPLE
-LIT_PEOPLE_MOD	LIT_PEOPLE
-LIT_GROUP	teen
-LIT_GROUP	under-class
-LIT_GROUP	German
-LIT_GROUP	Italian
-LIT_GROUP	immigrant
-LIT_GROUP	male
-LIT_GROUP	feminist
-LIT_GROUP	expatriot
-LIT_GROUP	Canadian
-LIT_PEOPLE	Germans
-LIT_PEOPLE	expatriots
-LIT_PEOPLE	Mexicans
-LIT_PEOPLE	critics
-LIT_PEOPLE	revolutionaries
-LIT_PEOPLE	feminists
-LIT_PEOPLE	women
-LIT_PEOPLE	homophobes
-LIT_PEOPLE	parents
-LIT_PEOPLE	teens
-LIT_PEOPLE	martyrs
-LIT_PEOPLE	immigrants
-LIT_PEOPLE	students
-LIT_C_ONE_CLOSING	LIT_BIG_NOUN is more deftly LIT_ACTION in LIT_BOOK than ever before.
-LIT_C_ONE_CLOSING	LIT_BOOK should be required reading for all LIT_PEOPLE_MOD .
-LIT_C_ONE_CLOSING	LIT_BOOK is truly LASTNAME 's most enduring contribution to mankind's continuing attempt to understand his own LIT_BIG_NOUN .
-LIT_C_ONE_CLOSING	as a testament to LIT_BIG_NOUN and a celebration of LIT_BIG_NOUN , LIT_BOOK will always ring true.
-LIT_C_ONE_CLOSING	LASTNAME 's LIT_BOOK will always be with me.
-LIT_C_ONE_CLOSING	LIT_BOOK remains the most important LIT_ACTION of LIT_BIG_NOUN ever committed to paper.
-LIT_C_ONE_CLOSING	LIT_BOOK might never be fully appreciated.
-LIT_C_ONE_CLOSING	the echoes of LIT_BOOK will reverberate through the centuries, for years to come.
-LIT_C_ONE_CLOSING	the sun may never set on the empire that is LIT_BOOK 's lasting influence.
-LIT_C_ONE_CLOSING	the influence of LIT_BOOK is stronger than ever.
-LIT_C_ONE_CLOSING	the influence of LASTNAME 's LIT_BOOK is still strong.
-LIT_C_ONE_CLOSING	it's easy to forget that LIT_BOOK was the most HIST_ADJ work of its time.
-LIT_C_TWO	While other works influenced by LIT_SCHOOL are LIT_DURATION forgotten , LIT_BOOK remains LIT_ADJ_POS .
-LIT_C_TWO	Perhaps it's time that scholars reevaluated their estimation of the book .
-LIT_C_THREE	Though contemporaries found LASTNAME 's use of LIT_THEMES LIT_ADJ_NEG , history will vindicate LIT_BOOK .
-LIT_C_THREE	Though famous for portrayals of LIT_THEMES_A in other works, LASTNAME will always be loved for his LIT_ADJ_POS LIT_ACTION of LIT_THEMES_B in this book.
-LIT_C_FOUR	This work is a fine example of what I like to call LIT_TYPE .
-LIT_C_FOUR	The Great Muse certainly smiled on LASTNAME when LIT_BOOK was written.
-LIT_C_FOUR	This book is perhaps the greatest LIT_ACTION of LIT_BIG_NOUN mankind has ever seen.
-LIT_C_FOUR	Join me in appreciating it .
-LIT_C_FOUR	FIRSTNAME LASTNAME , we salute you.
-LIT_C_FOUR	God rest ye, FIRSTNAME LASTNAME .
-LIT_C_FOUR	All thanks to a person I like to call FIRSTNAME LASTNAME .
-LIT_C_FOUR	FIRSTNAME LASTNAME : one soul lost in a LIT_ADJ_NEG whirlwind of LIT_NOUN .
-LIT_C_FOUR	This concludes my research.
-LIT_C_FOUR	Thus concludes my participation in this class.
-LIT_C_FOUR	Thus concludes my paper.
-LIT_C_FOUR	This is LIT_ADV why LASTNAME died disgraced and penniless .
-LIT_C_FOUR	Q. E. D. -- quite easily done.
-LIT_THEMES	LIT_THEMES_A
-LIT_THEMES	LIT_THEMES_B
-LIT_THEMES	LIT_THEMES_C
-LIT_THEMES_A	irony
-LIT_THEMES_A	tragedy
-LIT_THEMES_A	wilderness
-LIT_THEMES_A	pathos
-LIT_THEMES_A	bathos
-LIT_THEMES_A	allegory
-LIT_THEMES_A	juxtapostion
-LIT_THEMES_A	satire
-LIT_THEMES_A	the tragic hero
-LIT_THEMES_A	the patriarch
-LIT_THEMES_A	destiny
-LIT_THEMES_B	dystopic future-vision
-LIT_THEMES_B	revolution
-LIT_THEMES_B	iconoclasm
-LIT_THEMES_B	loss of innocence
-LIT_THEMES_B	coming of age
-LIT_THEMES_B	the journey
-LIT_THEMES_B	the absurd
-LIT_THEMES_B	nature
-LIT_THEMES_B	political commentary
-LIT_THEMES_B	social commentary
-LIT_THEMES_B	subversive undertones
-LIT_THEMES_C	incest
-LIT_THEMES_C	phallic imagery
-LIT_THEMES_C	sexual identity
-LIT_THEMES_C	farce
-LIT_THEMES_C	sexuality
-LIT_THEMES_C	human nature
-LIT_THEMES_C	the supernatural
-LIT_THEMES_C	the prison
-LIT_THEMES_C	sensuality
-LIT_THEMES_C	self-indulgence
-LIT_SOURCE	Jane Austen
-LIT_SOURCE	Mark Twain
-LIT_SOURCE	Shakespeare
-LIT_SOURCE	T. S. Eliot
-LIT_SOURCE	Robert Frost
-LIT_SOURCE	James Joyce
-LIT_SOURCE	Tom Wolfe
-LIT_SOURCE	John Updike
-LIT_SOURCE	Ovid
-LIT_SOURCE	Lewis Carroll
-LIT_SOURCE	Oscar Wilde
-LIT_SOURCE	Eugene Ionesco
-LIT_SOURCE	Lao Tzu
-LIT_SOURCE	Gustave Flaubert
-LIT_CHARACTER	LIT_FIRST_NAME LIT_LAST_NAME
-LIT_FIRST_NAME	Tom
-LIT_FIRST_NAME	Moby
-LIT_FIRST_NAME	David
-LIT_FIRST_NAME	Captain
-LIT_FIRST_NAME	Mr.
-LIT_FIRST_NAME	One-Eyed
-LIT_FIRST_NAME	William
-LIT_FIRST_NAME	Colonel
-LIT_FIRST_NAME	Benvolio
-LIT_FIRST_NAME	King
-LIT_FIRST_NAME	Master
-LIT_FIRST_NAME	Little Timmy
-LIT_FIRST_NAME	Nick
-LIT_FIRST_NAME	Holden
-LIT_FIRST_NAME	Ichabod
-LIT_FIRST_NAME	Ishmael
-LIT_LAST_NAME	Joad
-LIT_LAST_NAME	Daniel
-LIT_LAST_NAME	Dick
-LIT_LAST_NAME	Lee
-LIT_LAST_NAME	Maxwell
-LIT_LAST_NAME	Lewis
-LIT_LAST_NAME	Crane
-LIT_LAST_NAME	Sawyer
-LIT_LAST_NAME	Adams
-LIT_LAST_NAME	Stephenson
-LIT_LAST_NAME	Caulfield
-LIT_SCHOOL	the LIT_MOVEMENT school of HIST_NATIONALITY literature
-LIT_SCHOOL	the LIT_MOVEMENT school
-LIT_SCHOOL	the LIT_MOVEMENT movement
-LIT_SCHOOL	the LIT_PERIOD renaissance of HIST_NATIONALITY literature
-LIT_SCHOOL	the LIT_MOVEMENT school
-LIT_SCHOOL	the LIT_MOVEMENTA movement
-LIT_SCHOOL	the HIST_NATIONALITY LIT_MOVEMENTA school
-LIT_MOVEMENT	LIT_MOVEMENTA
-LIT_MOVEMENT	post LIT_MOVEMENTA
-LIT_MOVEMENT	pre LIT_MOVEMENTA
-LIT_MOVEMENT	LIT_PERIOD LIT_MOVEMENTA
-LIT_MOVEMENTA	Modernist
-LIT_MOVEMENTA	Romantic
-LIT_MOVEMENTA	Christian
-LIT_MOVEMENTA	Minimalist
-LIT_MOVEMENTA	Symbolist
-LIT_MOVEMENTA	Surrealist
-LIT_MOVEMENTA	Dadaist
-LIT_MOVEMENTA	Romantic
-LIT_MOVEMENTA	Positivist
-LIT_MOVEMENTA	Constructivist
-LIT_MOVEMENTA	Colonialist
-LIT_MOVEMENTA	reactionary
-LIT_MOVEMENTA	conservative
-LIT_PERIOD	18th century
-LIT_PERIOD	late 17th century
-LIT_PERIOD	mid 19th century
-LIT_PERIOD	early 20th century
-LIT_PERIOD	16th century
-LIT_PERIOD	20th century
-LIT_PERIOD	late 20th century
-LIT_QUOTE	\" LIT_QUOTEA .\" ( LASTNAME HIST_QUOTE_PAGE )
-LIT_QUOTEA	He drank the coffee
-LIT_QUOTEA	He sat in the chair
-LIT_QUOTEA	The woman looked into his eyes
-LIT_QUOTEA	Yearning pervaded the camp
-LIT_QUOTEA	She looked to the bleak horizon
-LIT_QUOTEA	There was hope in her eyes; in his, hope of a different kind
-LIT_QUOTEA	All they needed was LIT_BIG_NOUN 
-LIT_QUOTEA	The man and the boy talked for hours about absolutely nothing
-LIT_QUOTEA	Six of the men were LIT_PEOPLE ; the others were LIT_PEOPLE 
-LIT_QUOTEA	His face was bright as he looked at her
-LIT_QUOTEA	Her eyes were blue like sapphires
-LIT_QUOTEA	His sadness was deep, as if it wouldn't end
-LIT_QUOTEA	Four years had passed since the fun county fair
-LIT_QUOTEA	The winter winds blew cold, like snow
-LIT_QUOTEA	Autumn is the finest, and third, season
-LIT_QUOTEA	It was late at night when the old man died
-LIT_QUOTEA	Oh! How beautiful a sunrise can be!
-LIT_QUOTEA	She sat on the bed
-LIT_QUOTEA	It was a terrible week in France
-LIT_QUOTEA	Tuesday was a the bleakest day for the Parkers
-LIT_QUOTEA	She was not so much fat as unloved
-LIT_QUOTEA	Surely, fate was with them
-LIT_QUOTEA	There was nothing else to be done
-LIT_QUOTEA	I couldn't believe it
-LIT_QUOTEA	Down by the river, there was much mud and much water to drink
-LIT_QUOTEA	Unheard, I cried
-LIT_QUOTEA	The whiskey tasted good to the man
-LIT_QUOTEA	The man doffed his nice hat
-LIT_QUOTEA	Never give a party if you will be the most interesting person there
-LIT_QUOTEA	I subscribed to LIT_MOVEMENTA beliefs
-LIT_QUOTEA	My ideology is quite obvious
-LIT_QUOTEA	He was ready for any unforeseen event
-LIT_QUOTEA	The game was up
-LIT_QUOTEA	Life offered nothing but fear itself
-LIT_QUOTEA	Love lived in LIT_ADJ bottles of regret
-LIT_NOUN	wanderlust
-LIT_NOUN	the zeitgiest
-LIT_NOUN	soul-searching
-LIT_NOUN	angst
-LIT_NOUN	hope
-LIT_CHAPTER	LIT_CHAPTER_EARLY
-LIT_CHAPTER	LIT_CHAPTER_LATE
-LIT_CHAPTER_EARLY	opening monologue
-LIT_CHAPTER_EARLY	first chapter
-LIT_CHAPTER_EARLY	second chapter
-LIT_CHAPTER_EARLY	prologue
-LIT_CHAPTER_EARLY	first half
-LIT_CHAPTER_LATE	tenth chapter
-LIT_CHAPTER_LATE	final paragraph
-LIT_CHAPTER_LATE	twelfth chapter
-LIT_CHAPTER_LATE	latter half
-LIT_CHAPTER_LATE	closing scene
+
 SCIPAPER_SHORT	{
 
 
@@ -1243,343 +660,18 @@ SCI_SOURCE	Ole-Johan Dahl
 SCI_SOURCE	Kristen Nygaard
 SCI_SOURCE	Adi Shamir
 SCI_SOURCE	Leoanrd Adleman
-SCI_YEAR	1886
-SCI_YEAR	1968
-SCI_YEAR	1992
-SCI_YEAR	1781
-SCI_YEAR	1612
-SCI_YEAR	1745
-SCI_YEAR	1016 AD
-SCI_YEAR	1974
-SCI_YEAR	1949
-SCI_YEAR	784 BC
-HISTPAPER_SHORT	{
-
-
- HIST_PARAGRAPH_A 
-
- HIST_PARAGRAPH_B 
-
- HIST_PARAGRAPH_C
-}
-
-HISTPAPER_LONG	{
-
-
- HIST_PARAGRAPH_A 
-
- HIST_PARAGRAPH_B_LONG 
-
- HIST_PARAGRAPH_C
-}
-
-HIST_PARAGRAPH_B_LONG	{
-HIST_PARAGRAPH_B 
-
- HIST_PARAGRAPH_B 
-
- HIST_PARAGRAPH_B 
-
- HIST_PARAGRAPH_B 
-
- HIST_PARAGRAPH_B 
-
- HIST_PARAGRAPH_B 
-
- HIST_PARAGRAPH_B 
-
- HIST_PARAGRAPH_B
-}
-
-HISTPAPER_TITLE	TOPIC : HIST_SUBTITLE
-HISTPAPER_TITLE	TOPIC and HIST_FACT
-HIST_PARAGRAPH_BODY	{
-INTROA HIST_PARAGRAPH_B 
-
- INTROB HIST_PARAGRAPH_B 
-
- INTROC HIST_PARAGRAPH_B
-}
-
-HIST_PARAGRAPH_BODY_LONG	HIST_PARAGRAPH_BODY HIST_PARAGRAPH_BODY HIST_PARAGRAPH_BODY
-HIST_PARAGRAPH_A	HIST_A1 HIST_A2 HIST_A3
-HIST_PARAGRAPH_B	HIST_B1 HIST_B2 HIST_B3
-HIST_PARAGRAPH_C	HIST_C1 HIST_C2 HIST_C3 HIST_C4
-HIST_SUBTITLE	HIST_MOVEMENT HIST_ACT or HIST_MOVEMENT HIST_ACT ?
-HIST_SUBTITLE	HIST_SOURCE and the HIST_ACT of HIST_YEAR
-HIST_SUBTITLE	a HIST_ADJ time
-HIST_SUBTITLE	the HIST_ACT of the HIST_PEOPLE
-HIST_SUBTITLE	COMPLEXNOUN and COMPLEXNOUN
-HIST_A1	Many HIST_SCHOLARS agree that TOPIC is HIST_ADV the most HIST_ADJ event in HIST_NATIONALITY history.
-HIST_A1	TOPIC was a HIST_ADJ turning-point in HIST_NATIONALITY history.
-HIST_A1	TOPIC is perhaps the most misunderstood point in HIST_NATIONALITY history.
-HIST_A1	When studying TOPIC , it is HIST_ADJ to consider the HIST_NATIONALITY perspective on this significant event.
-HIST_A1	HIST_QUOTE As HIST_SOURCE said in HIST_YEAR , TOPIC was certainly a HIST_ADJ time full of COMPLEXNOUN and COMPLEXNOUN .
-HIST_A1	In HIST_YEAR , HIST_SOURCE had this to say about TOPIC :  HIST_QUOTE
-HIST_A1	Perhaps HIST_SOURCE best summed up the HIST_NATIONALITY sentiment toward TOPIC when he said, HIST_QUOTE
-HIST_A2	HIST_TRANS it is HIST_ADJ to see that TOPIC was in fact a product of the HIST_MOVEMENT movement and its HIST_NATIONALITY followers.
-HIST_A2	HIST_TRANS it became obvious that TOPIC was not nearly as HIST_ADJ as HIST_NATIONALITY  HIST_SCHOLARS would have us believe.
-HIST_A2	HIST_TRANS we now know that TOPIC was actually a HIST_ADJ conspiracy by the HIST_NATIONALITY  HIST_PEOPLE in their attempt to distract its citizens from the COMPLEXNOUN of the HIST_MOVEMENT movement.
-HIST_A2	While HIST_ADJ HIST_SCHOLARS have called this event HIST_ADJ , I would argue that TOPIC was in fact HIST_ADJ .
-HIST_TRANS	Although it was not clear in HIST_YEAR , 
-HIST_TRANS	While other HIST_ADJ HIST_SCHOLARS may disagree, 
-HIST_TRANS	But after examining the HIST_ADJ evidence, 
-HIST_A3	HIST_ANALYSIS : HIST_FACT , HIST_FACT , and HIST_FACT .
-HIST_ANALYSIS	This claim is supported by three HIST_ADJ facts
-HIST_ANALYSIS	This claim is confirmed by three HIST_ADJ points
-HIST_FACT	the HIST_NATIONALITY HIST_ACT of HIST_YEAR
-HIST_FACT	the HIST_NATIONALITY HIST_ACT of HIST_YEAR that HIST_EFFECT
-HIST_FACT	the HIST_SOURCE HIST_ACT of HIST_YEAR
-HIST_FACT	the HIST_SOURCE HIST_ACT of HIST_YEAR that HIST_EFFECT
-HIST_FACT	the HIST_MOVEMENT manifesto written by HIST_SOURCE
-HIST_FACT	the COMPLEXNOUN present in the HIST_ACT of HIST_YEAR
-HIST_FACT	the HIST_NATIONALITY literature of the HIST_MOVEMENT period
-HIST_B1	it's important to take into account a HIST_ADJ quote by HIST_SOURCE : HIST_QUOTE HIST_QUOTE_COMMENT
-HIST_B1	let us not forget HIST_SOURCE 's feelings on the subject: HIST_QUOTE HIST_QUOTE_COMMENT
-HIST_B1	any examination of TOPIC would be incomplete without HIST_SOURCE : HIST_QUOTE HIST_QUOTE_COMMENT
-HIST_B1	the HIST_NATIONALITY HIST_ACT of HIST_YEAR had a HIST_ADJ role in TOPIC because, as HIST_SOURCE said, HIST_QUOTE HIST_QUOTE_COMMENT
-HIST_B1	in HIST_YEAR a member of a HIST_ADJ group of HIST_NATIONALITY HIST_SCHOLARS wrote: HIST_QUOTE HIST_QUOTE_COMMENT
-HIST_B1	HIST_FACT was HIST_ADJ in TOPIC compared to HIST_FACT .
-HIST_B1	HIST_FACT was a HIST_ADJ event that almost rivaled TOPIC in terms of its COMPLEXNOUN .
-HIST_B1	TOPIC cannot be truly understood without examination of HIST_FACT .
-HIST_B2	When we examine HIST_FACT , what is most HIST_ADJ is its COMPLEXNOUN and how that relates to TOPIC .
-HIST_B2	Even HIST_SOURCE agrees that HIST_FACT was a direct cause of TOPIC . In HIST_YEAR he said HIST_QUOTE
-HIST_B2	The HIST_ADJ reality is that HIST_FACT was caused by TOPIC , a fact well documented by HIST_SOURCE .
-HIST_B2	HIST_SOURCE , in spite of his HIST_NATIONALITY allegiances, believed that HIST_FACT and TOPIC were in fact symptoms of the same HIST_MOVEMENT unrest among the HIST_PEOPLE .
-HIST_B2	This begs the question, was TOPIC HIST_MOVEMENT ? In HIST_YEAR it was thought that HIST_QUOTE
-HIST_B2	Without the HIST_MOVEMENT HIST_ACT it is unlikely that TOPIC would ever have come to fruition.
-HIST_B2	Without TOPIC it is unlikely that the HIST_MOVEMENT HIST_ACT would ever have occurred.
-HIST_B2	Without TOPIC it is unlikely that the HIST_NATIONALITY HIST_ACT of HIST_YEAR would have been successful.
-HIST_B3	HIST_ADV HIST_SCHOLARS recognize that the two are intertwined.
-HIST_B3	If HIST_FACT was a HIST_MOVEMENT plot, then obviously TOPIC must have been as well.
-HIST_B3	While HIST_SOURCE believed that TOPIC was caused by the HIST_PEOPLE , this HIST_ADJ evidence points instead to the HIST_PEOPLE .
-HIST_B3	Though TOPIC may have been HIST_MOVEMENT , this HIST_ADJ fact was never accepted by the HIST_NATIONALITY HIST_PEOPLE .
-HIST_B3	In the opinion of HIST_SOURCE , nothing could ever be as HIST_ADJ as TOPIC .
-HIST_B3	HIST_ADV the COMPLEXNOUN in HIST_FACT has been grossly misinterpreted by HIST_SCHOLARS .
-HIST_B3	HIST_ADV the role of HIST_MOVEMENT HIST_SCHOLARS in TOPIC has been overrated.
-HIST_B3	HIST_ADV HIST_SCHOLARS have marginalized the part of HIST_MOVEMENT in TOPIC .
-INTROA	LIT_MIDDLE_ONE
-INTROB	Aside from HIST_FACT ,
-INTROB	LIT_MIDDLE_TWO
-INTROB	LIT_MIDDLE_TWO
-INTROC	LIT_MIDDLE_THREE
-COMPLEXNOUN	democracy
-HIST_C1	HIST_OPENING the days of TOPIC are long over.
-HIST_C1	HIST_OPENING we've come a long way since TOPIC .
-HIST_C1	HIST_OPENING our memories of TOPIC have become faded.
-HIST_C1	HIST_OPENING the influence of TOPIC has waned.
-HIST_C1	HIST_OPENING the lessons of TOPIC seem outdated and irrelevant.
-HIST_C1	HIST_OPENING the survivors of TOPIC are growing fewer by the day.
-HIST_C2	It's easy to forget that, once, TOPIC was a HIST_ADJ force that changed the minds and hearts of the HIST_NATIONALITY HIST_PEOPLE .
-HIST_C2	But, in reality, the lessons of TOPIC are more relevant than ever.
-HIST_C3	Even as late as HIST_YEAR , HIST_SOURCE noted , HIST_QUOTE
-HIST_C3	As prominent HIST_SCHOLARS like HIST_SOURCE have noted, HIST_QUOTE
-HIST_C4	The world was changing. Changing, with the help of TOPIC .
-HIST_C4	HIST_ADV we are destined to never truly understand how much we owe to TOPIC .
-HIST_C4	God bless America.
-HIST_OPENING	these days
-HIST_OPENING	nowadays
-HIST_OPENING	today
-HIST_OPENING	as we begin the new millennium
-HIST_OPENING	in modern times
-HIST_OPENING	in the HIST_ADJ world of the 21st century
-HIST_ACT	War
-HIST_ACT	Election
-HIST_ACT	Rebellion
-HIST_ACT	Revolution
-HIST_ACT	Tariff
-HIST_ACT	Tax
-HIST_ACT	Coup
-HIST_ACT	Act
-HIST_ACT	Measure
-HIST_ACT	Law
-HIST_ACT	Doctrine
-HIST_ACT	Declaration
-HIST_ACT	Adjustment
-HIST_ACT	Invasion
-HIST_ACT	Depression
-HIST_ACT	Recession
-HIST_EFFECT	HIST_EFFECT_NEG
-HIST_EFFECT	HIST_EFFECT_POS
-HIST_EFFECT_POS	cut off relations with HIST_NATION
-HIST_EFFECT_POS	paved the way for the HIST_MOVEMENT HIST_ACT
-HIST_EFFECT_NEG	threw HIST_NATION into HIST_NOUN_NEG
-HIST_EFFECT_NEG	led HIST_NATION to suppress its HIST_PEOPLE
-HIST_EFFECT_NEG	improved relations with the HIST_NATIONALITY HIST_PEOPLE
-HIST_PEOPLE	elite
-HIST_PEOPLE	lower-class
-HIST_PEOPLE	upper-class
-HIST_PEOPLE	citizenry
-HIST_PEOPLE	populace
-HIST_PEOPLE	landed gentry
-HIST_PEOPLE	middle class
-HIST_PEOPLE	governing-class
-HIST_PEOPLE	proletariat
-HIST_PEOPLE	bourgeoisie
-HIST_SCHOLARS	scholars
-HIST_SCHOLARS	historians
-HIST_SCHOLARS	academics
-HIST_SCHOLARS	historical writers
-HIST_SCHOLARS	political scientists
-HIST_SCHOLARS	anthropologists
-HIST_SCHOLARS	sociologists
-HIST_NATION	America
-HIST_NATION	Germany
-HIST_NATION	the Soviet Union
-HIST_NATION	the U.S.S.R.
-HIST_NATION	Japan
-HIST_NATION	Rome
-HIST_NATION	Greece
-HIST_NATION	Egypt
-HIST_NATION	Britian
-HIST_NATION	England
-HIST_NATION	France
-HIST_NATION	Ireland
-HIST_NATION	China
-HIST_NATION	Italy
-HIST_NATIONALITY	American
-HIST_NATIONALITY	French
-HIST_NATIONALITY	Italian
-HIST_NATIONALITY	Cuban
-HIST_NATIONALITY	Canadian
-HIST_NATIONALITY	British
-HIST_NATIONALITY	Japanese
-HIST_NATIONALITY	German
-HIST_NATIONALITY	Roman
-HIST_NATIONALITY	Ottoman
-HIST_NATIONALITY	Greek
-HIST_ADJ	LIT_ADJ_POS
-HIST_ADV	particularly
-HIST_ADV	very
-HIST_ADV	dubiously
-HIST_ADV	daringly
-HIST_ADV	vehemently
-HIST_ADV	virulently
-HIST_ADV	daringly
-HIST_ADV	famously
-HIST_ADV	predictably
-HIST_ADV	clearly
-HIST_ADV	obviously
-HIST_ADJ_RHET	obvious
-HIST_ADJ_RHET	evident
-HIST_ADJ_RHET	clear
-HIST_ADJ_RHET	apparent
-HIST_ADJ_RHET	supposed
-HIST_ADJ_RHET	presumed
-HIST_NOUN_NEG	upheaval
-HIST_NOUN_NEG	revolution
-HIST_NOUN_NEG	disorder
-HIST_NOUN_NEG	depression
-HIST_NOUN_NEG	dispute
-HIST_NOUN_NEG	ruin
-HIST_NOUN_NEG	disrepair
-HIST_NOUN_NEG	recession
-HIST_NOUN_NEG	chaos
-HIST_MOVEMENT	Communism
-HIST_MOVEMENT	Socialism
-HIST_MOVEMENT	Nationalism
-HIST_MOVEMENT	Fascism
-HIST_MOVEMENT	Marxism
-HIST_MOVEMENT	Maoism
-HIST_MOVEMENT	Abolitionism
-HIST_MOVEMENT	Anarchism
-HIST_MOVEMENT	McCarthyism
-HIST_MOVEMENT	Reaganism
-HIST_MOVEMENT	New Historicism
-HIST_MOVEMENT	Colonialism
-HIST_MOVEMENT	Neo-Nazism
-HIST_MOVEMENT	Imperialism
-HIST_QUOTE	HIST_QUOTEA HIST_QUOTE_CITE
-HIST_QUOTEA	\"History hath triumphed over time, which besides it nothing but eternity hath triumphed over.\"
-HIST_QUOTEA	\"While we read history we make history.\"
-HIST_QUOTEA	\"Every great crisis of human history is a pass of Thermopylae, and there is always a Leonidas and his three hundred to die in it, if they can not conquer.\"
-HIST_QUOTEA	\"War makes rattling good history; but Peace is poor reading.\"
-HIST_QUOTEA	\"As the HIST_NATIONALITY HIST_PEOPLE say, there are three sexes,—men, women, and clergymen.\"
-HIST_QUOTEA	\"It hath been an opinion that the HIST_NATIONALITY HIST_PEOPLE are wiser than they seem, and the HIST_NATIONALITY HIST_PEOPLE seem wiser than they are; but howsoever it be between nations, certainly it is so in TOPIC .\"
-HIST_QUOTEA	\"Nothing succeeds like success.\"
-HIST_QUOTEA	\"Like the HIST_NATIONALITY Constitution, TOPIC owed its success in practice to its inconsistencies in principle.\"
-HIST_QUOTEA	\"Praise undeserved is scandal in disguise.\"
-HIST_QUOTEA	\" TOPIC ought to be the only study of a prince.\"
-HIST_QUOTEA	\"To the memory of TOPIC , first in war, first in peace, and first in the hearts of HIST_NATIONALITY countrymen.\"
-HIST_QUOTE_COMMENT	How true.
-HIST_QUOTE_COMMENT	I could not agree more.
-HIST_QUOTE_COMMENT	And how could one not agree?
-HIST_QUOTE_COMMENT	In some circles, this caused revolution; in others, revulsion.
-HIST_QUOTE_COMMENT	His opinion is HIST_ADJ not so much in its COMPLEXNOUN but in its HIST_ADJ use of COMPLEXNOUN to convey the HIST_MOVEMENT perspective on TOPIC .
-HIST_QUOTE_COMMENT	His comment truly captures the view of the HIST_PEOPLE when confronted with TOPIC .
-HIST_QUOTE_COMMENT	HIST_ADJ in this quote's COMPLEXNOUN is the HIST_MOVEMENT sentiment that swept over the HIST_NATIONALITY HIST_PEOPLE in HIST_YEAR .
-HIST_QUOTE_COMMENT	His motive for saying this is HIST_ADJ when you consider that HIST_SOURCE was a HIST_MOVEMENT .
-HIST_QUOTE_COMMENT	Immortal words from a HIST_ADJ player in the delicate balance that was TOPIC .
-HIST_QUOTE_COMMENT	Though this was written during the HIST_NATIONALITY HIST_ACT of HIST_YEAR , it is already evident that HIST_MOVEMENT ideals had infiltrated the HIST_ADJ thoughts of HIST_SCHOLARS .
-HIST_QUOTE_CITE	( HIST_QUOTE_NAME HIST_QUOTE_PAGE )
-HIST_QUOTE_NAME	Smith
-HIST_QUOTE_NAME	Washington
-HIST_QUOTE_NAME	Pliny
-HIST_QUOTE_NAME	Farrakan
-HIST_QUOTE_NAME	Boswell
-HIST_QUOTE_NAME	Cromwell
-HIST_QUOTE_NAME	Churchill
-HIST_QUOTE_NAME	Marx
-HIST_QUOTE_NAME	King
-HIST_QUOTE_NAME	Gould
-HIST_QUOTE_NAME	Herotodus
-HIST_QUOTE_PAGE	122
-HIST_QUOTE_PAGE	121
-HIST_QUOTE_PAGE	120
-HIST_QUOTE_PAGE	119
-HIST_QUOTE_PAGE	97
-HIST_QUOTE_PAGE	93
-HIST_QUOTE_PAGE	92
-HIST_QUOTE_PAGE	90
-HIST_QUOTE_PAGE	89
-HIST_QUOTE_PAGE	88
-HIST_QUOTE_PAGE	118
-HIST_QUOTE_PAGE	87
-HIST_QUOTE_PAGE	84
-HIST_QUOTE_PAGE	83
-HIST_SOURCE	Mark Twain
-HIST_SOURCE	Stephen Jay Gould
-HIST_SOURCE	Mao Zedong
-HIST_SOURCE	Benjamin Franklin
-HIST_SOURCE	John Lennon
-HIST_SOURCE	Noam Chomsky
-HIST_SOURCE	Abraham Lincoln
-HIST_SOURCE	Fidel Castro
-HIST_SOURCE	Winston Churchill
-HIST_SOURCE	James Madison
-HIST_SOURCE	John Quincy Adams
-HIST_SOURCE	Mikhail Gorbachev
-HIST_SOURCE	Thomas More
-HIST_SOURCE	Marcus Aurelius
-HIST_SOURCE	Aristotle
-HIST_SOURCE	Karl Marx
-HIST_YEAR	1944
-HIST_YEAR	1945
-HIST_YEAR	1968
-HIST_YEAR	1991
-HIST_YEAR	1789
-HIST_YEAR	1492
-HIST_YEAR	1943
-HIST_YEAR	1918
-HIST_YEAR	1917
-HIST_YEAR	1916
-HIST_YEAR	1915
-HIST_YEAR	1914
-HIST_YEAR	1913
-HIST_YEAR	1940
-HIST_YEAR	1941
-HIST_YEAR	1942
-HIST_YEAR	1972
-HIST_YEAR	1945
-HIST_YEAR	1775
-HIST_YEAR	1776
-HIST_YEAR	1777
-HIST_YEAR	1778
-HIST_YEAR	1779
-HIST_YEAR	1780
-HIST_YEAR	1781
-HIST_YEAR	1789
-HIST_YEAR	1791
+SCI_YEAR	1935
+SCI_YEAR	1953
+SCI_YEAR	1967
+SCI_YEAR	1970
+SCI_YEAR	1977
+SCI_YEAR	1980
+SCI_YEAR	1986
+SCI_YEAR	1993
+SCI_YEAR	1995
+SCI_YEAR	1999
+SCI_YEAR	2001
+SCI_YEAR	2004
 
 EVAL_SEC {
 
@@ -1759,20 +851,80 @@ GRAPH_Y_AXIS GRAPH_AXIS
 
 GRAPH_X_AXIS GRAPH_AXIS
 
-GRAPH_TYPE scatter=1
-GRAPH_TYPE scatter=1
-GRAPH_TYPE scatter=1
-GRAPH_TYPE scatter=2
-GRAPH_TYPE curve=1
-GRAPH_TYPE curve=1
-GRAPH_TYPE curve=1
-GRAPH_TYPE curve=1
-GRAPH_TYPE curve=1
-GRAPH_TYPE curve=2
-GRAPH_TYPE curve=2
-GRAPH_TYPE curve=2
-GRAPH_TYPE curve=4
-GRAPH_TYPE curve=10
+GRAPH_TYPE GRAPH_TYPE_SCATTER1
+GRAPH_TYPE GRAPH_TYPE_SCATTER1
+GRAPH_TYPE GRAPH_TYPE_SCATTER2
+GRAPH_TYPE GRAPH_TYPE_SCATTER2
+GRAPH_TYPE GRAPH_TYPE_CURVE1
+GRAPH_TYPE GRAPH_TYPE_CURVE1
+GRAPH_TYPE GRAPH_TYPE_CURVE1
+GRAPH_TYPE GRAPH_TYPE_CURVE1
+GRAPH_TYPE GRAPH_TYPE_CURVE1
+GRAPH_TYPE GRAPH_TYPE_CURVE2
+GRAPH_TYPE GRAPH_TYPE_CURVE2
+GRAPH_TYPE GRAPH_TYPE_CURVE2
+GRAPH_TYPE GRAPH_TYPE_CURVE2
+GRAPH_TYPE GRAPH_TYPE_CURVE4
+GRAPH_TYPE GRAPH_TYPE_CURVE4
+GRAPH_TYPE GRAPH_TYPE_CURVE10
+
+GRAPH_TYPE_SCATTER1 {
+
+ graphtype scatter=1
+ curvelabel notitle
+
+}
+
+GRAPH_TYPE_SCATTER2 {
+
+ graphtype scatter=2
+ curvelabel GRAPH_CURVE_LABEL
+ curvelabel GRAPH_CURVE_LABEL
+
+}
+
+GRAPH_TYPE_CURVE1 {
+
+ graphtype curve=1
+ curvelabel notitle
+
+}
+
+GRAPH_TYPE_CURVE2 {
+
+ graphtype curve=2
+ curvelabel GRAPH_CURVE_LABEL
+ curvelabel GRAPH_CURVE_LABEL
+
+}
+
+GRAPH_TYPE_CURVE4 {
+
+ graphtype curve=4
+ curvelabel GRAPH_CURVE_LABEL
+ curvelabel GRAPH_CURVE_LABEL
+ curvelabel GRAPH_CURVE_LABEL
+ curvelabel GRAPH_CURVE_LABEL
+
+}
+
+GRAPH_TYPE_CURVE10 {
+
+ graphtype curve=10
+ curvelabel GRAPH_CURVE_LABEL
+ curvelabel GRAPH_CURVE_LABEL
+ curvelabel GRAPH_CURVE_LABEL
+ curvelabel GRAPH_CURVE_LABEL
+ curvelabel GRAPH_CURVE_LABEL
+ curvelabel GRAPH_CURVE_LABEL
+ curvelabel GRAPH_CURVE_LABEL
+ curvelabel GRAPH_CURVE_LABEL
+ curvelabel GRAPH_CURVE_LABEL
+ curvelabel GRAPH_CURVE_LABEL
+
+}
+
+
 
 GRAPH_LOG set log x 10
 GRAPH_LOG set log y 10
@@ -1798,18 +950,14 @@ GRAPH_LOG
 GRAPH_CURVE_LABEL title 'NETWORK_TYPE'
 GRAPH_CURVE_LABEL title 'SCI_THING'
 GRAPH_CURVE_LABEL title 'EVAL_SYSTEM'
-GRAPH_CURVE_LABEL notitle
-GRAPH_CURVE_LABEL notitle
-GRAPH_CURVE_LABEL notitle
 
 GNUPLOT {
 
- graphtype GRAPH_TYPE
+ GRAPH_TYPE
  set xlabel "GRAPH_X_AXIS"
  set ylabel "GRAPH_Y_AXIS"
  GRAPH_LOG
- curvelabel GRAPH_CURVE_LABEL
- curvelabel GRAPH_CURVE_LABEL
+
  curvelabel GRAPH_CURVE_LABEL
  curvelabel GRAPH_CURVE_LABEL
  curvelabel GRAPH_CURVE_LABEL

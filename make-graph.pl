@@ -93,7 +93,7 @@ for( my $i = 0; $i < $curves; $i++ ) {
 	$expr =~ s/xxx/$x/g;
 	#print "expr = $expr\n";
 	my $y = eval( $expr );
-	if( !defined $y ) {
+	if( !defined $y or $y eq "NaN" ) {
 	    next;
 	}
 	
