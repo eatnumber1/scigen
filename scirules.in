@@ -1655,11 +1655,11 @@ EVAL_GUTS_ANALYSIS_2_A  Shown in EXP_FIG, WHICH_EXPERIMENTS call attention to SC
 EXP_FIG		Figure~\ref{LATEX_FIG_LABEL_REF}
 EXP_FIGS	Figures~\ref{LATEX_FIG_LABEL_REF} and~\ref{LATEX_FIG_LABEL_REF}
 
-WHICH_EXPERIMENTS	experiments (1) and (3)
+WHICH_EXPERIMENTS	experiments (1) and (3) enumerated above
 WHICH_EXPERIMENTS	the first two experiments
 WHICH_EXPERIMENTS	the second half of our experiments
-WHICH_EXPERIMENTS	experiments (3) and (4)
-WHICH_EXPERIMENTS	experiments (1) and (4)
+WHICH_EXPERIMENTS	experiments (3) and (4) enumerated above
+WHICH_EXPERIMENTS	experiments (1) and (4) enumerated above
 WHICH_EXPERIMENTS	all four experiments
 
 
