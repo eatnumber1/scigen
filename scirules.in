@@ -417,14 +417,14 @@ SCI_MODEL {
 
   MODEL_INTRO_P
 
-  LATEX_DIAGRAM_MAYBE
+  LATEX_DIAGRAM
 
   MODEL_BODY_P_MANY
 
 }
 
 LATEX_DIAGRAM_MAYBE LATEX_DIAGRAM
-#LATEX_DIAGRAM_MAYBE
+LATEX_DIAGRAM_MAYBE
 
 SCI_MODEL_TYPE	model
 SCI_MODEL_TYPE	design
@@ -581,7 +581,7 @@ IMPL_MID_X since SCI_SYSTEM_PROP, PROGRAMMING_VERBING the IMPL_COMPONENT was rel
 IMPL_MID_X SCI_OUR_SYSTEM requires root access in order to SCI_SYS_VERB SCI_GENERIC_NOUN
 IMPL_MID_X LIT_ALTHOUGH we have not yet optimized for CONSTRAINT_TYPE, this should be simple once we finish PROGRAMMING_VERBING the IMPL_COMPONENT
 IMPL_MID_X SCI_PEOPLE have complete control over the IMPL_COMPONENT, which of course is necessary so that SCI_OVERALL_THESIS_PROVE
-IMPL_MID_X it was necessary to cap the EVAL_MEASUREMENT_UM used by SCI_OUR_SYSTEM to MED_NUM EVAL_UNIT
+IMPL_MID_X it was necessary to cap the EVAL_MEASUREMENT_UM used by SCI_OUR_SYSTEM to MED_NUM EVAL_UNIT_UM
 IMPL_MID_X the IMPL_COMPONENT and the IMPL_COMPONENT must run IMPL_RUN_TYPE
 
 IMPL_CONCL we plan to release all of this code under LICENSE_TYPE XXX
@@ -1643,7 +1643,7 @@ VERSION		VERSION_BASE, Service Pack DIGIT
 
 EVAL_GUTS {
 
-EVAL_GUTS_INTRO EVAL_GUTS_EXP_SET EVAL_GUTS_EXP_SET_FOLLOWON  XXX
+EVAL_GUTS_INTRO EVAL_GUTS_EXP_SET EVAL_GUTS_EXP_SET_FOLLOWON
 
 EVAL_GUTS_ANALYSIS_1
 
@@ -1693,7 +1693,7 @@ ACCURATE	inaccurate
 
 
 SMOOTHER	smoother
-SMOOTHER	less descretized
+SMOOTHER	less discretized
 SMOOTHER	more jagged
 SMOOTHER	less jagged
 
@@ -1745,8 +1745,8 @@ EVAL_GUTS_INTRO is it possible to justify having paid little attention to our im
 EVAL_GUTS_EXP_SET EXP_SET_LEADIN we ran four novel experiments: (1) EVAL_EXP; (2) EVAL_EXP; (3) EVAL_EXP; and (4) EVAL_EXP XXX
 
 EVAL_GUTS_EXP_SET_FOLLOWON
-EVAL_GUTS_EXP_SET_FOLLOWON	we discarded the results of some earlier experiments, notably when EVAL_EXP
-EVAL_GUTS_EXP_SET_FOLLOWON	all of these experiments completed without RESOURCE_STARVATION or RESOURCE_STARVATION
+EVAL_GUTS_EXP_SET_FOLLOWON	we discarded the results of some earlier experiments, notably when EVAL_EXP XXX
+EVAL_GUTS_EXP_SET_FOLLOWON	all of these experiments completed without RESOURCE_STARVATION or RESOURCE_STARVATION XXX
 
 RESOURCE_STARVATION	resource starvation
 RESOURCE_STARVATION	LAN congestion
@@ -2035,7 +2035,7 @@ SCI_THING_S	the Ethernet
 SCI_THING_S	RAID
 SCI_THING_P	802.11 mesh networks
 SCI_THING_P	access points
-SCI_THING_S	gigabit switch
+SCI_THING_P	gigabit switches
 SCI_THING_S	telephony
 SCI_THING_P	multi-processors
 SCI_THING_P	compilers
@@ -2049,7 +2049,7 @@ SCI_THING_P	Lamport clocks
 SCI_THING_S	the producer-consumer problem
 SCI_THING_P	checksums
 SCI_THING_P	link-level acknowledgements
-SCI_THING_S	public-private key pair
+SCI_THING_P	public-private key pairs
 SCI_THING_P	symmetric encryption
 SCI_THING_S	forward-error correction
 SCI_THING_S	erasure coding
@@ -3114,23 +3114,25 @@ SCI_DIAGRAM_VERBS	plots
 SCI_DIAGRAM_VERBS	shows
 SCI_DIAGRAM_VERBS	depicts
 
-EVAL_UNIT MB/s
-EVAL_UNIT ms
-EVAL_UNIT sec
-EVAL_UNIT # nodes
-EVAL_UNIT # CPUs
-EVAL_UNIT Joules
-EVAL_UNIT dB
-EVAL_UNIT percentile
-EVAL_UNIT man-hours
-EVAL_UNIT bytes
-EVAL_UNIT cylinders
-EVAL_UNIT celcius
-EVAL_UNIT pages
-EVAL_UNIT nm
-EVAL_UNIT teraflops
-EVAL_UNIT GHz
-EVAL_UNIT connections/sec
+EVAL_UNIT_UM	 MB/s
+EVAL_UNIT_UM	 ms
+EVAL_UNIT_UM	 sec
+EVAL_UNIT_NUM	 # nodes
+EVAL_UNIT_NUM	 # CPUs
+EVAL_UNIT_UM	 Joules
+EVAL_UNIT_UM	 dB
+EVAL_UNIT_UM	 percentile
+EVAL_UNIT_UM	 man-hours
+EVAL_UNIT_UM	 bytes
+EVAL_UNIT_UM	 cylinders
+EVAL_UNIT_UM	 celcius
+EVAL_UNIT_UM	 pages
+EVAL_UNIT_UM	 nm
+EVAL_UNIT_UM	 teraflops
+EVAL_UNIT_UM	 GHz
+EVAL_UNIT_UM	 connections/sec
+EVAL_UNIT+7	EVAL_UNIT_UM
+EVAL_UNIT	EVAL_UNIT_NUM
 
 EVAL_MEASUREMENT_UM throughput
 EVAL_MEASUREMENT_UM clock speed
