@@ -568,7 +568,7 @@ EVAL_SEC_INTRO_B	our logic follows a new model: performance MATTERS only as long
 EVAL_SEC_INTRO_B	TAKE_NOTE_THAT we have intentionally neglected to SCI_VERB PROP_OR_MEASUREMENT XXX
 EVAL_SEC_INTRO_B	TAKE_NOTE_THAT we have decided not to SCI_VERB PROP_OR_MEASUREMENT XXX
 EVAL_SEC_INTRO_B	only with the benefit of our system's SCI_THING might we optimize for CONSTRAINT_TYPE at the cost of CONSTRAINT_OR_MEASUREMENT.
-EVAL_SEC_INTRO_B 	we are grateful for MATH_ADJ SCI_THING_P; without them, we could not optimize for CONSTRAINT_TYPE simultaneously with CONSTRAINT_OR_MEASUREMENT.
+EVAL_SEC_INTRO_B 	we are grateful for SCI_MATH_ADJ SCI_THING_P; without them, we could not optimize for CONSTRAINT_TYPE simultaneously with CONSTRAINT_OR_MEASUREMENT.
 
 MATTERS		is king
 MATTERS		is of import
