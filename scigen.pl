@@ -57,17 +57,18 @@ sub pick_rand {
 }
 
 sub pop_first_rule {
-    my ($rules, $regex, $preamble, $input) = @_;
-    print "input -> $$input\n";
+    my ($rules, $regex, $preamble, $input, $rule) = @_;
+
+    $$preamble = undef;
+    $$rule = undef;
 
     my $ret = undef;
     if ($$input =~ s/$regex//s) {
 	$$preamble = $1;
-	$ret = $2;
-    } else {
-	$$preamble = $$input;
+	$$rule = $2;
+	return 1;
     }
-    return $ret;
+    return 0;
 }
 
 sub expand {
@@ -75,15 +76,15 @@ sub expand {
 
     my $input = pick_rand ($rules->{$start});
     my $res = "";
-    my $pre;
-    my $rule;
+    my ($pre, $rule);
     my @components;
-    while (($rule = pop_first_rule ($rules, $regex, \$pre, \$input))) {
+
+    while (pop_first_rule ($rules, $regex, \$pre, \$input, \$rule)) {
 	my $ex = expand ($rules, $regex, $rule);
 	push @components, $pre if length ($pre);
 	push @components, $ex if length ($ex);
     }
-    push @components, $pre if length ($pre);
+    push @components, $input if length ($input);
     return  join "", @components ;
 }
 
