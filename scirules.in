@@ -467,9 +467,8 @@ MODEL_INTRO_1+3 MODEL_INTRO
 
 MODEL_INTRO Reality aside, we would like to SCI_VERB a SCI_MODEL_TYPE for how SCI_OUR_SYSTEM might behave in theory MODEL_XXX
 MODEL_INTRO Suppose that there exists SCI_GENERIC_NOUN such that we can easily SCI_VERB SCI_GENERIC_NOUN MODEL_XXX
-MODEL_INTRO SCI_OUR_SYSTEM relies on the SCI_ADJ SCI_MODEL_TYPE outlined in the recent SCI_STATUS_ADJ work by SCI_BY_WHO
-MODEL_INTRO
-MODEL_INTRO MODEL_MID
+MODEL_INTRO SCI_OUR_SYSTEM relies on the SCI_ADJ SCI_MODEL_TYPE outlined in the recent SCI_STATUS_ADJ work by SCI_BY_WHO in the field of SCI_FIELD MODEL_XXX
+MODEL_INTRO+2 MODEL_MID
 
 SCI_ASSUME+3	assume
 SCI_ASSUME	hypothesize
