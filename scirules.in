@@ -1966,7 +1966,10 @@ SCI_THING_P	Markov models
 SCI_THING_S	the memory bus
 SCI_THING_P	SMPs
 SCI_THING_P	kernels
+SCI_THING_P	suffix trees
+SCI_THING_P	spreadsheets
 SCI_THING_P	operating systems
+SCI_THING_P	systems
 SCI_THING_P	interrupts
 SCI_THING_P	Web services
 SCI_THING_P	massive multiplayer online role-playing games
@@ -2003,7 +2006,6 @@ SCI_THING_S	e-business
 SCI_THING_P	neural networks
 SCI_THING_P	von Neumann machines
 SCI_THING_S	context-free grammar
-SCI_THING_P	embedded systems
 SCI_THING_P	digital-to-analog converters
 SCI_THING_P	journaling file systems
 SCI_THING_P	expert systems
@@ -2123,10 +2125,13 @@ SCI_BUZZWORD_ADJ_MULTI+10 SCI_BUZZWORD_ADJ, SCI_BUZZWORD_ADJ
 SCI_BUZZWORD_ADJ_MULTI SCI_BUZZWORD_ADJ, SCI_BUZZWORD_ADJ, SCI_BUZZWORD_ADJ
 SCI_BUZZWORD_ADJ peer-to-peer
 SCI_BUZZWORD_ADJ game-theoretic
+SCI_BUZZWORD_ADJ knowledge-base
 SCI_BUZZWORD_ADJ relational
 SCI_BUZZWORD_ADJ compact
 SCI_BUZZWORD_ADJ ubiquitous
 SCI_BUZZWORD_ADJ linear-time
+SCI_BUZZWORD_ADJ ``fuzzy''
+SCI_BUZZWORD_ADJ embedded
 SCI_BUZZWORD_ADJ constant-time
 SCI_BUZZWORD_ADJ client-server
 SCI_BUZZWORD_ADJ efficient
@@ -2166,6 +2171,8 @@ SCI_BUZZWORD_ADJ Bayesian
 SCI_BUZZWORD_ADJ multimodal
 SCI_BUZZWORD_ADJ authenticated
 SCI_BUZZWORD_ADJ interactive
+SCI_BUZZWORD_ADJ heterogeneous
+SCI_BUZZWORD_ADJ homogeneous
 SCI_BUZZWORD_ADJ collaborative
 SCI_BUZZWORD_ADJ concurrent
 SCI_BUZZWORD_ADJ probabilistic
