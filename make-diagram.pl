@@ -82,7 +82,7 @@ open( VIZ, ">$viz_file" ) or die( "Can't open $viz_file for writing" );
 print VIZ $graph_file;
 close( VIZ );
 
-system( "$program -Tps $viz_file > $eps_file" ) and
+system( "$program -Tps $viz_file > $eps_file.tmp; ps2epsi $eps_file.tmp $eps_file" ) and
     die( "Can't run $program on $viz_file" );
 
 if( !defined $filename ) {

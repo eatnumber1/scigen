@@ -90,7 +90,7 @@ while( <TEX> ) {
 	push @figures, $figfile;
     }
 
-    if( /figure=(dia.*),/ ) {
+    if( /figure=(dia[^\,\}]*)[\,\}]/ ) {
 	my $figfile = "$tmp_dir/$1";
 	my $done = 0;
 	while( !$done ) {
