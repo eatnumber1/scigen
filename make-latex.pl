@@ -14,6 +14,7 @@ my $ps_file = "$tmp_pre$$.ps";
 my $bib_file = "$tmp_dir/scigenbibfile.bib";
 my $class_files = "IEEEtran.cls IEEE.bst";
 my @authors;
+my $seed;
 
 sub usage {
     select(STDERR);
@@ -23,8 +24,11 @@ $0 [options]
   Options:
 
     --help                    Display this help message
-    --author                  An author of the paper (can be specified 
+    --author <quoted_name>    An author of the paper (can be specified 
                               multiple times)
+    --seed <seed>             Seed the prng with this
+    --file <file>             Save the postscript in this file
+    --tar  <file>             Tar all the files up
 
 EOUsage
 
@@ -35,15 +39,21 @@ EOUsage
 # Get the user-defined parameters.
 # First parse options
 my %options;
-&GetOptions( \%options, "help|?", "author=s@" )
+&GetOptions( \%options, "help|?", "author=s@", "seed=s", "tar=s", "file=s" )
     or &usage;
 
 if( $options{"help"} ) {
     &usage();
 }
-if( $options{"author"} ) {
+if( defined $options{"author"} ) {
     @authors = @{$options{"author"}};
 }
+if( defined $options{"seed"} ) {
+    $seed = $options{"seed"};
+} else {
+    $seed = int rand 0xffffffff;
+}
+srand($seed);
 
 my $name_dat = {};
 my $name_RE = undef;
@@ -138,7 +148,24 @@ system( "cp $class_files $tmp_dir; cd $tmp_dir; latex $tex_prefix; bibtex $tex_p
 	"dvips -o $ps_file $dvi_file" )
     and die( "Couldn't latex nothing." );
 
-system( "gv $ps_file" ) and die( "Couldn't gv $ps_file" );
+if( defined $options{"file"} ) {
+    my $f = $options{"file"};
+    system( "cp $ps_file $f" ) and die( "Couldn't cp to $f" );
+} else {
+    system( "gv $ps_file" ) and die( "Couldn't gv $ps_file" );
+}
+
+if( defined $options{"tar"} ) {
+    my $f = $options{"tar"};
+    my $tartmp = "$tmp_dir/tartmp.$$";
+    my $all_files = "$tex_file $class_files @figures $bib_file";
+    system( "mkdir $tartmp; cp $all_files $tartmp/;" ) and 
+	die( "Couldn't mkdir $tartmp" );
+    $all_files =~ s/$tmp_dir\///g;
+    system( "cd $tartmp; tar -czf $$.tgz $all_files; cd -; " . 
+	    "cp $tartmp/$$.tgz $f; rm -rf $tartmp" ) and 
+	die( "Couldn't tar to $f" );
+}
 
 system( "rm $tmp_pre*" ) and die( "Couldn't rm" );
 unlink( @figures );
