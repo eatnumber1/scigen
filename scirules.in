@@ -1596,14 +1596,16 @@ EVAL_ANALYZE_ONE bugs in our system caused the unstable behavior throughout the 
 EVAL_ANALYZE_ONE Gaussian electromagnetic disturbances in our EXP_WHERE caused unstable experimental results
 EVAL_ANALYZE_ONE operator error alone cannot account for these results
 EVAL_ANALYZE_ONE these EVAL_MEASUREMENT observations contrast to those seen in earlier work CITE, such as SCI_SOURCE's seminal treatise on SCI_THING_P and observed HARDWARE_PROP_OR_MEASUREMENT
-EVAL_ANALYZE_ONE note how EMULATING SCI_THING_P rather than EMULATING_THEM produce smoother, more reproducible results
+EVAL_ANALYZE_ONE note how EMULATING SCI_THING_P rather than EMULATING_THEM produce SMOOTHER, more reproducible results
 EVAL_ANALYZE_ONE the results come from only DIGIT trial runs, and were not reproducible
 EVAL_ANALYZE_ONE error bars have been elided, since most of our data points fell outside of DIGITDIGIT standard deviations from observed means
 EVAL_ANALYZE_ONE note that EVAL_FIG shows the \textit{STAT_ADJ} and not \textit{STAT_ADJ} SCI_MATH_ADJ HARDWARE_PROP_OR_MEASUREMENT
 EVAL_ANALYZE_ONE the curve in EXP_FIG should look familiar; it is better known as EVAL_MATH_EXPR
 EVAL_ANALYZE_ONE we scarcely anticipated how ACCURATE our results were in this phase of the EVALUATION
 EVAL_ANALYZE_ONE our course, all sensitive data was anonymized during our EMULATION
-EVAL_ANALYZE_ONE note that SCI_THING_P have SMOOTHER SCI_MATH_ADJ HARDWARE_PROP_OR_MEASUREMENT curves than HACKED SCI_THING_P
+EVAL_ANALYZE_ONE note that SCI_THING_P have SMOOTHER HARDWARE_PROP_OR_MEASUREMENT curves than do HACKED SCI_THING_P
+EVAL_ANALYZE_ONE the key to EXP_FIG is closing the feedback loop; EXP_FIG shows how SCI_OUR_SYSTEM's HARDWARE_PROP_OR_MEASUREMENT does not converge otherwise
+EVAL_ANALYZE_ONE the data in EXP_FIG, in parcitular, proves that four years of hard work were wasted on this project
 
 ACCURATE	accurate
 ACCURATE	wildly inaccurate
@@ -1644,8 +1646,8 @@ EVAL_GUTS_ANALYSIS_2_A	We have seen on type of behavior in EXP_FIGS; our other e
 EVAL_GUTS_ANALYSIS_2_A	We next turn to WHICH_EXPERIMENTS, shown in EXP_FIG
 EVAL_GUTS_ANALYSIS_2_A  Shown in EXP_FIG, WHICH_EXPERIMENTS call attention to SCI_OUR_SYSTEM's EVAL_MEASUREMENT
 
-EXP_FIG		Figure~\ref{LATEX_LABEL_REF_FIG}
-EXP_FIGS	Figures~\ref{LATEX_LABEL_REF_FIG} and~\ref{LATEX_LABEL_REF_FIG}
+EXP_FIG		Figure~\ref{LATEX_FIG_LABEL_REF}
+EXP_FIGS	Figures~\ref{LATEX_FIG_LABEL_REF} and~\ref{LATEX_FIG_LABEL_REF}
 
 WHICH_EXPERIMENTS	experiments (1) and (3)
 WHICH_EXPERIMENTS	the first two experiments
