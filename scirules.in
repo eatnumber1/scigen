@@ -76,7 +76,8 @@ SCI_TITLE_IMPACT	impact of
 SCI_TITLE_IMPACT	effect of
 SCI_TITLE_IMPACT	influence of
 
-SCI_AUTHORS FIRSTNAME LASTNAME
+# ! = do not choose the same expansion twice for this rule
+AUTHOR_NAME!
 
 #############################################################################
 ####### Abstract #######

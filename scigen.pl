@@ -16,6 +16,10 @@ my $pretty = 1;
 
 use vars qw [ $RE ];
 
+sub dup_name {
+    my $name = shift;
+    return $name . "!!!";
+}
 
 sub read_rules {
     my ($fh, $rules, $name) = @_;
@@ -27,6 +31,14 @@ sub read_rules {
 	my @words = split /\s+/, $line;
 	my $name = shift @words;
 	my $rule = "";
+
+	# non-duplicate rule
+	if( $name =~ /([^\+]*)\!$/ ) {
+	    $name = $1;
+	    push @{$rules->{dup_name("$name")}}, "";
+	    next;
+	}
+
 	if ($#words == 0 && $words[0] eq '{') {
 	    my $end = 0;
 	    while ($line = <$fh>) {
@@ -199,23 +211,52 @@ sub expand {
 	}
 	return $i;
     }
+    my $full_token;
 
-    my $input = pick_rand ($rules->{$start});
-    if ($debug >= 5) {
-	warn "$start -> $input\n";
-    }
-    my $res = "";
-    my ($pre, $rule);
-    my @components;
+    my $repeat = 0;
+    do {
 
-    while (pop_first_rule ($rules, \$pre, \$input, \$rule)) {
-	my $ex = expand ($rules, $rule);
-	push @components, $pre if length ($pre);
-	push @components, $ex if length ($ex);
-    }
-    push @components, $input if length ($input);
-    return  join "", @components ;
+	my $input = pick_rand ($rules->{$start});
+	if ($debug >= 5) {
+	    warn "$start -> $input\n";
+	}
+
+	my ($pre, $rule);
+	my @components;
+	$repeat = 0;	
+
+	while (pop_first_rule ($rules, \$pre, \$input, \$rule)) {
+	    my $ex = expand ($rules, $rule);
+	    push @components, $pre if length ($pre);
+	    push @components, $ex if length ($ex);
+	}
+	push @components, $input if length ($input);
+	$full_token = join "", @components ;
+	my $ref = $rules->{dup_name("$start")};
+	if( defined $ref ) {
+	    my @dups = @{$ref};
+	    # make sure we haven't generated this exact token yet
+	    foreach my $d (@dups) {
+		if( $d eq $full_token ) {
+		    $repeat = 1;
+		}
+	    }
+	    
+	    if( !$repeat ) {
+		push @{$rules->{dup_name("$start")}}, $full_token;
+	    } elsif( ($#dups-1) == $#{@{$rules->{$start}}} ) {
+		$full_token = "";
+		$repeat = 0;
+	    }
+	    
+	}
+
+    } while( $repeat );
+
+    return $full_token;
+    
 }
+
 
 # main
 my $dat = {} ;
