@@ -13,6 +13,8 @@ SCIPAPER_LATEX {
 
  SCI_MODEL
 
+ SCI_IMPL
+
  SCI_EVAL
 
  SCI_RELWORK
@@ -34,6 +36,8 @@ SCIPAPER_LATEX {
  SCI_RELWORK
 
  SCI_MODEL
+
+ SCI_IMPL
 
  SCI_EVAL
 
@@ -543,7 +547,75 @@ SCI_IMPL {
 
 IMPL_SEC_LATEX_HEADER
 
+IMPL_INTRO_P
+
 }
+
+IMPL_INTRO_P	IMPL_INTRO IMPL_BODY_INSIDE IMPL_CONCL
+
+IMPL_BODY_INSIDE+3 	IMPL_MID IMPL_MID IMPL_MID IMPL_MID
+IMPL_BODY_INSIDE+3 	IMPL_MID IMPL_MID IMPL_MID
+IMPL_BODY_INSIDE+2 	IMPL_MID IMPL_MID
+IMPL_BODY_INSIDE 	IMPL_MID
+
+PROGRAMMING_VERBING	hacking
+PROGRAMMING_VERBING	programming
+PROGRAMMING_VERBING	coding
+PROGRAMMING_VERBING	designing
+PROGRAMMING_VERBING	architecting
+PROGRAMMING_VERBING	implementing
+PROGRAMMING_VERBING	optimizing
+
+IMPL_INTRO after several TRACE_UNITs of DIFFICULT_X PROGRAMMING_VERBING, we finally have a working implementation of SCI_OUR_SYSTEM XXX
+IMPL_INTRO our implementation of SCI_OUR_SYSTEM is SCI_BUZZWORD_ADJ, SCI_BUZZWORD_ADJ, and SCI_BUZZWORD_ADJ XXX
+IMPL_INTRO though many skeptics said it couldn't be done (most notably SCI_BY_WHO), we SCI_PRESENT_VERB a fully-working version of SCI_OUR_SYSTEM XXX
+IMPL_INTRO in this section, we SCI_PRESENT_VERB version VERSION of SYSNAME, the culmination of TRACE_UNITs of PROGRAMMING_VERBING XXX 
+IMPL_INTRO SCI_OUR_SYSTEM is elegant; so, too, must be our implementation XXX
+IMPL_INTRO IMPL_MID_X XXX
+
+IMPL_MID LIT_MIDDLE_MAYBE IMPL_MID_X XXX
+IMPL_MID_X SCI_OUR_SYSTEM is composed of a IMPL_COMPONENT, a IMPL_COMPONENT, and a IMPL_COMPONENT
+IMPL_MID_X the IMPL_COMPONENT contains about MED_NUM CODE_LINES of LANGUAGE_UM
+IMPL_MID_X we have not yet implemented the IMPL_COMPONENT, as this is the least SCI_ADJ component of SCI_OUR_SYSTEM
+IMPL_MID_X since SCI_SYSTEM_PROP, PROGRAMMING_VERBING the IMPL_COMPONENT was relatively straightforward
+IMPL_MID_X SCI_OUR_SYSTEM requires root access in order to SCI_SYS_VERB SCI_GENERIC_NOUN
+IMPL_MID_X LIT_ALTHOUGH we have not yet optimized for CONSTRAINT_TYPE, this should be simple once we finish PROGRAMMING_VERBING the IMPL_COMPONENT
+IMPL_MID_X SCI_PEOPLE have complete control over the IMPL_COMPONENT, which of course is necessary so that SCI_OVERALL_THESIS_PROVE
+IMPL_MID_X it was necessary to cap the EVAL_MEASUREMENT_UM used by SCI_OUR_SYSTEM to MED_NUM EVAL_UNIT
+IMPL_MID_X the IMPL_COMPONENT and the IMPL_COMPONENT must run IMPL_RUN_TYPE
+
+IMPL_CONCL we plan to release all of this code under LICENSE_TYPE XXX
+IMPL_CONCL overall, SCI_OUR_SYSTEM adds only modest overhead and complexity to RELATED SCI_BUZZWORD_ADJ SCI_SYSTEM_PL XXX
+IMPL_CONCL we SCI_CAN imagine other SCI_APPROACH_PL to the implementation that would have made PROGRAMMING_VERBING it much simpler XXX
+IMPL_CONCL+3 IMPL_MID_X XXX
+
+
+LICENSE_TYPE the Gnu Public License
+LICENSE_TYPE public domain
+LICENSE_TYPE X11 license
+LICENSE_TYPE BSD license
+LICENSE_TYPE Microsoft's Shared Source License
+LICENSE_TYPE Old Plan 9 License
+LICENSE_TYPE Sun Public License
+
+IMPL_RUN_TYPE on the same node
+IMPL_RUN_TYPE in the same JVM
+IMPL_RUN_TYPE with the same permissions
+
+
+IMPL_COMPONENT client-side library
+IMPL_COMPONENT server daemon
+IMPL_COMPONENT centralized logging facility
+IMPL_COMPONENT collection of shell scripts
+IMPL_COMPONENT homegrown database
+IMPL_COMPONENT hand-optimized compiler
+IMPL_COMPONENT virtual machine monitor
+IMPL_COMPONENT hacked operating system
+IMPL_COMPONENT NONZDIGIT LANGUAGE_UM files
+
+CODE_LINES	lines
+CODE_LINES	semi-colons
+CODE_LINES	instructions
 
 #############################################################################
 ####### Discussion #######
