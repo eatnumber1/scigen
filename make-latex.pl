@@ -135,6 +135,11 @@ while( <TEX> ) {
 close( TEX );
 
 # generate bibtex 
+foreach my $author (@authors) {
+    for( my $i = 0; $i < 10; $i++ ) {
+	push @{$tex_dat->{"SCI_SOURCE"}}, $author;
+    }
+}
 open( BIB, ">$bib_file" ) or die( "Couldn't open $bib_file for writing" );
 foreach my $clabel (keys(%citelabels)) {
     my $sysname_cite = &get_system_name();
@@ -160,7 +165,7 @@ if( defined $options{"file"} ) {
     system( "gv $ps_file" ) and die( "Couldn't gv $ps_file" );
 }
 
-my $seedstring = "seed=$seed";
+my $seedstring = "seed=$seed authors={@authors}";
 if( defined $options{"tar"} ) {
     my $f = $options{"tar"};
     my $tartmp = "$tmp_dir/tartmp.$$";
