@@ -526,6 +526,8 @@ SCI_EVAL {
 
  EVAL_SEC_LATEX_HEADER
 
+ EVAL_SEC_INTRO
+
  EVAL_SEC_BODY_P
 
  LATEX_FIGURE
@@ -535,6 +537,180 @@ SCI_EVAL {
  LATEX_FIGURE
 
 }
+
+EVAL_SEC_INTRO 		EVAL_SEC_INTRO_A EVAL_SEC_INTRO_BS EVAL_SEC_INTRO_C
+
+EVAL_SEC_INTRO_BS	EVAL_SEC_HYP_SET
+EVAL_SEC_INTRO_BS	EVAL_SEC_HYP_SET LIT_MIDDLE_TWO EVAL_SEC_INTRO_B
+EVAL_SEC_INTRO_BS	EVAL_SEC_HYP_SET LIT_MIDDLE_TWO EVAL_SEC_INTRO_B LIT_MIDDLE_3 EVAL_SEC_INTRO_B
+
+EVAL_SEC_INTRO_A2	In this light, we worked hard to arrive at a suitable evaluation METHODOLOGY.
+EVAL_SEC_INTRO_A2	We did not take any shortcuts here.
+EVAL_SEC_INTRO_A2	We desire to prove that our ideas have merit, despite their costs in complexity.
+EVAL_SEC_INTRO_A2	Only with precise measurements might we convince the reader that performance is king.
+
+EVAL_SEC_INTRO_A	EVAL_SEC_INTRO_A1 EVAL_SEC_INTRO_A2
+
+EVAL_SEC_INTRO_A1	EVALUATING a system as AMBITIOUS as ours proved DIFFICULT.
+EVAL_SEC_INTRO_A1	Evaluating complex systems is difficult.
+EVAL_SEC_INTRO_A1	How would our system behave in a real-world scenario?
+EVAL_SEC_INTRO_A1	Systems are only useful if they are efficient enough to achieve their goals.
+EVAL_SEC_INTRO_A1	A well designed system that has bad performance is of no use to any man, woman or animal.
+EVAL_SEC_INTRO_A1	Building a system as AMBITIOUS as our would be for not without a generous EVALUATION.
+
+EVAL_SEC_INTRO_A	We now discuss our EVALUATION.
+EVAL_SEC_INTRO_A	Our EVALUATION represents a valuable research contribution in and of itself.
+EVAL_SEC_INTRO_A	As we will soon see, the goals of this section are manifold.
+
+EVAL_SEC_INTRO_B	Studies have shown that EVAL_MEASUREMENT is roughly PERCENTAGE higher than we might expect CITATION.
+
+PERCENTAGE	DIGITDIGIT\%
+PERCENTAGE	DIGITDIGIT\%
+
+
+EVAL_SEC_INTRO_B	TAKE_NOTE_THAT we have intentionally neglected to SCI_VERB PROP_OR_MEASUREMENT XXX
+EVAL_SEC_INTRO_B	TAKE_NOTE_THAT we have decided not to SCI_VERB PROP_OR_MEASUREMENT XXX
+
+TAKE_NOTE_THAT		note that
+TAKE_NOTE_THAT		an astute reader would now infer that
+TAKE_NOTE_THAT		unlike other authors,
+
+NEGLECTED		neglected
+NEGLECTED		failed
+
+EVAL_SEC_HYP_SET {
+Our overall EVALUATION seeks to prove three hyptheses: 
+(1) EVAL_SEC_HYPOTHESIS; 
+(2) EVAL_SEC_HYPOTHESIS; and finally
+(3) EVAL_SEC_HYPOTHESIS.
+}
+
+AFFECT		affect
+AFFECT		impact
+AFFECT		influence
+AFFECT		toggle
+AFFECT		adjust
+
+LITTLE		much
+LITTLE		little
+LITTLE		a whole lot
+
+EVAL_SEC_HYPOTHESIS 	that PROP_OR_MEASUREMENT is MORE_IMPORTANT_THAN PROP_OR_MEASUREMENT when MAXIMIZING EVAL_MEASUREMENT
+
+EVAL_SEC_HYPOTHESIS 	that SCI_THING_HAS actually shown DIFFERENT EVAL_MEASUREMENT over time
+
+EVAL_SEC_HYPOTHESIS 	that we can do LITTLE to AFFECT a SCI_SYSTEM's PROP_OR_MEASUREMENT
+
+THINGS_NO_LONGER_INFLUENCE	SCI_THING_P no longer AFFECT
+THINGS_NO_LONGER_INFLUENCE	SCI_THING_S no longer AFFECTs
+
+EVAL_SEC_HYPOTHESIS 	that THINGS_NO_LONGER_INFLUENCE PROP_OR_MEASUREMENT
+EVAL_SEC_HYPOTHESIS 	that THINGS_NO_LONGER_INFLUENCE performance
+EVAL_SEC_HYPOTHESIS 	that THINGS_NO_LONGER_INFLUENCE system design
+
+EVAL_SEC_HYPOTHESIS 	that EVAL_MEASUREMENT is a BAD way to measure EVAL_MEASUREMENT
+BAD		bad
+BAD		good
+BAD		obsolete
+BAD		outmoded
+
+EVAL_SEC_INTRO_C	We hope to make clear that our EVAL_MODING is the key to our EVALUATION.
+EVAL_SEC_INTRO_C	Our work in this regard is a novel contribution, in and of itself.
+EVAL_SEC_INTRO_C	Our EVALUATION will show that EVAL_MODING is crucial to our results.
+EVAL_SEC_INTRO_C	We hope that this section proves to the reader that EVAL_FACT.
+EVAL_SEC_INTRO_C	Our evaluation strives to make these points clear.
+EVAL_SEC_INTRO_C	Our EVALUATION holds suprising results for patient reader.
+
+EVAL_MODING		EVAL_MODING_HARDWARE
+EVAL_MODING		EVAL_MODING_SOFTWARE
+
+MORE_IMPORTANT_THAN	MORE important than
+MORE_IMPORTANT_THAN	not as important as
+
+MAXIMIZING		maximizing
+MAXIMIZING		minimizing
+MAXIMIZING		optimizing
+MAXIMIZING		improving
+
+IMPROVED		improved
+
+MORE			more
+MORE			less
+MORE			even more
+
+AMBITIOUS		ambitious
+AMBITIOUS		novel
+AMBITIOUS		experimental
+AMBITIOUS		unstable
+AMBITIOUS		complex
+AMBITIOUS		overengineered
+
+DIFFICULT_X		difficult
+DIFFICULT_X		arduous
+DIFFICULT_X		onerous
+
+DIFFICULT		DIFFICULT_X
+DIFFICULT		as DIFFICULT_X as EVAL_MODING
+DIFFICULT		more DIFFICULT_X than with previous systems
+
+EVAL_MODING_HARDWARE	MULTIPLE_VERBING the HARDWARE_PROP_OR_MEASUREMENT of EVAL_SYSTEM
+EVAL_MODING_SOFTWARE	HACK_VERBING the SOFTWARE_PROP_OR_MEASUREMENT of our SOFTWARE_SYSTEM
+
+SOFTWARE_SYSTEM		operating system
+SOFTWARE_SYSTEM		distributed system
+SOFTWARE_SYSTEM		mesh network
+SOFTWARE_SYSTEM		SCI_THING
+
+EVALUATING		evaluating
+EVALUATING		measuring
+EVALUATING		analyzing
+
+HACK_VERBING		patching
+HACK_VERBING		refactoring
+HACK_VERBING		reprogramming
+HACK_VERBING		extreme programming
+HACK_VERBING		exokernelizing
+HACK_VERBING		microkernelizing
+HACK_VERBING		distributing
+HACK_VERBING		autogenerating
+HACK_VERBING		automating
+HACK_VERBING		making autonomous
+HACK_VERBING		instrumenting
+HACK_VERBING		interposing on
+HACK_VERBING		monitoring
+
+SOFTWARE_PROP_UNMOD	code complexity
+SOFTWARE_PROP_UNMOD	ABI
+SOFTWARE_PROP_UNMOD	API
+SOFTWARE_PROP_UNMOD	user-kernel boundary
+SOFTWARE_PROP_UNMOD	software architecture
+
+SOFTWARE_PROP		SOFTWARE_PROP_UNMOD
+SOFTWARE_PROP		SOFTWARE_ADJ SOFTWARE_PROP_UNMOD
+SOFTWARE_PROP		SCI_BUZZWORD_ADJ SOFTWARE_PROP_UNMOD
+
+SOFTWARE_PROP_OR_MEASUREMENT	SOFTWARE_PROP
+SOFTWARE_PROP_OR_MEASUREMENT	EVAL_MEASUREMENT
+
+PROP_OR_MEASUREMENT	a system's SOFTWARE_PROP
+PROP_OR_MEASUREMENT	HARDWARE_PROP
+PROP_OR_MEASUREMENT	EVAL_MEASUREMENT
+
+SOFTWARE_ADJ		legacy
+SOFTWARE_ADJ		virtual
+SOFTWARE_ADJ		traditional
+SOFTWARE_ADJ		historical
+SOFTWARE_ADJ		effective
+
+MULTIPLE_VERBING	doubling
+MULTIPLE_VERBING	increasing
+MULTIPLE_VERBING	tripling
+MULTIPLE_VERBING	reducing
+MULTIPLE_VERBING	quadrupling
+
+EVALUATION		evaluation
+EVALUATION		performance analysis
+EVALUATION		evaluation METHODOLOGY
 
 NETWORK_TYPE_N	2
 NETWORK_TYPE_N	10
@@ -607,7 +783,7 @@ EXP_WHOSE	CERN's
 EXP_WHOSE	DARPA's
 EXP_WHOSE	the NSA's
 EXP_WHOSE	the KGB's
-EXP_WHOSE+3	our
+EXP_WHOSE+5	our
 EXP_WHOSE	Intel's
 
 EXP	EXP_TYPE on EXP_WHOSE EXP_WHERE
@@ -690,11 +866,12 @@ IMPACT		influence on
 IMPACT		inability to effect
 IMPACT		lack of influence on
 
-EVAL_SYSTEM	SCI_BUZZWORD_NOUN
+#EVAL_SYSTEM	SCI_BUZZWORD_NOUN
 EVAL_SYSTEM	SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN
+EVAL_SYSTEM	SCI_MATH_ADV SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN
 
 EVAL_FACT	EVAL_SYSTEM's IMPACT SCI_A_FACT
-EVAL_FACT	the SCI_MATH_ADV SCI_BUZZWORD_ADJ nature of SCI_BUZZWORD_NOUN
+EVAL_FACT	the SCI_MATH_ADV SCI_BUZZWORD_ADJ nature of EVAL_SYSTEM 
 EVAL_FACT	the SCI_MATH_ADV SCI_BUZZWORD_ADJ behavior of SCI_MATH_ADJ SCI_BUZZWORD_NOUN
 EVAL_FACT	SCI_A_FACT
 
@@ -935,58 +1112,64 @@ FINDING			discussion
 FINDING			technique
 FINDING+3
 
-SCI_THING	DHTs
-SCI_THING	robots
-SCI_THING	agents
-SCI_THING	Markov models
-SCI_THING	the memory bus
-SCI_THING	SMPs
-SCI_THING	kernels
-SCI_THING	operating systems
-SCI_THING	interrupts
-SCI_THING	Web services
-SCI_THING	massive multiplayer online role-playing games
-SCI_THING	Byzantine fault tolerance
-SCI_THING	the location-identity split
-SCI_THING	sensor networks
-SCI_THING	online algorithms
-SCI_THING	extreme programming
-SCI_THING	object-oriented languages
-SCI_THING	Scheme
-SCI_THING	DNS
-SCI_THING	802.11b
-SCI_THING	information retrieval systems
-SCI_THING	web browsers
-SCI_THING	the Commodore VIC-20
-SCI_THING	the Turing machine
-SCI_THING	B-trees
-SCI_THING	hierarchical databases
-SCI_THING	randomized algorithms
-SCI_THING	the Internet
-SCI_THING	the Internets
-SCI_THING	consistent hashing
-SCI_THING	the transistor
-SCI_THING	the UNIVAC computer
-SCI_THING	Boolean logic
-SCI_THING	voice-over-IP
-SCI_THING	the World Wide Web
-SCI_THING	flip-flop gates
-SCI_THING	e-business
-SCI_THING	neural networks
-SCI_THING	von Neumann machines
-SCI_THING	context-free grammar
-SCI_THING	embedded systems
-SCI_THING	journaling file systems
-SCI_THING 	Internet QoS
-SCI_THING	model checking
-SCI_THING	lambda calculus
-SCI_THING	scatter/gather I/O
-SCI_THING	XML
-SCI_THING	I/O automata
-SCI_THING	fiber-optic cables
-SCI_THING	the Ethernet
-SCI_THING	RAID
-SCI_THING	802.11 mesh networks
+SCI_THING	SCI_THING_P
+SCI_THING	SCI_THING_S
+
+SCI_THING_HAS	SCI_THING_S has
+SCI_THING_HAS	SCI_THING_P have
+
+SCI_THING_P	DHTs
+SCI_THING_P	robots
+SCI_THING_P	agents
+SCI_THING_P	Markov models
+SCI_THING_P	the memory bus
+SCI_THING_P	SMPs
+SCI_THING_P	kernels
+SCI_THING_P	operating systems
+SCI_THING_P	interrupts
+SCI_THING_P	Web services
+SCI_THING_P	massive multiplayer online role-playing games
+SCI_THING_P	Byzantine fault tolerance
+SCI_THING_P	the location-identity split
+SCI_THING_P	sensor networks
+SCI_THING_P	online algorithms
+SCI_THING_S	extreme programming
+SCI_THING_P	object-oriented languages
+SCI_THING_S	Scheme
+SCI_THING_S	DNS
+SCI_THING_S	802.11b
+SCI_THING_P	information retrieval systems
+SCI_THING_P	web browsers
+SCI_THING_S	the Commodore VIC-20
+SCI_THING_S	the Turing machine
+SCI_THING_P	B-trees
+SCI_THING_P	hierarchical databases
+SCI_THING_P	randomized algorithms
+SCI_THING_S	the Internet
+SCI_THING_P	the Internets
+SCI_THING_S	consistent hashing
+SCI_THING_S	the transistor
+SCI_THING_S	the UNIVAC computer
+SCI_THING_S	Boolean logic
+SCI_THING_S	voice-over-IP
+SCI_THING_S	the World Wide Web
+SCI_THING_P	flip-flop gates
+SCI_THING_S	e-business
+SCI_THING_P	neural networks
+SCI_THING_P	von Neumann machines
+SCI_THING_S	context-free grammar
+SCI_THING_P	embedded systems
+SCI_THING_P	journaling file systems
+SCI_THING_S 	Internet QoS
+SCI_THING_S	model checking
+SCI_THING_S	lambda calculus
+SCI_THING_S	scatter/gather I/O
+SCI_THING_S	XML
+SCI_THING_P	I/O automata
+SCI_THING_S	fiber-optic cables
+SCI_THING_S	the Ethernet
+SCI_THING_S	RAID
+SCI_THING_P	802.11 mesh networks
 SCI_THING_MOD	SCI_THING CITATION_SOMETIMES
 SCI_SYSTEM	algorithm
 SCI_SYSTEM	system
@@ -1002,6 +1185,11 @@ SCI_SYSTEM_PL	heuristics
 SCI_SYSTEM_PL	applications
 SCI_SYSTEM_PL	methodologies
 SCI_SYSTEM_PL	SCI_APPROACH_PL
+
+METHODOLOGY	methodology
+METHODOLOGY	method
+METHODOLOGY	approach
+METHODOLOGY	strategy
 
 SCI_FIELD	SCI_BUZZWORD_ADJ SCI_FIELD
 SCI_FIELD+9	SCI_MATH_ADJ SCI_FIELD
@@ -1171,6 +1359,7 @@ DIFFERENT	exaggerated
 DIFFERENT	weakened
 DIFFERENT	muted
 DIFFERENT	duplicated
+DIFFERENT	improved
 
 IMPROVEMENT	improvement
 IMPROVEMENT	degredation
@@ -1411,6 +1600,7 @@ SCI_VERB	develop
 SCI_VERB	refine
 SCI_VERB	investigate
 SCI_VERB	analyze
+SCI_VERB	measure
 SCI_VERB	improve
 SCI_VERB	emulate
 SCI_VERB	simulate
