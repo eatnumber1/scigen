@@ -155,7 +155,6 @@ SCI_SOLVE_CLAUSE SCI_GOAL_ACHIEVE this SCI_GOAL
 SCI_APPROACH approach
 SCI_APPROACH solution
 SCI_APPROACH method
-SCI_APPROACH methodology
 
 SCI_IN_THIS_PAPER in this paper
 SCI_IN_THIS_PAPER in this position paper
@@ -170,7 +169,7 @@ SCI_INTRO_A	Many SCI_PEOPLE would agree that, had it not been for TOPIC , the SC
 SCI_INTRO_A	SCI_THING_MOD must work XXX
 SCI_INTRO_A	In recent years, much research has been devoted to the SCI_ACT; LIT_REVERSAL, few have SCI_VERBED the SCI_ACT XXX
 SCI_INTRO_A	SCI_THING_MOD and SCI_THING_MOD, while SCI_ADJ in theory, have not until recently been considered SCI_ADJ XXX
-SCI_INTRO_A	The SCI_ACT is a SCI_PROBLEM XXX
+SCI_INTRO_A	The SCI_ACT is a SCI_ADJ SCI_PROBLEM XXX
 SCI_INTRO_A	The SCI_ACT has SCI_VERBED SCI_THING_MOD, and current trends suggest that the SCI_ACT will soon emerge XXX
 SCI_INTRO_A	SCI_PEOPLE agree that TOPIC is an interesting new topic in the field of SCI_FIELD, and SCI_PEOPLE concur XXX
 SCI_INTRO_A	The SCI_FIELD SCI_APPROACH to SCI_THING_MOD is defined not only by the SCI_ACT, but also by the SCI_ADJ need for SCI_THING_MOD XXX
@@ -189,7 +188,7 @@ SCI_INTRO_ACT are based entirely on the assumption that SCI_THING_MOD and SCI_TH
 
 SCI_INTRO_A2 SCI_ABSTRACT_A
 SCI_INTRO_A2 SCI_INTRO_FILLER
-SCI_INTRO_A2 The notion that SCI_PEOPLE SCI_VERB_PL with SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN is LIT_OFTEN SCI_ADJ XXX
+SCI_INTRO_A2 The notion that SCI_PEOPLE SCI_VERB_PL with SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN is LIT_OFTEN SCI_REACTION XXX
 SCI_INTRO_A2 LIT_REVERSAL_MAYBE a SCI_ADJ SCI_PROBLEM in SCI_FIELD is the SCI_ACT_A SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN XXX
 
 SCI_INTRO_A3 LIT_MIDDLE_MAYBE SCI_INTRO_A2
@@ -247,6 +246,7 @@ SCI_BUZZWORD_NOUN courseware
 
 SCI_REACTION well-received
 SCI_REACTION adamantly opposed
+SCI_REACTION considered SCI_ADJ
 SCI_REACTION LIT_GOOD
 
 LIT_MIDDLE_TWO+4	
@@ -364,7 +364,7 @@ FILLER_SENTENCE		This is an important point to understand
 FILLER_SENTENCE		This is SCI_ADJ to the success of our work
 FILLER_SENTENCE		We LIT_OMIT WHAT_PL OMIT_WHY
 FILLER_SENTENCE		Of course, this is not always the case
-FILLER_SENTENCE		This follows from the SCI_ACT CITATION_SOMETIMES.
+FILLER_SENTENCE		This follows from the SCI_ACT CITATION_SOMETIMES
 
 FILLER_SURPRISE		LIT_ALTHOUGH WHAT FILLER_SURPRISE_1, it FILLER_SURPRISE_2
 FILLER_SURPRISE		WHAT FILLER_SURPRISE_1 but FILLER_SURPRISE_2
@@ -505,7 +505,7 @@ SCI_C_THREE	As prominent SCI_PEOPLE like SCI_SOURCE have noted, SCI_QUOTE
 SCI_C_FOUR	The world is changing; changing with the help of TOPIC  XXX
 SCI_C_FOUR	SCI_ADV we are destined to never truly understand how much we owe to TOPIC  XXX
 SCI_C_FOUR	SCI_ADV , the name of SCI_SCIENTIST will be destined to go down in History XXX
-SCI_ACT	SCI_ACT_A SCI_THING
+SCI_ACT+50	SCI_ACT_A SCI_THING
 SCI_ACT	SCI_ACT_A SCI_THING that SCI_EFFECT
 SCI_ACT_A	discovery of
 SCI_ACT_A	invention of
