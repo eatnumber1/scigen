@@ -692,14 +692,14 @@ EVAL_SEC_INTRO_A1	A well designed system that has bad performance is of no use t
 EVAL_SEC_INTRO_A1	Building a system as AMBITIOUS as our would be for not without a generous EVALUATION.
 
 EVAL_SEC_INTRO_A	We now discuss our EVALUATION.
-EVAL_SEC_INTRO_A	Our EVALUATION represents a valuable research contribution in and of itself.
-EVAL_SEC_INTRO_A	As we will soon see, the goals of this section are manifold.
+EVAL_SEC_INTRO_A	our EVALUATION represents a valuable research contribution in and of itself.
+EVAL_SEC_INTRO_A	as we will soon see, the goals of this section are manifold.
 
 EVAL_SEC_INTRO_B	the reason for this is that studies have shown that EVAL_MEASUREMENT is roughly PERCENTAGE higher than we might expect CITATION.
 EVAL_SEC_INTRO_B	our logic follows a new model: performance MATTERS only as long as CONSTRAINT_TAKES a back seat to CONSTRAINT_OR_MEASUREMENT XXX
 EVAL_SEC_INTRO_B	TAKE_NOTE_THAT we have intentionally neglected to SCI_VERB PROP_OR_MEASUREMENT XXX
 EVAL_SEC_INTRO_B	TAKE_NOTE_THAT we have decided not to SCI_VERB PROP_OR_MEASUREMENT XXX
-EVAL_SEC_INTRO_B	only with the benefit of our system's SCI_THING might we optimize for CONSTRAINT_TYPE at the cost of CONSTRAINT_OR_MEASUREMENT.
+EVAL_SEC_INTRO_B	only with the benefit of our system's PROP_OR_MEASUREMENT_2 might we optimize for CONSTRAINT_TYPE at the cost of CONSTRAINT_OR_MEASUREMENT.
 EVAL_SEC_INTRO_B 	we are grateful for SCI_MATH_ADJ SCI_THING_P; without them, we could not optimize for CONSTRAINT_TYPE simultaneously with CONSTRAINT_OR_MEASUREMENT.
 
 MATTERS		is king
@@ -735,7 +735,7 @@ TAKE_NOTE_THAT		unlike other authors,
 NEGLECTED		neglected
 NEGLECTED		failed
 
-EVAL_SEC_HYP_SET 	Our overall EVALUATION seeks to prove three hypotheses: (1) EVAL_SEC_HYPOTHESIS; (2) EVAL_SEC_HYPOTHESIS; and finally (3) EVAL_SEC_HYPOTHESIS.
+EVAL_SEC_HYP_SET 	our overall EVALUATION seeks to prove three hypotheses: (1) EVAL_SEC_HYPOTHESIS; (2) EVAL_SEC_HYPOTHESIS; and finally (3) EVAL_SEC_HYPOTHESIS.
 
 AFFECT		affect
 AFFECT		impact
@@ -772,13 +772,13 @@ BAD		good
 BAD		obsolete
 BAD		outmoded
 
-EVAL_SEC_INTRO_C	We hope to make clear that our EVAL_MODING is the key to our EVALUATION.
-EVAL_SEC_INTRO_C	Our work in this regard is a novel contribution, in and of itself.
-EVAL_SEC_INTRO_C	Our EVALUATION will show that EVAL_MODING is crucial to our results.
-EVAL_SEC_INTRO_C	We hope that this section PROVES SCI_A_FACT.
-EVAL_SEC_INTRO_C	We hope that this section SCI_A_FACT.
-EVAL_SEC_INTRO_C	Our evaluation strives to make these points clear.
-EVAL_SEC_INTRO_C	Our EVALUATION holds suprising results for patient reader.
+EVAL_SEC_INTRO_C	we hope to make clear that our EVAL_MODING is the key to our EVALUATION.
+EVAL_SEC_INTRO_C	our work in this regard is a novel contribution, in and of itself.
+EVAL_SEC_INTRO_C	our EVALUATION will show that EVAL_MODING is crucial to our results.
+EVAL_SEC_INTRO_C	we hope that this section PROVES SCI_A_FACT.
+EVAL_SEC_INTRO_C	we hope that this section SCI_A_FACT.
+EVAL_SEC_INTRO_C	wur evaluation strives to make these points clear.
+EVAL_SEC_INTRO_C	our EVALUATION holds suprising results for patient reader.
 
 EVAL_MODING		EVAL_MODING_HARDWARE
 EVAL_MODING		EVAL_MODING_SOFTWARE
@@ -870,6 +870,10 @@ SOFTWARE_PROP_OR_MEASUREMENT	EVAL_MEASUREMENT
 PROP_OR_MEASUREMENT	a SCI_SYSTEM's SOFTWARE_PROP
 PROP_OR_MEASUREMENT	HARDWARE_PROP
 PROP_OR_MEASUREMENT	EVAL_MEASUREMENT
+
+PROP_OR_MEASUREMENT_2	SOFTWARE_PROP
+PROP_OR_MEASUREMENT_2	HARDWARE_PROP
+PROP_OR_MEASUREMENT_2	EVAL_MEASUREMENT
 
 PROP_OR_MEASUREMENT_NO_SYSTEM	SOFTWARE_PROP
 PROP_OR_MEASUREMENT_NO_SYSTEM	HARDWARE_PROP
@@ -986,12 +990,12 @@ EVAL_HARDWARE_INTRO EVAL_ACTION EVAL_MOD_XXX LIT_FIRST EVAL_MOD EVAL_MOD_XXX LIT
 }
 
 
-EVAL_HARDWARE_INTRO	Many hardware modifications were REQUIRED to measure SCI_OUR_SYSTEM.
-EVAL_HARDWARE_INTRO	Our detailed EVALUATION REQUIRED many hardware modifications.
-EVAL_HARDWARE_INTRO	We modified our standard hardware as follows:
-EVAL_HARDWARE_INTRO	A well-tuned network setup holds the key to a useful EVALUATION.
-EVAL_HARDWARE_INTRO	Though many elide important experimental details, we provide them here in gory detail.
-EVAL_HARDWARE_INTRO	One must understand our network configuration to grasp the genesis of our results.
+EVAL_HARDWARE_INTRO	many hardware modifications were REQUIRED to measure SCI_OUR_SYSTEM.
+EVAL_HARDWARE_INTRO	our detailed EVALUATION REQUIRED many hardware modifications.
+EVAL_HARDWARE_INTRO	we modified our standard hardware as follows:
+EVAL_HARDWARE_INTRO	a well-tuned network setup holds the key to a useful EVALUATION.
+EVAL_HARDWARE_INTRO	though many elide important experimental details, we provide them here in gory detail.
+EVAL_HARDWARE_INTRO	one must understand our network configuration to grasp the genesis of our results.
 
 REQUIRED	mandated
 REQUIRED	required
@@ -1248,10 +1252,10 @@ EVAL_SEC_SOFTWARE_REST	EVAL_SEC_SOFTWARE_END
 EVAL_SEC_SOFTWARE_REST  LIT_MIDDLE_3 EVAL_SEC_SOFTWARE_MOD XXX EVAL_SEC_SOFTWARE_END
 
 EVAL_SEC_SOFTWARE_MOD	EVAL_WHO added support for SCI_OUR_SYSTEM as a KERNEL_MODULE
-EVAL_SEC_SOFTWARE_MOD	All software components were COMPILED using TOOLCHAIN LINKER_SUFFIX
-EVAL_SEC_SOFTWARE_MOD	All software was COMPILED using TOOLCHAIN LINKER_SUFFIX
-EVAL_SEC_SOFTWARE_MOD   Our experiments soon proved that HACK_VERBING our EVAL_ITEMS was more effective than HACK_VERBING them, as previous work suggested
-EVAL_SEC_SOFTWARE_MOD	We implemented our SCI_THING_S server in LANGUAGE, augmented with SCI_MATH_ADV SCI_MATH_ADJ extensions
+EVAL_SEC_SOFTWARE_MOD	all software components were COMPILED using TOOLCHAIN LINKER_SUFFIX
+EVAL_SEC_SOFTWARE_MOD	all software was COMPILED using TOOLCHAIN LINKER_SUFFIX
+EVAL_SEC_SOFTWARE_MOD   our experiments soon proved that HACK_VERBING our EVAL_ITEMS was more effective than HACK_VERBING them, as previous work suggested
+EVAL_SEC_SOFTWARE_MOD	we implemented our SCI_THING_S server in LANGUAGE, augmented with SCI_MATH_ADV SCI_MATH_ADJ extensions
 
 LINKER_SUFFIX		linked against SCI_BUZZWORD_ADJ libraries for SCI_VERBING SCI_THING_MOD
 LINKER_SUFFIX		with the help of SCI_SOURCE's libraries for SCI_MATH_ADV SCI_VERBING EVAL_ITEMS
@@ -1387,7 +1391,7 @@ WINVERS		for Workgroups
 WINVERS		Longhorn
 WINVERS		1969
 
-OSFULL		OSNAME VERSION
+OSFULL		OSNAME Version VERSION
 OSFULL		OSNAME
 
 ABCD		a
@@ -1395,7 +1399,7 @@ ABCD		b
 ABCD		c
 ABCD		d
 
-VERSION_BASE	DIGIT\~ABCD
+VERSION_BASE	DIGIT\!ABCD
 VERSION_BASE	DIGIT.DIGIT
 VERSION_BASE	DIGIT.DIGIT.DIGIT
 VERSION		VERSION_BASE
