@@ -5,11 +5,16 @@ use strict;
 # noise margin
 my $MARGIN = .1;
 
-my $XMAX = int rand 100 + 10;
-my $XMIN = $XMAX - int rand 2*$XMAX;
+my $XMAX;
+my $XMIN;
+do {
+    $XMAX = int rand 100 + 10;
+    $XMIN = $XMAX - int rand 2*$XMAX;
+} while( $XMAX == $XMIN );
 
 my $NUM_POINTS_SCATTER = int rand 1000 + 100;
 my $NUM_POINTS_CURVE = (int rand 100) + 10;
+my $NUM_BARS = (int rand 20) + 10;
 
 sub add_noise {
 
@@ -59,12 +64,22 @@ foreach my $line (@graph_lines) {
 }
 
 my @x = ();
-for( my $j = 0; $j < $num_points; $j++ ) {
-    
-    my $x = (rand ($XMAX-$XMIN))+$XMIN;
-    push @x, $x;
+if( $type eq "bargraph" ) {
 
+    for( my $x = $XMIN; $x <= $XMAX; $x += ($XMAX-$XMIN)/$NUM_BARS ) {
+	push @x, $x;
+    }
+
+} else {
+    for( my $j = 0; $j < $num_points; $j++ ) {
+	
+	my $x = (rand ($XMAX-$XMIN))+$XMIN;
+	push @x, $x;
+	
+    }
 }
+
+
 @x = sort { $a <=> $b} @x;
 
 print GPFILE "plot ";
@@ -73,8 +88,10 @@ for( my $i = 0; $i < $curves; $i++ ) {
     print GPFILE "\'$datafile.$i\' $label with ";
     if( $type eq "scatter" ) {
 	print GPFILE "points";
-    } else {
+    } elsif( $type eq "curve" ) {
 	print GPFILE "linespoints";
+    } else {
+	print GPFILE "boxes";
     }
 
     if( $i != $curves -1 ) {
