@@ -38,7 +38,7 @@ SCIPAPER_LONG	{
 
 XXX+15		.
 XXX		CITATION.
-XXX+2		. FILLER_SENTENCE.
+XXX		. FILLER_SENTENCE.
 
 SCI_TITLE TOPIC : SCI_ACT
 SCI_TITLE SCI_TITLE_PREP the SCI_ACT
@@ -176,6 +176,7 @@ SCI_BUZZWORD_ADJ mobile
 SCI_BUZZWORD_ADJ wearable
 SCI_BUZZWORD_ADJ semantic
 SCI_BUZZWORD_ADJ real time
+SCI_BUZZWORD_ADJ cooperative
 
 SCI_BUZZWORD_NOUN technology
 SCI_BUZZWORD_NOUN communication
@@ -207,6 +208,24 @@ LIT_FIRST+4
 LIT_LAST	Finally,
 LIT_LAST	Lastly,
 LIT_LAST	In the end,
+
+LIT_ALTHOUGH	though
+LIT_ALTHOUGH	although
+LIT_ALTHOUGH	while
+LIT_ALTHOUGH	even if
+LIT_ALTHOUGH	despite the fact that
+
+LIT_OFTEN	often
+LIT_OFTEN	usually
+LIT_OFTEN	mostly
+LIT_OFTEN	generally
+LIT_OFTEN	regularly
+
+LIT_OMIT	omit
+LIT_OMIT	withhold
+LIT_OMIT	skip
+LIT_OMIT	leave out
+
 
 LIT_LAST_MAYBE		LIT_LAST
 LIT_LAST_MAYBE	
@@ -247,17 +266,26 @@ SCI_MIDDLE_LONG	{
  SCI_PARAGRAPH_B_THREE
 }
 
-FILLER_SENTENCE		FILLER_SURPRISE
+FILLER_SENTENCE+10	FILLER_SURPRISE
 FILLER_SENTENCE		Our goal here is to set the record straight
+FILLER_SENTENCE		This is an important point to understand
+FILLER_SENTENCE		This is SCI_ADJ to the success of our work
+FILLER_SENTENCE		We LIT_OMIT WHAT_PL OMIT_WHY
 
+FILLER_SURPRISE		LIT_ALTHOUGH WHAT FILLER_SURPRISE_1, it FILLER_SURPRISE_2
 FILLER_SURPRISE		WHAT FILLER_SURPRISE_1 but FILLER_SURPRISE_2
-
 FILLER_SURPRISE_1	might seem PERVERSE
+FILLER_SURPRISE_1	is LIT_OFTEN a SCI_ADJ goal
 FILLER_SURPRISE_1	at first glance seems PERVERSE
 FILLER_SURPRISE_2	fell in line with our expectations
 FILLER_SURPRISE_2	is SUPPORTED by RELATED work in the field
 FILLER_SURPRISE_2	has ample historical precendence
 FILLER_SURPRISE_2	is derived from known results
+FILLER_SURPRISE_2	LIT_OFTEN conflicts with the need to provide SCI_THING to SCI_PEOPLE
+
+WHAT_PL			these results
+WHAT_PL			these algorithms
+WHAT_PL			a more thorough discussion
 
 WHAT			It
 WHAT			This FINDING
@@ -267,7 +295,15 @@ WHAT			Such a hypothesis
 FINDING			result
 FINDING			finding
 FINDING			outcome
+FINDING			discussion
 FINDING			technique
+FINDING+3
+
+OMIT_WHY due to space constraints
+OMIT_WHY due to resource constraints
+OMIT_WHY for anonymity
+OMIT_WHY for now
+OMIT_WHY until future work
 
 SUPPORTED		supported
 SUPPORTED		buffetted
@@ -630,6 +666,7 @@ SCI_ADJ	shocking
 SCI_ADJ	SCI_ADJ_ADV annoying
 SCI_ADJ	SCI_ADJ_ADV invigorating
 SCI_ADJ	celebrated
+SCI_ADJ	desirable
 SCI_ADJ_ADV	particularly
 SCI_ADJ_ADV	dubiously
 SCI_ADJ_ADV	daringly
