@@ -83,6 +83,46 @@ SCI_INTRO_A	The SCI_ACT is a challenge.
 SCI_INTRO_A	The SCI_ACT has SCI_VERBED SCI_THING, and current trends suggest that the SCI_ACT will soon emerge.
 SCI_INTRO_A	SCI_PEOPLE agree that TOPIC is an interesting new topic in the field of SCI_FIELD, and SCI_PEOPLE concur.
 SCI_INTRO_A	The SCI_FIELD approach to SCI_THING is defined not only by the SCI_ACT, but also by the SCI_ADJ need for SCI_THING.
+SCI_INTRO_A	Recent advances in SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN SCI_INTRO_ACT SCI_THING.
+
+SCI_INTRO_ACT offer a viable alternative to
+SCI_INTRO_ACT have paved the way for
+SCI_INTRO_ACT are often at odds with
+SCI_INTRO_ACT do not necessarily obviate the need for
+SCI_INTRO_ACT are based entirely on the assumption that SCI_THING and SCI_THING are not in conflict with
+
+SCI_BUZZWORD_ADJ peer-to-peer
+SCI_BUZZWORD_ADJ ubiquitous
+SCI_BUZZWORD_ADJ wireless
+SCI_BUZZWORD_ADJ modular
+SCI_BUZZWORD_ADJ autonomous
+SCI_BUZZWORD_ADJ introspective
+SCI_BUZZWORD_ADJ distributed
+SCI_BUZZWORD_ADJ atomic
+SCI_BUZZWORD_ADJ read-write
+SCI_BUZZWORD_ADJ highly-available
+SCI_BUZZWORD_ADJ secure
+SCI_BUZZWORD_ADJ interposable
+SCI_BUZZWORD_ADJ cacheable
+SCI_BUZZWORD_ADJ electronic
+SCI_BUZZWORD_ADJ pervasive
+SCI_BUZZWORD_ADJ large-scale
+SCI_BUZZWORD_ADJ bayesian
+SCI_BUZZWORD_ADJ multimodal
+SCI_BUZZWORD_ADJ authenticated
+SCI_BUZZWORD_ADJ interactive
+SCI_BUZZWORD_ADJ collaborative
+SCI_BUZZWORD_ADJ concurrent
+SCI_BUZZWORD_ADJ probabilistic
+SCI_BUZZWORD_ADJ mobile
+SCI_BUZZWORD_ADJ wearable
+
+SCI_BUZZWORD_NOUN technology
+SCI_BUZZWORD_NOUN communication
+SCI_BUZZWORD_NOUN algorithms
+SCI_BUZZWORD_NOUN theory
+SCI_BUZZWORD_NOUN e-commerce
+SCI_BUZZWORD_NOUN information
 
 LIT_PARAGRAPH_BODY1	{
 LIT_MIDDLE_ONE LIT_PARAGRAPH_B 
@@ -904,6 +944,7 @@ SCI_THING	XML
 SCI_THING	I/O automata
 SCI_THING	fiber-optic cables
 SCI_THING	the Ethernet
+SCI_THING	RAID
 SCI_RESPONSE	yes
 SCI_RESPONSE	no
 SCI_RESPONSE	it is
