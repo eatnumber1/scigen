@@ -1411,7 +1411,7 @@ EVAL_SEC_SOFTWARE_REST  LIT_MIDDLE_3 EVAL_SEC_SOFTWARE_MOD XXX EVAL_SEC_SOFTWARE
 EVAL_SEC_SOFTWARE_MOD	EVAL_WHO added support for SCI_OUR_SYSTEM as a KERNEL_MODULE
 EVAL_SEC_SOFTWARE_MOD	all software components were COMPILED using TOOLCHAIN LINKER_SUFFIX
 EVAL_SEC_SOFTWARE_MOD	all software was COMPILED using TOOLCHAIN LINKER_SUFFIX
-EVAL_SEC_SOFTWARE_MOD   our experiments soon proved that HACK_VERBING our EVAL_ITEMS was more effective than HACK_VERBING them, as previous work suggested
+EVAL_SEC_SOFTWARE_MOD   our experiments soon proved that HACK_VERBING our EVAL_ITEMS_P was more effective than HACK_VERBING them, as previous work suggested
 EVAL_SEC_SOFTWARE_MOD	we implemented our SCI_THING_S server in LANGUAGE, augmented with SCI_MATH_ADV SCI_MATH_ADJ extensions
 
 LINKER_SUFFIX		linked against SCI_BUZZWORD_ADJ libraries for SCI_VERBING SCI_THING_MOD
@@ -1470,15 +1470,21 @@ LANGUAGE_MOD		ANSI
 LANGUAGE+2		LANGUAGE_UM
 LANGUAGE		LANGUAGE_MOD LANGUAGE_UM
 
-EVAL_ITEMS_UM		EXPANSION_ITEMs
-EVAL_ITEMS_UM		HARDWARE_PROP
-EVAL_ITEMS_UM		EVAL_MEASUREMENT
-EVAL_ITEMS_UM		SCI_THING_P
+EVAL_ITEMS_UM_P		EXPANSION_ITEMs
+EVAL_ITEMS_UM_P		SCI_THING_P
+EVAL_ITEMS_UM_P		OLD_MACHINEs
+EVAL_ITEMS_P		EVAL_ITEMS_UM_P
+EVAL_ITEMS_P		SCI_MATH_ADJ EVAL_ITEMS_UM_P
 
-EVAL_ITEMS		EVAL_ITEMS_UM
-EVAL_ITEMS		SCI_MATH_ADJ EVAL_ITEMS_UM
-EVAL_ITEMS		SCI_THING_S
-EVAL_ITEMS		OLD_MACHINEs
+EVAL_ITEMS_UM_S		HARDWARE_PROP
+EVAL_ITEMS_UM_S		EVAL_MEASUREMENT
+
+EVAL_ITEMS_S		EVAL_ITEMS_UM_S
+EVAL_ITEMS_S		SCI_MATH_ADJ EVAL_ITEMS_UM
+EVAL_ITEMS_S		SCI_THING_S
+
+EVAL_ITEMS		EVAL_ITEMS_P
+EVAL_ITEMS		EVAL_ITEMS_S
 
 
 KERNEL_MODULE_UM		kernel module
@@ -1595,7 +1601,7 @@ EVAL_ANALYZE_ONE the many discontinuities in the graphs point to DIFFERENT EVAL_
 EVAL_ANALYZE_ONE bugs in our system caused the unstable behavior throughout the experiments
 EVAL_ANALYZE_ONE Gaussian electromagnetic disturbances in our EXP_WHERE caused unstable experimental results
 EVAL_ANALYZE_ONE operator error alone cannot account for these results
-EVAL_ANALYZE_ONE these EVAL_MEASUREMENT observations contrast to those seen in earlier work CITE, such as SCI_SOURCE's seminal treatise on SCI_THING_P and observed HARDWARE_PROP_OR_MEASUREMENT
+EVAL_ANALYZE_ONE these EVAL_MEASUREMENT observations contrast to those seen in earlier work CITATION, such as SCI_SOURCE's seminal treatise on SCI_THING_P and observed HARDWARE_PROP_OR_MEASUREMENT
 EVAL_ANALYZE_ONE note how EMULATING SCI_THING_P rather than EMULATING_THEM produce SMOOTHER, more reproducible results
 EVAL_ANALYZE_ONE the results come from only DIGIT trial runs, and were not reproducible
 EVAL_ANALYZE_ONE error bars have been elided, since most of our data points fell outside of DIGITDIGIT standard deviations from observed means
