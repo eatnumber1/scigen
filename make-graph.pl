@@ -1,8 +1,47 @@
 #!/usr/bin/perl -w
 
 use strict;
+use scigen;
+use Getopt::Long;
 
-my $filename = shift;
+my $filename;
+my $seed;
+
+sub usage {
+    select(STDERR);
+    print <<EOUsage;
+    
+$0 [options]
+  Options:
+
+    --help                    Display this help message
+    --seed <seed>             Seed the prng with this
+    --file <file>             Save the postscript in this file
+
+EOUsage
+
+    exit(1);
+
+}
+
+# Get the user-defined parameters.
+# First parse options
+my %options;
+&GetOptions( \%options, "help|?", "seed=s", "file=s" )
+    or &usage;
+
+if( $options{"help"} ) {
+    &usage();
+}
+if( defined $options{"file"} ) {
+    $filename = $options{"file"};
+}
+if( defined $options{"seed"} ) {
+    $seed = $options{"seed"};
+} else {
+    $seed = int rand 0xffffffff;
+}
+srand($seed);
 
 # noise margin
 my $MARGIN = .1;
@@ -27,7 +66,13 @@ sub add_noise {
 
 }
 
-my $graph = `perl scigen.pl -f scirules.in -s GNUPLOT -p 0`;
+my $fh = new IO::File ("<scirules.in");
+my $dat = {};
+my $RE = undef;
+scigen::read_rules ($fh, $dat, \$RE, 0);
+
+my $graph = scigen::generate ($dat, "GNUPLOT", $RE, 0, 0);
+#`perl scigen.pl -f scirules.in -s GNUPLOT -p 0`;
 #print "# [$$] func = $func\n";
 
 my @graph_lines = split( /\n/, $graph );
@@ -91,6 +136,11 @@ if( $type eq "bargraph" ) {
 @x = sort { $a <=> $b} @x;
 my @y = ();
 
+my $funcfh = new IO::File ("<functions.in");
+my $funcdat = {};
+my $funcRE = undef;
+scigen::read_rules ($funcfh, $funcdat, \$funcRE, 0);
+
 print GPFILE "plot ";
 for( my $i = 0; $i < $curves; $i++ ) {
     my $label = $labels[$i];
@@ -117,7 +167,8 @@ for( my $i = 0; $i < $curves; $i++ ) {
     my $num_points = 0;
     do {
 	@y = ();
-	my $func = `perl scigen.pl -f functions.in -s EXPR -p 0`;
+	my $func = scigen::generate ($funcdat, "EXPR", $funcRE, 0, 0);
+	#my $func = `perl scigen.pl -f functions.in -s EXPR -p 0`;
 	
 	open( DAT, ">$datafile.$i" ) or 
 	    clean() and die( "Couldn't write to $datafile.$i" );

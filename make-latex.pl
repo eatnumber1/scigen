@@ -96,7 +96,9 @@ while( <TEX> ) {
 	my $figfile = "$tmp_dir/$1";
 	my $done = 0;
 	while( !$done ) {
-	    system( "./make-graph.pl $figfile" ) or $done=1;
+	    my $newseed = int rand 0xffffffff;
+	    system( "./make-graph.pl --file $figfile --seed $newseed" ) 
+		or $done=1;
 	}
 	push @figures, $figfile;
     }
@@ -105,12 +107,15 @@ while( <TEX> ) {
 	my $figfile = "$tmp_dir/$1";
 	my $done = 0;
 	while( !$done ) {
+	    my $newseed = int rand 0xffffffff;
 	    if( `which neato` ) {
-		(system( "./make-diagram.pl \"$sysname\" $figfile" ) or 
+		(system( "./make-diagram.pl --sys \"$sysname\" " . 
+			 "--file $figfile --seed $seed" ) or 
 		 !(-f $figfile)) 
 		    or $done=1;
 	    } else {
-		system( "./make-graph.pl $figfile" ) or $done=1;
+		system( "./make-graph.pl --file $figfile --seed $newseed" ) 
+		    or $done=1;
 	    }
 	}
 	push @figures, $figfile;
@@ -155,6 +160,7 @@ if( defined $options{"file"} ) {
     system( "gv $ps_file" ) and die( "Couldn't gv $ps_file" );
 }
 
+my $seedstring = "seed=$seed";
 if( defined $options{"tar"} ) {
     my $f = $options{"tar"};
     my $tartmp = "$tmp_dir/tartmp.$$";
@@ -162,10 +168,16 @@ if( defined $options{"tar"} ) {
     system( "mkdir $tartmp; cp $all_files $tartmp/;" ) and 
 	die( "Couldn't mkdir $tartmp" );
     $all_files =~ s/$tmp_dir\///g;
+    system( "echo $seedstring > $tartmp/seed.txt" ) and 
+	die( "Couldn't cat to $tartmp/seed.txt" );
+    $all_files .= " seed.txt";
     system( "cd $tartmp; tar -czf $$.tgz $all_files; cd -; " . 
 	    "cp $tartmp/$$.tgz $f; rm -rf $tartmp" ) and 
 	die( "Couldn't tar to $f" );
+} else {
+    print "$seedstring\n";
 }
+
 
 system( "rm $tmp_pre*" ) and die( "Couldn't rm" );
 unlink( @figures );

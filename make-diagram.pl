@@ -2,14 +2,58 @@
 
 use strict;
 use scigen;
+use Getopt::Long;
 
 my $tmp_dir = "/tmp";
 my $tmp_pre = "/$tmp_dir/scimakediagram.$$";
 my $viz_file = "$tmp_pre.viz";
 my $eps_file = "$tmp_pre.eps";
 
-my $sysname = shift;
-my $filename = shift;
+my $sysname;
+my $filename;
+my $seed;
+
+sub usage {
+    select(STDERR);
+    print <<EOUsage;
+    
+$0 [options]
+  Options:
+
+    --help                    Display this help message
+    --seed <seed>             Seed the prng with this
+    --file <file>             Save the postscript in this file
+    --sysname <file>          What is the system called?
+
+EOUsage
+
+    exit(1);
+
+}
+
+# Get the user-defined parameters.
+# First parse options
+my %options;
+&GetOptions( \%options, "help|?", "seed=s", "file=s", "sysname=s" )
+    or &usage;
+
+if( $options{"help"} ) {
+    &usage();
+}
+if( defined $options{"file"} ) {
+    $filename = $options{"file"};
+}
+if( defined $options{"sysname"} ) {
+    $sysname = $options{"sysname"};
+} else {
+    die( "--sysname required" );
+}
+if( defined $options{"seed"} ) {
+    $seed = $options{"seed"};
+} else {
+    $seed = int rand 0xffffffff;
+}
+srand($seed);
 
 if( defined $filename ) {
     $eps_file = $filename;
