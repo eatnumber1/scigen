@@ -76,13 +76,13 @@ SCI_ABSTRACT {
 
  SCI_ABSTRACT_HEADER 
 
- SCI_INTRO_A SCI_ABSTRACT_A SCI_A_THREE SCI_A_FOUR
+ SCI_INTRO_A SCI_ABSTRACT_A
 
 }
 
 SCI_ABSTRACT_A SCI_AB_A_START the SCI_ACT SCI_AB_A_END XXX
 
-SCI_AB_A_START in this paper, we SCI_MID_VERB 
+SCI_AB_A_START SCI_IN_THIS_PAPER, we SCI_MID_VERB 
 SCI_AB_A_START in fact, few SCI_PEOPLE would disagree with
 SCI_AB_A_START given the current status of SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN, SCI_PEOPLE SCI_ADJ_ADV desire
 SCI_AB_A_START after years of SCI_ADJ research into SCI_THING_MOD, we SCI_MID_VERB
@@ -104,7 +104,7 @@ SCI_INTRO {
 
 }
 
-SCI_INTRO_PARAGRAPH_A SCI_INTRO_A SCI_A_TWO SCI_A_THREE SCI_A_FOUR
+SCI_INTRO_PARAGRAPH_A SCI_INTRO_A SCI_INTRO_A2 SCI_INTRO_A3 SCI_INTRO_CLOSING
 
 SCI_INTRO_PARAGRAPH_FINAL The rest of this paper is organized as follows.  SCI_IPF_FIRST SCI_IPF_MID SCI_IPF_FINAL
 
@@ -127,24 +127,81 @@ SCI_MID_VERB prove
 SCI_MID_VERB show
 SCI_MID_VERB disprove
 
+SCI_PROBLEM_SOLVE solve
+SCI_PROBLEM_SOLVE overcome
+SCI_PROBLEM_SOLVE surmount
+SCI_PROBLEM_SOLVE answer
+SCI_PROBLEM_SOLVE fix
+
+SCI_PROBLEM problem
+SCI_PROBLEM issue
+SCI_PROBLEM obstacle
+SCI_PROBLEM grand challenge
+SCI_PROBLEM challenge
+
+SCI_GOAL_ACHIEVE achieve
+SCI_GOAL_ACHIEVE realize
+SCI_GOAL_ACHIEVE fulfill
+SCI_GOAL_ACHIEVE accomplish
+
+SCI_GOAL goal
+SCI_GOAL mission
+SCI_GOAL objective
+SCI_GOAL purpose
+
+SCI_SOLVE_CLAUSE SCI_PROBLEM_SOLVE this SCI_PROBLEM
+SCI_SOLVE_CLAUSE SCI_GOAL_ACHIEVE this SCI_GOAL
+
+SCI_APPROACH approach
+SCI_APPROACH solution
+SCI_APPROACH method
+SCI_APPROACH methodology
+
+SCI_IN_THIS_PAPER in this paper
+SCI_IN_THIS_PAPER in this position paper
+SCI_IN_THIS_PAPER in this work
+SCI_IN_THIS_PAPER in our research
+SCI_IN_THIS_PAPER here
+
 SCI_ABSTRACT_HEADER \section*{Abstract}
 SCI_INTRO_HEADER \section{Introduction}
 
 SCI_INTRO_A	Many SCI_PEOPLE would agree that, had it not been for TOPIC , the SCI_ACT might never have occurred XXX
 SCI_INTRO_A	SCI_THING_MOD must work XXX
-SCI_INTRO_A	In recent years, much research has been devoted to the SCI_ACT; however, few have explored the SCI_ACT XXX
+SCI_INTRO_A	In recent years, much research has been devoted to the SCI_ACT; LIT_REVERSAL, few have SCI_VERBED the SCI_ACT XXX
 SCI_INTRO_A	SCI_THING_MOD and SCI_THING_MOD, while SCI_ADJ in theory, have not until recently been considered SCI_ADJ XXX
-SCI_INTRO_A	The SCI_ACT is a challenge XXX
+SCI_INTRO_A	The SCI_ACT is a SCI_PROBLEM XXX
 SCI_INTRO_A	The SCI_ACT has SCI_VERBED SCI_THING_MOD, and current trends suggest that the SCI_ACT will soon emerge XXX
 SCI_INTRO_A	SCI_PEOPLE agree that TOPIC is an interesting new topic in the field of SCI_FIELD, and SCI_PEOPLE concur XXX
-SCI_INTRO_A	The SCI_FIELD approach to SCI_THING_MOD is defined not only by the SCI_ACT, but also by the SCI_ADJ need for SCI_THING_MOD XXX
-SCI_INTRO_A	Recent advances in SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN SCI_INTRO_ACT SCI_THING_MOD XXX
+SCI_INTRO_A	The SCI_FIELD SCI_APPROACH to SCI_THING_MOD is defined not only by the SCI_ACT, but also by the SCI_ADJ need for SCI_THING_MOD XXX
+SCI_INTRO_A	Recent advances in SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN and SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN SCI_INTRO_ACT SCI_THING_MOD XXX
+SCI_INTRO_A	Many SCI_PEOPLE would agree that, had it not been for SCI_THING, the SCI_ACT might never have occurred XXX
+SCI_INTRO_A	The implications of SCI_BUZZWORD_ADJ technology have been far-reaching and pervasive XXX
+SCI_INTRO_A	Unified SCI_BUZZWORD_ADJ theory has led to many SCI_ADJ advances, including SCI_THING_MOD and SCI_THING_MOD  XXX
+
 
 SCI_INTRO_ACT offer a viable alternative to
 SCI_INTRO_ACT have paved the way for
-SCI_INTRO_ACT are often at odds with
+SCI_INTRO_ACT SCI_VERB_PL in order to SCI_GOAL_ACHIEVE
+SCI_INTRO_ACT are LIT_OFTEN at odds with
 SCI_INTRO_ACT do not necessarily obviate the need for
 SCI_INTRO_ACT are based entirely on the assumption that SCI_THING_MOD and SCI_THING_MOD are not in conflict with
+
+SCI_INTRO_A2 SCI_ABSTRACT_A
+SCI_INTRO_A2 SCI_INTRO_FILLER
+SCI_INTRO_A2 The notion that SCI_PEOPLE SCI_VERB_PL with SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN is LIT_OFTEN SCI_ADJ XXX
+SCI_INTRO_A2 LIT_REVERSAL_MAYBE a SCI_ADJ SCI_PROBLEM in SCI_FIELD is the SCI_ACT_A SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN XXX
+
+SCI_INTRO_A3 LIT_MIDDLE_MAYBE SCI_INTRO_A2
+
+SCI_INTRO_CLOSING LIT_CONCLUSION, SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN and SCI_THING_MOD SCI_INTRO_ACT the SCI_ACT XXX
+SCI_INTRO_CLOSING To what extent can SCI_THING_MOD be SCI_VERBED to SCI_SOLVE_CLAUSE?
+SCI_INTRO_CLOSING LIT_REVERSAL, SCI_THING_MOD alone cannot fulfill the need for SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN XXX
+
+SCI_INTRO_FILLER FILLER_SENTENCE.
+SCI_INTRO_FILLER The usual methods for the SCI_ACT do not apply in this area.
+SCI_INTRO_FILLER This is a direct result of the SCI_ACT CITATION_SOMETIMES.
+SCI_INTRO_FILLER LIT_ALTHOUGH RELATED solutions to this SCI_PROBLEM are LIT_GOOD, none have taken the SCI_BUZZWORD_ADJ SCI_APPROACH we propose SCI_IN_THIS_PAPER.
 
 SCI_BUZZWORD_ADJ_MULTI+5 SCI_BUZZWORD_ADJ
 SCI_BUZZWORD_ADJ_MULTI+10 SCI_BUZZWORD_ADJ, SCI_BUZZWORD_ADJ
@@ -182,10 +239,15 @@ SCI_BUZZWORD_NOUN technology
 SCI_BUZZWORD_NOUN communication
 SCI_BUZZWORD_NOUN algorithms
 SCI_BUZZWORD_NOUN theory
+SCI_BUZZWORD_NOUN methodology
 SCI_BUZZWORD_NOUN e-commerce
 SCI_BUZZWORD_NOUN information
 SCI_BUZZWORD_NOUN models
 SCI_BUZZWORD_NOUN courseware
+
+SCI_REACTION well-received
+SCI_REACTION adamantly opposed
+SCI_REACTION LIT_GOOD
 
 LIT_MIDDLE_TWO+4	
 LIT_MIDDLE_TWO		Second,
@@ -199,6 +261,8 @@ LIT_MIDDLE	Next,
 LIT_MIDDLE	Further,
 LIT_MIDDLE	Furthermore,
 LIT_MIDDLE	Continuing with this rationale,
+LIT_MIDDLE	Along these same lines,
+LIT_MIDDLE	Similarly,
 
 LIT_FIRST	First,
 LIT_FIRST	To begin with,
@@ -212,21 +276,49 @@ LIT_LAST	In the end,
 LIT_ALTHOUGH	though
 LIT_ALTHOUGH	although
 LIT_ALTHOUGH	while
-LIT_ALTHOUGH	even if
+LIT_ALTHOUGH	even though
 LIT_ALTHOUGH	despite the fact that
 
 LIT_OFTEN	often
 LIT_OFTEN	usually
+LIT_OFTEN	rarely
+LIT_OFTEN	never
 LIT_OFTEN	mostly
 LIT_OFTEN	generally
 LIT_OFTEN	regularly
+LIT_OFTEN	continuously
 
 LIT_OMIT	omit
 LIT_OMIT	withhold
 LIT_OMIT	skip
 LIT_OMIT	leave out
 
+LIT_GOOD	good
+LIT_GOOD	bad
+LIT_GOOD	excellent
+LIT_GOOD	useful
+LIT_GOOD	satisfactory
+LIT_GOOD	numerous
+LIT_GOOD	promising
+LIT_GOOD	significant
+LIT_GOOD	encouraging
+LIT_GOOD	outdated
 
+LIT_CONCLUSION	thus
+LIT_CONCLUSION	thusly
+LIT_CONCLUSION	therefore
+LIT_CONCLUSION	clearly
+LIT_CONCLUSION	obviously
+LIT_CONCLUSION  as a result
+
+LIT_REVERSAL	however
+LIT_REVERSAL	nevertheless
+LIT_REVERSAL	contrarily
+
+LIT_REVERSAL_MAYBE	LIT_REVERSAL,
+LIT_REVERSAL_MAYBE	
+LIT_MIDDLE_MAYBE	LIT_MIDDLE
+LIT_MIDDLE_MAYBE+2	
 LIT_LAST_MAYBE		LIT_LAST
 LIT_LAST_MAYBE	
 LIT_LAST_OR_MIDDLE 	LIT_LAST
@@ -267,15 +359,17 @@ SCI_MIDDLE_LONG	{
 }
 
 FILLER_SENTENCE+10	FILLER_SURPRISE
-FILLER_SENTENCE		Our goal here is to set the record straight
+FILLER_SENTENCE		Our SCI_GOAL here is to set the record straight
 FILLER_SENTENCE		This is an important point to understand
 FILLER_SENTENCE		This is SCI_ADJ to the success of our work
 FILLER_SENTENCE		We LIT_OMIT WHAT_PL OMIT_WHY
+FILLER_SENTENCE		Of course, this is not always the case
+FILLER_SENTENCE		This follows from the SCI_ACT CITATION_SOMETIMES.
 
 FILLER_SURPRISE		LIT_ALTHOUGH WHAT FILLER_SURPRISE_1, it FILLER_SURPRISE_2
 FILLER_SURPRISE		WHAT FILLER_SURPRISE_1 but FILLER_SURPRISE_2
 FILLER_SURPRISE_1	might seem PERVERSE
-FILLER_SURPRISE_1	is LIT_OFTEN a SCI_ADJ goal
+FILLER_SURPRISE_1	is LIT_OFTEN a SCI_ADJ SCI_GOAL
 FILLER_SURPRISE_1	at first glance seems PERVERSE
 FILLER_SURPRISE_2	fell in line with our expectations
 FILLER_SURPRISE_2	is SUPPORTED by RELATED work in the field
@@ -315,34 +409,11 @@ PERVERSE		unexpected
 RELATED			prior
 RELATED			related
 RELATED			previous
+RELATED			existing
 
 SCI_PARAGRAPH_A	SCI_A_ONE SCI_A_TWO SCI_A_THREE SCI_A_FOUR
 SCI_PARAGRAPH_B	SCI_B_ONE SCI_B_TWO SCI_B_THREE
 SCI_PARAGRAPH_C	SCI_C_ONE SCI_C_TWO SCI_C_THREE SCI_C_FOUR
-SCI_SUBTITLE	SCI_MOVEMENT SCI_ACT or SCI_MOVEMENT SCI_ACT ?
-SCI_SUBTITLE	a SCI_ADJ theory
-SCI_SUBTITLE	the SCI_ACT as it relates to TOPIC
-SCI_SUBTITLE	SCI_COMPLEXNOUN and SCI_COMPLEXNOUN
-SCI_A_ONE	Many SCI_PEOPLE would agree that, had it not been for TOPIC , the SCI_ACT might never have occurred XXX
-SCI_A_ONE	Without TOPIC , the SCI_YEAR SCI_ACT would have been merely a SCI_ADJ fantasy XXX
-SCI_A_ONE	The implications of TOPIC technology have been far-reaching and pervasive, touching all aspects of our lives XXX
-SCI_A_ONE	Although the SCI_ACT by SCI_SOURCE and the SCI_ACT by SCI_SOURCE were both SCI_ADJ discoveries, they would have been nothing without TOPIC  XXX
-SCI_A_ONE	Our SCI_ADJ_ADV modern lives are influenced by TOPIC everyday XXX
-SCI_A_ONE	TOPIC technology has led to SCI_ADJ advances in SCI_FIELD , discoveries that today we take for granted XXX
-SCI_A_ONE	Unified TOPIC theory has led to many SCI_ADJ advances, including SCI_THING_MOD and SCI_THING_MOD  XXX
-SCI_A_TWO	Few scientists have been as SCI_ADJ as SCI_SCIENTIST in the development of TOPIC  XXX
-SCI_A_TWO	No discussion of TOPIC would be complete without mention of SCI_SCIENTIST  XXX
-SCI_A_TWO	Although the contributions of SCI_SOURCE and SCI_SOURCE to TOPIC are well documented, few people realize that it was actually SCI_SCIENTIST who played a leading role in its development XXX
-SCI_A_TWO	Few would argue that SCI_SCIENTIST 's discovery of TOPIC was one of the most important scientific advances of our century XXX
-SCI_A_TWO	No one played as pivotal a role in the development of TOPIC as SCI_SCIENTIST  XXX
-SCI_A_TWO	Although the contributions of SCI_SCIENTIST to the worldwide advancement of science are SCI_ADJ , TOPIC is perhaps the most SCI_ADJ of all XXX
-SCI_A_TWO	TOPIC , perhaps one of the most SCI_ADJ advances of our time, would never have occurred had it not been for SCI_SCIENTIST  XXX
-SCI_A_THREE	Three points support this thesis: SCI_A_FACT , SCI_A_FACT , and most importantly, SCI_A_FACT  XXX
-SCI_A_THREE	Three important discoveries led to the discovery of TOPIC : SCI_THING_MOD , SCI_THING_MOD , and SCI_THING_MOD  XXX
-SCI_A_THREE	The evidence points to three main factors: SCI_A_FACT , SCI_THING_MOD , and SCI_A_FACT  XXX
-SCI_A_FOUR	In this paper, the author will demonstrate the important role played by SCI_SCIENTIST in the development of TOPIC  XXX
-SCI_A_FOUR	The author hopes to set the record straight concerning SCI_SCIENTIST 's many contributions to TOPIC  XXX
-SCI_A_FOUR	This paper will explore SCI_SCIENTIST 's important relationship with TOPIC  XXX
 SCI_A_FACT	SCI_SOURCE 's SCI_ACT in SCI_YEAR
 SCI_A_FACT	LASTNAME 's relationship with the SCI_COUNTRY SCI_PEOPLE
 SCI_A_FACT	the SCI_COMPLEXNOUN of SCI_MOVEMENT theory
@@ -360,7 +431,7 @@ SCI_B_LEADIN	SCI_ADJ_ADV enough,
 SCI_B_LEADIN	Without a doubt, 
 SCI_B_LEADIN	In the opinion of SCI_SOURCE , 
 SCI_B_LEADIN	Predictably, 
-SCI_B_LEADIN	On a smilar note, 
+SCI_B_LEADIN	On a similar note, 
 SCI_B_LEADIN	Furthermore, 
 SCI_B_LEADIN	By comparison, 
 SCI_B_LEADIN	In the opinions of many, 
@@ -447,10 +518,19 @@ SCI_ACT_A	unification of SCI_THING and
 SCI_ACT_A	exploration of
 SCI_ACT_A	refinement of
 SCI_ACT_A	synthesis of
+SCI_ACT_A	construction of
 SCI_ACH	SCI_VERBED SCI_THING_MOD
 SCI_ACH	SCI_VERBED SCI_THING_MOD (which SCI_EFFECT )
 SCI_ACH_PRES	SCI_VERBING SCI_THING_MOD
 SCI_ACH_PRES	SCI_VERBING SCI_THING_MOD (which SCI_EFFECT )
+SCI_VERB_PL	interact
+SCI_VERB_PL	collaborate
+SCI_VERB_PL	interfere
+SCI_VERB_PL	connect
+SCI_VERB_PL	agree
+SCI_VERB_PL	collude
+SCI_VERB_PL	cooperate
+SCI_VERB_PL	synchronize
 SCI_VERBED	explored
 SCI_VERBED	harnessed
 SCI_VERBED	invented
@@ -461,6 +541,7 @@ SCI_VERBED	developed
 SCI_VERBED	investigated
 SCI_VERBED	analyzed
 SCI_VERBED	improved
+SCI_VERBED	constructed
 SCI_VERBING	harnessing
 SCI_VERBING	exploring
 SCI_VERBING	controlling
@@ -473,6 +554,7 @@ SCI_VERBING	architecting
 SCI_VERBING	investigating
 SCI_VERBING	improving
 SCI_VERBING	analyzing
+SCI_VERBING	constructing
 SCI_THING	DHTs
 SCI_THING	robots
 SCI_THING	agents
@@ -566,6 +648,7 @@ SCI_PEOPLE	theorists
 SCI_PEOPLE	researchers
 SCI_PEOPLE	stegonographers
 SCI_PEOPLE	cyberinformaticians
+SCI_PEOPLE	end-users
 SCI_FIELD	SCI_BUZZWORD_ADJ SCI_FIELD
 SCI_FIELD+9	SCI_MATH_ADJ SCI_FIELD
 SCI_FIELD	hardware and architecture
