@@ -10,7 +10,9 @@ my $dvi_file = "$tmp_pre$$.dvi";
 my $ps_file = "$tmp_pre$$.ps";
 my $bib_file = "$tmp_dir/scigenbibfile.bib";
 
-system( "perl scigen.pl -f scirules.in -s SCIPAPER_LATEX > $tex_file" ) and
+my $sysname = &get_system_name();
+system( "perl scigen.pl -f scirules.in -s SCIPAPER_LATEX SYSNAME=\"$sysname\""
+	. " > $tex_file" ) and
     die( "Couldn't make SCIPAPER_LATEX into file $tex_file" );
 
 # for every figure you find in the file, generate a figure
@@ -45,7 +47,9 @@ close( TEX );
 
 # generate bibtex 
 foreach my $clabel (keys(%citelabels)) {
-    system( "perl scigen.pl -f scirules.in -s BIBTEX_ENTRY CITE_LABEL_GIVEN=$clabel >> $bib_file" ) 
+    my $sysname_cite = &get_system_name();
+    system( "perl scigen.pl -f scirules.in -s BIBTEX_ENTRY " . 
+	    "CITE_LABEL_GIVEN=$clabel SYSNAME=\"$sysname_cite\" >> $bib_file" ) 
       and die( "Couldn't make a bibtex entry" );
 }
 
@@ -58,3 +62,19 @@ system( "gv $ps_file" ) and die( "Couldn't gv $ps_file" );
 system( "rm $tmp_pre*" ) and die( "Couldn't rm" );
 unlink( @figures );
 unlink( "$bib_file" );
+
+sub get_system_name {
+
+    my $name = `perl scigen.pl -f system_names.in -s SYSTEM_NAME -p 0`;
+    chomp($name);
+
+    # how about some effects?
+    my $rand = rand;
+    if( $rand < .1 ) {
+	$name = "{\\em $name}";
+    } elsif( length($name) <= 6 and $rand < .4 ) {
+	$name = uc($name);
+    }
+
+    return $name;
+}

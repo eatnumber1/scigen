@@ -125,7 +125,7 @@ sub pretty_print {
 	my $newline = "";
 
 	$line =~ s/(\s+)([\.\,\?\;\:])/$2/g;
-	$line =~ s/(\s+)(a) ([aeiou])/$1$2n $3/gi;
+	$line =~ s/(\W+)(a) ([aeiou])/$1$2n $3/gi;
 
 	if( $line =~ /\\section(\*?){(.*)}/ ) {
 	    $newline = "\\section${1}{" . 
@@ -147,19 +147,21 @@ sub pretty_print {
 					    squeeze => 0  } );
 	    chomp $newline;
 	    chomp $newline;
+	    $newline =~ s/\\Em/\\em/g;
 	    $newline .= "}\n";
 	} elsif( $line =~ /(.*) = {(.*)}\,/ ) {
 	    my $label = $1;
 	    my $curr = $2;
 	    # place brackets around any words containing capital letters
-	    $curr =~ s/(\s+)([^\s]*[A-Z]+[^\s]*)(\s+)/$1\{$2\}$3/g;
-	    $curr =~ s/^([^\s]*[A-Z]+[^\s]*)(\s+)/\{$1\}$2/g;
-	    $curr =~ s/(\s+)([^\s]*[A-Z]+[^\s]*)$/$1\{$2\}/g;
+	    $curr =~ s/(\s+)([^\s]*[A-Z]+[^\s\:]*)(\:?\s+)/$1\{$2\}$3/g;
+	    $curr =~ s/^([^\s]*[A-Z]+[^\s\:]*)(\:?\s+)/\{$1\}$2/g;
+	    $curr =~ s/(\s+)([^\s]*[A-Z]+[^\s\:]*)$/$1\{$2\}/g;
 	    $newline = "$label = {" . 
 	      Autoformat::autoformat( $curr, { case => 'highlight', 
 					       squeeze => 0  } );
 	    chomp $newline;
 	    chomp $newline;
+	    $newline =~ s/\\Em/\\em/g;
 	    $newline .= "},\n";
 	} else {
 	    $newline .= 

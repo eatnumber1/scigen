@@ -499,7 +499,8 @@ sub entitle {
 
 	# put into lowercase if on stop list, else titlecase
 	s{($alword)}
-	 { $ignore && $ignore{lc $1} ? recase($1,'lower') : recase($1,'title') }gex;
+	 { $ignore && 
+	       $ignore{lc $1} ? recase($1,'lower') : recase($1,'title') }gex;
 
 	s/^($alword) /recase($1,'title')/ex;  # last word always to cap
 	s/ ($alword)$/recase($1,'title')/ex;  # first word always to cap
