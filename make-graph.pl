@@ -32,6 +32,7 @@ my @graph_lines = split( /\n/, $graph );
 
 my $type;
 my $curves;
+my $error = 0;
 
 my $tmp_dir = "/tmp/scigengraph.";
 my $gpfile = "$tmp_dir$$.gnuplot";
@@ -57,6 +58,8 @@ foreach my $line (@graph_lines) {
 	}
     } elsif( $line =~ /curvelabel (.*)/ ) {
 	push @labels, $1;
+    } elsif( $line =~ /errorbars/ ) {
+	$error = 1;
     } else {
 	print GPFILE "$line\n";
     }
@@ -91,6 +94,9 @@ for( my $i = 0; $i < $curves; $i++ ) {
 	print GPFILE "points";
     } elsif( $type eq "curve" ) {
 	print GPFILE "linespoints";
+	if( $error ) {
+	    print GPFILE ",\'$datafile.$i\' notitle with errorbars";
+	}
     } elsif( $type eq "cdf" ) {
 	print GPFILE "lines";
     } else {
@@ -122,7 +128,12 @@ for( my $i = 0; $i < $curves; $i++ ) {
 	    }
 	    
 	    my $yn = &add_noise($y);
-	    
+	    if( $type eq "curve" and $error ) {
+		my $ymin = $yn - (rand)*abs($yn);
+		my $ymax = $yn + (rand)*abs($yn);
+		$yn = "$yn $ymin $ymax";
+	    }
+
 	    if( $type ne "cdf" ) {
 		print DAT "$x $yn\n";
 	    } else {
