@@ -2,6 +2,8 @@
 
 use strict;
 
+my $filename = shift;
+
 # noise margin
 my $MARGIN = .1;
 
@@ -37,6 +39,9 @@ my $error = 0;
 my $tmp_dir = "/tmp/scigengraph.";
 my $gpfile = "$tmp_dir$$.gnuplot";
 my $epsfile = "$tmp_dir$$.eps";
+if( defined $filename ) {
+    $epsfile = $filename;
+}
 my $datafile = "$tmp_dir$$.dat";
 my @labels = ();
 my $num_points = 10;
@@ -164,6 +169,8 @@ for( my $i = 0; $i < $curves; $i++ ) {
 close( GPFILE );
 
 system( "gnuplot $gpfile" ) and die( "Couldn't gnuplot $gpfile" );
-system( "gv $epsfile" ) and die( "Couldn't gv $epsfile" );
+if( !defined $filename ) {
+    system( "gv $epsfile" ) and die( "Couldn't gv $epsfile" );
+}
 system( "rm $tmp_dir$$*" ) and die( "Couldn't rm anything" );
 

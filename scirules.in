@@ -3,6 +3,18 @@
 # $Id$
 #
 
+SCIPAPER_LATEX {
+
+ LATEX_HEADER
+
+ SCI_ABSTRACT 
+
+ SCI_INTRO
+
+ LATEX_FOOTER
+
+}
+
 SCIPAPER_LONG	{
 
  SCI_TITLE
@@ -87,8 +99,8 @@ SCI_MID_VERB prove
 SCI_MID_VERB show
 SCI_MID_VERB disprove
 
-SCI_ABSTRACT_HEADER <b>Abstract</b>
-SCI_INTRO_HEADER <b>Introduction</b>
+SCI_ABSTRACT_HEADER \section*{Abstract}
+SCI_INTRO_HEADER \section{Introduction}
 
 SCI_INTRO_A	Many SCI_PEOPLE would agree that, had it not been for TOPIC , the SCI_ACT might never have occurred.
 SCI_INTRO_A	SCI_THING must work.
@@ -1160,3 +1172,38 @@ GNUPLOT {
 }
 
 
+######## LaTeX stuff ########
+
+LATEX_HEADER { 
+
+\documentclass[12pt, twocolumn]{article}
+\usepackage{times}
+\begin{document}
+
+LATEX_TITLE
+LATEX_AUTHORS
+
+\date{}
+
+\maketitle
+
+}
+
+LATEX_FOOTER {
+
+\end{document}
+
+}
+
+LATEX_TITLE \title{SCI_TITLE}
+LATEX_AUTHORS \author{SCI_AUTHORS}
+
+LATEX_FIGURE {
+
+\begin{figure}[t]
+\centerline{\epsfig{figure=query_timeline.eps,width=3in}}
+\caption{\small{SCI_CAPTION}}
+\label{fig:query_timeline}
+\end{figure}
+
+}
