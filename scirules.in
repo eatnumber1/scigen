@@ -1599,7 +1599,7 @@ EVAL_ANALYZE_ONE these EVAL_MEASUREMENT observations contrast to those seen in e
 EVAL_ANALYZE_ONE note how EMULATING SCI_THING_P rather than EMULATING_THEM produce SMOOTHER, more reproducible results
 EVAL_ANALYZE_ONE the results come from only DIGIT trial runs, and were not reproducible
 EVAL_ANALYZE_ONE error bars have been elided, since most of our data points fell outside of DIGITDIGIT standard deviations from observed means
-EVAL_ANALYZE_ONE note that EVAL_FIG shows the \textit{STAT_ADJ} and not \textit{STAT_ADJ} SCI_MATH_ADJ HARDWARE_PROP_OR_MEASUREMENT
+EVAL_ANALYZE_ONE note that EXP_FIG shows the \textit{STAT_ADJ} and not \textit{STAT_ADJ} SCI_MATH_ADJ HARDWARE_PROP_OR_MEASUREMENT
 EVAL_ANALYZE_ONE the curve in EXP_FIG should look familiar; it is better known as EVAL_MATH_EXPR
 EVAL_ANALYZE_ONE we scarcely anticipated how ACCURATE our results were in this phase of the EVALUATION
 EVAL_ANALYZE_ONE our course, all sensitive data was anonymized during our EMULATION
