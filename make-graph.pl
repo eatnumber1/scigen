@@ -6,9 +6,9 @@ use strict;
 my $MARGIN = .1;
 
 my $XMAX = int rand 100 + 10;
-my $XMIN = $XMAX - int rand 200;
+my $XMIN = $XMAX - int rand 2*$XMAX;
 
-my $NUM_POINTS_SCATTER = 1000;
+my $NUM_POINTS_SCATTER =int rand 1000 + 100;
 my $NUM_POINTS_CURVE = (int rand 100) + 10;
 
 sub add_noise {
