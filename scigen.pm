@@ -144,7 +144,6 @@ sub pretty_print {
 					    squeeze => 0  } );
 	    chomp $newline;
 	    chomp $newline;
-	    $newline =~ s/\\Em/\\em/g;
 	    $newline .= "}\n";
 	} elsif( $line =~ /(.*) = {(.*)}\,/ ) {
 	    my $label = $1;
@@ -156,7 +155,6 @@ sub pretty_print {
 					       squeeze => 0  } );
 	    chomp $newline;
 	    chomp $newline;
-	    $newline =~ s/\\Em/\\em/g;
 	    $newline .= "},\n";
 	} elsif( $line =~ /\S/ ) {
 	    $newline = 
@@ -164,10 +162,10 @@ sub pretty_print {
 					       squeeze => 0, 
 					       break => break_latex(),
 					       ignore => qr/^\\/ } );
-	    $newline =~ s/\\Em/\\em/g;
 	    $newline .= "\n";
 	}
 
+	$newline =~ s/\\Em/\\em/g;
 	$news .= $newline;
 
     }

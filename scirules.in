@@ -2844,8 +2844,9 @@ GNUPLOT {
 
 LATEX_HEADER { 
 
-\documentclass[12pt, twocolumn]{article}
-\usepackage{times}
+LATEX_DOCCLASS
+LATEX_FONTCLASS
+LATEX_CITEPACK
 \usepackage{epsfig}
 \begin{document}
 
@@ -2858,11 +2859,27 @@ LATEX_AUTHORS
 
 }
 
+LATEX_CITEPACK \usepackage{cite}
+LATEX_CITEPACK+3 
+
+LATEX_FONTCLASS \usepackage{times}
+LATEX_FONTCLASS 
+
+LATEX_DOCCLASS+3 \documentclass[LATEX_FONTSIZE, twocolumn]{article}
+LATEX_DOCCLASS \documentclass[conference]{IEEEtran}
+
+LATEX_BIBSTYLE+3 \bibliographystyle{acm}
+LATEX_BIBSTYLE \bibliographystyle{IEEE}
+
+LATEX_FONTSIZE+3 12pt
+LATEX_FONTSIZE+2 11pt
+LATEX_FONTSIZE   10pt
+
 LATEX_FOOTER {
 
 \begin{footnotesize}
 \bibliography{scigenbibfile} 
-\bibliographystyle{acm} 
+LATEX_BIBSTYLE
 \end{footnotesize}
 
 \end{document}

@@ -12,6 +12,7 @@ my $tex_file = "$tmp_pre$$.tex";
 my $dvi_file = "$tmp_pre$$.dvi";
 my $ps_file = "$tmp_pre$$.ps";
 my $bib_file = "$tmp_dir/scigenbibfile.bib";
+my $class_files = "IEEEtran.cls IEEE.bst";
 my @authors;
 
 sub usage {
@@ -133,7 +134,7 @@ foreach my $clabel (keys(%citelabels)) {
 }
 close( BIB );
 
-system( "cd $tmp_dir; latex $tex_prefix; bibtex $tex_prefix; latex $tex_prefix; latex $tex_prefix; " . 
+system( "cp $class_files $tmp_dir; cd $tmp_dir; latex $tex_prefix; bibtex $tex_prefix; latex $tex_prefix; latex $tex_prefix; rm $class_files; " . 
 	"dvips -o $ps_file $dvi_file" )
     and die( "Couldn't latex nothing." );
 
