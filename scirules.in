@@ -611,7 +611,7 @@ IMPL_COMPONENT homegrown database
 IMPL_COMPONENT hand-optimized compiler
 IMPL_COMPONENT virtual machine monitor
 IMPL_COMPONENT hacked operating system
-IMPL_COMPONENT NONZDIGIT LANGUAGE_UM files
+IMPL_COMPONENT codebase of NONZDIGIT LANGUAGE_UM files
 
 CODE_LINES	lines
 CODE_LINES	semi-colons
