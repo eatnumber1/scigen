@@ -1,6 +1,8 @@
 #!/usr/bin/perl -w
 
 use strict;
+use scigen;
+use IO::File;
 
 my $tmp_dir = "/tmp";
 my $tmp_pre = "$tmp_dir/scimakelatex.";
@@ -10,10 +12,20 @@ my $dvi_file = "$tmp_pre$$.dvi";
 my $ps_file = "$tmp_pre$$.ps";
 my $bib_file = "$tmp_dir/scigenbibfile.bib";
 
+my $name_dat = {};
+my $name_RE = undef;
+my $tex_dat = {};
+my $tex_RE = undef;
+
 my $sysname = &get_system_name();
-system( "perl scigen.pl -f scirules.in -s SCIPAPER_LATEX SYSNAME=\"$sysname\""
-	. " > $tex_file" ) and
-    die( "Couldn't make SCIPAPER_LATEX into file $tex_file" );
+my $tex_fh = new IO::File ("<scirules.in");
+my @a = ($sysname);
+$tex_dat->{"SYSNAME"} = \@a;
+scigen::read_rules ($tex_fh, $tex_dat, \$tex_RE, 0);
+my $tex = scigen::generate ($tex_dat, "SCIPAPER_LATEX", $tex_RE, 0, 1);
+open( TEX, ">$tex_file" ) or die( "Couldn't open $tex_file for writing" );
+print TEX $tex;
+close( TEX );
 
 # for every figure you find in the file, generate a figure
 open( TEX, "<$tex_file" ) or die( "Couldn't read $tex_file" );
@@ -46,12 +58,19 @@ while( <TEX> ) {
 close( TEX );
 
 # generate bibtex 
+open( BIB, ">$bib_file" ) or die( "Couldn't open $bib_file for writing" );
 foreach my $clabel (keys(%citelabels)) {
     my $sysname_cite = &get_system_name();
-    system( "perl scigen.pl -f scirules.in -s BIBTEX_ENTRY " . 
-	    "CITE_LABEL_GIVEN=$clabel SYSNAME=\"$sysname_cite\" >> $bib_file" ) 
-      and die( "Couldn't make a bibtex entry" );
+    @a = ($sysname_cite);
+    $tex_dat->{"SYSNAME"} = \@a;
+    my @b = ($clabel);
+    $tex_dat->{"CITE_LABEL_GIVEN"} = \@b;
+    scigen::compute_re( $tex_dat, \$tex_RE );
+    my $bib = scigen::generate ($tex_dat, "BIBTEX_ENTRY", $tex_RE, 0, 1);
+    print BIB $bib;
+    
 }
+close( BIB );
 
 system( "cd $tmp_dir; latex $tex_prefix; bibtex $tex_prefix; latex $tex_prefix; latex $tex_prefix; " . 
 	"dvips -o $ps_file $dvi_file" )
@@ -65,7 +84,12 @@ unlink( "$bib_file" );
 
 sub get_system_name {
 
-    my $name = `perl scigen.pl -f system_names.in -s SYSTEM_NAME -p 0`;
+    if( !defined $name_RE ) {
+	my $fh = new IO::File ("<system_names.in");
+        scigen::read_rules ($fh, $name_dat, \$name_RE, 0);
+    }
+
+    my $name = scigen::generate ($name_dat, "SYSTEM_NAME", $name_RE, 0, 0);
     chomp($name);
 
     # how about some effects?
