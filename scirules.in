@@ -672,7 +672,7 @@ RELWORK_MID_X SCI_BY_WHO RELWORK_CITATION originally articulated the need for SC
 RELWORK_MID_X the original SCI_APPROACH to this SCI_PROBLEM SCI_BY_WHO_SOMETIMES was SCI_REACTION; LIT_REVERSAL, WHAT did not completely SCI_SOLVE_CLAUSE
 RELWORK_MID_X SCI_BY_WHO RELWORK_CITATION suggested a scheme for SCI_VERBING SCI_GENERIC_NOUN, but did not fully realize the implications of SCI_GENERIC_NOUN at the time
 RELWORK_MID_X SCI_OUR_SYSTEM is broadly related to work in the field of SCI_FIELD SCI_BY_WHO_SOMETIMES, but we view it from a new perspective: SCI_GENERIC_NOUN
-RELWORK_MID_X SCI_BY_WHO RELWORK_CITATION developed a similar SCI_SYSTEM, LIT_REVERSAL we have SCI_PROVE_VERBED that SCI_OUR_SYSTEM SCI_PROOF_PROP 
+RELWORK_MID_X SCI_BY_WHO RELWORK_CITATION developed a similar SCI_SYSTEM, LIT_REVERSAL we SCI_PROVE_VERBED that SCI_OUR_SYSTEM SCI_PROOF_PROP 
 RELWORK_MID_X a litany of RELATED work supports our use of SCI_GENERIC_NOUN
 
 SCI_FAIR+3	ill-conceived
@@ -722,7 +722,7 @@ RELWORK_CONCL we plan to adopt many of the ideas from this RELATED work in futur
 RELWORK_CONCL all of these SCI_APPROACH_PL conflict with our assumption that SCI_GENERIC_NOUN and SCI_GENERIC_NOUN are SCI_ADJ RELWORK_XXX
 RELWORK_CONCL our SCI_APPROACH to SCI_GENERIC_NOUN differs from that of SCI_BY_WHO RELWORK_CITATION as well RELWORK_XXX
 RELWORK_CONCL LIT_ALTHOUGH we have nothing against the RELATED SCI_APPROACH SCI_BY_WHO_SOMETIMES, we do not believe that SCI_APPROACH is applicable to SCI_FIELD RELWORK_XXX
-RELWORK_CONCL these SCI_SYSTEM_PL typically require that SCI_OVERALL_THESIS_PROVE RELWORK_CITATION, and we have SCI_PROVE_VERBED SCI_IN_THIS_PAPER that this, indeed, is the case.
+RELWORK_CONCL these SCI_SYSTEM_PL typically require that SCI_OVERALL_THESIS_PROVE RELWORK_CITATION, and we SCI_PROVE_VERBED SCI_IN_THIS_PAPER that this, indeed, is the case.
 RELWORK_CONCL SCI_B_LEADIN_C the SCI_SYSTEM of SCI_BY_WHO RELWORK_CITATION is a SCI_ADJ choice for SCI_GENERIC_NOUN RELWORK_XXX
 RELWORK_CONCL LIT_CONCLUSION, despite substantial work in this area, our SCI_APPROACH is SCI_ADV the SCI_SYSTEM of choice among SCI_PEOPLE RELWORK_XXX
 RELWORK_CONCL RELWORK_MID_X RELWORK_XXX
@@ -1673,7 +1673,7 @@ SCI_THING_S	DNS
 SCI_THING_S	802.11b
 SCI_THING_P	information retrieval systems
 SCI_THING_P	web browsers
-SCI_THING_S	the Commodore VIC-20
+#SCI_THING_S	the Commodore VIC-20
 SCI_THING_S	the Turing machine
 SCI_THING_P	B-trees
 SCI_THING_P	hierarchical databases
@@ -1692,8 +1692,16 @@ SCI_THING_P	neural networks
 SCI_THING_P	von Neumann machines
 SCI_THING_S	context-free grammar
 SCI_THING_P	embedded systems
+SCI_THING_P	digital-to-analog converters
 SCI_THING_P	journaling file systems
+SCI_THING_P	expert systems
+SCI_THING_S	evolutionary programming
+SCI_THING_S	simulated annealing
+SCI_THING_P	superpages
+SCI_THING_P	64-bit architectures
+SCI_THING_P	vacuum tubes
 SCI_THING_S 	Internet QoS
+SCI_THING_S 	rasterization
 SCI_THING_S	model checking
 SCI_THING_S	lambda calculus
 SCI_THING_S	scatter/gather I/O
@@ -1703,6 +1711,22 @@ SCI_THING_S	fiber-optic cables
 SCI_THING_S	the Ethernet
 SCI_THING_S	RAID
 SCI_THING_P	802.11 mesh networks
+SCI_THING_S	telephony
+SCI_THING_P	multi-processors
+SCI_THING_P	compilers
+SCI_THING_P	semaphores
+SCI_THING_P	RPCs
+SCI_THING_P	virtual machines
+SCI_THING_S	Smalltalk
+SCI_THING_S	A\* search
+SCI_THING_S	reinforcement learning
+SCI_THING_P	Lamport clocks
+SCI_THING_S	the producer-consumer problem
+SCI_THING_P	checksums
+SCI_THING_P	multicast SCI_SYSTEM_PL
+SCI_THING_S	write-ahead logging
+SCI_THING_S	cache coherence
+SCI_THING_P	SCSI disks
 SCI_THING_MOD	SCI_THING CITATION_SOMETIMES
 SCI_SYSTEM	algorithm
 SCI_SYSTEM	system
@@ -1771,6 +1795,7 @@ SCI_BUZZWORD_ADJ autonomous
 SCI_BUZZWORD_ADJ introspective
 SCI_BUZZWORD_ADJ distributed
 SCI_BUZZWORD_ADJ atomic
+SCI_BUZZWORD_ADJ event-driven
 SCI_BUZZWORD_ADJ read-write
 SCI_BUZZWORD_ADJ highly-available
 SCI_BUZZWORD_ADJ secure
@@ -2066,7 +2091,7 @@ SCI_PROVE_VERB disprove
 SCI_PROVE_VERBED demonstrated
 SCI_PROVE_VERBED argued
 SCI_PROVE_VERBED proved
-SCI_PROVE_VERBED shown
+SCI_PROVE_VERBED showed
 SCI_PROVE_VERBED disproved
 SCI_PROVE_VERBING demonstrating
 SCI_PROVE_VERBING arguing
@@ -2709,7 +2734,7 @@ GRAPH_TYPE+2 GRAPH_TYPE_SCATTER2
 GRAPH_TYPE+5 GRAPH_TYPE_CURVE1
 GRAPH_TYPE+4 GRAPH_TYPE_CURVE2
 GRAPH_TYPE+2 GRAPH_TYPE_CURVE4
-GRAPH_TYPE GRAPH_TYPE_CURVE10
+#GRAPH_TYPE GRAPH_TYPE_CURVE10
 GRAPH_TYPE GRAPH_TYPE_BARGRAPH1
 GRAPH_TYPE GRAPH_TYPE_CDF1
 GRAPH_TYPE GRAPH_TYPE_CDF1
