@@ -878,6 +878,20 @@ SCI_THING	Boolean logic
 SCI_THING	voice-over-IP
 SCI_THING	the World Wide Web
 SCI_THING	flip-flop gates
+SCI_THING	e-business
+SCI_THING	neural networks
+SCI_THING	von Neumann machines
+SCI_THING	context-free grammar
+SCI_THING	embedded systems
+SCI_THING	journaling file systems
+SCI_THING 	Internet QoS
+SCI_THING	model checking
+SCI_THING	lambda calculus
+SCI_THING	scatter/gather I/O
+SCI_THING	XML
+SCI_THING	I/O automata
+SCI_THING	fiber-optic cables
+SCI_THING	the Ethernet
 SCI_RESPONSE	yes
 SCI_RESPONSE	no
 SCI_RESPONSE	it is
@@ -928,11 +942,12 @@ SCI_FIELD	artificial intelligence
 SCI_FIELD	machine learning
 SCI_FIELD	robotics
 SCI_FIELD	electrical engineering
-SCI_FIELD	voting technology
+SCI_FIELD	e-voting technology
 SCI_FIELD	cryptography
 SCI_FIELD	cryptoanalysis
 SCI_FIELD	cyberinformatics
 SCI_FIELD	stegonography
+SCI_FIELD	software engineering
 SCI_COUNTRY	American
 SCI_COUNTRY	British
 SCI_COUNTRY	Canadian
