@@ -120,7 +120,7 @@ for( my $i = 0; $i < $curves; $i++ ) {
 	my $func = `perl scigen.pl -f functions.in -s EXPR -p 0`;
 	
 	open( DAT, ">$datafile.$i" ) or 
-	    die( "Couldn't write to $datafile.$i" );
+	    clean() and die( "Couldn't write to $datafile.$i" );
 	
 	foreach my $x (@x) {
 	    
@@ -168,9 +168,13 @@ for( my $i = 0; $i < $curves; $i++ ) {
 
 close( GPFILE );
 
-system( "gnuplot $gpfile" ) and die( "Couldn't gnuplot $gpfile" );
+system( "gnuplot $gpfile" ) and clean() and die( "Couldn't gnuplot $gpfile" );
 if( !defined $filename ) {
-    system( "gv $epsfile" ) and die( "Couldn't gv $epsfile" );
+    system( "gv $epsfile" ) and clean() 
+	and die( "Couldn't gv $epsfile" ) and clean();
 }
-system( "rm $tmp_dir$$*" ) and die( "Couldn't rm anything" );
+clean();
 
+sub clean {
+    system( "rm $tmp_dir$$*" ) and die( "Couldn't rm anything" );
+}
