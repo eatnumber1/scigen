@@ -49,7 +49,7 @@ while( <TEX> ) {
 	my $done = 0;
 	while( !$done ) {
 	    if( `which neato` ) {
-		(system( "./make-diagram.pl $sysname $figfile" ) or 
+		(system( "./make-diagram.pl \"$sysname\" $figfile" ) or 
 		 !(-f $figfile)) 
 		    or $done=1;
 	    } else {

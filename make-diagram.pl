@@ -1,7 +1,6 @@
 #!/usr/bin/perl -w
 
 use strict;
-use GraphViz;
 use scigen;
 
 my $tmp_dir = "/tmp";
@@ -17,7 +16,7 @@ if( defined $filename ) {
 }
 
 my @label_types = qw( NODE_LABEL_LET NODE_LABEL_PROG 
-		      NODE_LABEL_NET NODE_LABEL_IP );
+		      NODE_LABEL_NET NODE_LABEL_IP NODE_LABEL_HW );
 my %types = ("digraph" => "DIR_LAYOUT",
 	     "graph" => "UNDIR_LAYOUT" );
 my %edges = ("digraph" => "->",
@@ -43,7 +42,12 @@ my @b = ($label_type);
 $dat->{"NODE_LABEL"} = \@b;
 my @c = ($edge_type);
 $dat->{"EDGEOP"} = \@c;
-my @d = ($sysname);
+# can't be in italics
+print "sysname=($sysname)\n";
+if( $sysname =~ /\{\\em (.*)\}/ ) {
+    $sysname = $1;
+}
+my @d = ($sysname); 
 $dat->{"SYSNAME"} = \@d;
 my @e = ();
 my @shapes = split( /\s+/, $shape_type );
@@ -59,7 +63,6 @@ open( VIZ, ">$viz_file" ) or die( "Can't open $viz_file for writing" );
 print VIZ $graph_file;
 close( VIZ );
 
-print "running $program . . .\n";
 system( "$program -Tps $viz_file > $eps_file" ) and
     die( "Can't run $program on $viz_file" );
 
