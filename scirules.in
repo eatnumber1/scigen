@@ -885,50 +885,54 @@ SCI_RESPONSE	unlikely
 SCI_RESPONSE	exactly so
 SCI_RESPONSE	it is not
 SCI_RESPONSE	the answer is yes
+SCI_RESPONSE	yes, but only in theory
 SCI_EFFECT	made SCI_VERBING and possibly SCI_VERBING TOPIC a reality
 SCI_EFFECT	would allow for further study into SCI_THING
 SCI_EFFECT	paved the way for the SCI_ACT_A SCI_THING
 SCI_EFFECT	would make SCI_VERBING SCI_THING a real possibility
 SCI_PERSON	chemist
 SCI_PERSON	physicist
-SCI_PERSON	astrologer
-SCI_PERSON	astrophysicist
-SCI_PERSON	biogeneticist
-SCI_PERSON	biologist
-SCI_PERSON	geologist
+SCI_PERSON	information theorist
+SCI_PERSON	computational biologist
+SCI_PERSON	system administrator
+SCI_PERSON	gifted hacker
+SCI_PERSON	convicted hacker
 SCI_PERSON	mad scientist
-SCI_PERSON	nutritionist
-SCI_PERSON	psychologist
-SCI_PEOPLE	physicists
-SCI_PEOPLE	academics
-SCI_PEOPLE	astrologers
-SCI_PEOPLE	astrologers
-SCI_PEOPLE	astrophysicists
-SCI_PEOPLE	biogeneticists
+SCI_PERSON	hardware designer
+SCI_PERSON	complexity theorist
+SCI_PERSON	algorithmist
+SCI_PEOPLE	information theorists
+SCI_PEOPLE	statisticians
+SCI_PEOPLE	computational biologists
+SCI_PEOPLE	system administrators
+SCI_PEOPLE	electrical engineers
+SCI_PEOPLE	cryptographers
+SCI_PEOPLE	security experts
+SCI_PEOPLE	systems engineers
+SCI_PEOPLE	hackers worldwide
 SCI_PEOPLE	biologists
-SCI_PEOPLE	chemists
-SCI_PEOPLE	geologists
-SCI_PEOPLE	mad scientists
-SCI_PEOPLE	nutritionists
+SCI_PEOPLE	mathematicians
 SCI_PEOPLE	physicists
-SCI_PEOPLE	psychologists
+SCI_PEOPLE	theorists
 SCI_PEOPLE	researchers
-SCI_FIELD	archaeology
-SCI_FIELD	astrology
-SCI_FIELD	astrophysics
-SCI_FIELD	biology
-SCI_FIELD	chemistry
-SCI_FIELD	computer technology
-SCI_FIELD	library science
-SCI_FIELD	linguistics
-SCI_FIELD	medical science
-SCI_FIELD	mortuary science
-SCI_FIELD	national defense
-SCI_FIELD	physics
-SCI_FIELD	psychiatry
-SCI_FIELD	psychology
-SCI_FIELD	sexology
-SCI_FIELD	sociology
+SCI_PEOPLE	stegonographers
+SCI_PEOPLE	cyberinformaticians
+SCI_FIELD	hardware and architecture
+SCI_FIELD	networking
+SCI_FIELD	operating systems
+SCI_FIELD	programming languages
+SCI_FIELD	theory
+SCI_FIELD	algorithms
+SCI_FIELD	complexity theory
+SCI_FIELD	artificial intelligence
+SCI_FIELD	machine learning
+SCI_FIELD	robotics
+SCI_FIELD	electrical engineering
+SCI_FIELD	voting technology
+SCI_FIELD	cryptography
+SCI_FIELD	cryptoanalysis
+SCI_FIELD	cyberinformatics
+SCI_FIELD	stegonography
 SCI_COUNTRY	American
 SCI_COUNTRY	British
 SCI_COUNTRY	Canadian
@@ -1029,34 +1033,66 @@ SCI_QUOTE_NUMBER	3054
 SCI_QUOTE_NUMBER	54
 SCI_QUOTE_NUMBER	250
 SCI_QUOTE_NUMBER	666
-SCI_SOURCE	Ada Lovelace
 SCI_SOURCE	Alan Turing
 SCI_SOURCE	Albert Einstein
-SCI_SOURCE	Alexander Graham Bell
-SCI_SOURCE	Aristotle
-SCI_SOURCE	Benjamin Franklin
-SCI_SOURCE	Bill Nye
-SCI_SOURCE	Blaise Pascal
 SCI_SOURCE	Charles Darwin
-SCI_SOURCE	Doctor Who
-SCI_SOURCE	Dr. Laura Schlessinger
-SCI_SOURCE	Dr. Ruth Westheimer
 SCI_SOURCE	Erwin Schroedinger
-SCI_SOURCE	Galileo
-SCI_SOURCE	George Washington Carver
-SCI_SOURCE	Isaac Asimov
 SCI_SOURCE	Isaac Newton
-SCI_SOURCE	Johannes Kepler
-SCI_SOURCE	Leonardo Da Vinci
-SCI_SOURCE	Louis Pasteur
-SCI_SOURCE	Marie Curie
-SCI_SOURCE	Max Planck
-SCI_SOURCE	Mr. Spock
-SCI_SOURCE	Nicola Tesla
 SCI_SOURCE	Noam Chomsky
-SCI_SOURCE	Sigmund Freud
 SCI_SOURCE	Stephen Hawking
 SCI_SOURCE	Timothy Leary
+SCI_SOURCE	Butler Lampson
+SCI_SOURCE	Henry Levy
+SCI_SOURCE	Roger Needham
+SCI_SOURCE	Matt Welsh
+SCI_SOURCE	M. Frans Kaashoek
+SCI_SOURCE	Ken Thompson
+SCI_SOURCE	Richard Stallman
+SCI_SOURCE	Ron Rivest
+SCI_SOURCE	A.J. Perlis
+SCI_SOURCE	Maurice V. Wilkes
+SCI_SOURCE	Richard Hamming
+SCI_SOURCE	Marvin Minksy
+SCI_SOURCE	J.H. Wilkinson
+SCI_SOURCE	John McCarthy
+SCI_SOURCE	E.W. Dijkstra
+SCI_SOURCE	Charles Bachman
+SCI_SOURCE	Donald Knuth
+SCI_SOURCE	Allen Newell
+SCI_SOURCE	Herbert Simon
+SCI_SOURCE	Michael O. Rabin
+SCI_SOURCE	Dana S. Scott
+SCI_SOURCE	John Backus
+SCI_SOURCE	Robert Floyd
+SCI_SOURCE	Kenneth Iverson
+SCI_SOURCE	C. Antony R. Hoare
+SCI_SOURCE	Edgar Codd
+SCI_SOURCE	Stephen Cook
+SCI_SOURCE	Dennis Ritchie
+SCI_SOURCE	Niklaus Wirth
+SCI_SOURCE	Andy Tanenbaum
+SCI_SOURCE	Richard Karp
+SCI_SOURCE	John Hopcroft
+SCI_SOURCE	Robert Tarjan
+SCI_SOURCE	John Cocke
+SCI_SOURCE	Ivan Sutherland
+SCI_SOURCE	William Kahan
+SCI_SOURCE	Fernando Corbato
+SCI_SOURCE	Robin Milner
+SCI_SOURCE	Juris Hartmanis
+SCI_SOURCE	Richard Stearns
+SCI_SOURCE	Edward Feigenbaum
+SCI_SOURCE	Raj Reddy
+SCI_SOURCE	Manuel Blum
+SCI_SOURCE	Amir Pnueli
+SCI_SOURCE	Douglas Engelbart
+SCI_SOURCE	James Gray
+SCI_SOURCE	Fredrick P. Brooks, Jr.
+SCI_SOURCE	Andrew Yao
+SCI_SOURCE	Ole-Johan Dahl
+SCI_SOURCE	Kristen Nygaard
+SCI_SOURCE	Adi Shamir
+SCI_SOURCE	Leoanrd Adleman
 SCI_YEAR	1886
 SCI_YEAR	1968
 SCI_YEAR	1992
