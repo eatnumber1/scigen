@@ -400,22 +400,122 @@ BACK_SEC_LATEX_HEADER
 ####### Model/Design #######
 #############################################################################
 
-MODEL_SEC_LATEX_HEADER	\section{Model}
-MODEL_SEC_LATEX_HEADER	\section{Design}
-MODEL_SEC_LATEX_HEADER	\section{Framework}
-MODEL_SEC_LATEX_HEADER	\section{Principles}
-MODEL_SEC_LATEX_HEADER	\section{Architecture}
-MODEL_SEC_LATEX_HEADER	\section{Methodology}
-MODEL_SEC_LATEX_HEADER	\section{SCI_SYSTEM SCI_VERBION}
-MODEL_SEC_LATEX_HEADER	\section{SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN}
+MODEL_SEC_LATEX_HEADER+6	\section{SCI_MODEL_TYPE}
+MODEL_SEC_LATEX_HEADER		\section{SYSNAME SCI_VERBION}
+MODEL_SEC_LATEX_HEADER		\section{principles}
+MODEL_SEC_LATEX_HEADER		\section{SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN}
 
 SCI_MODEL {
 
-MODEL_SEC_LATEX_HEADER
+  MODEL_SEC_LATEX_HEADER
 
   LATEX_DIAGRAM
 
+  MODEL_INTRO_P
+
+  MODEL_BODY_P_MANY
+
 }
+
+SCI_MODEL_TYPE	model
+SCI_MODEL_TYPE	design
+SCI_MODEL_TYPE	framework
+SCI_MODEL_TYPE	architecture
+SCI_MODEL_TYPE	methodology
+
+MODEL_XXX+2	XXX
+MODEL_XXX	. MODEL_FILLER.
+
+MODEL_INTRO_P	MODEL_INTRO_1 MODEL_BODY_INSIDE MODEL_CONCL
+MODEL_BODY_P	MODEL_INTRO MODEL_BODY_INSIDE MODEL_CONCL
+
+MODEL_BODY_P_FEW+3	MODEL_BODY_P
+MODEL_BODY_P_FEW	MODEL_BODY_P_2
+
+MODEL_BODY_P_MANY	MODEL_BODY_P
+MODEL_BODY_P_MANY+2	MODEL_BODY_P_2
+MODEL_BODY_P_MANY	MODEL_BODY_P_2
+
+MODEL_BODY_P_2 {
+
+ MODEL_BODY_P
+
+ MODEL_BODY_P
+
+}
+
+MODEL_BODY_P_3 {
+
+ MODEL_BODY_P_2
+
+ MODEL_BODY_P
+
+}
+
+MODEL_BODY_INSIDE 	MODEL_MID MODEL_MID MODEL_MID MODEL_MID
+MODEL_BODY_INSIDE+2 	MODEL_MID MODEL_MID MODEL_MID
+MODEL_BODY_INSIDE+3 	MODEL_MID MODEL_MID
+MODEL_BODY_INSIDE 	MODEL_MID
+
+MODEL_INTRO_1 in this section, we SCI_PRESENT_VERB a SCI_MODEL_TYPE for SCI_VERBING SCI_GENERIC_NOUN MODEL_XXX
+MODEL_INTRO_1 next, we SCI_PRESENT_VERB our SCI_MODEL_TYPE for SCI_PROVE_VERBING that SCI_OUR_SYSTEM SCI_PROOF_PROP MODEL_XXX
+MODEL_INTRO_1 The properties of SCI_OUR_SYSTEM depend greatly on the assumptions inherent in our SCI_MODEL_TYPE; in this section, we outline those assumptions MODEL_XXX
+MODEL_INTRO_1 motivated by the need for SCI_GENERIC_NOUN, we now SCI_PRESENT_VERB a SCI_MODEL_TYPE for SCI_PROVE_VERBING that SCI_OVERALL_THESIS_PROVE MODEL_XXX
+MODEL_INTRO_1 our research is principled.
+MODEL_INTRO_1+3 MODEL_INTRO
+
+
+MODEL_INTRO Reality aside, we would like to SCI_VERB a SCI_MODEL_TYPE for how SCI_OUR_SYSTEM might behave in theory MODEL_XXX
+MODEL_INTRO Suppose that there exists SCI_GENERIC_NOUN such that we can easily SCI_VERB SCI_GENERIC_NOUN MODEL_XXX
+MODEL_INTRO SCI_OUR_SYSTEM relies on the SCI_ADJ SCI_MODEL_TYPE outlined in the recent SCI_STATUS_ADJ work by SCI_BY_WHO
+MODEL_INTRO
+MODEL_INTRO MODEL_MID
+
+SCI_ASSUME+3	assume
+SCI_ASSUME	hypothesize
+SCI_ASSUME	postulate
+SCI_ASSUME	estimate
+SCI_ASSUME	believe
+
+MODEL_MID	LIT_MIDDLE_MAYBE MODEL_MID_X MODEL_XXX
+MODEL_MID_X	SCI_OUR_SYSTEM does not require such a SCI_ADJ SCI_SYS_VERBION to run correctly, but it doesn't hurt
+MODEL_MID_X	we SCI_ASSUME that SCI_OVERALL_THESIS_PROVE
+MODEL_MID_X	consider the early SCI_MODEL_TYPE by SCI_BY_WHO; our SCI_MODEL_TYPE is similar, but actually SCI_SOLVE_CLAUSE
+MODEL_MID_X	any SCI_ADJ SCI_VERBION of SCI_GENERIC_NOUN will clearly require that SCI_OVERALL_THESIS_PROVE; SCI_OUR_SYSTEM is no different
+MODEL_MID_X	we SCI_ASSUME that SCI_GENERIC_NOUN can SCI_SYS_VERB SCI_GENERIC_NOUN without needing to SCI_SYS_VERB SCI_GENERIC_NOUN
+MODEL_MID_X	despite the results by SCI_BY_WHO, we can SCI_PROVE_VERB that SCI_OVERALL_THESIS_PROVE
+MODEL_MID_X	we consider a SCI_SYSTEM consisting of $n$ SCI_THING_P
+MODEL_MID_X	we SCI_ASSUME that each component of SCI_OUR_SYSTEM SCI_SYSTEM_ACTION, independent of all other components
+MODEL_MID_X	the SCI_MODEL_TYPE for SCI_OUR_SYSTEM consists of four independent components: SCI_GENERIC_NOUN, SCI_GENERIC_NOUN, SCI_GENERIC_NOUN, and SCI_GENERIC_NOUN
+MODEL_MID_X	rather than SCI_SYS_VERBING SCI_GENERIC_NOUN, SCI_OUR_SYSTEM chooses to SCI_SYS_VERB SCI_GENERIC_NOUN
+MODEL_MID_X	we EVAL_VERBED a SCI_TRACE SCI_PROVE_VERBING that our SCI_MODEL_TYPE MODEL_GROUNDING
+
+MODEL_GROUNDING is solidly grounded in reality
+MODEL_GROUNDING is unfounded
+MODEL_GROUNDING holds for most cases
+MODEL_GROUNDING is not feasible
+MODEL_GROUNDING is feasible
+
+TRACE_UNIT	week
+TRACE_UNIT	day
+TRACE_UNIT	month
+TRACE_UNIT	year
+TRACE_UNIT	minute
+
+SCI_TRACE	TRACE_UNIT-long trace
+SCI_TRACE	NONZ-TRACE_UNIT-long trace
+SCI_TRACE	trace, over the course of several TRACE_UNITs,
+
+MODEL_CONCL	the question is, will SYSNAME satisy all of these assumptions?  SCI_RESPONSE XXX
+MODEL_CONCL	see our RELATED technical report CITATION for details XXX
+MODEL_CONCL	we use our previously SCI_VERBED results as a basis for all of these assumptions MODEL_XXX
+MODEL_CONCL	LIT_CONCLUSION, the SCI_MODEL_TYPE that SCI_OUR_SYSTEM uses MODEL_GROUNDING XXX
+MODEL_CONCL	MODEL_MID
+
+MODEL_FILLER	this may or may not actually hold in reality
+MODEL_FILLER	this seems to hold in most cases
+MODEL_FILLER	this is a SCI_ADJ property of SCI_OUR_SYSTEM
+MODEL_FILLER	LIT_ALTHOUGH SCI_PEOPLE LIT_OFTEN SCI_ASSUME the exact opposite, SCI_OUR_SYSTEM depends on this property for correct behavior
 
 #############################################################################
 ####### Implementation #######
@@ -1399,7 +1499,7 @@ ABCD		b
 ABCD		c
 ABCD		d
 
-VERSION_BASE	DIGIT\!ABCD
+VERSION_BASE	DIGITABCD
 VERSION_BASE	DIGIT.DIGIT
 VERSION_BASE	DIGIT.DIGIT.DIGIT
 VERSION		VERSION_BASE
@@ -2278,6 +2378,7 @@ SCI_PROOF_PROP is in Co-NP
 SCI_PROOF_PROP is optimal
 SCI_PROOF_PROP is Turing complete
 SCI_PROOF_PROP is maximally efficient
+SCI_PROOF_PROP follows a Zipf-like distribution
 
 #############################################################################
 ####### People #######
