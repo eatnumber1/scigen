@@ -2687,7 +2687,29 @@ GENERIC_LASTNAME Kumar
 ######### Units/Graphs ##########
 #############################################################################
 
-SCI_CAPTION See Figure~\ref{LATEX_FIG_LABEL_REF} XXX
+SCI_CAPTION see Figure~\ref{LATEX_FIG_LABEL_REF} XXX
+
+SCI_GRAPH_CAPTION SCI_CAPTION
+
+SCI_DIAGRAM_CAPTION SCI_CAPTION
+SCI_DIAGRAM_CAPTION a SCI_DIAGRAM_TYPE SCI_DIAGRAM_VERBING the relationship between SCI_OUR_SYSTEM and SCI_GENERIC_NOUN XXX
+SCI_DIAGRAM_CAPTION SCI_OUR_SYSTEM's SCI_BUZZWORD_ADJ SCI_SYS_VERBION XXX
+SCI_DIAGRAM_CAPTION the SCI_DIAGRAM_TYPE used by SCI_OUR_SYSTEM XXX
+SCI_DIAGRAM_CAPTION the relationship between SCI_OUR_SYSTEM and SCI_GENERIC_NOUN XXX
+SCI_DIAGRAM_CAPTION SCI_OUR_SYSTEM SCI_SYS_VERBS SCI_GENERIC_NOUN in the manner detailed above XXX
+SCI_DIAGRAM_CAPTION SCI_OVERALL_THESIS_THING XXX
+
+SCI_DIAGRAM_TYPE	diagram
+SCI_DIAGRAM_TYPE	schematic
+SCI_DIAGRAM_TYPE	architectural layout
+SCI_DIAGRAM_TYPE	flowchart
+SCI_DIAGRAM_TYPE	decision tree
+SCI_DIAGRAM_TYPE	SCI_MODEL_TYPE
+
+SCI_DIAGRAM_VERBING	detailing
+SCI_DIAGRAM_VERBING	diagramming
+SCI_DIAGRAM_VERBING	plotting
+SCI_DIAGRAM_VERBING	showing
 
 EVAL_UNIT MB/s
 EVAL_UNIT ms
@@ -2874,7 +2896,9 @@ LATEX_AUTHORS
 LATEX_CITEPACK \usepackage{cite}
 LATEX_CITEPACK+3 
 
-LATEX_FONTCLASS \usepackage{times}
+LATEX_FONTCLASS+2 \usepackage{times}
+LATEX_FONTCLASS \usepackage{helvet}
+LATEX_FONTCLASS \usepackage{palatino}
 LATEX_FONTCLASS 
 
 LATEX_DOCCLASS+3 \documentclass[LATEX_FONTSIZE, twocolumn]{article}
@@ -2905,7 +2929,9 @@ LATEX_FIGURE {
 
 \begin{figure}[t]
 \centerline{\epsfig{figure=LATEX_FIG_FILENAME,width=3in}}
-\caption{\small{SCI_CAPTION}}
+\caption{\small{
+SCI_GRAPH_CAPTION
+}}
 \label{LATEX_FIG_LABEL}
 \end{figure}
 
@@ -2924,7 +2950,9 @@ LATEX_DIAGRAM {
 
 \begin{figure}[t]
 \centerline{\epsfig{figure=LATEX_DIA_FILENAME}}
-\caption{\small{SCI_CAPTION}}
+\caption{\small{
+SCI_DIAGRAM_CAPTION
+}}
 \label{LATEX_DIA_LABEL}
 \end{figure}
 

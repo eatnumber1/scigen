@@ -130,21 +130,21 @@ sub pretty_print {
 					    squeeze => 0 } );
 	    chomp $newline;
 	    chomp $newline;
-	    $newline .= "}\n";
+	    $newline .= "}";
 	} elsif( $line =~ /\\subsection{(.*)}/ ) {
 	    $newline = "\\subsection{" . 
 	      Autoformat::autoformat( $1, { case => 'highlight', 
 					    squeeze => 0 } );
 	    chomp $newline;
 	    chomp $newline;
-	    $newline .= "}\n";
+	    $newline .= "}";
 	} elsif( $line =~ /\\title{(.*)}/ ) {
 	    $newline = "\\title{" . 
 	      Autoformat::autoformat( $1, { case => 'highlight', 
 					    squeeze => 0  } );
 	    chomp $newline;
 	    chomp $newline;
-	    $newline .= "}\n";
+	    $newline .= "}";
 	} elsif( $line =~ /(.*) = {(.*)}\,/ ) {
 	    my $label = $1;
 	    my $curr = $2;
@@ -155,17 +155,20 @@ sub pretty_print {
 					       squeeze => 0  } );
 	    chomp $newline;
 	    chomp $newline;
-	    $newline .= "},\n";
+	    $newline .= "},";
 	} elsif( $line =~ /\S/ ) {
 	    $newline = 
 	      Autoformat::autoformat( $line, { case => 'sentence', 
 					       squeeze => 0, 
 					       break => break_latex(),
 					       ignore => qr/^\\/ } );
-	    $newline .= "\n";
 	}
 
 	$newline =~ s/\\Em/\\em/g;
+
+	if( $newline !~ /\n$/ ) {
+	    $newline .= "\n";
+	}
 	$news .= $newline;
 
     }
