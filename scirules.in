@@ -1445,7 +1445,7 @@ SCI_MATH_ADJ	Markov
 SCI_MATH_ADJ	Bayesian
 SCI_MATH_ADJ	randomized
 SCI_MATH_ADJ	pipelined
-SCI_MATH_ADJ	hardware
+#SCI_MATH_ADJ	hardware
 SCI_MATH_ADJ	wireless
 SCI_MATH_ADJ	wired
 SCI_MATH_ADJ	separated
