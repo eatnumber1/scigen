@@ -110,7 +110,7 @@ while( <TEX> ) {
 	    my $newseed = int rand 0xffffffff;
 	    if( `which neato` ) {
 		(system( "./make-diagram.pl --sys \"$sysname\" " . 
-			 "--file $figfile --seed $seed" ) or 
+			 "--file $figfile --seed $newseed" ) or 
 		 !(-f $figfile)) 
 		    or $done=1;
 	    } else {
@@ -165,7 +165,11 @@ if( defined $options{"file"} ) {
     system( "gv $ps_file" ) and die( "Couldn't gv $ps_file" );
 }
 
-my $seedstring = "seed=$seed authors={@authors}";
+my $seedstring = "seed=$seed ";
+foreach my $author (@authors) {
+    $seedstring .= "author=$author ";
+}
+
 if( defined $options{"tar"} ) {
     my $f = $options{"tar"};
     my $tartmp = "$tmp_dir/tartmp.$$";
