@@ -113,35 +113,45 @@ sub pretty_print {
 	my $newline = "";
 
 	$line =~ s/(\s+)([\.\,\?\;\:])/$2/g;
+	$line =~ s/(\s+)(a) ([aeiou])/$1$2n $3/gi;
 
 	if( $line =~ /\\section(\*?){(.*)}/ ) {
 	    $newline = "\\section${1}{" . 
-	      Autoformat::autoformat( $2, { case => 'highlight', squeeze => 0 } );
+	      Autoformat::autoformat( $2, { case => 'highlight', 
+					    squeeze => 0 } );
 	    chomp $newline;
 	    chomp $newline;
 	    $newline .= "}\n";
 	} elsif( $line =~ /\\subsection{(.*)}/ ) {
 	    $newline = "\\subsection{" . 
-	      Autoformat::autoformat( $1, { case => 'highlight', squeeze => 0 } );
+	      Autoformat::autoformat( $1, { case => 'highlight', 
+					    squeeze => 0 } );
 	    chomp $newline;
 	    chomp $newline;
 	    $newline .= "}\n";
 	} elsif( $line =~ /\\title{(.*)}/ ) {
 	    $newline = "\\title{" . 
-	      Autoformat::autoformat( $1, { case => 'highlight', squeeze => 0  } );
+	      Autoformat::autoformat( $1, { case => 'highlight', 
+					    squeeze => 0  } );
 	    chomp $newline;
 	    chomp $newline;
 	    $newline .= "}\n";
 	} elsif( $line =~ /title = {{(.*)}}\,/ ) {
 	    $newline = "title = {{" . 
-	      Autoformat::autoformat( $1, { case => 'highlight', squeeze => 0  } );
+	      Autoformat::autoformat( $1, { case => 'highlight', 
+					    squeeze => 0  } );
 	    chomp $newline;
 	    chomp $newline;
 	    $newline .= "}},\n";
 	} else {
 	    $newline .= 
-	      Autoformat::autoformat( $line, { case => 'sentence', squeeze => 0, 
-					       ignore => qr/^\\/ } ) . "\n";
+	      Autoformat::autoformat( $line, { case => 'sentence', 
+					       squeeze => 0, 
+					       break => break_latex(),
+					       ignore => qr/^\\/ } );
+	    chomp $newline;
+	    chomp $newline;
+	    $newline .= "\n";
 	}
 
 	$news .= $newline;
@@ -149,6 +159,11 @@ sub pretty_print {
     }
 
     return $news;
+}
+
+sub break_latex($$$) {
+    my ($text, $reqlen, $fldlen) = @_;
+    return { $text, "" };
 }
 
 sub expand {

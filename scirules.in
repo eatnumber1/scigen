@@ -596,7 +596,7 @@ RELWORK_FILLER this is arguably SCI_FAIR.
 RELWORK_FILLER the only other noteworthy work in this area suffers from SCI_FAIR assumptions about SCI_GENERIC_NOUN RELWORK_CITATION.
 RELWORK_FILLER our SCI_SYSTEM also SCI_SYSTEM_ACTION, but without all the unnecssary complexity.
 RELWORK_FILLER CONSTRAINT_TYPE aside, our SCI_SYSTEM SCI_VERBS MORE accurately.
-RELWORK_FILLER we believe there is room for both schools of though within the field of SCI_FIELD.
+RELWORK_FILLER we believe there is room for both schools of thought within the field of SCI_FIELD.
 RELWORK_FILLER LIT_ALTHOUGH this work was published before ours, we came up with the SCI_APPROACH first but could not publish it until now due to red tape. 
 RELWORK_FILLER SCI_IN_THIS_PAPER, we SCI_PROBLEM_SOLVED all of the SCI_PROBLEM_PL inherent in the RELATED work.
 RELWORK_FILLER LIT_REVERSAL, the complexity of their SCI_APPROACH grows SCI_GROWTH_ADV as SCI_GENERIC_NOUN grows.
@@ -722,9 +722,9 @@ NEGLECTED		neglected
 NEGLECTED		failed
 
 EVAL_SEC_HYP_SET {
-Our overall EVALUATION seeks to prove three hyptheses: 
+Our overall EVALUATION seeks to prove three hypotheses: 
 (1) EVAL_SEC_HYPOTHESIS; 
-(2) EVAL_SEC_HYPOTHESIS; and finally
+(2) EVAL_SEC_HYPOTHESIS; and finally 
 (3) EVAL_SEC_HYPOTHESIS.
 }
 
@@ -1285,7 +1285,7 @@ SCI_THING_P	DHTs
 SCI_THING_P	robots
 SCI_THING_P	agents
 SCI_THING_P	Markov models
-SCI_THING_P	the memory bus
+SCI_THING_S	the memory bus
 SCI_THING_P	SMPs
 SCI_THING_P	kernels
 SCI_THING_P	operating systems
@@ -1293,7 +1293,7 @@ SCI_THING_P	interrupts
 SCI_THING_P	Web services
 SCI_THING_P	massive multiplayer online role-playing games
 SCI_THING_P	Byzantine fault tolerance
-SCI_THING_P	the location-identity split
+SCI_THING_S	the location-identity split
 SCI_THING_P	sensor networks
 SCI_THING_P	online algorithms
 SCI_THING_S	extreme programming
@@ -1309,7 +1309,7 @@ SCI_THING_P	B-trees
 SCI_THING_P	hierarchical databases
 SCI_THING_P	randomized algorithms
 SCI_THING_S	the Internet
-SCI_THING_P	the Internets
+#SCI_THING_P	the Internets
 SCI_THING_S	consistent hashing
 SCI_THING_S	the transistor
 SCI_THING_S	the UNIVAC computer
@@ -2017,9 +2017,9 @@ SCI_RESPONSE	the answer is yes
 SCI_RESPONSE	yes, but only in theory
 SCI_RESPONSE	yes, but with low probability
 SCI_EFFECT	made SCI_VERBING and possibly SCI_VERBING TOPIC a reality
-SCI_EFFECT	would allow for further study into SCI_THING_MOD
-SCI_EFFECT	paved the way for the SCI_ACT_A SCI_THING_MOD
-SCI_EFFECT	would make SCI_VERBING SCI_THING_MOD a real possibility
+SCI_EFFECT	would allow for further study into SCI_THING
+SCI_EFFECT	paved the way for the SCI_ACT_A SCI_THING
+SCI_EFFECT	would make SCI_VERBING SCI_THING a real possibility
 
 SCI_COMPLEXITY_FUNC O
 SCI_COMPLEXITY_FUNC $\Omega$
