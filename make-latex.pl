@@ -3,6 +3,7 @@
 use strict;
 use scigen;
 use IO::File;
+use Getopt::Long;
 
 my $tmp_dir = "/tmp";
 my $tmp_pre = "$tmp_dir/scimakelatex.";
@@ -11,6 +12,37 @@ my $tex_file = "$tmp_pre$$.tex";
 my $dvi_file = "$tmp_pre$$.dvi";
 my $ps_file = "$tmp_pre$$.ps";
 my $bib_file = "$tmp_dir/scigenbibfile.bib";
+my @authors;
+
+sub usage {
+    select(STDERR);
+    print <<EOUsage;
+    
+$0 [options]
+  Options:
+
+    --help                    Display this help message
+    --author                  An author of the paper (can be specified 
+                              multiple times)
+
+EOUsage
+
+    exit(1);
+
+}
+
+# Get the user-defined parameters.
+# First parse options
+my %options;
+&GetOptions( \%options, "help|?", "author=s@" )
+    or &usage;
+
+if( $options{"help"} ) {
+    &usage();
+}
+if( $options{"author"} ) {
+    @authors = @{$options{"author"}};
+}
 
 my $name_dat = {};
 my $name_RE = undef;
@@ -21,6 +53,20 @@ my $sysname = &get_system_name();
 my $tex_fh = new IO::File ("<scirules.in");
 my @a = ($sysname);
 $tex_dat->{"SYSNAME"} = \@a;
+# add in authors
+$tex_dat->{"AUTHOR_NAME"} = \@authors;
+my $s = "";
+for( my $i = 0; $i <= $#authors; $i++ ) {
+    $s .= "AUTHOR_NAME";
+    if( $i < $#authors-1 ) {
+	$s .= ", ";
+    } elsif( $i == $#authors-1 ) {
+	$s .= " and ";
+    }
+}
+my @b = ($s);
+$tex_dat->{"SCIAUTHORS"} = \@b;
+
 scigen::read_rules ($tex_fh, $tex_dat, \$tex_RE, 0);
 my $tex = scigen::generate ($tex_dat, "SCIPAPER_LATEX", $tex_RE, 0, 1);
 open( TEX, ">$tex_file" ) or die( "Couldn't open $tex_file for writing" );
