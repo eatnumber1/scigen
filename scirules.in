@@ -1276,7 +1276,7 @@ OSNAME		GNU/Hurd
 OSNAME		L4
 OSNAME		Amoeba
 OSNAME		Sprite
-OSNAME		AT&T System V
+OSNAME		AT\&T System V
 OSNAME+4	Microsoft Windows WINVERS
 
 WINVERS		XP
