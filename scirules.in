@@ -1721,7 +1721,7 @@ FGH_SUP	'
 EVAL_GUTS_ANALYSIS_2 EVAL_GUTS_ANALYSIS_2_A XXX EVAL_GUTS_ANALYSIS 
 EVAL_GUTS_ANALYSIS_3 EVAL_GUTS_ANALYSIS_3_A XXX EVAL_GUTS_ANALYSIS
 
-EVAL_GUTS_ANALYSIS_2_A	We have seen on type of behavior in EXP_FIGS; our other experiments (shown in Figure~\ref{LATEX_FIG_LABEL_REF} paint a different picture
+EVAL_GUTS_ANALYSIS_2_A	We have seen on type of behavior in EXP_FIGS; our other experiments (shown in Figure~\ref{LATEX_FIG_LABEL_REF}) paint a different picture
 EVAL_GUTS_ANALYSIS_2_A	We next turn to WHICH_EXPERIMENTS, shown in EXP_FIG
 EVAL_GUTS_ANALYSIS_2_A  Shown in EXP_FIG, WHICH_EXPERIMENTS call attention to SCI_OUR_SYSTEM's EVAL_MEASUREMENT
 
