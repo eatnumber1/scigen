@@ -1371,7 +1371,7 @@ SCI_FIELD	e-voting technology
 SCI_FIELD	cryptography
 SCI_FIELD	cryptoanalysis
 SCI_FIELD	cyberinformatics
-SCI_FIELD	stegonography
+SCI_FIELD	steganography
 SCI_FIELD	software engineering
 SCI_COUNTRY	American
 SCI_COUNTRY	British
@@ -2640,7 +2640,7 @@ BIBTEX_ENTRY+10 {
 
  @InProceedings{CITE_LABEL_GIVEN, 
   author = {CITE_AUTHOR_LIST},
-  title = {SCI_TITLE},
+  title = {{SCI_TITLE}},
   booktitle = {CITE_CONF},
   month = CITE_MONTH,
   year = CITE_YEAR}
@@ -2651,7 +2651,7 @@ BIBTEX_ENTRY+6 {
 
  @article{CITE_LABEL_GIVEN, 
   author = {CITE_AUTHOR_LIST},
-  title = {SCI_TITLE},
+  title = {{SCI_TITLE}},
   journal = {CITE_JOURNAL},
   month = CITE_MONTH,
   year = CITE_YEAR,
@@ -2664,7 +2664,7 @@ BIBTEX_ENTRY {
 
  @techreport{CITE_LABEL_GIVEN, 
   author = {CITE_AUTHOR_LIST},
-  title = {SCI_TITLE},
+  title = {{SCI_TITLE}},
   institution = {CITE_INST},
   number = {CITE_TRNUM},	
   month = CITE_MONTH,

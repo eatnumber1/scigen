@@ -9,8 +9,10 @@
 use IO::File;
 use strict;
 use Data::Dumper;
+use Autoformat;
 
 my $debug = 0;
+my $pretty = 1;
 
 use vars qw [ $RE ];
 
@@ -70,6 +72,9 @@ sub generate {
 
     $RE = qr/^(.*?)(${in})/s ;
     my $s = expand ($rules, $start);
+    if( $pretty ) {
+	$s = pretty_print($s);
+    }
     print "$s\n";
 }
 
@@ -95,6 +100,55 @@ sub pop_first_rule {
     }
 	
     return 0;
+}
+
+sub pretty_print {
+
+    my ($s) = shift;
+
+    my $news = "";
+    my @lines = split( /\n/, $s );
+    foreach my $line (@lines) {
+
+	my $newline = "";
+
+	$line =~ s/(\s+)([\.\,\?\;\:])/$2/g;
+
+	if( $line =~ /\\section(\*?){(.*)}/ ) {
+	    $newline = "\\section${1}{" . 
+	      Autoformat::autoformat( $2, { case => 'highlight', squeeze => 0 } );
+	    chomp $newline;
+	    chomp $newline;
+	    $newline .= "}\n";
+	} elsif( $line =~ /\\subsection{(.*)}/ ) {
+	    $newline = "\\subsection{" . 
+	      Autoformat::autoformat( $1, { case => 'highlight', squeeze => 0 } );
+	    chomp $newline;
+	    chomp $newline;
+	    $newline .= "}\n";
+	} elsif( $line =~ /\\title{(.*)}/ ) {
+	    $newline = "\\title{" . 
+	      Autoformat::autoformat( $1, { case => 'highlight', squeeze => 0  } );
+	    chomp $newline;
+	    chomp $newline;
+	    $newline .= "}\n";
+	} elsif( $line =~ /title = {{(.*)}}\,/ ) {
+	    $newline = "title = {{" . 
+	      Autoformat::autoformat( $1, { case => 'highlight', squeeze => 0  } );
+	    chomp $newline;
+	    chomp $newline;
+	    $newline .= "}},\n";
+	} else {
+	    $newline .= 
+	      Autoformat::autoformat( $line, { case => 'sentence', squeeze => 0, 
+					       ignore => qr/^\\/ } ) . "\n";
+	}
+
+	$news .= $newline;
+
+    }
+
+    return $news;
 }
 
 sub expand {
@@ -153,6 +207,7 @@ use Getopt::Long;
 # parse args
 my $result = GetOptions ("filename=s" => \$filename,
 			 "start=s"    => \$start,
+			 "pretty=i"    => \$pretty,
 			 "debug=i"    => \$debug );
 
 if ( $filename ) {

@@ -27,7 +27,7 @@ sub add_noise {
 
 }
 
-my $graph = `perl scigen.pl -f scirules.in -s GNUPLOT`;
+my $graph = `perl scigen.pl -f scirules.in -s GNUPLOT -p 0`;
 #print "# [$$] func = $func\n";
 
 my @graph_lines = split( /\n/, $graph );
@@ -117,7 +117,7 @@ for( my $i = 0; $i < $curves; $i++ ) {
     my $num_points = 0;
     do {
 	@y = ();
-	my $func = `perl scigen.pl -f functions.in -s EXPR`;
+	my $func = `perl scigen.pl -f functions.in -s EXPR -p 0`;
 	
 	open( DAT, ">$datafile.$i" ) or 
 	    die( "Couldn't write to $datafile.$i" );
