@@ -1,0 +1,18 @@
+NUM	2
+NUM	3
+NUM	10
+
+
+EXPR	EXPR + EXPR
+EXPR	EXPR * EXPR
+EXPR	sin(EXPR)
+EXPR	cos(EXPR)
+EXPR	atan2(EXPR,EXPR)
+EXPR	exp(EXPR)
+EXPR	log(abs(EXPR))
+EXPR	sqrt(abs(EXPR))
+EXPR	(EXPR)**NUM
+EXPR	xxx
+EXPR	xxx
+EXPR	xxx
+EXPR	xxx
