@@ -48,7 +48,7 @@ my $num_points = 10;
 
 open( GPFILE, ">$gpfile" ) or die( "Couldn't write to $gpfile" );
 
-print GPFILE "set terminal postscript eps\n";
+print GPFILE "set terminal postscript eps 26\n";
 print GPFILE "set output \"$epsfile\"\n";
 
 foreach my $line (@graph_lines) {

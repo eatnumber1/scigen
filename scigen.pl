@@ -87,6 +87,31 @@ sub pop_first_rule {
 sub expand {
     my ($rules, $start) = @_;
 
+    # check for special rules ending in + and # 
+    # Rules ending in + generate a sequential integer
+    # The same rule ending in # chooses a random # from among preiously
+    # generated integers
+    if( $start =~ /(.*)\+$/ ) {
+	my $rule = $1;
+	my $i = $rules->{$rule};
+	if( !defined $i ) {
+	    $i = 0;
+	    $rules->{$rule} = 1;
+	} else {
+	    $rules->{$rule} = $i+1;
+	}
+	return $i;
+    } elsif( $start =~ /(.*)\#$/ ) {
+	my $rule = $1;
+	my $i = $rules->{$rule};
+	if( !defined $i ) {
+	    $i = 0;
+	} else {
+	    $i = int rand $i;
+	}
+	return $i;
+    }
+
     my $input = pick_rand ($rules->{$start});
     if ($debug >= 5) {
 	warn "$start -> $input\n";

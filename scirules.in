@@ -11,6 +11,12 @@ SCIPAPER_LATEX {
 
  SCI_INTRO
 
+ LATEX_FIGURE
+
+ LATEX_FIGURE
+
+ LATEX_FIGURE
+
  LATEX_FOOTER
 
 }
@@ -984,6 +990,8 @@ EVAL_MOD_PASSIVE_ACTION HARDWARE was removed from
 
 ######### Units/Graphs ##########
 
+SCI_CAPTION See Figure~\ref{LATEX_FIG_LABEL_REF}.
+
 EVAL_UNIT MB/s
 EVAL_UNIT ms
 EVAL_UNIT sec
@@ -1178,6 +1186,7 @@ LATEX_HEADER {
 
 \documentclass[12pt, twocolumn]{article}
 \usepackage{times}
+\usepackage{epsfig}
 \begin{document}
 
 LATEX_TITLE
@@ -1201,9 +1210,18 @@ LATEX_AUTHORS \author{SCI_AUTHORS}
 LATEX_FIGURE {
 
 \begin{figure}[t]
-\centerline{\epsfig{figure=query_timeline.eps,width=3in}}
+\centerline{\epsfig{figure=LATEX_FIG_FILENAME,width=3in}}
 \caption{\small{SCI_CAPTION}}
-\label{fig:query_timeline}
+\label{LATEX_FIG_LABEL}
 \end{figure}
 
 }
+
+LATEX_FIG_FILENAME figureNEWFIGNUM+.eps
+NEWFIGNUM\+
+NEWFIGNUM\#
+
+LATEX_FIG_LABEL fig:labelNEWFIGLABEL+
+LATEX_FIG_LABEL_REF fig:labelNEWFIGLABEL#
+NEWFIGLABEL\+
+NEWFIGLABEL\#
