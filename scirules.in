@@ -1077,7 +1077,7 @@ EXP_WHERE_CMN+4	EXP_WHERE_ADJ EXP_WHERE_UM
 # rare places
 OLD_MACHINE	Macintosh SE
 OLD_MACHINE	UNIVAC
-OLD_MACHINE	Apple II
+OLD_MACHINE	Apple ][e
 OLD_MACHINE	IBM PC Junior
 OLD_MACHINE	Atari 2600
 OLD_MACHINE	Nintendo Gameboy
@@ -1547,17 +1547,22 @@ VERSION_BASE	DIGIT.DIGIT.DIGIT
 VERSION		VERSION_BASE
 VERSION		VERSION_BASE, Service Pack DIGIT
 
-#EVAL_GUTS {
-#
-#EVAL_GUTS_P
-#
-#EVAL_GUTS_P_2
-#
-#}
+EVAL_GUTS {
 
-EVAL_GUTS	EVAL_GUTS_P
+EVAL_GUTS_INTRO EVAL_GUTS_EXP_SET EVAL_GUTS_EXP_SET_FOLLOWON  XXX
 
-EVAL_GUTS_P	EVAL_GUTS_INTRO EVAL_GUTS_EXP_SET
+EVAL_GUTS_ANALYSIS_1
+
+LIT_MIDDLE_TWO EVAL_GUTS_ANALYSIS_2
+
+LIT_MIDDLE_3 EVAL_GUTS_ANALYSIS_3
+
+}
+
+EVAL_GUTS_ANALYSIS_1  
+EVAL_GUTS_ANALYSIS_2  
+EVAL_GUTS_ANALYSIS_3 
+
 
 EVAL_GUTS_INTRO	our hardware and software modficiations PROVE_THAT EMULATING SCI_OUR_SYSTEM is one thing, but EMULATING_IT is a completely different story.
 EVAL_GUTS_INTRO we have taken great pains to describe out EVALUATION setup; now, the payoff, is to discuss our results.
@@ -1566,6 +1571,22 @@ EVAL_GUTS_INTRO is it possible to justify the great pains we took in our impleme
 EVAL_GUTS_INTRO is it possible to justify having paid little attention to our implementation and experimental setup? SCI_RESPONSE.
 
 EVAL_GUTS_EXP_SET EXP_SET_LEADIN we ran four novel experiments: (1) EVAL_EXP; (2) EVAL_EXP; (3) EVAL_EXP; and (4) EVAL_EXP XXX
+
+EVAL_GUTS_EXP_SET_FOLLOWON
+EVAL_GUTS_EXP_SET_FOLLOWON	we discarded the results of some earlier experiments, notably when EVAL_EXP
+EVAL_GUTS_EXP_SET_FOLLOWON	all of these experiments completed without RESOURCE_STARVATION or RESOURCE_STARVATION
+
+RESOURCE_STARVATION	resource starvation
+RESOURCE_STARVATION	LAN congestion
+RESOURCE_STARVATION	access-link congestion
+RESOURCE_STARVATION	WAN congestion
+RESOURCE_STARVATION	the black smoke that results from hardware failure
+RESOURCE_STARVATION	paging 
+RESOURCE_STARVATION	NETWORK_TYPE congestion
+RESOURCE_STARVATION	noticable performance bottlenecks
+RESOURCE_STARVATION	unusual heat dissipation
+
+
 
 EXP_SET_LEADIN that being said,
 EXP_SET_LEADIN 
@@ -1588,6 +1609,11 @@ EVAL_EXP 	we compared EVAL_MEASUREMENT on the OSNAME, OSNAME and OSNAME operatin
 
 EVAL_EXP	we measured MEASURABLE_SYSTEM and MEASURABLE_SYSTEM PERFORMANCE on our EXP_WHERE
 
+EVAL_EXP	we dogfooded SCI_OUR_SYSTEM on our own desktop machines, paying particular attention to HARDWARE_PROP_OR_MEASUREMENT
+
+EVAL_EXP	we ran DIGITDIGIT trials with a simulated MEASURABLE_SYSTEM workload, and compared results to our EMULATION
+
+
 MEASURABLE_SYSTEM	DNS
 MEASURABLE_SYSTEM	Web server
 MEASURABLE_SYSTEM	E-mail
@@ -1596,6 +1622,11 @@ MEASURABLE_SYSTEM	RAID array
 MEASURABLE_SYSTEM	database
 MEASURABLE_SYSTEM	WHOIS
 MEASURABLE_SYSTEM	DHCP
+
+EMULATION		WARE emulation
+EMULATION		WARE simulation
+EMULATION		WARE deployment
+EMULATION		earlier deployment
 
 
 #############################################################################
