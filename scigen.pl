@@ -17,6 +17,7 @@ sub read_rules {
     my ($fh, $rules, $name) = @_;
     my $line;
     while ($line = <$fh>) {
+	next if $line =~ /^#/ ;
 	next if $line !~ /\S/ ;
 	    
 	my @words = split /\s+/, $line;
