@@ -201,6 +201,7 @@ SCI_MIDDLE_LONG	{
 }
 
 FILLER_SENTENCE		FILLER_SUPRISE.
+FILLER_SENTENCE		Our goal here is to set the record straight.
 
 FILLER_SUPRISE		WHAT FILLER_SURPIRSE_1 but FILLER_SURPRISE_2
 
@@ -556,7 +557,6 @@ SCI_MATH_VERBING	pipelining
 
 
 
-
 SCI_ADJ	SCI_ADJ_ADV important
 SCI_ADJ	significant
 SCI_ADJ	key
@@ -654,6 +654,7 @@ SCI_SOURCE	Charles Darwin
 SCI_SOURCE	Erwin Schroedinger
 SCI_SOURCE	Isaac Newton
 SCI_SOURCE	Noam Chomsky
+SCI_SOURCE	Robert T. Morrison
 SCI_SOURCE	Stephen Hawking
 SCI_SOURCE	Timothy Leary
 SCI_SOURCE	Butler Lampson
@@ -671,6 +672,7 @@ SCI_SOURCE	Marvin Minksy
 SCI_SOURCE	J.H. Wilkinson
 SCI_SOURCE	John McCarthy
 SCI_SOURCE	E.W. Dijkstra
+SCI_SOURCE	Paul Erdos
 SCI_SOURCE	Charles Bachman
 SCI_SOURCE	Donald Knuth
 SCI_SOURCE	Allen Newell
@@ -763,6 +765,7 @@ EXP_TYPE_UM	deployment
 EXP_TYPE_UM	prototype
 EXP_WHERE_UM	cluster
 EXP_WHERE_UM	testbed
+EXP_WHERE_UM	overlay network
 EXP_WHERE	desktop machines
 EXP_WHERE	mobile telephones
 EXP_WHERE	system
