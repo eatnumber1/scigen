@@ -4,6 +4,7 @@ use strict;
 use scigen;
 use IO::File;
 use Getopt::Long;
+use IO::Socket;
 
 my $tmp_dir = "/tmp";
 my $tmp_pre = "$tmp_dir/scimakelatex.";
@@ -15,6 +16,7 @@ my $bib_file = "$tmp_dir/scigenbibfile.bib";
 my $class_files = "IEEEtran.cls IEEE.bst";
 my @authors;
 my $seed;
+my $remote = 0;
 
 sub usage {
     select(STDERR);
@@ -29,6 +31,9 @@ $0 [options]
     --seed <seed>             Seed the prng with this
     --file <file>             Save the postscript in this file
     --tar  <file>             Tar all the files up
+    --savedir <dir>           Save the files in a directory; do not latex 
+                              or dvips.  Must specify full path
+    --remote                  Use a daemon to resolve symbols
 
 EOUsage
 
@@ -39,7 +44,8 @@ EOUsage
 # Get the user-defined parameters.
 # First parse options
 my %options;
-&GetOptions( \%options, "help|?", "author=s@", "seed=s", "tar=s", "file=s" )
+&GetOptions( \%options, "help|?", "author=s@", "seed=s", "tar=s", "file=s", 
+	     "savedir=s", "remote" )
     or &usage;
 
 if( $options{"help"} ) {
@@ -47,6 +53,9 @@ if( $options{"help"} ) {
 }
 if( defined $options{"author"} ) {
     @authors = @{$options{"author"}};
+}
+if( defined $options{"remote"} ) {
+    $remote = 1;
 }
 if( defined $options{"seed"} ) {
     $seed = $options{"seed"};
@@ -154,15 +163,19 @@ foreach my $clabel (keys(%citelabels)) {
 }
 close( BIB );
 
-system( "cp $class_files $tmp_dir; cd $tmp_dir; latex $tex_prefix; bibtex $tex_prefix; latex $tex_prefix; latex $tex_prefix; rm $class_files; " . 
-	"dvips -o $ps_file $dvi_file" )
-    and die( "Couldn't latex nothing." );
+if( !defined $options{"savedir"} ) {
 
-if( defined $options{"file"} ) {
-    my $f = $options{"file"};
-    system( "cp $ps_file $f" ) and die( "Couldn't cp to $f" );
-} else {
-    system( "gv $ps_file" ) and die( "Couldn't gv $ps_file" );
+    system( "cp $class_files $tmp_dir; cd $tmp_dir; latex $tex_prefix; bibtex $tex_prefix; latex $tex_prefix; latex $tex_prefix; rm $class_files; " . 
+	    "dvips -o $ps_file $dvi_file" )
+	and die( "Couldn't latex nothing." );
+
+    if( defined $options{"file"} ) {
+	my $f = $options{"file"};
+	system( "cp $ps_file $f" ) and die( "Couldn't cp to $f" );
+    } else {
+	system( "gv $ps_file" ) and die( "Couldn't gv $ps_file" );
+    }
+
 }
 
 my $seedstring = "seed=$seed ";
@@ -170,7 +183,7 @@ foreach my $author (@authors) {
     $seedstring .= "author=$author ";
 }
 
-if( defined $options{"tar"} ) {
+if( defined $options{"tar"} or defined $options{"savedir"} ) {
     my $f = $options{"tar"};
     my $tartmp = "$tmp_dir/tartmp.$$";
     my $all_files = "$tex_file $class_files @figures $bib_file";
@@ -180,9 +193,17 @@ if( defined $options{"tar"} ) {
     system( "echo $seedstring > $tartmp/seed.txt" ) and 
 	die( "Couldn't cat to $tartmp/seed.txt" );
     $all_files .= " seed.txt";
-    system( "cd $tartmp; tar -czf $$.tgz $all_files; cd -; " . 
-	    "cp $tartmp/$$.tgz $f; rm -rf $tartmp" ) and 
-	die( "Couldn't tar to $f" );
+
+    if( defined $options{"tar"} ) {
+	system( "cd $tartmp; tar -czf $$.tgz $all_files; cd -; " . 
+		"cp $tartmp/$$.tgz $f; rm -rf $tartmp" ) and 
+		    die( "Couldn't tar to $f" );
+    } else {
+	# saving everything untarred
+	my $dir = $options{"savedir"};
+	system( "mv $tartmp $dir" ) and die( "Couldn't move $tartmp to $dir" );
+    }
+
 } else {
     print "$seedstring\n";
 }
@@ -193,6 +214,10 @@ unlink( @figures );
 unlink( "$bib_file" );
 
 sub get_system_name {
+
+    if( $remote ) {
+	return &get_system_name_remote();
+    }
 
     if( !defined $name_RE ) {
 	my $fh = new IO::File ("<system_names.in");
@@ -210,5 +235,30 @@ sub get_system_name {
 	$name = uc($name);
     }
 
+    return $name;
+}
+
+sub get_system_name_remote {
+
+    my $sock = IO::Socket::INET->new( PeerAddr => "localhost", 
+				      PeerPort => $scigen::SCIGEND_PORT,
+				      Proto => 'tcp' );
+    
+    my $name;
+    if( defined $sock ) {
+	$sock->autoflush;
+	$sock->print( "SYSTEM_NAME\n" );
+	
+	while( <$sock> ) { 
+	    $name = $_;
+	}
+	$sock->close();
+	undef $sock;
+	
+    } else {
+	print STDERR "socket didn't work\n";
+    }
+
+    chomp($name);
     return $name;
 }

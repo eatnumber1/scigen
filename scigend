@@ -26,9 +26,11 @@ while(1) {
     while( $client = $server->accept() ) {
 
 	while( <$client> ) {
-	    select $client;
+	    print "Received message: $_\n";
+	    my $fh = select $client;
 	    print &get_system_name() . "\n";
 	    close $client; 
+	    select $fh;
 	    last;
 	}
 

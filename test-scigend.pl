@@ -10,7 +10,7 @@ my $sock = IO::Socket::INET->new( PeerAddr => "localhost",
 
 if( defined $sock ) {
     $sock->autoflush;
-    $sock->print( "\n" );
+    $sock->print( "SYSTEM_NAME\n" );
 
     while( <$sock> ) { 
 	print $_; 
