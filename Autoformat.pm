@@ -1,4 +1,7 @@
-package Autoformat;
+package Autoformat;  # modified by JS: remove Text:: package
+
+# See the bottom of this file for copyright and owner information.
+# Modified by Jeremy Stribling to work with SCIgen, 2/2005.
 
 use strict; use vars qw($VERSION @ISA @EXPORT @EXPORT_OK); use Carp;
 use 5.005;
@@ -6,6 +9,7 @@ $VERSION = '1.12';
 
 require Exporter;
 
+# modified by JS: remove Text:: package
 use Reform qw( form tag break_at break_with break_wrap break_TeX );
 
 @ISA = qw(Exporter);
@@ -58,6 +62,7 @@ my %casing = (
 		   sub { $_ = lc },   sub { $_ = lc } ],
 	upper => [ \%upper_entities,  \%upper_entities,
 		   sub { $_ = uc },   sub { $_ = uc } ],
+        # modified by JS: no need to lowercase everything before the ucfirst
 	title => [ \%upper_entities,  \%lower_entities,
 		   sub { $_ = ucfirst  }, sub { $_ = lc  } ],
 );
@@ -65,6 +70,7 @@ my %casing = (
 my $default_margin = 72;
 my $default_widow  = 10;
 
+# modified by JS: remove Text:: package
 $Autoformat::widow_slack = 0.1;
 
 
@@ -414,6 +420,7 @@ sub autoformat	# ($text, %args)
 			   . $para->{quotespace}
 			   . $hfield
 			   . $para->{hangspace};
+                # modified by JS: remove Text:: package
 	        my $rightslack = int (($args{right}-length $leftmargin)*$Autoformat::widow_slack);
 	        my ($widow_okay, $rightindent, $firsttext, $newtext) = (0,0);
 	        do {
@@ -499,6 +506,7 @@ sub entitle {
 
 	# put into lowercase if on stop list, else titlecase
 	s{($alword)}
+         # modified by JS: just a formatting change
 	 { $ignore && 
 	       $ignore{lc $1} ? recase($1,'lower') : recase($1,'title') }gex;
 
@@ -514,6 +522,7 @@ sub entitle {
 }
 
 my $abbrev = join '|', qw{
+        # modified by JS: add al. and Jr.
 	etc[.]	pp[.]	ph[.]?d[.]	U[.]S[.]  al. Jr.
 };
 
@@ -534,6 +543,7 @@ sub ensentence {
 		$brsent = $1 =~ /^[[(]/;
 		return uc $str
 	}
+        # modified by JS: Don't lc LaTeX stuff inside {}
 	unless ($str =~ /[a-z0-9].*[A-Z]|[A-Z].*[a-z0-9]/ or 
 		$str =~ /^\(?\{?[A-Z]+\}?\)?/) {
 		$str = lc $str;

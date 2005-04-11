@@ -1,4 +1,7 @@
-package Reform;
+package Reform; # modified by JS: remove Text:: package
+
+# See the bottom of this file for copyright and owner information.
+# Modified by Jeremy Stribling to work with SCIgen, 2/2005.
 
 use strict; use vars qw($VERSION @ISA @EXPORT @EXPORT_OK); use Carp;
 use 5.005;
