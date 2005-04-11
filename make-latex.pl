@@ -218,6 +218,10 @@ if( defined $options{"tar"} or defined $options{"savedir"} ) {
     } else {
 	# saving everything untarred
 	my $dir = $options{"savedir"};
+	# WARNING: we delete this directory if it exists
+	if( -d $dir ) {
+	    system( "rm -rf $dir" ) and die( "Couldn't rm existing $dir" );
+	}
 	system( "mv $tartmp $dir" ) and die( "Couldn't move $tartmp to $dir" );
     }
 
