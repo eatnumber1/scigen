@@ -23,7 +23,7 @@ use IO::File;
 use Getopt::Long;
 use IO::Socket;
 
-my $tmp_dir = "/tmp";
+my $tmp_dir = "/tmp/scitmp.$$";
 my $tmp_pre = "$tmp_dir/scimakelatex.";
 my $tex_prefix = "scimakelatex.$$";
 my $tex_file = "$tmp_pre$$.tex";
@@ -85,6 +85,10 @@ my $name_dat = {};
 my $name_RE = undef;
 my $tex_dat = {};
 my $tex_RE = undef;
+
+if( !-d $tmp_dir ) {
+    system( "mkdir -p $tmp_dir" ) and die( "Couldn't make $tmp_dir" );
+}
 
 my $sysname = &get_system_name();
 my $tex_fh = new IO::File ("<scirules.in");
@@ -233,6 +237,7 @@ if( defined $options{"tar"} or defined $options{"savedir"} ) {
 system( "rm $tmp_pre*" ) and die( "Couldn't rm" );
 unlink( @figures );
 unlink( "$bib_file" );
+system( "rmdir $tmp_dir" );
 
 sub get_system_name {
 
