@@ -600,6 +600,7 @@ IMPL_MID_X LIT_ALTHOUGH we have not yet optimized for CONSTRAINT_TYPE, this shou
 IMPL_MID_X SCI_PEOPLE have complete control over the IMPL_COMPONENT, which of course is necessary so that SCI_OVERALL_THESIS_PROVE
 IMPL_MID_X it was necessary to cap the EVAL_MEASUREMENT_UM used by SCI_OUR_SYSTEM to MED_NUM EVAL_UNIT_UM
 IMPL_MID_X the IMPL_COMPONENT and the IMPL_COMPONENT must run IMPL_RUN_TYPE
+# IMPL_MID_X our IMPL_COMPONENT REQUIRED 
 
 IMPL_CONCL we plan to release all of this code under LICENSE_TYPE XXX
 IMPL_CONCL overall, SCI_OUR_SYSTEM adds only modest overhead and complexity to RELATED SCI_BUZZWORD_ADJ SCI_SYSTEM_PL XXX
@@ -1978,6 +1979,9 @@ SCI_THING_HAS	SCI_THING_P have
 SCI_THING_P	courseware
 SCI_THING_P	e-commerce
 
+SCI_THING_S	IPv4
+SCI_THING_S	IPv6
+SCI_THING_S	IPv7
 SCI_THING_P	DHTs
 SCI_THING_P	robots
 SCI_THING_P	agents
