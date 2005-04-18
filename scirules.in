@@ -3469,6 +3469,7 @@ LATEX_DOCCLASS
 LATEX_FONTCLASS
 LATEX_CITEPACK
 \usepackage{epsfig}
+\usepackage[latin1]{inputenc}
 \begin{document}
 
 LATEX_TITLE
