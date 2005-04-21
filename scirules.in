@@ -1510,8 +1510,8 @@ LINKER_SUFFIX		with the help of SCI_SOURCE's libraries for SCI_MATH_ADV SCI_VERB
 LINKER_SUFFIX		built on SCI_SOURCE's toolkit for SCI_MATH_ADV SCI_VERBING EVAL_ITEMS
 LINKER_SUFFIX		built on the SCI_COUNTRY toolkit for SCI_MATH_ADV SCI_VERBING EVAL_ITEMS
 
-EVAL_SEC_SOFTWARE_END	We made all of our software is available under a LICENSE_TYPE license.
-EVAL_SEC_SOFTWARE_END	We note that other researchers have tried and failed to enable this functionality.
+EVAL_SEC_SOFTWARE_END	we made all of our software is available under a LICENSE_TYPE license.
+EVAL_SEC_SOFTWARE_END	we note that other researchers have tried and failed to enable this functionality.
 EVAL_SEC_SOFTWARE_END	this concludes our discussion of software modifications.
 EVAL_SEC_SOFTWARE_END	all of these techniques are of interesting historical significance; SCI_SOURCE and SCI_SOURCE investigated a SIMILAR SETUP in SCI_YEAR.
 
@@ -1541,7 +1541,7 @@ LANGUAGE_UM		C++
 LANGUAGE_UM		Python
 LANGUAGE_UM		Lisp
 LANGUAGE_UM		Scheme
-LANGUAGE_UM		SmallTalk
+LANGUAGE_UM		Smalltalk
 LANGUAGE_UM		Ruby
 LANGUAGE_UM		x86 assembly
 LANGUAGE_UM		Dylan
@@ -1604,7 +1604,7 @@ LINKED			statically-linked
 EVAL_SEC_SOFTWARE_INTRO	SYSNAME does not run on a commodity operating system but instead requires a SCI_MATH_ADV HACKED version of OSFULL
 EVAL_SEC_SOFTWARE_INTRO	SYSNAME runs on HACKED standard software
 EVAL_SEC_SOFTWARE_INTRO	We ran SCI_OUR_SYSTEM on commodity operating systems, such as OSFULL and OSFULL
-EVAL_SEC_SOFTWARE_INTRO	Building a sufficient software environment took time, but was well worth it in the end.
+EVAL_SEC_SOFTWARE_INTRO	Building a sufficient software environment took time, but was well worth it in the end
 EVAL_SEC_SOFTWARE_INTRO	When SCI_SOURCE HACKED OSFULL's SOFTWARE_PROP in SCI_YEAR, he could not have anticipated the impact; our work here FOLLOWS_SUIT
 
 
@@ -1861,7 +1861,7 @@ CONCL_INTRO our experiences with SCI_OUR_SYSTEM and SCI_GENERIC_NOUN SCI_PROVE_V
 CONCL_INTRO CONCL_MID_X XXX
 
 CONCL_MID	LIT_MIDDLE_MAYBE CONCL_MID_X XXX
-CONCL_MID_X SCI_OUR_SYSTEM has set a precedent for SCI_GENERIC_NOUN, and we that expect SCI_PEOPLE will SCI_VERB SCI_OUR_SYSTEM for years to come
+CONCL_MID_X SCI_OUR_SYSTEM has set a precedent for SCI_GENERIC_NOUN, and we expect that SCI_PEOPLE will SCI_VERB SCI_OUR_SYSTEM for years to come
 CONCL_MID_X	we SCI_PROVE_VERBED that CONSTRAINT_TYPE in SCI_OUR_SYSTEM is not a SCI_PROBLEM
 CONCL_MID_X	our SCI_MODEL_TYPE for SCI_VERBING SCI_GENERIC_NOUN is SCI_ADJ_ADV LIT_GOOD
 CONCL_MID_X	we also SCI_PRESENT_VERBED SCI_OVERALL_THESIS_THING
@@ -2147,7 +2147,7 @@ SCI_BUZZWORD_ADJ_MULTI+10 SCI_BUZZWORD_ADJ, SCI_BUZZWORD_ADJ
 SCI_BUZZWORD_ADJ_MULTI SCI_BUZZWORD_ADJ, SCI_BUZZWORD_ADJ, SCI_BUZZWORD_ADJ
 SCI_BUZZWORD_ADJ peer-to-peer
 SCI_BUZZWORD_ADJ game-theoretic
-SCI_BUZZWORD_ADJ knowledge-base
+SCI_BUZZWORD_ADJ knowledge-based
 SCI_BUZZWORD_ADJ relational
 SCI_BUZZWORD_ADJ compact
 SCI_BUZZWORD_ADJ ubiquitous
@@ -2354,7 +2354,7 @@ SCI_STATUS_ADJ famous
 SCI_STATUS_ADJ well-known
 SCI_STATUS_ADJ little-known
 SCI_STATUS_ADJ acclaimed
-SCI_STATUS_ADJ much-tauted
+SCI_STATUS_ADJ much-touted
 SCI_STATUS_ADJ infamous
 SCI_STATUS_ADJ foremost
 SCI_STATUS_ADJ seminal
@@ -2397,7 +2397,7 @@ SCI_MATH_ADV	mutually
 SCI_MATH_ADV	collectively
 SCI_MATH_ADV	topologically
 SCI_MATH_ADV	computationally
-SCI_MATH_ADV	oportunistically
+SCI_MATH_ADV	opportunistically
 SCI_MATH_ADV	lazily
 SCI_MATH_ADV	provably
 
@@ -2819,7 +2819,7 @@ OMIT_WHY for anonymity
 OMIT_WHY for now
 OMIT_WHY until future work
 
-SCI_A_FACT	SCI_SOURCE 's SCI_ACT in SCI_YEAR
+SCI_A_FACT	SCI_SOURCE's SCI_ACT in SCI_YEAR
 SCI_A_FACT	the SCI_COMPLEXNOUN of SCI_FIELD
 SCI_A_FACT	the work of SCI_COUNTRY SCI_PERSON SCI_SOURCE
 SCI_ACT+50	SCI_ACT_A SCI_THING
@@ -3103,7 +3103,7 @@ GENERIC_LASTNAME Nehru
 GENERIC_LASTNAME Shastri
 GENERIC_LASTNAME Kumar
 
-# Karthik's Tamil brahim names
+# Karthik's Tamil brahmin names
 BRAHIM_LASTNAME Abhishek
 BRAHIM_LASTNAME Aditya
 BRAHIM_LASTNAME Ajay
@@ -3615,7 +3615,7 @@ CITE_JOURNAL TOCS
 CITE_JOURNAL Journal of Automated Reasoning
 CITE_JOURNAL IEEE JSAC
 CITE_JOURNAL OSR
-CITE_JOURNAL NTT Techincal Review
+CITE_JOURNAL NTT Technical Review
 
 CITE_CONF_TYPE Workshop
 CITE_CONF_TYPE Conference
