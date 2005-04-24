@@ -31,13 +31,18 @@ sub dup_name {
     return $name . "!!!";
 }
 
+sub file_name {
+    my $name = shift;
+    return $name . ".file";
+}
+
 sub read_rules {
     my ($fh, $rules, $RE, $debug) = @_;
     my $line;
     while ($line = <$fh>) {
 	next if $line =~ /^#/ ;
 	next if $line !~ /\S/ ;
-	    
+
 	my @words = split /\s+/, $line;
 	my $name = shift @words;
 	my $rule = "";
@@ -47,6 +52,29 @@ sub read_rules {
 	    $name = $1;
 	    push @{$rules->{dup_name("$name")}}, "";
 	    next;
+	}
+
+	# include rule
+	if( $name =~ /\.include$/ ) {
+	    my $file = $words[0];
+	    # make sure we haven't already included this file
+	    # NOTE: this allows the main file to be included at most twice
+	    if( defined $rules->{&file_name($file)} ) {
+		if( $debug > 0 ) {
+		    print "Skipping duplicate included file $file\n";
+		}
+		next;
+	    } else {
+		$rules->{&file_name($file)} = 1;
+	    }
+	    if( $debug > 0 ) {
+		print "Opening included file $file\n";
+	    }
+	    my $inc_fh = new IO::File ("<$file");
+	    if( !defined $inc_fh ) {
+		die( "Couldn't open included file $file" );
+	    }
+	    &read_rules( $inc_fh, $rules, undef, $debug );
 	}
 
 	if ($#words == 0 && $words[0] eq '{') {
@@ -83,7 +111,9 @@ sub read_rules {
 	} while( --$weight > 0 );
     }
 
-    compute_re( $rules, $RE );
+    if( defined $RE ) {
+	compute_re( $rules, $RE );
+    }
 
 }
 

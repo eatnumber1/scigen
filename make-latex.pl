@@ -29,11 +29,13 @@ my $tex_prefix = "scimakelatex.$$";
 my $tex_file = "$tmp_pre$$.tex";
 my $dvi_file = "$tmp_pre$$.dvi";
 my $ps_file = "$tmp_pre$$.ps";
+my $pdf_file = "$tmp_pre$$.pdf";
 my $bib_file = "$tmp_dir/scigenbibfile.bib";
 my $class_files = "IEEEtran.cls IEEE.bst";
 my @authors;
 my $seed;
 my $remote = 0;
+my $title;
 
 sub usage {
     select(STDERR);
@@ -51,6 +53,8 @@ $0 [options]
     --savedir <dir>           Save the files in a directory; do not latex 
                               or dvips.  Must specify full path
     --remote                  Use a daemon to resolve symbols
+    --talk                    Make a talk, instead of a paper
+    --title <title>           Set the title (useful for talks)
 
 EOUsage
 
@@ -62,7 +66,7 @@ EOUsage
 # First parse options
 my %options;
 &GetOptions( \%options, "help|?", "author=s@", "seed=s", "tar=s", "file=s", 
-	     "savedir=s", "remote" )
+	     "savedir=s", "remote", "talk", "title=s" )
     or &usage;
 
 if( $options{"help"} ) {
@@ -73,6 +77,9 @@ if( defined $options{"author"} ) {
 }
 if( defined $options{"remote"} ) {
     $remote = 1;
+}
+if( defined $options{"title"} ) {
+    $title = $options{"title"};
 }
 if( defined $options{"seed"} ) {
     $seed = $options{"seed"};
@@ -91,7 +98,15 @@ if( !-d $tmp_dir ) {
 }
 
 my $sysname = &get_system_name();
-my $tex_fh = new IO::File ("<scirules.in");
+my $tex_fh; 
+my $start_rule;
+if( defined $options{"talk"} ) {
+    $tex_fh = new IO::File ("<talkrules.in");
+    $start_rule = "SCITALK_LATEX";
+} else {
+    $tex_fh = new IO::File ("<scirules.in");
+    $start_rule = "SCIPAPER_LATEX";
+}
 my @a = ($sysname);
 $tex_dat->{"SYSNAME"} = \@a;
 # add in authors
@@ -109,7 +124,11 @@ my @b = ($s);
 $tex_dat->{"SCIAUTHORS"} = \@b;
 
 scigen::read_rules ($tex_fh, $tex_dat, \$tex_RE, 0);
-my $tex = scigen::generate ($tex_dat, "SCIPAPER_LATEX", $tex_RE, 0, 1);
+if( defined $title ) {
+    my @a = ($title);
+    $tex_dat->{"SCI_TITLE"} = \@a;
+}
+my $tex = scigen::generate ($tex_dat, $start_rule, $tex_RE, 0, 1);
 open( TEX, ">$tex_file" ) or die( "Couldn't open $tex_file for writing" );
 print TEX $tex;
 close( TEX );
@@ -193,6 +212,9 @@ if( !defined $options{"savedir"} ) {
     if( defined $options{"file"} ) {
 	my $f = $options{"file"};
 	system( "cp $ps_file $f" ) and die( "Couldn't cp to $f" );
+    } elsif( defined $options{"talk"} ) {
+	system( "ps2pdf $ps_file $pdf_file; acroread $pdf_file" ) 
+	    and die( "Couldn't gv $ps_file" );
     } else {
 	system( "gv $ps_file" ) and die( "Couldn't gv $ps_file" );
     }

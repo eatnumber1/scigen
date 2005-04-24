@@ -1,0 +1,69 @@
+#    This file is part of SCIgen.
+#
+#    SCIgen is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation; either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    SCIgen is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with SCIgen; if not, write to the Free Software
+#    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+.include scirules.in
+.include scirules.in
+
+SCITALK_LATEX {
+
+LATEX_TALK_HEADER
+
+SLIDE_TITLE
+
+LATEX_TALK_FOOTER
+
+}
+
+LATEX_TALK_HEADER { 
+
+\documentclass{seminar}
+LATEX_FONTCLASS
+LATEX_CITEPACK
+\usepackage{epsfig}
+\usepackage[latin1]{inputenc}
+\usepackage{color}
+\usepackage{graphicx}
+\begin{document}
+
+}
+
+LATEX_TALK_FOOTER	\end{document}
+
+SLIDE_TITLE {
+
+SLIDE_START
+
+\begin{center}
+
+SCI_TITLE
+
+SCIAUTHORS
+
+\end{center}
+
+SLIDE_END
+
+}
+
+SLIDE_START	\begin{slide}
+
+SLIDE_END {
+
+\vfill
+
+\end{slide}
+
+}
