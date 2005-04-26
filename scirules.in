@@ -423,10 +423,11 @@ BACK_SEC_LATEX_HEADER
 ####### Model/Design #######
 #############################################################################
 
-MODEL_SEC_LATEX_HEADER+6	\section{SCI_MODEL_TYPE}
-MODEL_SEC_LATEX_HEADER		\section{SYSNAME SCI_VERBION}
-MODEL_SEC_LATEX_HEADER		\section{principles}
-MODEL_SEC_LATEX_HEADER		\section{SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN}
+MODEL_SEC_LATEX_HEADER		\section{MODEL_SEC_HEADER_T}
+MODEL_SEC_HEADER_T+6		SCI_MODEL_TYPE
+MODEL_SEC_HEADER_T		SYSNAME SCI_VERBION
+MODEL_SEC_HEADER_T		Principles
+MODEL_SEC_HEADER_T		SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN
 
 SCI_MODEL {
 
@@ -849,13 +850,14 @@ RELWORK_CONCL RELWORK_MID_X RELWORK_XXX
 #
 #}
 
-EVAL_SEC_LATEX_HEADER		\section{Evaluation and Performance Results}
-EVAL_SEC_LATEX_HEADER		\section{Performance Results}
-EVAL_SEC_LATEX_HEADER+5		\section{Evaluation}
-EVAL_SEC_LATEX_HEADER		\section{Experimental Evaluation}
-EVAL_SEC_LATEX_HEADER		\section{Experimental Evaluation and Analysis}
-EVAL_SEC_LATEX_HEADER		\section{Results and Analysis}
-EVAL_SEC_LATEX_HEADER+5		\section{Results}
+EVAL_SEC_LATEX_HEADER		\section{EVAL_SEC_HEADER_T}
+EVAL_SEC_HEADER_T		Evaluation and Performance Results
+EVAL_SEC_HEADER_T		Performance Results
+EVAL_SEC_HEADER_T+5		Evaluation
+EVAL_SEC_HEADER_T		Experimental Evaluation
+EVAL_SEC_HEADER_T		Experimental Evaluation and Analysis
+EVAL_SEC_HEADER_T		Results and Analysis
+EVAL_SEC_HEADER_T+5		Results
 
 LATEX_FIGURE_MAYBE LATEX_FIGURE
 LATEX_FIGURE_MAYBE
