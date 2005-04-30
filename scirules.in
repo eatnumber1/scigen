@@ -408,10 +408,13 @@ SCI_CONTR_ANY SCI_CONTR_2
 ####### Background/Overview #######
 #############################################################################
 
-BACK_SEC_LATEX_HEADER+3		\section{Background}
-BACK_SEC_LATEX_HEADER+3		\section{Overview}
-BACK_SEC_LATEX_HEADER		\section{Overview of SCI_THING}
-BACK_SEC_LATEX_HEADER		\section{A Brief Primer on SCI_THING}
+BACK_SEC_LATEX_HEADER		\section{BACK_SEC_HEADER_T}
+BACK_SEC_HEADER_T+3		Background
+BACK_SEC_HEADER_T+3		Overview
+BACK_SEC_HEADER_T		Overview of SCI_THING
+BACK_SEC_HEADER_T		SCI_THING
+BACK_SEC_HEADER_T		SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN
+BACK_SEC_HEADER_T		A Brief Primer on SCI_THING
 
 SCI_BACK {
 
