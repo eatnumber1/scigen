@@ -3,7 +3,6 @@ SVG_FIG {
 <svg xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink">
 
-
 ELEMENT
 
 </svg>
@@ -14,7 +13,7 @@ ELEMENT <circle cx="25" cy="25" r="20" fill="COLOR"/>
 ELEMENT <line x1="5" y1="5" x2="45" y2="45" stroke="COLOR"/>
 ELEMENT <rect x="5" y="5" width="40" height="40" fill="COLOR"/>
 
-ELEMENT+20 {
+ELEMENT {
 
 <image x="400" y="200" width="100px" height="100px"
          xlink:href="floppy.svg">
