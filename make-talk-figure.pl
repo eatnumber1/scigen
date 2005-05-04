@@ -82,7 +82,7 @@ scigen::read_rules ($fh, $dat, \$RE, 0);
 
 my $svg = scigen::generate ($dat, "SVG_FIG", $RE, 0, 0);
 
-# file need pwd I guess
+# file needs pwd I guess
 $svg =~ s/href=\"(.*)\"/href=\"$ENV{'PWD'}\/$1\"/gi;
 
 open( SVG, ">$svg_file" ) or die( "Can't open $svg_file for writing" );
