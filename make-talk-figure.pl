@@ -89,7 +89,7 @@ open( SVG, ">$svg_file" ) or die( "Can't open $svg_file for writing" );
 print SVG $svg;
 close( SVG );
 
-system( "inkscape -z --export-eps=$eps_file $svg_file" ) and
+system( "inkscape -z --export-eps=$eps_file -b white -y 100 $svg_file" ) and
     die( "Can't run inkscape on $svg_file" );
 
 if( !defined $filename ) {

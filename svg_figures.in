@@ -13,9 +13,10 @@ ELEMENT <circle cx="25" cy="25" r="20" fill="COLOR"/>
 ELEMENT <line x1="5" y1="5" x2="45" y2="45" stroke="COLOR"/>
 ELEMENT <rect x="5" y="5" width="40" height="40" fill="COLOR"/>
 
+#<image x="400" y="200" width="100px" height="100px"
 ELEMENT+20 {
 
-<image x="400" y="200" width="100px" height="100px"
+<image x="400" y="200"
          xlink:href="FILENAME">
 </image>
 
@@ -24,6 +25,7 @@ ELEMENT+20 {
 COLOR red
 COLOR blue
 COLOR green
+COLOR black
 
 FILENAME	ANIMAL
 FILENAME	BUILDING
