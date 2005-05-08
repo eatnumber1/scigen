@@ -253,6 +253,10 @@ SCI_TITLE
 
 SCIAUTHORS
 
+\begin{figure}[h]
+\includegraphics[width=3in]{/tmp/cloud.eps}
+\end{figure}
+
 \end{center}
 
 SLIDE_END

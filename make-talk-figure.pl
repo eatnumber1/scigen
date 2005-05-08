@@ -25,6 +25,8 @@ my $tmp_dir = "/tmp";
 my $tmp_pre = "/$tmp_dir/scimaketalkfig.$$";
 my $svg_file = "$tmp_pre.svg";
 my $eps_file = "$tmp_pre.eps";
+my $ps_file = "$tmp_pre.ps";
+my $png_file = "$tmp_pre.png";
 
 my $sysname;
 my $filename;
@@ -89,12 +91,15 @@ open( SVG, ">$svg_file" ) or die( "Can't open $svg_file for writing" );
 print SVG $svg;
 close( SVG );
 
-system( "inkscape -z --export-eps=$eps_file -b white -y 100 $svg_file" ) and
-    die( "Can't run inkscape on $svg_file" );
+system( "inkscape -z --export-png=$png_file -b white -D $svg_file; " .
+	"convert $png_file $eps_file" ) and
+    die( "Can't run inkscape or convert on $svg_file" );
 
 if( !defined $filename ) {
     system( "gv $eps_file" ) and
 	die( "Can't run gv on $eps_file" );
+} else {
+    system( "cp $eps_file $filename" );
 }
 
 system( "rm -f $tmp_pre*" ) and die( "Couldn't rm" );

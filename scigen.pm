@@ -75,6 +75,7 @@ sub read_rules {
 		die( "Couldn't open included file $file" );
 	    }
 	    &read_rules( $inc_fh, $rules, undef, $debug );
+	    next; # we don't want to have .include itself be a rule
 	}
 
 	if ($#words == 0 && $words[0] eq '{') {
