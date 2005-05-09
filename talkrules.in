@@ -36,7 +36,8 @@ SLIDE_OUTLINE {
 
 SLIDE_START
 
-\textbf{TALK_OUTLINE_TITLE}
+\slideheading{
+TALK_OUTLINE_TITLE}
 
 \begin{itemize}
 
@@ -120,7 +121,7 @@ SLIDE_OVERVIEW {
 
 SLIDE_START
 
-\textbf{
+\slideheading{
 TALK_OVERVIEW_TITLE}
 
 \begin{itemize}
@@ -230,16 +231,49 @@ TALK_PROBLEM	All RELATED SCI_SYSTEM_PL require that SCI_THING_S SCI_SYSTEM_ACTIO
 
 LATEX_TALK_HEADER { 
 
-\documentclass[slidesonly]{seminar}
+\documentclass{seminar}
 LATEX_FONTCLASS
 LATEX_CITEPACK
 \usepackage{epsfig}
 \usepackage[latin1]{inputenc}
 \usepackage{color}
 \usepackage{graphicx}
+\usepackage{slidesec}
 \begin{document}
 
+LATEX_HEADER_CMD
+
 }
+
+LATEX_HEADER_CMD {
+\renewcommand{\makeslideheading}[1]{%
+LATEX_HEADER_WHERE}
+}
+
+LATEX_HEADER_WHERE {
+\begin{center}
+LATEX_HEADER_STYLE
+\end{center}
+}
+
+LATEX_HEADER_WHERE {
+\begin{flushleft}
+LATEX_HEADER_STYLE
+\end{flushleft}
+}
+
+LATEX_HEADER_STYLE	\framebox{LATEX_HEADER_STYLE}
+LATEX_HEADER_STYLE	\textit{LATEX_HEADER_TEXT}
+LATEX_HEADER_STYLE+2	\textbf{LATEX_HEADER_TEXT}
+LATEX_HEADER_STYLE	\textsc{LATEX_HEADER_TEXT}
+LATEX_HEADER_STYLE	\underline{LATEX_HEADER_TEXT}
+LATEX_HEADER_STYLE	LATEX_HEADER_STYLE \vspace{2mm} \hrule
+LATEX_HEADER_STYLE+2	LATEX_HEADER_TEXT
+
+LATEX_HEADER_TEXT+2	#1
+LATEX_HEADER_TEXT+3	\large{#1}
+LATEX_HEADER_TEXT+2	\Large{#1}
+LATEX_HEADER_TEXT	\LARGE{#1}
 
 LATEX_TALK_FOOTER	\end{document}
 
@@ -249,13 +283,10 @@ SLIDE_START
 
 \begin{center}
 
-SCI_TITLE
+\slideheading{
+SCI_TITLE}
 
 SCIAUTHORS
-
-\begin{figure}[h]
-\includegraphics[width=3in]{/tmp/cloud.eps}
-\end{figure}
 
 \end{center}
 
@@ -263,7 +294,7 @@ SLIDE_END
 
 }
 
-SLIDE_START	\begin{slide}
+SLIDE_START	\slideframe{none}\begin{slide}
 
 SLIDE_END {
 
