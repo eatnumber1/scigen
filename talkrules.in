@@ -210,7 +210,7 @@ SCI_PARTS	flavors
 SCI_PARTS	components
 SCI_PARTS	requirements
 
-TALK_OVERVIEW_END	Problem: TALK_PROBLEM
+TALK_OVERVIEW_END	Problem: TALK_PROBLEM 
 TALK_OVERVIEW_END	How can we make SCI_GENERIC_NOUN_UM more SCI_BUZZWORD_ADJ?
 
 TALK_PROBLEM	None of the RELATED SCI_APPROACH_PL are SCI_BUZZWORD_ADJ
@@ -238,7 +238,19 @@ LATEX_CITEPACK
 \usepackage[latin1]{inputenc}
 \usepackage{color}
 \usepackage{graphicx}
+\usepackage{semlayer}
+\usepackage{semcolor}
 \usepackage{slidesec}
+\input{seminar.bug}
+
+\makeatletter
+\def\pst@initoverlay#1{%
+\pst@Verb{%
+/BeginOL {dup (all) eq exch TheOL le or {IfVisible not {Visible
+/IfVisible true def} if} {IfVisible {Invisible /IfVisible false def} if} ifelse} def
+\tx@InitOL /TheOL (#1) def}}
+\makeatother
+
 \begin{document}
 
 LATEX_HEADER_CMD
