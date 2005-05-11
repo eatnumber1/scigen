@@ -183,9 +183,10 @@ sub pretty_print {
 	    chomp $newline;
 	    chomp $newline;
 	    $newline .= "}";
-	} elsif( $line =~ /\\subsection{(.*)}/ ) {
-	    $newline = "\\subsection{" . 
-	      Autoformat::autoformat( $1, { case => 'highlight', 
+	} elsif( $line =~ /(\\subsection){(.*)}/ or 
+		 $line =~ /(\\slideheading){(.*)}/ ) {
+	    $newline = $1 . "{" . 
+	      Autoformat::autoformat( $2, { case => 'highlight', 
 					    squeeze => 0 } );
 	    chomp $newline;
 	    chomp $newline;

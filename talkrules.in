@@ -38,8 +38,7 @@ SLIDE_OUTLINE {
 
 SLIDE_START
 
-\slideheading{
-TALK_OUTLINE_TITLE}
+\slideheading{TALK_OUTLINE_TITLE}
 
 \begin{itemize}
 
@@ -119,8 +118,7 @@ SLIDE_INTRO {
 
 SLIDE_START
 
-\slideheading{
-TALK_INTRO_TITLE}
+\slideheading{TALK_INTRO_TITLE}
 
 \begin{itemize}
 
@@ -212,8 +210,7 @@ SLIDE_OVERVIEW {
 
 SLIDE_START
 
-\slideheading{
-TALK_OVERVIEW_TITLE}
+\slideheading{TALK_OVERVIEW_TITLE}
 
 \begin{itemize}
 
@@ -403,8 +400,7 @@ SLIDE_START
 
 \begin{center}
 
-\slideheading{
-SCI_TITLE}
+\slideheading{SCI_TITLE}
 
 LATEX_AUTHOR_STYLE
 
