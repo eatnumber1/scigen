@@ -211,10 +211,15 @@ if( !defined $options{"savedir"} ) {
 
     if( defined $options{"file"} ) {
 	my $f = $options{"file"};
-	system( "cp $ps_file $f" ) and die( "Couldn't cp to $f" );
+	if( defined $options{"talk"} ) {
+	    system( "ps2pdf $ps_file $pdf_file; cp $pdf_file $f" ) 
+		and die( "Couldn't ps2pdf/cp $pdf_file" );
+	} else {
+	    system( "cp $ps_file $f" ) and die( "Couldn't cp to $f" );
+	}
     } elsif( defined $options{"talk"} ) {
 	system( "ps2pdf $ps_file $pdf_file; acroread $pdf_file" ) 
-	    and die( "Couldn't gv $ps_file" );
+	    and die( "Couldn't ps2pdf/acroread $ps_file" );
     } else {
 	system( "gv $ps_file" ) and die( "Couldn't gv $ps_file" );
     }

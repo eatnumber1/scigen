@@ -2266,6 +2266,12 @@ LIT_OFTEN	generally
 LIT_OFTEN	regularly
 LIT_OFTEN	continuously
 
+LIT_INCREASING	increasing
+LIT_INCREASING	rising
+LIT_INCREASING	decreasing
+LIT_INCREASING	dwindling
+
+
 SCI_ADJ	important
 SCI_ADJ	significant
 SCI_ADJ	key
