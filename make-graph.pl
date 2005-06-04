@@ -70,7 +70,7 @@ do {
     $XMIN = $XMAX - int rand 2*$XMAX;
 } while( $XMAX == $XMIN );
 
-my $NUM_POINTS_SCATTER = int rand 1000 + 100;
+my $NUM_POINTS_SCATTER = (int rand 1000) + 100;
 my $NUM_POINTS_CURVE = (int rand 100) + 10;
 my $NUM_BARS = (int rand 20) + 10;
 
@@ -150,7 +150,7 @@ if( $type eq "bargraph" ) {
 }
 
 
-@x = sort { $a <=> $b} @x;
+@x = sort { $a <=> $b } @x;
 my @y = ();
 
 my $funcfh = new IO::File ("<functions.in");
