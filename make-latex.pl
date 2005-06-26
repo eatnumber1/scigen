@@ -170,6 +170,18 @@ while( <TEX> ) {
 	push @figures, $figfile;
     }
 
+    if( /figure=(.*)-(talkfig[^\,\}]*)[\,\}]/ ) {
+	my $figfile = "$tmp_dir/$1-$2";
+	my $type = $1;
+	my $done = 0;
+	while( !$done ) {
+	    my $newseed = int rand 0xffffffff;
+	    system( "./make-talk-figure.pl --file $figfile --seed $newseed --type $type" ) 
+		or $done=1;
+	}
+	push @figures, $figfile;
+    }
+
     # find citations
     while( $line =~ s/(cite\:\d+)[,\}]// ) {
         my $citelabel = $1;

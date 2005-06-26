@@ -354,7 +354,7 @@ SLIDE_END
 
 }
 
-SLIDE_EVAL {
+SLIDE_EVAL+10 {
 
 SLIDE_START
 
@@ -362,7 +362,7 @@ SLIDE_START
 
 \begin{itemize}
 
-TALK_GRAPH
+TALK_FIG
 
 TALK_EVAL_INSIDE_1
 
@@ -547,3 +547,15 @@ SLIDE_END {
 \end{slide}
 
 }
+
+NETWORK_DIAGRAM {
+
+\begin{figure}[t]
+\centerline{\epsfig{figure=network-TALKFIG_FILENAME,width=3in}}
+\end{figure}
+
+}
+
+TALKFIG_FILENAME talkfigNEWTALKFIGNUM+.eps
+NEWTALKFIGNUM\+
+NEWTALKFIGNUM\#

@@ -28,6 +28,10 @@ my $eps_file = "$tmp_pre.eps";
 my $ps_file = "$tmp_pre.ps";
 my $png_file = "$tmp_pre.png";
 
+my %types = qw( network NETWORK_DIAGRAM
+		anything ANYTHING_DIAGRAM
+	     );
+
 my $sysname;
 my $filename;
 my $seed;
@@ -43,6 +47,7 @@ $0 [options]
     --seed <seed>             Seed the prng with this
     --file <file>             Save the postscript in this file
     --sysname <file>          What is the system called?
+    --type <type>             What type of figure?
 
 EOUsage
 
@@ -53,7 +58,7 @@ EOUsage
 # Get the user-defined parameters.
 # First parse options
 my %options;
-&GetOptions( \%options, "help|?", "seed=s", "file=s", "sysname=s" )
+&GetOptions( \%options, "help|?", "seed=s", "file=s", "sysname=s", "type=s" )
     or &usage;
 
 if( $options{"help"} ) {
@@ -79,10 +84,24 @@ if( defined $filename ) {
 my $dat = {};
 my $RE = undef;
 
-my $fh = new IO::File ("<svg_figures.in");
-scigen::read_rules ($fh, $dat, \$RE, 0);
+my $fh = new IO::File( "<svg_figures.in" );
+scigen::read_rules( $fh, $dat, \$RE, 0 );
 
-my $svg = scigen::generate ($dat, "SVG_FIG", $RE, 0, 0);
+my $type = "network";
+if( defined $options{"type"} ) {
+    $type = $options{"type"};
+}
+my @a;
+if( !defined $types{$type} ) {
+    die( "Bad type: $type" );
+} else {
+    @a = ($types{$type});
+    $dat->{"FIGURE_TYPE"} = \@a;
+    print "Made it type $type -> " . $types{$type} . "\n";
+}
+
+scigen::compute_re( $dat, \$RE );
+my $svg = scigen::generate( $dat, "SVG_FIG", $RE, 0, 0 );
 
 # file needs pwd I guess
 $svg =~ s/href=\"(.*)\"/href=\"$ENV{'PWD'}\/$1\"/gi;
@@ -97,13 +116,16 @@ foreach my $line (@lines) {
 	my $x = $1+int($3/2);
 	my $y = $2+int($4/2);
 	push @positions, "$x $y";
-    } elsif( $line =~ /OLDPOINT(\d+)/ ) {
-	while( $line =~ /OLDPOINT(\d+)/ ) {
+    } elsif( $line =~ /OLDPOINT(\d*)/ ) {
+	while( $line =~ /OLDPOINT(\d*)/ ) {
 	    my $num = $1;
+	    if( !defined $num ) {
+		$num = "";
+	    }
 	    my $point = $positions[int rand @positions];
 	    my @xy = split( /\s+/, $point );
 	    my $newpoint = "x$num=\"$xy[0]\" y$num=\"$xy[1]\"";
-	    $line =~ s/OLDPOINT\d+/$newpoint/;
+	    $line =~ s/OLDPOINT\d*/$newpoint/;
 	}
     }
 

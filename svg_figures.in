@@ -3,79 +3,136 @@ SVG_FIG {
 <svg xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink">
 
-NETWORK_DIAGRAM
+FIGURE_TYPE
 
 </svg>
-
-}
-
-#ELEMENT <circle cx="25" cy="25" r="20" fill="COLOR"/>
-#ELEMENT <line x1="5" y1="5" x2="45" y2="45" stroke="COLOR"/>
-#ELEMENT <rect x="5" y="5" width="40" height="40" fill="COLOR"/>
-
-#<image x="400" y="200" width="100px" height="100px"
-
-ELEMENT {
-
-<image x="0" y="0"
-         xlink:href="FILENAME">
-</image>
-<image x="100" y="100"
-         xlink:href="FILENAME">
-</image>
 
 }
 
 # network diagram
 NETWORK_DIAGRAM {
 
-<image POSITION SIZE
-         xlink:href="NET_FILENAME">
-</image>
+BIG_CLOUD_IMAGE
 
-<image POSITION SIZE
-         xlink:href="NET_FILENAME">
-</image>
+COMPUTERS
 
-<image POSITION SIZE
-         xlink:href="NET_FILENAME">
-</image>
+COMPUTER_PARTNER
+COMPUTER_PARTNER
+COMPUTER_PARTNER
 
-<image POSITION SIZE
-         xlink:href="NET_FILENAME">
-</image>
-
-<line LINE_START LINE_END stroke="COLOR"/>
-<line LINE_START LINE_END stroke="COLOR"/>
-<line LINE_START LINE_END stroke="COLOR"/>
-
+LINE_P2P
+LINE_P2P
+LINE_P2P
 
 }
 
-NET_FILENAME COMP_ELEM
-NET_FILENAME COMPUTER
-NET_FILENAME CLOUD
-NET_FILENAME SOFTWARE
+COMPUTER_IMAGE {
+
+<image POSITION SIZE
+         xlink:href="COMPUTER_FILENAME">
+</image>
+
+}
+
+COMPUTER_PARTNER {
+
+<image OLDPOINT SIZE
+         xlink:href="PARTNER_FILENAME">
+</image>
+
+}
+
+COMPUTER_FILENAME COMP_ELEM
+COMPUTER_FILENAME+8 COMPUTER
+COMPUTER_FILENAME CLOUD
+
+PARTNER_FILENAME COMP_ELEM
+PARTNER_FILENAME PEOPLE
+PARTNER_FILENAME SOFTWARE
+
+BIG_CLOUD_IMAGE {
+
+<image POSITION BIG_SIZE
+         xlink:href="CLOUD">
+</image>
+
+}
+
+COMPUTERS COMPUTERS_1
+COMPUTERS+3 COMPUTERS_2
+COMPUTERS+5 COMPUTERS_3
+COMPUTERS+5 COMPUTERS_4
+COMPUTERS+3 COMPUTERS_5
+COMPUTERS+2 COMPUTERS_6
+COMPUTERS COMPUTERS_7
+COMPUTERS COMPUTERS_8
+COMPUTERS COMPUTERS_9
+COMPUTERS COMPUTERS_10
+
+COMPUTERS_1	COMPUTER_IMAGE
+COMPUTERS_2 {
+  COMPUTERS_1
+  COMPUTERS_1
+}
+COMPUTERS_3 {
+  COMPUTERS_1
+  COMPUTERS_2
+}
+COMPUTERS_4 {
+  COMPUTERS_1
+  COMPUTERS_3
+}
+COMPUTERS_5 {
+  COMPUTERS_1
+  COMPUTERS_4
+}
+COMPUTERS_6 {
+  COMPUTERS_1
+  COMPUTERS_5
+}
+COMPUTERS_7 {
+  COMPUTERS_1
+  COMPUTERS_6
+}
+COMPUTERS_8 {
+  COMPUTERS_1
+  COMPUTERS_7
+}
+COMPUTERS_9 {
+  COMPUTERS_1
+  COMPUTERS_8
+}
+COMPUTERS_10 {
+  COMPUTERS_1
+  COMPUTERS_9
+}
 
 POSITION!
 POSITION x="POSX" y="POSY"
+
+
+LINE_P2P <line LINE_START LINE_END stroke="COLOR"/>
 # OLDPOINTs match any point that's already been picked (make-talk-figure.pl)
 LINE_START OLDPOINT1
 LINE_END OLDPOINT2
 
 POSX 0
-POSX 50
-POSX 100
-POSX 150
+POSX 40
+POSX 80
+POSX 120
+POSX 160
 POSX 200
+POSX 240
+POSX 280
 
 POSY 0
-POSY 50
-POSY 100
-POSY 150
-POSY 200
+POSY 40
+POSY 80
+#POSY 120
 
-SIZE width="100px" height="100px"
+SIZE width="40px" height="40px"
+BIG_SIZE width="80px" height="80px"
+BIG_SIZE width="120px" height="120px"
 
 COLOR red
 COLOR blue
@@ -350,7 +407,7 @@ COMPUTER	 ./openclipart-0.13.1/computer/gis-computer_glenn_rolla_01.svg
 #skip ./openclipart-0.13.1/computer/gnu_linux_disco_dance_an_01.svg
 #skip ./openclipart-0.13.1/computer/hardware/8_port_switch_denco_01.svg
 COMPUTER	 ./openclipart-0.13.1/computer/hardware/computer-aj_aj_ashton_01.svg
-COMPUTER	 ./openclipart-0.13.1/computer/hardware/Computer-Keyboardlayout-de.svg
+#COMPUTER	 ./openclipart-0.13.1/computer/hardware/Computer-Keyboardlayout-de.svg
 COMPUTER	 ./openclipart-0.13.1/computer/hardware/computer.svg
 COMPUTER	 ./openclipart-0.13.1/computer/hardware/computer1.svg
 #skip ./openclipart-0.13.1/computer/hardware/computer2.svg
