@@ -87,8 +87,31 @@ my $svg = scigen::generate ($dat, "SVG_FIG", $RE, 0, 0);
 # file needs pwd I guess
 $svg =~ s/href=\"(.*)\"/href=\"$ENV{'PWD'}\/$1\"/gi;
 
+
+# We want to draw line, etc, from objects that have already been placed
+my @lines = split( /\n/, $svg );
+my @positions = ();
+my $svg_out = "";
+foreach my $line (@lines) {
+    if( $line =~ /x=\"(\d+)\" y=\"(\d+)\" width=\"(\d+)px\" height=\"(\d+)px\"/ ) {
+	my $x = $1+int($3/2);
+	my $y = $2+int($4/2);
+	push @positions, "$x $y";
+    } elsif( $line =~ /OLDPOINT(\d+)/ ) {
+	while( $line =~ /OLDPOINT(\d+)/ ) {
+	    my $num = $1;
+	    my $point = $positions[int rand @positions];
+	    my @xy = split( /\s+/, $point );
+	    my $newpoint = "x$num=\"$xy[0]\" y$num=\"$xy[1]\"";
+	    $line =~ s/OLDPOINT\d+/$newpoint/;
+	}
+    }
+
+    $svg_out .= $line . "\n";
+}
+
 open( SVG, ">$svg_file" ) or die( "Can't open $svg_file for writing" );
-print SVG $svg;
+print SVG $svg_out;
 close( SVG );
 
 system( "inkscape -z --export-png=$png_file -b white -D $svg_file; " .

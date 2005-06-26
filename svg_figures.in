@@ -3,24 +3,79 @@ SVG_FIG {
 <svg xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink">
 
-ELEMENT
+NETWORK_DIAGRAM
 
 </svg>
 
 }
 
-ELEMENT <circle cx="25" cy="25" r="20" fill="COLOR"/>
-ELEMENT <line x1="5" y1="5" x2="45" y2="45" stroke="COLOR"/>
-ELEMENT <rect x="5" y="5" width="40" height="40" fill="COLOR"/>
+#ELEMENT <circle cx="25" cy="25" r="20" fill="COLOR"/>
+#ELEMENT <line x1="5" y1="5" x2="45" y2="45" stroke="COLOR"/>
+#ELEMENT <rect x="5" y="5" width="40" height="40" fill="COLOR"/>
 
 #<image x="400" y="200" width="100px" height="100px"
-ELEMENT+20 {
 
-<image x="400" y="200"
+ELEMENT {
+
+<image x="0" y="0"
+         xlink:href="FILENAME">
+</image>
+<image x="100" y="100"
          xlink:href="FILENAME">
 </image>
 
 }
+
+# network diagram
+NETWORK_DIAGRAM {
+
+<image POSITION SIZE
+         xlink:href="NET_FILENAME">
+</image>
+
+<image POSITION SIZE
+         xlink:href="NET_FILENAME">
+</image>
+
+<image POSITION SIZE
+         xlink:href="NET_FILENAME">
+</image>
+
+<image POSITION SIZE
+         xlink:href="NET_FILENAME">
+</image>
+
+<line LINE_START LINE_END stroke="COLOR"/>
+<line LINE_START LINE_END stroke="COLOR"/>
+<line LINE_START LINE_END stroke="COLOR"/>
+
+
+}
+
+NET_FILENAME COMP_ELEM
+NET_FILENAME COMPUTER
+NET_FILENAME CLOUD
+NET_FILENAME SOFTWARE
+
+POSITION!
+POSITION x="POSX" y="POSY"
+# OLDPOINTs match any point that's already been picked (make-talk-figure.pl)
+LINE_START OLDPOINT1
+LINE_END OLDPOINT2
+
+POSX 0
+POSX 50
+POSX 100
+POSX 150
+POSX 200
+
+POSY 0
+POSY 50
+POSY 100
+POSY 150
+POSY 200
+
+SIZE width="100px" height="100px"
 
 COLOR red
 COLOR blue

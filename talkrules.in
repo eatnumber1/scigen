@@ -28,6 +28,8 @@ SLIDE_OUTLINE
 
 SLIDE_OVERVIEW
 
+SLIDE_EVAL
+
 LATEX_TALK_FOOTER
 
 }
@@ -311,6 +313,123 @@ TALK_PROBLEM	All RELATED SCI_SYSTEM_PL require that SCI_THING_S SCI_SYSTEM_ACTIO
 
 %%%%%%%%%%% Evaluation/Results %%%%%%%%%%%%
 
+SLIDE_EVAL {
+
+SLIDE_START
+
+\slideheading{TALK_EVAL_TITLE}
+
+\begin{itemize}
+
+\item{
+TALK_EVAL_START}
+
+TALK_EVAL_INSIDE
+
+\item{
+TALK_EVAL_END}
+
+\end{itemize}
+
+SLIDE_END
+
+}
+
+SLIDE_EVAL {
+
+SLIDE_START
+
+\slideheading{TALK_EVAL_TITLE}
+
+\begin{itemize}
+
+\item{
+TALK_EVAL_START}
+
+TALK_GRAPH
+
+\end{itemize}
+
+SLIDE_END
+
+}
+
+SLIDE_EVAL {
+
+SLIDE_START
+
+\slideheading{TALK_EVAL_TITLE}
+
+\begin{itemize}
+
+TALK_GRAPH
+
+TALK_EVAL_INSIDE_1
+
+\end{itemize}
+
+SLIDE_END
+
+}
+
+TALK_EVAL_TITLE	EVAL_SEC_HEADER_T
+TALK_EVAL_TITLE	CONSTRAINT_OR_MEASUREMENT
+TALK_EVAL_TITLE PROP_OR_MEASUREMENT_NO_SYSTEM
+
+TALK_EVAL_INSIDE+3	TALK_EVAL_INSIDE_2
+TALK_EVAL_INSIDE+3	TALK_EVAL_INSIDE_3
+TALK_EVAL_INSIDE	TALK_EVAL_INSIDE_4
+TALK_EVAL_INSIDE_1 {
+\item{
+TALK_EVAL_INSIDE_X}
+}
+
+TALK_EVAL_INSIDE_2 {
+
+TALK_EVAL_INSIDE_1
+
+TALK_EVAL_INSIDE_1
+
+}
+
+TALK_EVAL_INSIDE_3 {
+
+TALK_EVAL_INSIDE_2
+
+TALK_EVAL_INSIDE_1
+
+}
+
+TALK_EVAL_INSIDE_4 {
+
+TALK_EVAL_INSIDE_3
+
+TALK_EVAL_INSIDE_1
+
+}
+
+TALK_EVAL_START	EVAL_EXP
+
+TALK_EVAL_INSIDE_X	EVAL_ACTION
+TALK_EVAL_INSIDE_X	we EVAL_NOTED that CONSTRAINT_OR_MEASUREMENT EVAL_INCREASED by EVAL_AMOUNT
+
+EVAL_AMOUNT	SMALL_NUM\%
+EVAL_AMOUNT	MED_NUM EVAL_UNIT_UM
+
+TALK_EVAL_END	EVAL_EXP
+
+EVAL_INCREASED increased
+EVAL_INCREASED decreased
+EVAL_INCREASED fell
+EVAL_INCREASED skyrocketed
+EVAL_INCREASED ballooned
+EVAL_INCREASED was reduced
+
+EVAL_NOTED		noted
+EVAL_NOTED		observed
+EVAL_NOTED		saw
+EVAL_NOTED+3		measured
+
 %%%%%%%%%%% Implementation %%%%%%%%%%%%
 
 %%%%%%%%%%% Conclusion/Summary %%%%%%%%%%%%
@@ -325,8 +444,17 @@ SCI_THING_P+4	\textbf{SCI_THING_P}
 SCI_BUZZWORD_NOUN+2	\textbf{SCI_BUZZWORD_NOUN}
 SCI_BUZZWORD_ADJ+2	\textbf{SCI_BUZZWORD_ADJ}
 
-# for the cognitive complexity lecture only:
-.include cogcom.in
+## for the cognitive complexity lecture only:
+#.include cogcom.in
+
+TALK_GRAPH {
+
+\begin{figure}[h]
+\centerline{\epsfig{figure=LATEX_FIG_FILENAME,width=3in}}
+\label{LATEX_FIG_LABEL}
+\end{figure}
+
+}
 
 %%%%%%%%%%% LaTeX stuff %%%%%%%%%%%%
 
