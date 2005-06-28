@@ -44,12 +44,12 @@ SLIDE_START
 
 \begin{itemize}
 
-\item{
+\sciitem{
 TALK_OUTLINE_START}
 
 TALK_OUTLINE_INSIDE
 
-\item{
+\sciitem{
 TALK_OUTLINE_END}
 
 \end{itemize}
@@ -64,7 +64,7 @@ TALK_OUTLINE_INSIDE	TALK_OUTLINE_INSIDE_2
 TALK_OUTLINE_INSIDE	TALK_OUTLINE_INSIDE_3
 TALK_OUTLINE_INSIDE	TALK_OUTLINE_INSIDE_4
 TALK_OUTLINE_INSIDE_1 {
-\item{
+\sciitem{
 TALK_OUTLINE_INSIDE_X}
 }
 
@@ -124,12 +124,12 @@ SLIDE_START
 
 \begin{itemize}
 
-\item{
+\sciitem{
 TALK_INTRO_START}
 
 TALK_INTRO_INSIDE
 
-\item{
+\sciitem{
 TALK_INTRO_END}
 
 \end{itemize}
@@ -145,7 +145,7 @@ TALK_INTRO_INSIDE+3	TALK_INTRO_INSIDE_2
 TALK_INTRO_INSIDE+3	TALK_INTRO_INSIDE_3
 TALK_INTRO_INSIDE	TALK_INTRO_INSIDE_4
 TALK_INTRO_INSIDE_1 {
-\item{
+\sciitem{
 TALK_INTRO_INSIDE_X}
 }
 
@@ -186,11 +186,11 @@ TALK_INTRO_INSIDE_X {
 there are three SCI_ADJ components to any such SCI_SYSTEM:
 
 \begin{itemize}
-\item{
+\sciitem{
 SCI_GENERIC_NOUN_UM}
-\item{
+\sciitem{
 SCI_GENERIC_NOUN_UM}
-\item{
+\sciitem{
 SCI_GENERIC_NOUN_UM}
 \end{itemize}
 
@@ -216,12 +216,12 @@ SLIDE_START
 
 \begin{itemize}
 
-\item{
+\sciitem{
 TALK_OVERVIEW_START}
 
 TALK_OVERVIEW_INSIDE
 
-\item{
+\sciitem{
 TALK_OVERVIEW_END}
 
 \end{itemize}
@@ -236,7 +236,7 @@ TALK_OVERVIEW_INSIDE+3	TALK_OVERVIEW_INSIDE_2
 TALK_OVERVIEW_INSIDE+3	TALK_OVERVIEW_INSIDE_3
 TALK_OVERVIEW_INSIDE	TALK_OVERVIEW_INSIDE_4
 TALK_OVERVIEW_INSIDE_1 {
-\item{
+\sciitem{
 TALK_OVERVIEW_INSIDE_X}
 }
 
@@ -279,11 +279,11 @@ TALK_OVERVIEW_INSIDE_X	{
 RELATED SCI_SYSTEM_PL have many SIMILAR SCI_PARTS:
 
 \begin{itemize}
-\item{
+\sciitem{
 SCI_GENERIC_NOUN_UM}
-\item{
+\sciitem{
 SCI_GENERIC_NOUN_UM}
-\item{
+\sciitem{
 SCI_GENERIC_NOUN_UM}
 \end{itemize}
 
@@ -321,12 +321,12 @@ SLIDE_START
 
 \begin{itemize}
 
-\item{
+\sciitem{
 TALK_EVAL_START}
 
 TALK_EVAL_INSIDE
 
-\item{
+\sciitem{
 TALK_EVAL_END}
 
 \end{itemize}
@@ -343,7 +343,7 @@ SLIDE_START
 
 \begin{itemize}
 
-\item{
+\sciitem{
 TALK_EVAL_START}
 
 TALK_GRAPH
@@ -380,7 +380,7 @@ TALK_EVAL_INSIDE+3	TALK_EVAL_INSIDE_2
 TALK_EVAL_INSIDE+3	TALK_EVAL_INSIDE_3
 TALK_EVAL_INSIDE	TALK_EVAL_INSIDE_4
 TALK_EVAL_INSIDE_1 {
-\item{
+\sciitem{
 TALK_EVAL_INSIDE_X}
 }
 
@@ -482,14 +482,13 @@ LATEX_CITEPACK
 \tx@InitOL /TheOL (#1) def}}
 \makeatother
 
-\newcommand\BackgroundPicture[1]{%
-\put(0,200){%
-\parbox[b][\paperheight]{\paperwidth}{%
-\vfill
-\centering
-\includegraphics[width=2in,height=2in,keepaspectratio]{#1}%
-\vfill
-}}}
+\newcounter{overlaycount}
+
+\newcommand{\overlayitem}[1]{%
+\stepcounter{overlaycount}
+\begin{overlay}{\value{overlaycount}}\item{#1}\end{overlay}}
+
+\newcommand{\sciitem}[1]{\item{#1}}
 
 \begin{document}
 
@@ -548,7 +547,23 @@ SLIDE_END_DIAGRAM
 
 }
 
-SLIDE_START	\slideframe{none}\begin{slide}
+SLIDE_START SLIDE_START_OVER
+SLIDE_START SLIDE_START_NOOVER
+
+SLIDE_START_PRE		\slideframe{none}\begin{slide}
+SLIDE_START_OVER {
+
+SLIDE_START_PRE
+\renewcommand{\sciitem}[1]{\overlayitem{#1}}
+\setcounter{overlaycount}{0}
+
+}
+SLIDE_START_NOOVER {
+
+SLIDE_START_PRE
+\renewcommand{\sciitem}[1]{\item{#1}}
+
+}
 
 SLIDE_END {
 
