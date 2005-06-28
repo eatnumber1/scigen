@@ -362,7 +362,7 @@ SLIDE_START
 
 \begin{itemize}
 
-TALK_FIG
+TALK_GRAPH
 
 TALK_EVAL_INSIDE_1
 
@@ -471,6 +471,7 @@ LATEX_CITEPACK
 \usepackage{semlayer}
 \usepackage{semcolor}
 \usepackage{slidesec}
+\usepackage{eso-pic,graphicx}
 \input{seminar.bug}
 
 \makeatletter
@@ -480,6 +481,15 @@ LATEX_CITEPACK
 /IfVisible true def} if} {IfVisible {Invisible /IfVisible false def} if} ifelse} def
 \tx@InitOL /TheOL (#1) def}}
 \makeatother
+
+\newcommand\BackgroundPicture[1]{%
+\put(0,200){%
+\parbox[b][\paperheight]{\paperwidth}{%
+\vfill
+\centering
+\includegraphics[width=2in,height=2in,keepaspectratio]{#1}%
+\vfill
+}}}
 
 \begin{document}
 
@@ -534,7 +544,7 @@ LATEX_AUTHOR_STYLE
 
 \end{center}
 
-SLIDE_END
+SLIDE_END_DIAGRAM
 
 }
 
@@ -548,6 +558,16 @@ SLIDE_END {
 
 }
 
+SLIDE_END_DIAGRAM {
+
+\vfill
+
+ANYTHING_DIAGRAM
+
+\end{slide}
+
+}
+
 NETWORK_DIAGRAM {
 
 \begin{figure}[t]
@@ -555,6 +575,22 @@ NETWORK_DIAGRAM {
 \end{figure}
 
 }
+
+ANYTHING_DIAGRAM {
+
+\begin{picture}(0,0)(0,0)
+\put(ANYTHING_XPOS,0){\includegraphics[width=2in,height=2in,keepaspectratio]{anything-TALKFIG_FILENAME.eps}}
+\end{picture}
+
+}
+
+ANYTHING_XPOS 0
+ANYTHING_XPOS 100
+ANYTHING_XPOS 200
+
+#%\AddToShipoutPicture*{\BackgroundPicture{anything-TALKFIG_FILENAME.eps}}
+#%\AddToShipoutPicture*{\put(0,200){\circle{10pt}}}
+
 
 TALKFIG_FILENAME talkfigNEWTALKFIGNUM+.eps
 NEWTALKFIGNUM\+

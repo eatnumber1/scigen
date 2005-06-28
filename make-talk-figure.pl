@@ -97,7 +97,6 @@ if( !defined $types{$type} ) {
 } else {
     @a = ($types{$type});
     $dat->{"FIGURE_TYPE"} = \@a;
-    print "Made it type $type -> " . $types{$type} . "\n";
 }
 
 scigen::compute_re( $dat, \$RE );

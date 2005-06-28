@@ -170,7 +170,7 @@ while( <TEX> ) {
 	push @figures, $figfile;
     }
 
-    if( /figure=(.*)-(talkfig[^\,\}]*)[\,\}]/ ) {
+    if( /[=\{]([^\{]*)-(talkfig[^\,\}]*)[\,\}]/) {
 	my $figfile = "$tmp_dir/$1-$2";
 	my $type = $1;
 	my $done = 0;

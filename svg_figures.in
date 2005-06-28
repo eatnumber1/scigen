@@ -9,6 +9,25 @@ FIGURE_TYPE
 
 }
 
+########## Something random #######################
+
+ANYTHING_DIAGRAM {
+
+<image xlink:href="ANYTHING_FILENAME">
+</image>
+
+}
+
+ANYTHING_FILENAME+40 ANIMAL
+ANYTHING_FILENAME+20 BUILDING
+ANYTHING_FILENAME+100 MISC_OBJECT
+ANYTHING_FILENAME+15 SIGN
+ANYTHING_FILENAME+35 PEOPLE
+ANYTHING_FILENAME+5 MAP
+ANYTHING_FILENAME+30 STICKMEN
+
+########## Network Diagram #######################
+
 # network diagram
 NETWORK_DIAGRAM {
 
