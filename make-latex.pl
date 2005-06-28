@@ -146,7 +146,11 @@ while( <TEX> ) {
 	my $done = 0;
 	while( !$done ) {
 	    my $newseed = int rand 0xffffffff;
-	    system( "./make-graph.pl --file $figfile --seed $newseed" ) 
+	    my $color = "";
+	    if( defined $options{"talk"} ) {
+		$color = "--color"
+	    }
+	    system( "./make-graph.pl --file $figfile --seed $newseed $color" ) 
 		or $done=1;
 	}
 	push @figures, $figfile;

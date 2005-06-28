@@ -23,6 +23,7 @@ use Getopt::Long;
 
 my $filename;
 my $seed;
+my $color = "";
 
 sub usage {
     select(STDERR);
@@ -34,6 +35,7 @@ $0 [options]
     --help                    Display this help message
     --seed <seed>             Seed the prng with this
     --file <file>             Save the postscript in this file
+    --color                   Draw in color?
 
 EOUsage
 
@@ -44,11 +46,14 @@ EOUsage
 # Get the user-defined parameters.
 # First parse options
 my %options;
-&GetOptions( \%options, "help|?", "seed=s", "file=s" )
+&GetOptions( \%options, "help|?", "seed=s", "file=s", "color" )
     or &usage;
 
 if( $options{"help"} ) {
     &usage();
+}
+if( $options{"color"} ) {
+    $color = "color";
 }
 if( defined $options{"file"} ) {
     $filename = $options{"file"};
@@ -110,7 +115,7 @@ my $num_points = 10;
 
 open( GPFILE, ">$gpfile" ) or die( "Couldn't write to $gpfile" );
 
-print GPFILE "set terminal postscript eps 26\n";
+print GPFILE "set terminal postscript eps $color 26\n";
 print GPFILE "set output \"$epsfile\"\n";
 
 foreach my $line (@graph_lines) {
