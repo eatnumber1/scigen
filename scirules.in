@@ -2266,6 +2266,12 @@ LIT_OFTEN	generally
 LIT_OFTEN	regularly
 LIT_OFTEN	continuously
 
+LIT_BETTER+3	better
+LIT_BETTER+2	more effectively
+LIT_BETTER	less well
+LIT_BETTER	no better
+LIT_BETTER	worse
+
 LIT_INCREASING	increasing
 LIT_INCREASING	rising
 LIT_INCREASING	decreasing
