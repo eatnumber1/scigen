@@ -452,6 +452,11 @@ SCI_MODEL_TYPE	design
 SCI_MODEL_TYPE	framework
 SCI_MODEL_TYPE	architecture
 SCI_MODEL_TYPE	methodology
+SCI_MODEL_TYPE_P	models
+SCI_MODEL_TYPE_P	designs
+SCI_MODEL_TYPE_P	frameworks
+SCI_MODEL_TYPE_P	architectures
+SCI_MODEL_TYPE_P	methodologies
 
 MODEL_XXX+2	XXX
 MODEL_XXX	. MODEL_FILLER.
