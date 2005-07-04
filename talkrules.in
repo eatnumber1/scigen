@@ -30,6 +30,8 @@ SLIDE_OVERVIEW
 
 SLIDE_TECH
 
+SLIDE_MODEL
+
 SLIDE_EVAL
 
 LATEX_TALK_FOOTER
@@ -451,6 +453,69 @@ PHASE	calculation
 
 %%%%%%%%%%% Model %%%%%%%%%%%%
 
+SLIDE_MODEL {
+
+SLIDE_START
+
+\slideheading{TALK_MODEL_TITLE}
+
+\begin{itemize}
+
+\sciitem{
+TALK_MODEL_START}
+
+TALK_MODEL_INSIDE
+
+\sciitem{
+TALK_MODEL_END}
+
+\end{itemize}
+
+SLIDE_END
+
+}
+
+SLIDE_MODEL {
+
+SLIDE_START
+
+\slideheading{TALK_MODEL_TITLE}
+
+NETWORK_DIAGRAM
+
+SLIDE_END
+
+}
+
+TALK_MODEL_TITLE	SCI_MODEL_TYPE
+
+TALK_MODEL_INSIDE	TALK_MODEL_INSIDE_1
+
+TALK_MODEL_INSIDE_1 {
+\sciitem{
+TALK_MODEL_INSIDE_X}
+}
+
+TALK_MODEL_START	Under what conditions will SCI_OUR_SYSTEM SCI_SOLVE_CLAUSE?
+
+TALK_MODEL_INSIDE_X	Assumption: MODEL_ASSUMPTION
+
+MODEL_ASSUMPTION+3	GENERIC_LASTNAME's Law MODEL_GROUNDING
+MODEL_ASSUMPTION+3	ADVERSARY_TYPE adversaries
+MODEL_ASSUMPTION+3	SCI_IDEALly SCI_BUZZWORD_ADJ SCI_BUZZWORD_NOUN	
+MODEL_ASSUMPTION	P = NP
+MODEL_ASSUMPTION+3	SCI_THING SCI_SYS_VERBION SCI_PROOF_PROP
+MODEL_ASSUMPTION+3	SCI_OVERALL_THESIS_PROVE
+
+ADVERSARY_TYPE+4	non-malicious
+ADVERSARY_TYPE		technologically-impaired
+ADVERSARY_TYPE		child-like
+ADVERSARY_TYPE		bandwidth-constrained
+ADVERSARY_TYPE		computation-constrained
+ADVERSARY_TYPE  	storage-constrained
+
+TALK_MODEL_END		this SCI_MODEL_TYPE MODEL_GROUNDING
+
 %%%%%%%%%%% Evaluation/Results %%%%%%%%%%%%
 
 SLIDE_EVAL+2 {
@@ -743,9 +808,9 @@ ANYTHING_DIAGRAM
 
 NETWORK_DIAGRAM {
 
-\begin{figure}[t]
-\centerline{\epsfig{figure=network-TALKFIG_FILENAME,width=3in}}
-\end{figure}
+\begin{center}
+\includegraphics[width=3.5in,height=2.5in,keepaspectratio]{network-TALKFIG_FILENAME.eps}
+\end{center}
 
 }
 
@@ -760,10 +825,6 @@ ANYTHING_DIAGRAM {
 ANYTHING_XPOS 0
 ANYTHING_XPOS 100
 ANYTHING_XPOS 200
-
-#%\AddToShipoutPicture*{\BackgroundPicture{anything-TALKFIG_FILENAME.eps}}
-#%\AddToShipoutPicture*{\put(0,200){\circle{10pt}}}
-
 
 TALKFIG_FILENAME talkfigNEWTALKFIGNUM+.eps
 NEWTALKFIGNUM\+

@@ -130,28 +130,27 @@ POSITION!
 POSITION x="POSX" y="POSY"
 
 
-LINE_P2P <line LINE_START LINE_END stroke="COLOR"/>
+LINE_P2P <line LINE_START LINE_END stroke="black"/>
 # OLDPOINTs match any point that's already been picked (make-talk-figure.pl)
 LINE_START OLDPOINT1
 LINE_END OLDPOINT2
 
 POSX 0
-POSX 40
-POSX 80
-POSX 120
-POSX 160
+POSX 100
 POSX 200
-POSX 240
-POSX 280
+POSX 300
+POSX 400
+POSX 500
+POSX 600
+POSX 700
 
-POSY 0
-POSY 40
-POSY 80
-#POSY 120
+POSY 100
+POSY 200
+POSY 300
 
-SIZE width="40px" height="40px"
-BIG_SIZE width="80px" height="80px"
-BIG_SIZE width="120px" height="120px"
+SIZE width="100px" height="100px"
+BIG_SIZE width="200px" height="200px"
+BIG_SIZE width="300px" height="300px"
 
 COLOR red
 COLOR blue
