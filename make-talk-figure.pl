@@ -99,6 +99,40 @@ if( !defined $types{$type} ) {
     $dat->{"FIGURE_TYPE"} = \@a;
 }
 
+my @b;
+my @c;
+my @d;
+# special network processing
+if( $type eq "network" ) {
+
+    my $num_nodes = scigen::generate( $dat, "NETWORK_NUM_COMPS", $RE, 0, 0 );
+    @b = ("COMPUTERS_$num_nodes");
+    $dat->{"COMPUTERS"} = \@b;
+
+    # some number of edges (n/2 - 2n-1)
+    my $num_edges = int rand($num_nodes/2);
+    $num_edges += int ($num_nodes*3/2)-1;
+    if( $num_edges > 16 ) {
+	$num_edges = 16;
+    } elsif( $num_edges == 0 ) {
+	$num_edges = 1;
+    }
+
+    @c = ("LINE_P2P_$num_edges");
+    $dat->{"LINES"} = \@c;
+
+    # some number of partners
+    my $num_partners = int rand($num_nodes);
+    if( $num_partners == 0 ) {
+	$num_partners = 1;
+    }
+
+    @d = ("COMPUTER_PARTNER_$num_partners");
+    $dat->{"COMPUTER_PARTNERS"} = \@d;
+
+}
+
+
 scigen::compute_re( $dat, \$RE );
 my $svg = scigen::generate( $dat, "SVG_FIG", $RE, 0, 0 );
 
