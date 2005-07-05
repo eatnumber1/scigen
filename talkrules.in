@@ -958,6 +958,9 @@ SCI_THING_P+4	\textbf{SCI_THING_P}
 SCI_BUZZWORD_NOUN+2	\textbf{SCI_BUZZWORD_NOUN}
 SCI_BUZZWORD_ADJ+2	\textbf{SCI_BUZZWORD_ADJ}
 
+CITATION+100	
+CITATION_MULTI+200	
+
 ## for the cognitive complexity lecture only:
 #.include cogcom.in
 
