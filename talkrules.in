@@ -635,6 +635,18 @@ SLIDE_END
 
 }
 
+SLIDE_MODEL+5 {
+
+SLIDE_START
+
+\slideheading{TALK_MODEL_TITLE}
+
+NETWORK_DIAGRAM
+
+SLIDE_END
+
+}
+
 TALK_MODEL_TITLE	SCI_MODEL_TYPE
 
 TALK_MODEL_INSIDE	TALK_MODEL_INSIDE_1
@@ -1076,10 +1088,9 @@ TALK_GRAPH {
 
 TALK_DIAGRAM {
 
-\begin{figure}[h]
-\centerline{\epsfig{figure=LATEX_DIA_FILENAME,width=3in}}
-\label{LATEX_DIA_LABEL}
-\end{figure}
+\begin{center}
+\includegraphics[width=3in,height=2in,keepaspectratio]{LATEX_DIA_FILENAME}
+\end{center}
 
 }
 
