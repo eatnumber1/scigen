@@ -629,7 +629,7 @@ SLIDE_START
 
 \slideheading{TALK_MODEL_TITLE}
 
-NETWORK_DIAGRAM
+TALK_DIAGRAM
 
 SLIDE_END
 
@@ -1070,6 +1070,15 @@ TALK_GRAPH {
 \begin{figure}[h]
 \centerline{\epsfig{figure=LATEX_FIG_FILENAME,width=3in}}
 \label{LATEX_FIG_LABEL}
+\end{figure}
+
+}
+
+TALK_DIAGRAM {
+
+\begin{figure}[h]
+\centerline{\epsfig{figure=LATEX_DIA_FILENAME,width=3in}}
+\label{LATEX_DIA_LABEL}
 \end{figure}
 
 }

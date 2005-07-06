@@ -146,6 +146,15 @@ close( VIZ );
 system( "$program -Tps $viz_file > $eps_file.tmp; ps2epsi $eps_file.tmp $eps_file" ) and
     die( "Can't run $program on $viz_file" );
 
+if( `uname` =~ /Linux/ ) {
+    # fix bounding box of stupid linux's ps2epsi
+    my $bbline = `grep -m 1 "BoundingBox" $eps_file.tmp`;
+    chomp $bbline;
+    #print "Fixing box: $bbline\n";
+    system( "sed -e s/%%BoundingBox.*/\"$bbline\"/ -i $eps_file" );
+}
+
+
 if( !defined $filename ) {
     system( "gv $eps_file" ) and
 	die( "Can't run $program on $viz_file" );
