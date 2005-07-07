@@ -21,7 +21,7 @@ ANYTHING_DIAGRAM {
 ANYTHING_FILENAME+40 ANIMAL
 ANYTHING_FILENAME+20 BUILDING
 ANYTHING_FILENAME+100 MISC_OBJECT
-ANYTHING_FILENAME+15 SIGN
+ANYTHING_FILENAME+14 SIGN
 ANYTHING_FILENAME+35 PEOPLE
 ANYTHING_FILENAME+5 MAP
 ANYTHING_FILENAME+30 STICKMEN
@@ -3020,7 +3020,7 @@ MISC_OBJECT	 ./openclipart-0.13.1/transportation/hummer_03.svg
 #skip ./openclipart-0.13.1/transportation/roadsigns/splash.svg
 #skip ./openclipart-0.13.1/transportation/roadsigns/staggered.svg
 #skip ./openclipart-0.13.1/transportation/roadsigns/stop-sign-angled_01.svg
-SIGN	 ./openclipart-0.13.1/transportation/roadsigns/stop.svg
+#skip (broken)  ./openclipart-0.13.1/transportation/roadsigns/stop.svg
 #skip ./openclipart-0.13.1/transportation/roadsigns/stop_sign_01.svg
 #skip ./openclipart-0.13.1/transportation/roadsigns/train.svg
 #skip ./openclipart-0.13.1/transportation/roadsigns/tram.svg
