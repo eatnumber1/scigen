@@ -55,6 +55,7 @@ $0 [options]
     --remote                  Use a daemon to resolve symbols
     --talk                    Make a talk, instead of a paper
     --title <title>           Set the title (useful for talks)
+    --sysname <name>          Set the system name
 
 EOUsage
 
@@ -66,7 +67,7 @@ EOUsage
 # First parse options
 my %options;
 &GetOptions( \%options, "help|?", "author=s@", "seed=s", "tar=s", "file=s", 
-	     "savedir=s", "remote", "talk", "title=s" )
+	     "savedir=s", "remote", "talk", "title=s", "sysname=s" )
     or &usage;
 
 if( $options{"help"} ) {
@@ -97,7 +98,13 @@ if( !-d $tmp_dir ) {
     system( "mkdir -p $tmp_dir" ) and die( "Couldn't make $tmp_dir" );
 }
 
-my $sysname = &get_system_name();
+my $sysname;
+if( defined $options{"sysname"} ) {
+    $sysname = $options{"sysname"};
+} else {
+    $sysname = &get_system_name();
+}
+
 my $tex_fh; 
 my $start_rule;
 if( defined $options{"talk"} ) {
