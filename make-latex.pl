@@ -287,7 +287,7 @@ if( defined $options{"tar"} or defined $options{"savedir"} ) {
 system( "rm $tmp_pre*" ) and die( "Couldn't rm" );
 unlink( @figures );
 unlink( "$bib_file" );
-system( "rm -f $tmp_dir/dia*.eps.tmp; rmdir $tmp_dir" );
+system( "rm -f $tmp_dir/dia*.tmp; rmdir $tmp_dir" );
 
 sub get_system_name {
 
