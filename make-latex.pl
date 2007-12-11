@@ -229,7 +229,7 @@ close( BIB );
 if( !defined $options{"savedir"} ) {
 
     system( "cp $class_files $tmp_dir; cd $tmp_dir; latex $tex_prefix; bibtex $tex_prefix; latex $tex_prefix; latex $tex_prefix; rm $class_files; " . 
-	    "dvips -o $ps_file $dvi_file" )
+	    "dvips -t landscape -o $ps_file $dvi_file" )
 	and die( "Couldn't latex nothing." );
 
     if( defined $options{"file"} ) {
