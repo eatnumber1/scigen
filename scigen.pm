@@ -81,7 +81,7 @@ sub read_rules {
 	if ($#words == 0 && $words[0] eq '{') {
 	    my $end = 0;
 	    while ($line = <$fh>) {
-		if ($line eq "}\n") {
+		if ($line =~ /^}[\r\n]+$/) {
 		    $end = 1;
 		    last;
 		} else {
